@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SkylandersViewController: UIViewController {
+class SkylandersMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
