@@ -28,11 +28,11 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFj-mA-vnc">
-                        <rect key="frame" x="283" y="0.0" width="50" height="66"/>
+                        <rect key="frame" x="291.5" y="0.0" width="45" height="66"/>
                         <buttonConfiguration key="configuration" style="plain"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FwI-4Z-NkJ">
-                        <rect key="frame" x="228.5" y="25.5" width="46.5" height="15"/>
+                        <rect key="frame" x="237" y="25.5" width="46.5" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.5" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>

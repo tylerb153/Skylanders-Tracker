@@ -70,8 +70,7 @@ extension SkylandersMenuViewController: UITableViewDelegate, UITableViewDataSour
             tableView.rowHeight = 66
             let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! SkylanderCell
             cell.accessoryType = .none
-            cell.setName(givenName: "Test Name")
-            cell.setSeries(givenSeries: "")
+            cell.configure(name: "PP", series: "")
             return cell
         }
     }
