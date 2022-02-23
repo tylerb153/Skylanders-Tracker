@@ -26,20 +26,36 @@ class SkylanderCell: UITableViewCell {
     func setName(givenName: String) {
         skylanderName.text = givenName
     }
-    func setSeries(givenSeries: String) {
-        seriesNumber.text = givenSeries
-    }
-    func setImage(givenImage: UIImage) {
-        skylanderImage.image = givenImage
+    func setSeries(givenSeries: Int) {
+        if givenSeries == 0 {
+            seriesNumber.text = ""
+        }
+        else {
+            seriesNumber.text = "Series \(givenSeries)"
+        }
     }
     
-    func configure(name: String, series: String) {
-        setName(givenName: name)
-        setSeries(givenSeries: series)
+    func setImage(givenImage: UIImage?) {
+        if givenImage != nil {
+            skylanderImage.image = givenImage
+        }
+        else {
+            skylanderImage.image = UIImage(systemName: "square")
+        }
     }
-    func configure(name: String, series: String, image: UIImage) {
+    
+    func configure(name: String, series: Int) {
         setName(givenName: name)
         setSeries(givenSeries: series)
-        setImage(givenImage: image)
+        setImage(givenImage: UIImage(named: configureName(name: name, series: series)))
+    }
+    
+    private func configureName(name: String, series: Int) -> String {
+        if series == 0 {
+            return "\(name)1"
+        }
+        else {
+            return "\(name)\(series)"
+        }
     }
 }

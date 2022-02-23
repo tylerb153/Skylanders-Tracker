@@ -12,7 +12,7 @@ class SkylandersMenuViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
-    let gamesCount = 6
+    let gamesCount = 1
     let skylandersCount = 300
     var segmentSelected = 0
     
@@ -62,7 +62,8 @@ extension SkylandersMenuViewController: UITableViewDelegate, UITableViewDataSour
         if segmentSelected == 0 {
             let cellIdentifier = "GameCell"
             tableView.rowHeight = 80
-            let cell: UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! GameCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! GameCell
+            cell.configure(gameName: "Spyro's Adventure")
             return cell
         }
         else {
@@ -70,7 +71,7 @@ extension SkylandersMenuViewController: UITableViewDelegate, UITableViewDataSour
             tableView.rowHeight = 66
             let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! SkylanderCell
             cell.accessoryType = .none
-            cell.configure(name: "PP", series: "")
+            cell.configure(name: "Cynder", series: 0)
             return cell
         }
     }

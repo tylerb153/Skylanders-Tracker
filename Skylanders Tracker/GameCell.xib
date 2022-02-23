@@ -36,6 +36,10 @@
                     <constraint firstItem="vYh-z5-lvy" firstAttribute="top" secondItem="Tz2-zj-KmI" secondAttribute="top" constant="8" id="yh3-ez-Hn7"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="gameImageView" destination="vYh-z5-lvy" id="JkS-da-fRD"/>
+                <outlet property="gameName" destination="ZhF-Rr-kQQ" id="eZ4-d3-3dz"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="81.696428571428569"/>
         </tableViewCell>
     </objects>

@@ -16,6 +16,8 @@
 		2F0F5D1E27C3A20100FB29FC /* SkylandersMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F5D1D27C3A20100FB29FC /* SkylandersMenuViewController.swift */; };
 		2F0F5D2027C3A6EA00FB29FC /* SkylanderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F5D1F27C3A6EA00FB29FC /* SkylanderCell.swift */; };
 		2F0F5D2227C3A76B00FB29FC /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F5D2127C3A76B00FB29FC /* GameCell.swift */; };
+		2F0F5D2A27C3FC4C00FB29FC /* SkylandersList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F5D2827C3FC4C00FB29FC /* SkylandersList.xcdatamodeld */; };
+		2F0F5D3D27C4044600FB29FC /* DataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F5D3C27C4044600FB29FC /* DataBuilder.swift */; };
 		2FD970B227C3620300283528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD970B127C3620300283528 /* AppDelegate.swift */; };
 		2FD970B427C3620300283528 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD970B327C3620300283528 /* SceneDelegate.swift */; };
 		2FD970B927C3620300283528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD970B727C3620300283528 /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 		2F0F5D1D27C3A20100FB29FC /* SkylandersMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylandersMenuViewController.swift; sourceTree = "<group>"; };
 		2F0F5D1F27C3A6EA00FB29FC /* SkylanderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylanderCell.swift; sourceTree = "<group>"; };
 		2F0F5D2127C3A76B00FB29FC /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		2F0F5D2927C3FC4C00FB29FC /* SkylandersList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkylandersList.xcdatamodel; sourceTree = "<group>"; };
+		2F0F5D3C27C4044600FB29FC /* DataBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBuilder.swift; sourceTree = "<group>"; };
 		2FD970AE27C3620300283528 /* Skylanders Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skylanders Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD970B127C3620300283528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FD970B327C3620300283528 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F0F5D3327C3FFC500FB29FC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2F0F5D2827C3FC4C00FB29FC /* SkylandersList.xcdatamodeld */,
+				2F0F5D3C27C4044600FB29FC /* DataBuilder.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		2FD970A527C3620300283528 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,7 @@
 				2F0F5D1327C37EC100FB29FC /* SkylanderCell.xib */,
 				2F0F5D2127C3A76B00FB29FC /* GameCell.swift */,
 				2F0F5D1527C383C100FB29FC /* GameCell.xib */,
+				2F0F5D3327C3FFC500FB29FC /* Data */,
 				2F0F5D1127C37E4F00FB29FC /* NothingFoundCell.xib */,
 				2FD970BF27C3620400283528 /* Info.plist */,
 			);
@@ -171,6 +185,8 @@
 				2F0F5D2227C3A76B00FB29FC /* GameCell.swift in Sources */,
 				2F0F5D1C27C3955200FB29FC /* SkylandersListViewController.swift in Sources */,
 				2F0F5D1827C38DE100FB29FC /* SkylandersDetailViewController.swift in Sources */,
+				2F0F5D2A27C3FC4C00FB29FC /* SkylandersList.xcdatamodeld in Sources */,
+				2F0F5D3D27C4044600FB29FC /* DataBuilder.swift in Sources */,
 				2FD970B227C3620300283528 /* AppDelegate.swift in Sources */,
 				2FD970B427C3620300283528 /* SceneDelegate.swift in Sources */,
 			);
@@ -394,6 +410,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2F0F5D2827C3FC4C00FB29FC /* SkylandersList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2F0F5D2927C3FC4C00FB29FC /* SkylandersList.xcdatamodel */,
+			);
+			currentVersion = 2F0F5D2927C3FC4C00FB29FC /* SkylandersList.xcdatamodel */;
+			path = SkylandersList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2FD970A627C3620300283528 /* Project object */;
 }
