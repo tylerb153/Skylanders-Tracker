@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Skylander" representedClassName="Skylander" syncable="YES" codeGenerationType="class">
-        <attribute name="game" attributeType="String"/>
-        <attribute name="isChecked" attributeType="String"/>
-        <attribute name="name" attributeType="String"/>
+        <attribute name="game" attributeType="String" defaultValueString=""/>
+        <attribute name="isChecked" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String" defaultValueString=""/>
         <attribute name="series" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="statsName" attributeType="String" defaultValueString=""/>
-        <attribute name="worksWithGiants" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="worksWithImaginators" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="worksWithSpryosAdventure" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="worksWithSuperchargers" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="worksWithSwapForce" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="worksWithTrapTeam" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="worksWithGiants" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="worksWithImaginators" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="worksWithSpryosAdventure" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="worksWithSuperchargers" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="worksWithSwapForce" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="worksWithTrapTeam" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
     </entity>
     <entity name="SkylanderStats" representedClassName="SkylanderStats" syncable="YES" codeGenerationType="class">
         <attribute name="armor" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="criticalHit" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="elementalPower" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="maxHealth" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="name" attributeType="String"/>
+        <attribute name="name" attributeType="String" defaultValueString=""/>
         <attribute name="speed" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="startingHealth" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class SkylanderCell: UITableViewCell {
 
@@ -33,6 +34,7 @@ class SkylanderCell: UITableViewCell {
         else {
             seriesNumber.text = "Series \(givenSeries)"
         }
+        
     }
     
     func setImage(givenImage: UIImage?) {
@@ -45,6 +47,13 @@ class SkylanderCell: UITableViewCell {
     }
     
     func configure(name: String, series: Int) {
+        setName(givenName: name)
+        setSeries(givenSeries: series)
+        setImage(givenImage: UIImage(named: configureName(name: name, series: series)))
+    }
+    func configure(for skylander: NSManagedObject) {
+        let name = skylander.value(forKey: "name") as! String
+        let series = skylander.value(forKey: "series") as! Int
         setName(givenName: name)
         setSeries(givenSeries: series)
         setImage(givenImage: UIImage(named: configureName(name: name, series: series)))

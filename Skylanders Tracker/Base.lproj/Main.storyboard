@@ -49,11 +49,29 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Skylanders Menu Placeholder" id="KXS-ev-Jda">
-                        <barButtonItem key="leftBarButtonItem" title="Test" id="7ZY-9d-39z">
-                            <connections>
-                                <segue destination="Xum-Ah-VWP" kind="show" id="w6h-nI-yLb"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem title="Details Test" id="7ZY-9d-39z">
+                                <connections>
+                                    <segue destination="Xum-Ah-VWP" kind="show" id="w6h-nI-yLb"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="List Test" style="plain" id="Xv6-mX-stU">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="naY-u2-JUa" userLabel="List Test">
+                                    <rect key="frame" x="119.5" y="5" width="92" height="34.5"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="List Test"/>
+                                    <connections>
+                                        <segue destination="65o-ky-9rp" kind="show" id="GuA-Ji-aas"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                            <barButtonItem style="plain" systemItem="add" id="HZp-mQ-Y5g">
+                                <connections>
+                                    <action selector="addFakeData" destination="gcy-bb-8iw" id="Afw-6s-eo7"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="F0Y-zv-Pxb">
                             <connections>
                                 <segue destination="JVV-Oa-RAx" kind="show" id="wTR-98-rET"/>

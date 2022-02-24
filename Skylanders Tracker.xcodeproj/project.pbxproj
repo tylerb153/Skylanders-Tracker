@@ -66,6 +66,29 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		2F0F5D7127C6A45600FB29FC /* Cell Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F0F5D1F27C3A6EA00FB29FC /* SkylanderCell.swift */,
+				2F0F5D1327C37EC100FB29FC /* SkylanderCell.xib */,
+				2F0F5D2127C3A76B00FB29FC /* GameCell.swift */,
+				2F0F5D1527C383C100FB29FC /* GameCell.xib */,
+				2F0F5D1127C37E4F00FB29FC /* NothingFoundCell.xib */,
+			);
+			path = "Cell Files";
+			sourceTree = "<group>";
+		};
+		2F0F5D7227C6A47B00FB29FC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F0F5D1D27C3A20100FB29FC /* SkylandersMenuViewController.swift */,
+				2F0F5D1B27C3955200FB29FC /* SkylandersListViewController.swift */,
+				2F0F5D1927C3950200FB29FC /* SearchViewController.swift */,
+				2F0F5D1727C38DE100FB29FC /* SkylandersDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		2FD970A527C3620300283528 = {
 			isa = PBXGroup;
 			children = (
@@ -87,19 +110,12 @@
 			children = (
 				2FD970B127C3620300283528 /* AppDelegate.swift */,
 				2FD970B327C3620300283528 /* SceneDelegate.swift */,
-				2F0F5D1D27C3A20100FB29FC /* SkylandersMenuViewController.swift */,
-				2F0F5D1727C38DE100FB29FC /* SkylandersDetailViewController.swift */,
-				2F0F5D1927C3950200FB29FC /* SearchViewController.swift */,
-				2F0F5D1B27C3955200FB29FC /* SkylandersListViewController.swift */,
+				2F0F5D7227C6A47B00FB29FC /* View Controllers */,
 				2FD970B727C3620300283528 /* Main.storyboard */,
 				2FD970BC27C3620400283528 /* LaunchScreen.storyboard */,
 				2FD970BA27C3620400283528 /* Assets.xcassets */,
-				2F0F5D1F27C3A6EA00FB29FC /* SkylanderCell.swift */,
-				2F0F5D1327C37EC100FB29FC /* SkylanderCell.xib */,
-				2F0F5D2127C3A76B00FB29FC /* GameCell.swift */,
-				2F0F5D1527C383C100FB29FC /* GameCell.xib */,
+				2F0F5D7127C6A45600FB29FC /* Cell Files */,
 				2F0F5D3327C3FFC500FB29FC /* Data */,
-				2F0F5D1127C37E4F00FB29FC /* NothingFoundCell.xib */,
 				2FD970BF27C3620400283528 /* Info.plist */,
 			);
 			path = "Skylanders Tracker";

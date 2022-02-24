@@ -6,15 +6,23 @@
 //
 
 import UIKit
+import CoreData
 
 class SkylandersMenuViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
-    let gamesCount = 1
-    let skylandersCount = 300
+    var skylandersList: [NSManagedObject] = []
+    lazy var gamesCount = 1
+    lazy var skylandersCount = skylandersList.count
     var segmentSelected = 0
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        refreshData()
+        tableView.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +40,10 @@ class SkylandersMenuViewController: UIViewController {
         cellNib = UINib(nibName: "SkylanderCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "SkylanderCell")
         
+        refreshData()
         tableView.reloadData()
     }
+    
     @IBAction func segmentChanged(_ sender: Any) {
         let index = segmentedControl.selectedSegmentIndex
         if index == 0 {
@@ -44,16 +54,35 @@ class SkylandersMenuViewController: UIViewController {
             navigationItem.title = "Skylanders"
             segmentSelected = 1
         }
+        refreshData()
         tableView.reloadData()
+    }
+    
+    func refreshData() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Skylander")
+        do {
+            skylandersList = try managedContext.fetch(fetchRequest)
+        }
+        catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
+        skylandersCount = skylandersList.count
+//        print(skylandersList)
     }
 }
 
+// MARK: - tableView Delegate
 extension SkylandersMenuViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if segmentedControl.selectedSegmentIndex == 0 {
             return gamesCount
         }
         else {
+            print(skylandersCount)
             return skylandersCount
         }
     }
@@ -71,8 +100,37 @@ extension SkylandersMenuViewController: UITableViewDelegate, UITableViewDataSour
             tableView.rowHeight = 66
             let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! SkylanderCell
             cell.accessoryType = .none
-            cell.configure(name: "Cynder", series: 0)
+            cell.configure(for: skylandersList[indexPath.row])
             return cell
+        }
+    }
+}
+// MARK: - Data Save
+extension SkylandersMenuViewController {
+    @IBAction func addFakeData() {
+        print("added data")
+        saveSkylander()
+        refreshData()
+        tableView.reloadData()
+    }
+    
+    func saveSkylander() {
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "Skylander", in: managedContext)!
+        let skylander = NSManagedObject(entity: entity, insertInto: managedContext)
+        skylander.setValue("Terrafin", forKey: "name")
+        
+        do {
+            try managedContext.save()
+            skylandersList.append(skylander)
+            tableView.reloadData()
+        }
+        catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
         }
     }
 }
