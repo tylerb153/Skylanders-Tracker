@@ -22,7 +22,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skylander Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fi7-7N-KJl">
-                        <rect key="frame" x="103" y="21" width="144" height="24"/>
+                        <rect key="frame" x="102" y="21" width="144" height="24"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -34,14 +34,17 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gmy-Xe-C2S">
-                        <rect key="frame" x="58" y="10.5" width="45" height="45"/>
+                        <rect key="frame" x="58" y="11" width="44" height="44"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="Gmy-Xe-C2S" secondAttribute="height" multiplier="1:1" id="sTP-ky-ZOX"/>
                         </constraints>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" image="checkmark.circle" catalog="system">
+                        <buttonConfiguration key="configuration" style="plain" image="checkmark" catalog="system">
                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
                         </buttonConfiguration>
+                        <connections>
+                            <action selector="toggleCheckmark:" destination="N9H-Ie-rYW" eventType="touchUpInside" id="Q3y-i4-qU5"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -66,7 +69,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="checkmark.circle" catalog="system" width="128" height="121"/>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="square" catalog="system" width="128" height="114"/>
     </resources>
 </document>

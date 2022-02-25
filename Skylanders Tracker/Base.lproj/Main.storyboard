@@ -92,13 +92,13 @@
         <!--Game/Name Placeholder-->
         <scene sceneID="bXV-TH-eMp">
             <objects>
-                <tableViewController id="65o-ky-9rp" sceneMemberID="viewController">
+                <tableViewController id="65o-ky-9rp" customClass="SkylandersListTableViewController" customModule="Skylanders_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="EMG-ep-RVO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <searchBar key="tableHeaderView" hidden="YES" contentMode="redraw" id="6tf-dS-H86">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="Series number" id="6tf-dS-H86">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits" returnKeyType="go"/>
                         </searchBar>
@@ -107,10 +107,9 @@
                             <outlet property="delegate" destination="65o-ky-9rp" id="hdy-lt-ht2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Game/Name Placeholder" largeTitleDisplayMode="never" id="Vbl-nv-oxW">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="4o9-RE-Vcz"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Game/Name Placeholder" largeTitleDisplayMode="never" id="Vbl-nv-oxW"/>
                     <connections>
+                        <outlet property="searchBar" destination="6tf-dS-H86" id="ZJE-tF-ZjK"/>
                         <segue destination="Xum-Ah-VWP" kind="show" identifier="DisplaySkylander" id="Fjb-27-xG1"/>
                     </connections>
                 </tableViewController>
@@ -121,7 +120,7 @@
         <!--Skylander Name-->
         <scene sceneID="kFy-T5-zke">
             <objects>
-                <viewController id="Xum-Ah-VWP" sceneMemberID="viewController">
+                <viewController id="Xum-Ah-VWP" customClass="SkylandersDetailViewController" customModule="Skylanders_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mut-UV-911">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -364,7 +363,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="w6h-nI-yLb"/>
+        <segue reference="Fjb-27-xG1"/>
         <segue reference="4Lc-0q-Bbt"/>
     </inferredMetricsTieBreakers>
     <resources>

@@ -124,8 +124,9 @@ extension SkylandersMenuViewController {
         let managedContext = appDelegate.persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "Skylander", in: managedContext)!
         let skylander = NSManagedObject(entity: entity, insertInto: managedContext)
-        skylander.setValue("Chop Chop", forKey: "name")
-        skylander.setValue(1, forKey: "series")
+        skylander.setValue("Eruptor", forKey: "name")
+        skylander.setValue(2, forKey: "series")
+        skylander.setValue(true, forKey: "isChecked")
         
         do {
             try managedContext.save()

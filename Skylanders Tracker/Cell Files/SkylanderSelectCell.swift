@@ -47,6 +47,7 @@ class SkylanderSelectCell: UITableViewCell {
     }
     
     private func configureName(name: String, series: Int) -> String {
+        return "\(name)1"
         if series == 0 {
             return "\(name)1"
         }

@@ -10,6 +10,8 @@ import CoreData
 
 class SkylanderCell: UITableViewCell {
 
+    var isChecked = false
+    
     @IBOutlet weak var skylanderName: UILabel!
     @IBOutlet weak var seriesNumber: UILabel!
     @IBOutlet weak var skylanderImage: UIImageView!
@@ -25,12 +27,22 @@ class SkylanderCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    // MARK: Action
+    @IBAction func toggleCheckmark(_ sender: Any) {
+        if isChecked {
+            setChecked(givenCheck: false)
+        }
+        else {
+            setChecked(givenCheck: true)
+        }
+    }
+    
     // MARK: - Set Labels Methods
     func setName(givenName: String) {
         skylanderName.text = givenName
     }
     func setSeries(givenSeries: Int) {
-            seriesNumber.text = "Series \(givenSeries)"
+        seriesNumber.text = "Series \(givenSeries)"
     }
     
     func setImage(givenImage: UIImage?) {
@@ -42,17 +54,31 @@ class SkylanderCell: UITableViewCell {
         }
     }
     
+    func setChecked(givenCheck: Bool) {
+        if givenCheck {
+            checkmarkImage.setImage(UIImage(systemName: "checkmark.circle.fill"), for: UIControl.State.normal)
+            isChecked = true
+        }
+        else {
+            checkmarkImage.setImage(UIImage(systemName: "checkmark.circle"), for: UIControl.State.normal)
+            isChecked = false
+        }
+    }
+    
     // MARK: - Configure Cell Methods
     
     func configure(for skylander: NSManagedObject) {
         let name = skylander.value(forKey: "name") as! String
         let series = skylander.value(forKey: "series") as! Int
+        let check = skylander.value(forKey: "isChecked") as! Bool
         setName(givenName: name)
         setSeries(givenSeries: series)
         setImage(givenImage: UIImage(named: configureName(name: name, series: series)))
+        setChecked(givenCheck: check)
     }
     
     private func configureName(name: String, series: Int) -> String {
+        return "\(name)1"
         if series == 0 {
             return "\(name)1"
         }
