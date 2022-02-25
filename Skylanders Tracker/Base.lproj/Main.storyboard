@@ -55,7 +55,7 @@
                                     <segue destination="Xum-Ah-VWP" kind="show" id="w6h-nI-yLb"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="List Test" style="plain" id="Xv6-mX-stU">
+                            <barButtonItem title="List Test" id="Xv6-mX-stU">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="naY-u2-JUa" userLabel="List Test">
                                     <rect key="frame" x="119.5" y="5" width="92" height="34.5"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -66,7 +66,7 @@
                                     </connections>
                                 </button>
                             </barButtonItem>
-                            <barButtonItem style="plain" systemItem="add" id="HZp-mQ-Y5g">
+                            <barButtonItem systemItem="add" id="HZp-mQ-Y5g">
                                 <connections>
                                     <action selector="addFakeData" destination="gcy-bb-8iw" id="Afw-6s-eo7"/>
                                 </connections>
@@ -97,7 +97,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="Series number" id="6tf-dS-H86">
+                        <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="Game\Series Placeholder" id="6tf-dS-H86">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits" returnKeyType="go"/>

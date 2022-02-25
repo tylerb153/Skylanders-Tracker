@@ -11,6 +11,7 @@ import CoreData
 class SkylanderCell: UITableViewCell {
 
     var isChecked = false
+    var skylander: NSManagedObject? = nil
     
     @IBOutlet weak var skylanderName: UILabel!
     @IBOutlet weak var seriesNumber: UILabel!
@@ -58,16 +59,21 @@ class SkylanderCell: UITableViewCell {
         if givenCheck {
             checkmarkImage.setImage(UIImage(systemName: "checkmark.circle.fill"), for: UIControl.State.normal)
             isChecked = true
+            skylander!.setValue(true, forKey: "isChecked")
+            saveSkylander()
         }
         else {
             checkmarkImage.setImage(UIImage(systemName: "checkmark.circle"), for: UIControl.State.normal)
             isChecked = false
+            skylander!.setValue(false, forKey: "isChecked")
+            saveSkylander()
         }
     }
     
     // MARK: - Configure Cell Methods
     
     func configure(for skylander: NSManagedObject) {
+        self.skylander = skylander
         let name = skylander.value(forKey: "name") as! String
         let series = skylander.value(forKey: "series") as! Int
         let check = skylander.value(forKey: "isChecked") as! Bool
@@ -75,6 +81,7 @@ class SkylanderCell: UITableViewCell {
         setSeries(givenSeries: series)
         setImage(givenImage: UIImage(named: configureName(name: name, series: series)))
         setChecked(givenCheck: check)
+//        skylander.setValue(false, forKey: "isChecked")
     }
     
     private func configureName(name: String, series: Int) -> String {
@@ -84,6 +91,21 @@ class SkylanderCell: UITableViewCell {
         }
         else {
             return "\(name)\(series)"
+        }
+    }
+    
+    // MARK: - Save Checkmark
+    func saveSkylander() {
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        do {
+            try managedContext.save()
+        }
+        catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
         }
     }
 }
