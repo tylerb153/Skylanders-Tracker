@@ -13,8 +13,9 @@ class SkylandersMenuViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
+    lazy var games = getGames()
     var skylandersList: [NSManagedObject] = []
-    lazy var gamesCount = 1
+    lazy var gamesCount = games.count
     lazy var skylandersCount = skylandersList.count
     var segmentSelected = 0
     
@@ -61,6 +62,8 @@ class SkylandersMenuViewController: UIViewController {
         tableView.reloadData()
     }
     
+    // MARK: - Data
+    
     func refreshData() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
@@ -74,7 +77,20 @@ class SkylandersMenuViewController: UIViewController {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
         skylandersCount = skylandersList.count
+        games = getGames()
+        gamesCount = games.count
 //        print(skylandersList)
+    }
+    
+    func getGames() -> [String] {
+        var gamesList: [String] = []
+        for i in skylandersList {
+            let gameName = i.value(forKey: "game") as! String
+            if(!gamesList.contains(gameName)) {
+                gamesList.append(gameName)
+            }
+        }
+        return gamesList
     }
 }
 
@@ -82,7 +98,7 @@ class SkylandersMenuViewController: UIViewController {
 extension SkylandersMenuViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if segmentedControl.selectedSegmentIndex == 0 {
-            return gamesCount
+            return games.count
         }
         else {
             print(skylandersCount)
@@ -95,7 +111,8 @@ extension SkylandersMenuViewController: UITableViewDelegate, UITableViewDataSour
             let cellIdentifier = "GameCell"
             tableView.rowHeight = 80
             let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! GameCell
-            cell.configure(gameName: "Spyro's Adventure")
+            let gameName = games[indexPath.row]
+            cell.configure(gameName: gameName)
             return cell
         }
         else {
@@ -117,7 +134,6 @@ extension SkylandersMenuViewController {
     }
     
     func saveSkylander() {
-        
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
         }
@@ -127,6 +143,8 @@ extension SkylandersMenuViewController {
         skylander.setValue("Sonic Boom", forKey: "name")
         skylander.setValue(1, forKey: "series")
         skylander.setValue(false, forKey: "isChecked")
+        skylander.setValue("Giants", forKey: "game")
+//        skylander.setValue("Spyro's Adventure", forKey: "game")
         
         do {
             try managedContext.save()

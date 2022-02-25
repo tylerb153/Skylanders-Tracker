@@ -51,7 +51,7 @@ class GameCell: UITableViewCell {
             else {
                 gameImageView.image = defaultImage
             }
-        case "Superchargers": if let gameImage = UIImage(named: "Superchargers Game Icon") {
+        case "SuperChargers": if let gameImage = UIImage(named: "SuperChargers Game Icon") {
             gameImageView.image = gameImage
             }
             else {
