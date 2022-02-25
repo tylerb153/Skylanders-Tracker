@@ -37,6 +37,9 @@ class SkylandersMenuViewController: UIViewController {
         cellNib = UINib(nibName: "GameCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "GameCell")
         
+        cellNib = UINib(nibName: "SkylanderSelectCell", bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: "SkylanderSelectCell")
+        
         cellNib = UINib(nibName: "SkylanderCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "SkylanderCell")
         
@@ -96,10 +99,9 @@ extension SkylandersMenuViewController: UITableViewDelegate, UITableViewDataSour
             return cell
         }
         else {
-            let cellIdentifier = "SkylanderCell"
+            let cellIdentifier = "SkylanderSelectCell"
             tableView.rowHeight = 66
-            let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! SkylanderCell
-            cell.accessoryType = .none
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! SkylanderSelectCell
             cell.configure(for: skylandersList[indexPath.row])
             return cell
         }
@@ -122,7 +124,8 @@ extension SkylandersMenuViewController {
         let managedContext = appDelegate.persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "Skylander", in: managedContext)!
         let skylander = NSManagedObject(entity: entity, insertInto: managedContext)
-        skylander.setValue("Terrafin", forKey: "name")
+        skylander.setValue("Chop Chop", forKey: "name")
+        skylander.setValue(1, forKey: "series")
         
         do {
             try managedContext.save()

@@ -1,19 +1,17 @@
 //
-//  SkylanderCell.swift
+//  SkylanderSelectCell.swift
 //  Skylanders Tracker
 //
-//  Created by Tyler Bischoff on 2/21/22.
+//  Created by Tyler Bischoff on 2/25/22.
 //
 
 import UIKit
 import CoreData
 
-class SkylanderCell: UITableViewCell {
+class SkylanderSelectCell: UITableViewCell {
 
     @IBOutlet weak var skylanderName: UILabel!
-    @IBOutlet weak var seriesNumber: UILabel!
     @IBOutlet weak var skylanderImage: UIImageView!
-    @IBOutlet weak var checkmarkImage: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,9 +26,6 @@ class SkylanderCell: UITableViewCell {
     // MARK: - Set Labels Methods
     func setName(givenName: String) {
         skylanderName.text = givenName
-    }
-    func setSeries(givenSeries: Int) {
-            seriesNumber.text = "Series \(givenSeries)"
     }
     
     func setImage(givenImage: UIImage?) {
@@ -48,7 +43,6 @@ class SkylanderCell: UITableViewCell {
         let name = skylander.value(forKey: "name") as! String
         let series = skylander.value(forKey: "series") as! Int
         setName(givenName: name)
-        setSeries(givenSeries: series)
         setImage(givenImage: UIImage(named: configureName(name: name, series: series)))
     }
     
