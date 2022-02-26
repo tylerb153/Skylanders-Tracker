@@ -68,8 +68,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
         return container
     }()
-    
-    lazy var managedObjectContext = persistentContainer.viewContext
+
 
     // MARK: - Core Data Saving support
 

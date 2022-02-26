@@ -32,6 +32,7 @@ class SkylandersListTableViewController: UITableViewController {
         }
         if let chosenGame = chosenGame {
             navigationItem.title = chosenGame
+            searchBar.placeholder = "Search for a Skylander"
         }
         
         let searchBarHeight = searchBar.frame.size.height

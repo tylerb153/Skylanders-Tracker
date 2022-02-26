@@ -11,7 +11,7 @@ import CoreData
 class SkylanderCell: UITableViewCell {
 
     var isChecked = false
-    var skylander: NSManagedObject? = nil
+    var skylander: NSManagedObject?
     
     @IBOutlet weak var skylanderName: UILabel!
     @IBOutlet weak var seriesNumber: UILabel!
@@ -43,7 +43,12 @@ class SkylanderCell: UITableViewCell {
         skylanderName.text = givenName
     }
     func setSeries(givenSeries: Int) {
-        seriesNumber.text = "Series \(givenSeries)"
+        if givenSeries == 0 {
+            seriesNumber.text = ""
+        }
+        else {
+            seriesNumber.text = "Series \(givenSeries)"
+        }
     }
     
     func setImage(givenImage: UIImage?) {
@@ -75,11 +80,13 @@ class SkylanderCell: UITableViewCell {
     func configure(for skylander: NSManagedObject) {
         self.skylander = skylander
         let name = skylander.value(forKey: "name") as! String
+        let baseName = skylander.value(forKey: "baseName") as! String
         let series = skylander.value(forKey: "series") as! Int
         let check = skylander.value(forKey: "isChecked") as! Bool
         setName(givenName: name)
         setSeries(givenSeries: series)
-        setImage(givenImage: UIImage(named: configureName(name: name, series: series)))
+        setImage(givenImage: UIImage(named: configureName(name: baseName, series: series)))
+        tintBorder()
         setChecked(givenCheck: check)
 //        skylander.setValue(false, forKey: "isChecked")
     }
@@ -92,6 +99,17 @@ class SkylanderCell: UITableViewCell {
         else {
             return "\(name)\(series)"
         }
+    }
+    
+    func tintBorder() {
+        let game = skylander?.value(forKey: "game") as! String
+        let color = UIColor(named: game)?.cgColor
+        
+        skylanderImage.layer.masksToBounds = true
+        skylanderImage.layer.borderWidth = 1
+        skylanderImage.layer.borderColor = color
+        
+        skylanderImage.layer.cornerRadius = skylanderImage.bounds.width / 5
     }
     
     // MARK: - Save Checkmark

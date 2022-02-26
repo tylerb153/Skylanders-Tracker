@@ -284,11 +284,11 @@
                             <constraint firstItem="VWT-IH-WPY" firstAttribute="width" secondItem="IPO-9Q-dtJ" secondAttribute="width" id="xgW-1d-w9x"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Skylander Name" largeTitleDisplayMode="never" id="QQk-5I-pRT"/>
+                    <navigationItem key="navigationItem" title="Skylander Name" largeTitleDisplayMode="always" id="QQk-5I-pRT"/>
                     <connections>
-                        <outlet property="ArmorLabel" destination="9J2-CA-ksp" id="8fv-AK-U6v"/>
-                        <outlet property="CriticalHitLabel" destination="86r-iU-s4U" id="KDH-os-y4U"/>
+                        <outlet property="armorLabel" destination="9J2-CA-ksp" id="UFN-TT-YWL"/>
                         <outlet property="compatableGames" destination="VWT-IH-WPY" id="stK-x6-xIK"/>
+                        <outlet property="criticalHitLabel" destination="86r-iU-s4U" id="Xh8-7t-e1O"/>
                         <outlet property="elementalPowerLabel" destination="VkJ-aH-uqU" id="MF6-jv-dxh"/>
                         <outlet property="maximumHealthLabel" destination="IEQ-51-60a" id="VbY-eM-qp3"/>
                         <outlet property="skylanderArmor" destination="ES2-gt-Ka5" id="cup-6j-Q9y"/>
