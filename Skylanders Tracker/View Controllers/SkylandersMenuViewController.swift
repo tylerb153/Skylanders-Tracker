@@ -15,9 +15,12 @@ class SkylandersMenuViewController: UIViewController {
     
     lazy var games = getGames()
     var skylandersList: [NSManagedObject] = []
+    lazy var skylandersToDisplay = getSkylandersToDisplay()
     lazy var gamesCount = games.count
-    lazy var skylandersCount = skylandersList.count
+    lazy var skylandersCount = skylandersToDisplay.count
     var segmentSelected = 0
+    var chosenSkylander: String?
+    var chosenGame = ""
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -76,7 +79,7 @@ class SkylandersMenuViewController: UIViewController {
         catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
-        skylandersCount = skylandersList.count
+        skylandersCount = skylandersToDisplay.count
         games = getGames()
         gamesCount = games.count
 //        print(skylandersList)
@@ -84,13 +87,42 @@ class SkylandersMenuViewController: UIViewController {
     
     func getGames() -> [String] {
         var gamesList: [String] = []
-        for i in skylandersList {
-            let gameName = i.value(forKey: "game") as! String
-            if(!gamesList.contains(gameName)) {
+        for skylander in skylandersList {
+            let gameName = skylander.value(forKey: "game") as! String
+            if !gamesList.contains(gameName) {
                 gamesList.append(gameName)
             }
         }
         return gamesList
+    }
+    
+    func getSkylandersToDisplay() -> [NSManagedObject] {
+        var skylandersToDisplay: [NSManagedObject] = []
+        var skylandersBaseNames: [String] = []
+        for skylander in skylandersList {
+            let baseName = skylander.value(forKey: "baseName") as! String
+            if !skylandersBaseNames.contains(baseName) {
+                skylandersBaseNames.append(baseName)
+                skylandersToDisplay.append(skylander)
+            }
+        }
+        return skylandersToDisplay
+    }
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ChoseSkylander" {
+            
+            let SkylandersListViewController = segue.destination as! SkylandersListTableViewController
+            SkylandersListViewController.skylandersList = skylandersList
+            SkylandersListViewController.chosenSkylander = chosenSkylander
+        }
+        if segue.identifier == "ChoseGame" {
+            let SkylandersListViewController = segue.destination as! SkylandersListTableViewController
+            SkylandersListViewController.skylandersList = skylandersList
+            SkylandersListViewController.chosenGame = chosenGame
+        }
     }
 }
 
@@ -98,10 +130,9 @@ class SkylandersMenuViewController: UIViewController {
 extension SkylandersMenuViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if segmentedControl.selectedSegmentIndex == 0 {
-            return games.count
+            return gamesCount
         }
         else {
-            print(skylandersCount)
             return skylandersCount
         }
     }
@@ -119,8 +150,19 @@ extension SkylandersMenuViewController: UITableViewDelegate, UITableViewDataSour
             let cellIdentifier = "SkylanderSelectCell"
             tableView.rowHeight = 66
             let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! SkylanderSelectCell
-            cell.configure(for: skylandersList[indexPath.row])
+            cell.configure(for: skylandersToDisplay[indexPath.row])
             return cell
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if segmentSelected == 1 {
+            chosenSkylander = skylandersToDisplay[indexPath.row].value(forKey: "baseName") as? String
+            self.performSegue(withIdentifier: "ChoseSkylander", sender: Any?.self)
+        }
+        else {
+            chosenGame = games[indexPath.row]
+            self.performSegue(withIdentifier: "ChoseGame", sender: Any?.self)
         }
     }
 }
@@ -140,15 +182,17 @@ extension SkylandersMenuViewController {
         let managedContext = appDelegate.persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "Skylander", in: managedContext)!
         let skylander = NSManagedObject(entity: entity, insertInto: managedContext)
-        skylander.setValue("Sonic Boom", forKey: "name")
-        skylander.setValue(1, forKey: "series")
+        skylander.setValue("Camo", forKey: "name")
+        skylander.setValue("Camo", forKey: "baseName")
+        skylander.setValue(5, forKey: "series")
         skylander.setValue(false, forKey: "isChecked")
-        skylander.setValue("Giants", forKey: "game")
+        skylander.setValue("SuperChargers", forKey: "game")
 //        skylander.setValue("Spyro's Adventure", forKey: "game")
         
         do {
             try managedContext.save()
             skylandersList.append(skylander)
+            skylandersToDisplay = getSkylandersToDisplay()
             tableView.reloadData()
         }
         catch let error as NSError {

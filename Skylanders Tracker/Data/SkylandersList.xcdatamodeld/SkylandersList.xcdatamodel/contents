@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21D62" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Skylander" representedClassName="Skylander" syncable="YES" codeGenerationType="class">
+        <attribute name="baseName" attributeType="String"/>
         <attribute name="game" attributeType="String" defaultValueString=""/>
         <attribute name="isChecked" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
         <attribute name="name" attributeType="String" defaultValueString=""/>
@@ -23,7 +24,7 @@
         <attribute name="startingHealth" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <elements>
-        <element name="Skylander" positionX="-54" positionY="-9" width="128" height="194"/>
+        <element name="Skylander" positionX="-54" positionY="-9" width="128" height="209"/>
         <element name="SkylanderStats" positionX="-36" positionY="81" width="128" height="134"/>
     </elements>
 </model>

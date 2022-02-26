@@ -13,18 +13,24 @@ class SkylandersListTableViewController: UITableViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     
     var skylandersList: [NSManagedObject] = []
-    lazy var skylandersCount = skylandersList.count
+    lazy var skylandersToDisplay: [NSManagedObject] = getSkylandersToDisplay()
+    lazy var skylandersCount = skylandersToDisplay.count
+    var chosenSkylander: String?
+    var chosenGame: String?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        refreshData()
-        tableView.reloadData()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         refreshData()
-        navigationItem.title = skylandersList[0].value(forKey: "name") as? String
+        if let chosenSkylander = chosenSkylander {
+            navigationItem.title = chosenSkylander
+        }
+        if let chosenGame = chosenGame {
+            navigationItem.title = chosenGame
+        }
         
         let searchBarHeight = searchBar.frame.size.height
         tableView.setContentOffset(CGPoint(x: 0, y: searchBarHeight), animated: false)
@@ -60,8 +66,29 @@ class SkylandersListTableViewController: UITableViewController {
         catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
-        skylandersCount = skylandersList.count
+        skylandersCount = skylandersToDisplay.count
 //        print(skylandersList)
+    }
+    
+    func getSkylandersToDisplay() -> [NSManagedObject] {
+        var skylandersToDisplay: [NSManagedObject] = []
+        if let chosenSkylander = chosenSkylander {
+            for skylander in skylandersList {
+                let skylanderBaseName = skylander.value(forKey: "baseName") as! String
+                if skylanderBaseName == chosenSkylander {
+                    skylandersToDisplay.append(skylander)
+                }
+            }
+        }
+        else {
+            for skylander in skylandersList {
+                let skylanderGame = skylander.value(forKey: "game") as! String
+                if skylanderGame == chosenGame {
+                    skylandersToDisplay.append(skylander)
+                }
+            }
+        }
+        return skylandersToDisplay
     }
 }
 
@@ -70,10 +97,12 @@ extension SkylandersListTableViewController {
         return skylandersCount
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
         let cellIdentifier = "SkylanderCell"
         tableView.rowHeight = 66
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! SkylanderCell
-        cell.configure(for: skylandersList[indexPath.row])
+        cell.configure(for: skylandersToDisplay[indexPath.row])
         return cell
     }
 }
