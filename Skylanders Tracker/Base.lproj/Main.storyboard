@@ -49,18 +49,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Skylanders Menu Placeholder" id="KXS-ev-Jda">
-                        <leftBarButtonItems>
-                            <barButtonItem title="Details Test" id="7ZY-9d-39z">
-                                <connections>
-                                    <segue destination="Xum-Ah-VWP" kind="show" id="w6h-nI-yLb"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="add" id="HZp-mQ-Y5g">
-                                <connections>
-                                    <action selector="addFakeData" destination="gcy-bb-8iw" id="Afw-6s-eo7"/>
-                                </connections>
-                            </barButtonItem>
-                        </leftBarButtonItems>
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="HZp-mQ-Y5g">
+                            <connections>
+                                <action selector="addFakeData" destination="gcy-bb-8iw" id="Afw-6s-eo7"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="F0Y-zv-Pxb">
                             <connections>
                                 <segue destination="JVV-Oa-RAx" kind="show" id="wTR-98-rET"/>
@@ -292,6 +285,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Skylander Name" largeTitleDisplayMode="never" id="QQk-5I-pRT"/>
+                    <connections>
+                        <outlet property="ArmorLabel" destination="9J2-CA-ksp" id="8fv-AK-U6v"/>
+                        <outlet property="CriticalHitLabel" destination="86r-iU-s4U" id="KDH-os-y4U"/>
+                        <outlet property="compatableGames" destination="VWT-IH-WPY" id="stK-x6-xIK"/>
+                        <outlet property="elementalPowerLabel" destination="VkJ-aH-uqU" id="MF6-jv-dxh"/>
+                        <outlet property="maximumHealthLabel" destination="IEQ-51-60a" id="VbY-eM-qp3"/>
+                        <outlet property="skylanderArmor" destination="ES2-gt-Ka5" id="cup-6j-Q9y"/>
+                        <outlet property="skylanderCriticalHit" destination="a6y-m3-ehr" id="aps-ZK-nab"/>
+                        <outlet property="skylanderElementalPower" destination="gyd-yf-8dX" id="g6r-1v-1ft"/>
+                        <outlet property="skylanderImage" destination="IPO-9Q-dtJ" id="2tS-Kx-Gho"/>
+                        <outlet property="skylanderMaximumHealth" destination="m95-bj-f8K" id="X4v-DA-gYJ"/>
+                        <outlet property="skylanderSeries" destination="fUZ-Pa-8tr" id="Hdv-ek-nxh"/>
+                        <outlet property="skylanderSpeed" destination="WnW-N1-i46" id="rk7-BS-oxi"/>
+                        <outlet property="skylanderStartHealth" destination="PPN-Ug-KMY" id="SGw-O0-FOD"/>
+                        <outlet property="speedLabel" destination="9zE-HP-tyo" id="4aL-Kd-Cej"/>
+                        <outlet property="startHealthLabel" destination="4mk-3w-pVM" id="Gap-ob-9mx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOY-GP-D2e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -305,7 +315,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="gsC-5x-rze">
+                            <searchBar contentMode="redraw" placeholder="Search for a Skylander" translatesAutoresizingMaskIntoConstraints="NO" id="gsC-5x-rze">
                                 <rect key="frame" x="0.0" y="88" width="414" height="51"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go"/>
                             </searchBar>
@@ -327,6 +337,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Search" largeTitleDisplayMode="never" id="0dS-Yj-17t"/>
+                    <connections>
+                        <segue destination="Xum-Ah-VWP" kind="show" identifier="SearchedSkylander" id="j9q-D0-eET"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gn7-vV-o2I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -352,7 +365,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="w6h-nI-yLb"/>
+        <segue reference="Fjb-27-xG1"/>
         <segue reference="Ve8-fG-c2C"/>
     </inferredMetricsTieBreakers>
     <resources>

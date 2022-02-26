@@ -17,6 +17,7 @@ class SkylandersListTableViewController: UITableViewController {
     lazy var skylandersCount = skylandersToDisplay.count
     var chosenSkylander: String?
     var chosenGame: String?
+    var skylanderToSend: NSManagedObject?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -27,6 +28,7 @@ class SkylandersListTableViewController: UITableViewController {
         refreshData()
         if let chosenSkylander = chosenSkylander {
             navigationItem.title = chosenSkylander
+            searchBar.placeholder = "Search for a series"
         }
         if let chosenGame = chosenGame {
             navigationItem.title = chosenGame
@@ -90,12 +92,21 @@ class SkylandersListTableViewController: UITableViewController {
         }
         return skylandersToDisplay
     }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DisplaySkylander" {
+            let SkylandersDetailViewController = segue.destination as! SkylandersDetailViewController
+            SkylandersDetailViewController.chosenSkylander = skylanderToSend
+        }
+    }
 }
 
 extension SkylandersListTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return skylandersCount
     }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
@@ -104,5 +115,11 @@ extension SkylandersListTableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! SkylanderCell
         cell.configure(for: skylandersToDisplay[indexPath.row])
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        skylanderToSend = skylandersToDisplay[indexPath.row]
+        self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
     }
 }

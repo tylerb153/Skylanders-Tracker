@@ -89,8 +89,8 @@
 			children = (
 				2F0F5D1D27C3A20100FB29FC /* SkylandersMenuViewController.swift */,
 				2F0F5D1B27C3955200FB29FC /* SkylandersListViewController.swift */,
-				2F0F5D1927C3950200FB29FC /* SearchViewController.swift */,
 				2F0F5D1727C38DE100FB29FC /* SkylandersDetailViewController.swift */,
+				2F0F5D1927C3950200FB29FC /* SearchViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
