@@ -85,14 +85,13 @@ class SkylanderCell: UITableViewCell {
         let check = skylander.value(forKey: "isChecked") as! Bool
         setName(givenName: name)
         setSeries(givenSeries: series)
-        setImage(givenImage: UIImage(named: configureName(name: baseName, series: series)))
+        setImage(givenImage: UIImage(named: configureName(name: name, series: series)))
         tintBorder()
         setChecked(givenCheck: check)
-//        skylander.setValue(false, forKey: "isChecked")
     }
     
     private func configureName(name: String, series: Int) -> String {
-        return "\(name)1"
+//        return "\(name)1"
         if series == 0 {
             return "\(name)1"
         }
