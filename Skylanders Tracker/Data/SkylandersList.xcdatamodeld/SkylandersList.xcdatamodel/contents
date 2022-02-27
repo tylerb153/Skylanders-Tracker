@@ -5,27 +5,28 @@
         <attribute name="game" attributeType="String" defaultValueString=""/>
         <attribute name="isChecked" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
         <attribute name="name" attributeType="String" defaultValueString=""/>
-        <attribute name="series" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="series" attributeType="Integer 16" defaultValueString="-1" usesScalarValueType="YES"/>
         <attribute name="statsName" attributeType="String" defaultValueString=""/>
         <attribute name="varientText" attributeType="String" defaultValueString=""/>
         <attribute name="worksWithGiants" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
         <attribute name="worksWithImaginators" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
-        <attribute name="worksWithSpryosAdventure" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
-        <attribute name="worksWithSuperchargers" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="worksWithSpyrosAdventure" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="worksWithSuperChargers" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
         <attribute name="worksWithSwapForce" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
         <attribute name="worksWithTrapTeam" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
     </entity>
     <entity name="SkylanderStats" representedClassName="SkylanderStats" syncable="YES" codeGenerationType="class">
-        <attribute name="armor" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="criticalHit" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="elementalPower" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="maxHealth" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="speed" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="startingHealth" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="armor" attributeType="Integer 32" defaultValueString="-1" usesScalarValueType="YES"/>
+        <attribute name="criticalHit" attributeType="Integer 32" defaultValueString="-1" usesScalarValueType="YES"/>
+        <attribute name="element" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="elementalPower" attributeType="Integer 32" defaultValueString="-1" usesScalarValueType="YES"/>
+        <attribute name="maxHealth" attributeType="Integer 32" defaultValueString="-1" usesScalarValueType="YES"/>
+        <attribute name="speed" attributeType="Integer 32" defaultValueString="-1" usesScalarValueType="YES"/>
+        <attribute name="startingHealth" attributeType="Integer 32" defaultValueString="-1" usesScalarValueType="YES"/>
         <attribute name="statsName" attributeType="String" defaultValueString=""/>
     </entity>
     <elements>
         <element name="Skylander" positionX="-54" positionY="-9" width="128" height="224"/>
-        <element name="SkylanderStats" positionX="-36" positionY="81" width="128" height="134"/>
+        <element name="SkylanderStats" positionX="-36" positionY="81" width="128" height="149"/>
     </elements>
 </model>

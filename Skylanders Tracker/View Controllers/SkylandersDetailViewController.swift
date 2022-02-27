@@ -30,6 +30,7 @@ class SkylandersDetailViewController: UIViewController {
     @IBOutlet weak var skylanderImage: UIImageView!
     @IBOutlet weak var compatableGames: UILabel!
     @IBOutlet weak var skylanderSeries: UILabel!
+    @IBOutlet weak var skylanderGame: UILabel!
     
     var chosenSkylander: NSManagedObject?
     lazy var name = chosenSkylander!.value(forKey: "name") as! String
@@ -43,12 +44,8 @@ class SkylandersDetailViewController: UIViewController {
         navigationItem.title = name
         skylanderSeries.text = configureSeries()
         skylanderImage.image = image
-        if series == 1 {
-            tintBorder()
-        }
-        else if series == 2 || series == 0 {
-            tintSeries()
-        }
+        skylanderGame.text = game
+        tintGame()
     }
     
     // MARK: - Helper Functions
@@ -81,20 +78,10 @@ class SkylandersDetailViewController: UIViewController {
         }
     }
     
-    func tintBorder() {
-        let color = UIColor(named: game)?.cgColor
-        
-        skylanderImage.layer.masksToBounds = true
-        skylanderImage.layer.borderWidth = 5
-        skylanderImage.layer.borderColor = color
-        
-        skylanderImage.layer.cornerRadius = skylanderImage.bounds.width / 20
-    }
-    
-    func tintSeries() {
+    func tintGame() {
         let game = "Spyro's Adventure"
         let color = UIColor(named: game)
         
-        skylanderSeries.backgroundColor = color
+        skylanderGame.backgroundColor = color
     }
 }

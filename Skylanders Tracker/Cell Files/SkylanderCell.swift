@@ -39,10 +39,10 @@ class SkylanderCell: UITableViewCell {
     }
     
     // MARK: - Set Labels Methods
-    func setName(givenName: String) {
+    private func setName(givenName: String) {
         skylanderName.text = givenName
     }
-    func setSeries(givenSeries: Int) {
+    private func setSeries(givenSeries: Int) {
         if givenSeries == 0 {
             seriesNumber.text = ""
         }
@@ -51,7 +51,7 @@ class SkylanderCell: UITableViewCell {
         }
     }
     
-    func setImage(givenImage: UIImage?) {
+    private func setImage(givenImage: UIImage?) {
         if givenImage != nil {
             skylanderImage.image = givenImage
         }
@@ -60,7 +60,7 @@ class SkylanderCell: UITableViewCell {
         }
     }
     
-    func setChecked(givenCheck: Bool) {
+    private func setChecked(givenCheck: Bool) {
         if givenCheck {
             checkmarkImage.setImage(UIImage(systemName: "checkmark.circle.fill"), for: UIControl.State.normal)
             isChecked = true
@@ -101,7 +101,7 @@ class SkylanderCell: UITableViewCell {
         }
     }
     
-    func tintBorder() {
+    private func tintBorder() {
         let game = skylander?.value(forKey: "game") as! String
         let color = UIColor(named: game)?.cgColor
         
@@ -113,7 +113,7 @@ class SkylanderCell: UITableViewCell {
     }
     
     // MARK: - Save Checkmark
-    func saveSkylander() {
+    private func saveSkylander() {
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return

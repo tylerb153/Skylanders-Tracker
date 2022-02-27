@@ -49,11 +49,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Skylanders Menu Placeholder" id="KXS-ev-Jda">
-                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="HZp-mQ-Y5g">
-                            <connections>
-                                <action selector="addFakeData" destination="gcy-bb-8iw" id="Afw-6s-eo7"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem systemItem="add" id="HZp-mQ-Y5g">
+                                <connections>
+                                    <action selector="addFakeData" destination="gcy-bb-8iw" id="Afw-6s-eo7"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="save" id="EL7-PZ-TEt">
+                                <connections>
+                                    <action selector="runJsonParse" destination="gcy-bb-8iw" id="mLe-h0-0Pi"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="trash" id="Ew1-sS-cPD">
+                                <connections>
+                                    <action selector="deleteData" destination="gcy-bb-8iw" id="4gQ-PE-FPl"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="F0Y-zv-Pxb">
                             <connections>
                                 <segue destination="JVV-Oa-RAx" kind="show" id="wTR-98-rET"/>
@@ -108,31 +120,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUZ-Pa-8tr">
-                                <rect key="frame" x="0.0" y="88" width="414" height="20.5"/>
+                                <rect key="frame" x="0.0" y="88" width="203" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IPO-9Q-dtJ">
-                                <rect key="frame" x="8" y="141.5" width="195" height="192.5"/>
+                                <rect key="frame" x="8" y="142" width="195" height="192.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="IPO-9Q-dtJ" secondAttribute="height" multiplier="1:1" id="Mme-Zo-ncl"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="Compatable Games" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3r2-6F-Vud">
-                                <rect key="frame" x="211" y="140.5" width="195" height="75"/>
+                                <rect key="frame" x="211" y="141" width="195" height="75"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Games Skylander is compatible with" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWT-IH-WPY">
-                                <rect key="frame" x="211" y="223.5" width="195" height="112"/>
+                                <rect key="frame" x="211" y="224" width="195" height="112"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xf1-3L-HXq">
-                                <rect key="frame" x="8" y="367.5" width="398" height="297"/>
+                                <rect key="frame" x="8" y="368" width="398" height="297"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character Stats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Goz-DX-TA2">
                                         <rect key="frame" x="118.5" y="0.0" width="161" height="29"/>
@@ -261,17 +273,25 @@
                                     <constraint firstItem="Goz-DX-TA2" firstAttribute="top" secondItem="Xf1-3L-HXq" secondAttribute="top" id="ytX-IX-nuy"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eum-Kf-npF">
+                                <rect key="frame" x="211" y="88" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FIn-XE-kXX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="FIn-XE-kXX" firstAttribute="trailing" secondItem="eum-Kf-npF" secondAttribute="trailing" id="0JD-QJ-psR"/>
                             <constraint firstItem="FIn-XE-kXX" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VWT-IH-WPY" secondAttribute="trailing" symbolic="YES" id="0kP-o3-OPu"/>
                             <constraint firstItem="FIn-XE-kXX" firstAttribute="trailing" secondItem="3r2-6F-Vud" secondAttribute="trailing" constant="8" id="4bZ-cm-xLY"/>
                             <constraint firstItem="VWT-IH-WPY" firstAttribute="bottom" secondItem="IPO-9Q-dtJ" secondAttribute="bottom" id="5ix-3q-mlu"/>
                             <constraint firstItem="3r2-6F-Vud" firstAttribute="leading" secondItem="IPO-9Q-dtJ" secondAttribute="trailing" constant="8" id="9fv-2P-V6F"/>
+                            <constraint firstItem="eum-Kf-npF" firstAttribute="leading" secondItem="fUZ-Pa-8tr" secondAttribute="trailing" constant="8" id="DvD-Pc-euT"/>
                             <constraint firstItem="VWT-IH-WPY" firstAttribute="top" secondItem="3r2-6F-Vud" secondAttribute="bottom" constant="8" id="GnL-2a-tm8"/>
+                            <constraint firstItem="eum-Kf-npF" firstAttribute="width" secondItem="fUZ-Pa-8tr" secondAttribute="width" id="Kib-tf-f1Q"/>
                             <constraint firstItem="fUZ-Pa-8tr" firstAttribute="leading" secondItem="FIn-XE-kXX" secondAttribute="leading" id="NcB-H5-GbR"/>
-                            <constraint firstItem="fUZ-Pa-8tr" firstAttribute="trailing" secondItem="FIn-XE-kXX" secondAttribute="trailing" id="SQd-jd-sYF"/>
                             <constraint firstItem="FIn-XE-kXX" firstAttribute="trailing" secondItem="Xf1-3L-HXq" secondAttribute="trailing" constant="8" id="XvO-PZ-QJ0"/>
                             <constraint firstItem="IPO-9Q-dtJ" firstAttribute="leading" secondItem="FIn-XE-kXX" secondAttribute="leading" constant="8" id="YkH-OJ-RWA"/>
                             <constraint firstItem="VWT-IH-WPY" firstAttribute="leading" secondItem="3r2-6F-Vud" secondAttribute="leading" id="ivQ-Gm-HZH"/>
@@ -282,6 +302,7 @@
                             <constraint firstItem="Xf1-3L-HXq" firstAttribute="leading" secondItem="FIn-XE-kXX" secondAttribute="leading" constant="8" id="u7l-CK-Kaw"/>
                             <constraint firstItem="3r2-6F-Vud" firstAttribute="top" secondItem="IPO-9Q-dtJ" secondAttribute="top" id="vff-Gr-tDk"/>
                             <constraint firstItem="VWT-IH-WPY" firstAttribute="width" secondItem="IPO-9Q-dtJ" secondAttribute="width" id="xgW-1d-w9x"/>
+                            <constraint firstItem="eum-Kf-npF" firstAttribute="top" secondItem="FIn-XE-kXX" secondAttribute="top" id="xy6-1s-6IZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Skylander Name" largeTitleDisplayMode="always" id="QQk-5I-pRT"/>
@@ -294,6 +315,7 @@
                         <outlet property="skylanderArmor" destination="ES2-gt-Ka5" id="cup-6j-Q9y"/>
                         <outlet property="skylanderCriticalHit" destination="a6y-m3-ehr" id="aps-ZK-nab"/>
                         <outlet property="skylanderElementalPower" destination="gyd-yf-8dX" id="g6r-1v-1ft"/>
+                        <outlet property="skylanderGame" destination="eum-Kf-npF" id="GWP-z7-nD0"/>
                         <outlet property="skylanderImage" destination="IPO-9Q-dtJ" id="2tS-Kx-Gho"/>
                         <outlet property="skylanderMaximumHealth" destination="m95-bj-f8K" id="X4v-DA-gYJ"/>
                         <outlet property="skylanderSeries" destination="fUZ-Pa-8tr" id="Hdv-ek-nxh"/>

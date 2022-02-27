@@ -1,0 +1,37 @@
+
+{
+   "Skylanders": [
+       {
+
+            "name": "Spyro",
+            "game": "Spyro's Adventure",
+            "series": 1,
+            "baseName": "Spyro",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Spyro",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+       },
+
+       {
+            "name": "Dark Spyro",
+            "game": "Spyro's Adventure",
+            "series": 1,
+            "baseName": "Spyro",
+            "isChecked": false,
+            "varientText": "Dark",
+            "statsName": "Spyro",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        }
+    ]
+}

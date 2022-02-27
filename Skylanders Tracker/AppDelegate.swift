@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           return paths[0]
         }()
         print(applicationDocumentsDirectory)
+        
         _ = persistentContainer
         return true
     }

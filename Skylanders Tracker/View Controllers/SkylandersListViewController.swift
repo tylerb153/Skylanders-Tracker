@@ -110,7 +110,6 @@ extension SkylandersListTableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
         let cellIdentifier = "SkylanderCell"
         tableView.rowHeight = 66
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! SkylanderCell

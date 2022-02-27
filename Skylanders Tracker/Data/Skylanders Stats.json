@@ -1,0 +1,14 @@
+{
+    "SkylandersStats" : [
+        {
+            "statsName": "Spyro",
+            "element": "Magic",
+            "speed": 0,
+            "armor":  50,
+            "criticalHit": 18,
+            "elementalPower": 30,
+            "maxHealth": 560,
+            "startingHealth": 280
+        }
+    ]
+}

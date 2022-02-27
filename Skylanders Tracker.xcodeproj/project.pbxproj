@@ -18,6 +18,12 @@
 		2F0F5D2227C3A76B00FB29FC /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F5D2127C3A76B00FB29FC /* GameCell.swift */; };
 		2F0F5D2A27C3FC4C00FB29FC /* SkylandersList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F5D2827C3FC4C00FB29FC /* SkylandersList.xcdatamodeld */; };
 		2F0F5D3D27C4044600FB29FC /* DataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F5D3C27C4044600FB29FC /* DataBuilder.swift */; };
+		2F10582727CB8CA300CF67CF /* SkylandersObjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10582627CB8CA300CF67CF /* SkylandersObjectList.swift */; };
+		2F10582927CB8FF500CF67CF /* SkylandersStatsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10582827CB8FF500CF67CF /* SkylandersStatsList.swift */; };
+		2F10582B27CB9E4300CF67CF /* Skylanders Stats.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F10582A27CB9E4300CF67CF /* Skylanders Stats.json */; };
+		2F2A5FCB27CB804F00B046CB /* Skylanders Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F2A5FCA27CB804F00B046CB /* Skylanders Data.json */; };
+		2F2A5FCD27CB88B000B046CB /* SkylanderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2A5FCC27CB88B000B046CB /* SkylanderObject.swift */; };
+		2F2A5FCF27CB88EE00B046CB /* SkylandersStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2A5FCE27CB88EE00B046CB /* SkylandersStats.swift */; };
 		2F39382727C8C4AB005C5D18 /* SkylanderSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F39382627C8C4AB005C5D18 /* SkylanderSelectCell.xib */; };
 		2F39382927C8C5D5005C5D18 /* SkylanderSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39382827C8C5D5005C5D18 /* SkylanderSelectCell.swift */; };
 		2FD970B227C3620300283528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD970B127C3620300283528 /* AppDelegate.swift */; };
@@ -39,6 +45,12 @@
 		2F0F5D2127C3A76B00FB29FC /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
 		2F0F5D2927C3FC4C00FB29FC /* SkylandersList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkylandersList.xcdatamodel; sourceTree = "<group>"; };
 		2F0F5D3C27C4044600FB29FC /* DataBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBuilder.swift; sourceTree = "<group>"; };
+		2F10582627CB8CA300CF67CF /* SkylandersObjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylandersObjectList.swift; sourceTree = "<group>"; };
+		2F10582827CB8FF500CF67CF /* SkylandersStatsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylandersStatsList.swift; sourceTree = "<group>"; };
+		2F10582A27CB9E4300CF67CF /* Skylanders Stats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Skylanders Stats.json"; sourceTree = "<group>"; };
+		2F2A5FCA27CB804F00B046CB /* Skylanders Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Skylanders Data.json"; sourceTree = "<group>"; };
+		2F2A5FCC27CB88B000B046CB /* SkylanderObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylanderObject.swift; sourceTree = "<group>"; };
+		2F2A5FCE27CB88EE00B046CB /* SkylandersStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylandersStats.swift; sourceTree = "<group>"; };
 		2F39382627C8C4AB005C5D18 /* SkylanderSelectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkylanderSelectCell.xib; sourceTree = "<group>"; };
 		2F39382827C8C5D5005C5D18 /* SkylanderSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylanderSelectCell.swift; sourceTree = "<group>"; };
 		2FD970AE27C3620300283528 /* Skylanders Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skylanders Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +78,12 @@
 			children = (
 				2F0F5D2827C3FC4C00FB29FC /* SkylandersList.xcdatamodeld */,
 				2F0F5D3C27C4044600FB29FC /* DataBuilder.swift */,
+				2F2A5FCC27CB88B000B046CB /* SkylanderObject.swift */,
+				2F10582627CB8CA300CF67CF /* SkylandersObjectList.swift */,
+				2F10582827CB8FF500CF67CF /* SkylandersStatsList.swift */,
+				2F2A5FCE27CB88EE00B046CB /* SkylandersStats.swift */,
+				2F2A5FCA27CB804F00B046CB /* Skylanders Data.json */,
+				2F10582A27CB9E4300CF67CF /* Skylanders Stats.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -191,7 +209,9 @@
 				2FD970BB27C3620400283528 /* Assets.xcassets in Resources */,
 				2FD970B927C3620300283528 /* Main.storyboard in Resources */,
 				2F0F5D1427C37EC100FB29FC /* SkylanderCell.xib in Resources */,
+				2F2A5FCB27CB804F00B046CB /* Skylanders Data.json in Resources */,
 				2F0F5D1627C383C100FB29FC /* GameCell.xib in Resources */,
+				2F10582B27CB9E4300CF67CF /* Skylanders Stats.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,15 +222,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F10582927CB8FF500CF67CF /* SkylandersStatsList.swift in Sources */,
 				2F0F5D2027C3A6EA00FB29FC /* SkylanderCell.swift in Sources */,
 				2F0F5D1A27C3950200FB29FC /* SearchViewController.swift in Sources */,
 				2F0F5D1E27C3A20100FB29FC /* SkylandersMenuViewController.swift in Sources */,
 				2F0F5D2227C3A76B00FB29FC /* GameCell.swift in Sources */,
 				2F0F5D1C27C3955200FB29FC /* SkylandersListViewController.swift in Sources */,
+				2F2A5FCF27CB88EE00B046CB /* SkylandersStats.swift in Sources */,
 				2F0F5D1827C38DE100FB29FC /* SkylandersDetailViewController.swift in Sources */,
 				2F0F5D2A27C3FC4C00FB29FC /* SkylandersList.xcdatamodeld in Sources */,
+				2F2A5FCD27CB88B000B046CB /* SkylanderObject.swift in Sources */,
 				2F0F5D3D27C4044600FB29FC /* DataBuilder.swift in Sources */,
 				2F39382927C8C5D5005C5D18 /* SkylanderSelectCell.swift in Sources */,
+				2F10582727CB8CA300CF67CF /* SkylandersObjectList.swift in Sources */,
 				2FD970B227C3620300283528 /* AppDelegate.swift in Sources */,
 				2FD970B427C3620300283528 /* SceneDelegate.swift in Sources */,
 			);

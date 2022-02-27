@@ -40,10 +40,10 @@ class SkylanderSelectCell: UITableViewCell {
     // MARK: - Configure Cell Methods
     
     func configure(for skylander: NSManagedObject) {
-        let name = skylander.value(forKey: "name") as! String
+//        let name = skylander.value(forKey: "name") as! String
         let baseName = skylander.value(forKey: "baseName") as! String
         let series = skylander.value(forKey: "series") as! Int
-        setName(givenName: name)
+        setName(givenName: baseName)
         setImage(givenImage: UIImage(named: configureName(name: baseName, series: series)))
     }
     
