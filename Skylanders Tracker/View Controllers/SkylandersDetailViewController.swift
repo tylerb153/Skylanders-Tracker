@@ -38,6 +38,8 @@ class SkylandersDetailViewController: UIViewController {
     lazy var series = chosenSkylander!.value(forKey: "series") as! Int
     lazy var image = getImage()
     lazy var game = chosenSkylander!.value(forKey: "game") as! String
+    lazy var statsName = chosenSkylander!.value(forKey: "statsName") as! String
+    lazy var varient = chosenSkylander!.value(forKey: "varientText") as! String
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,10 +48,14 @@ class SkylandersDetailViewController: UIViewController {
         skylanderImage.image = image
         skylanderGame.text = game
         tintGame()
+        setLabels()
+        if varient == "Dark" {
+            skylanderImage.backgroundColor = UIColor.black
+        }
     }
     
     // MARK: - Helper Functions
-    func getImage() -> UIImage {
+    private func getImage() -> UIImage {
         if let image = UIImage(named: configureName(name: name, series: series)) {
             return image
         }
@@ -68,7 +74,7 @@ class SkylandersDetailViewController: UIViewController {
         }
     }
     
-    func configureSeries() -> String {
+    private func configureSeries() -> String {
         if series == 0 {
             let varient = chosenSkylander?.value(forKey: "varientText") as! String
             return varient
@@ -78,10 +84,69 @@ class SkylandersDetailViewController: UIViewController {
         }
     }
     
-    func tintGame() {
+    private func tintGame() {
         let game = "Spyro's Adventure"
         let color = UIColor(named: game)
         
         skylanderGame.backgroundColor = color
+    }
+    
+    private func setLabels() {
+        let skylanderStats = getStats()!
+
+        skylanderSpeed.text = "\(skylanderStats.value(forKey: "speed") as! Int)"
+        skylanderArmor.text = String(describing: skylanderStats.value(forKey: "armor") as! Int)
+        skylanderCriticalHit.text = String(describing: skylanderStats.value(forKey: "criticalHit") as! Int)
+        skylanderElementalPower.text = String(describing: skylanderStats.value(forKey: "elementalPower") as! Int)
+        skylanderStartHealth.text = String(describing: skylanderStats.value(forKey: "startingHealth") as! Int)
+        skylanderMaximumHealth.text = String(describing: skylanderStats.value(forKey: "maxHealth") as! Int)
+        
+        setCompatibleGames()
+    }
+    
+    // MARK: - Data Functions
+    private func getStats() -> NSManagedObject? {
+        var statsList: [NSManagedObject] = []
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            print("error in get data")
+            return nil
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "SkylanderStats")
+        do {
+            statsList = try managedContext.fetch(fetchRequest)
+        }
+        catch {
+            print("error")
+        }
+        for skylanderStats in statsList {
+            if skylanderStats.value(forKey: "statsName") as! String == statsName {
+                return skylanderStats
+            }
+        }
+        return nil
+
+    }
+    
+    private func setCompatibleGames() {
+        var displayString = ""
+        if chosenSkylander?.value(forKey: "worksWithSpyrosAdventure") as! Bool {
+            displayString += "Spyro's Adventure\n"
+        }
+        if chosenSkylander?.value(forKey: "worksWithGiants") as! Bool {
+            displayString += "Giants\n"
+        }
+        if chosenSkylander?.value(forKey: "worksWithSwapForce") as! Bool {
+            displayString += "Swap Force\n"
+        }
+        if chosenSkylander?.value(forKey: "worksWithTrapTeam") as! Bool {
+            displayString += "Trap Team\n"
+        }
+        if chosenSkylander?.value(forKey: "worksWithSuperChargers") as! Bool {
+            displayString += "Imaginators\n"
+        }
+        
+        compatableGames.text = displayString
     }
 }

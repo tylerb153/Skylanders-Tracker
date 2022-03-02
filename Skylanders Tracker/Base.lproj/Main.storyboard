@@ -50,11 +50,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Skylanders Menu Placeholder" id="KXS-ev-Jda">
                         <leftBarButtonItems>
-                            <barButtonItem systemItem="add" id="HZp-mQ-Y5g">
-                                <connections>
-                                    <action selector="addFakeData" destination="gcy-bb-8iw" id="Afw-6s-eo7"/>
-                                </connections>
-                            </barButtonItem>
                             <barButtonItem systemItem="save" id="EL7-PZ-TEt">
                                 <connections>
                                     <action selector="runJsonParse" destination="gcy-bb-8iw" id="mLe-h0-0Pi"/>
@@ -189,37 +184,37 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnW-N1-i46">
-                                        <rect key="frame" x="173" y="53" width="115" height="24"/>
+                                        <rect key="frame" x="181" y="53" width="115" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Armor Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ES2-gt-Ka5">
-                                        <rect key="frame" x="173" y="93" width="113" height="24"/>
+                                        <rect key="frame" x="181" y="93" width="113" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Critical Hit Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6y-m3-ehr">
-                                        <rect key="frame" x="173" y="133" width="145" height="24"/>
+                                        <rect key="frame" x="181" y="133" width="145" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elemental Power Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyd-yf-8dX">
-                                        <rect key="frame" x="173" y="173" width="192" height="24"/>
+                                        <rect key="frame" x="181" y="173" width="192" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Start Health Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPN-Ug-KMY">
-                                        <rect key="frame" x="173" y="213" width="157" height="24"/>
+                                        <rect key="frame" x="181" y="213" width="157" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maximum Health Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m95-bj-f8K">
-                                        <rect key="frame" x="173" y="253" width="193.5" height="24"/>
+                                        <rect key="frame" x="181" y="253" width="193.5" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -232,7 +227,6 @@
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gyd-yf-8dX" secondAttribute="trailing" constant="8" id="1eR-qf-KbP"/>
                                     <constraint firstItem="PPN-Ug-KMY" firstAttribute="top" secondItem="gyd-yf-8dX" secondAttribute="bottom" constant="16" id="2Cv-rH-pJX"/>
                                     <constraint firstItem="a6y-m3-ehr" firstAttribute="centerY" secondItem="86r-iU-s4U" secondAttribute="centerY" id="EkH-HN-ouu"/>
-                                    <constraint firstItem="gyd-yf-8dX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VkJ-aH-uqU" secondAttribute="trailing" constant="8" symbolic="YES" id="F4N-jC-R92"/>
                                     <constraint firstItem="WnW-N1-i46" firstAttribute="top" secondItem="Goz-DX-TA2" secondAttribute="bottom" constant="24" id="Fxm-bq-2sd"/>
                                     <constraint firstItem="gyd-yf-8dX" firstAttribute="top" secondItem="a6y-m3-ehr" secondAttribute="bottom" constant="16" id="I8D-bT-nPI"/>
                                     <constraint firstItem="86r-iU-s4U" firstAttribute="leading" secondItem="Xf1-3L-HXq" secondAttribute="leading" id="I8J-IG-gFm"/>
@@ -264,7 +258,7 @@
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WnW-N1-i46" secondAttribute="trailing" constant="8" id="gT4-12-0dm"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m95-bj-f8K" secondAttribute="trailing" constant="8" id="jSU-Yg-z2q"/>
                                     <constraint firstAttribute="bottom" secondItem="IEQ-51-60a" secondAttribute="bottom" constant="20" symbolic="YES" id="lIL-2Q-fdx"/>
-                                    <constraint firstItem="m95-bj-f8K" firstAttribute="leading" secondItem="IEQ-51-60a" secondAttribute="trailing" constant="8" id="sOU-Le-v9A"/>
+                                    <constraint firstItem="m95-bj-f8K" firstAttribute="leading" secondItem="IEQ-51-60a" secondAttribute="trailing" constant="16" id="sOU-Le-v9A"/>
                                     <constraint firstItem="a6y-m3-ehr" firstAttribute="leading" secondItem="WnW-N1-i46" secondAttribute="leading" id="t6N-0d-Mqq"/>
                                     <constraint firstItem="WnW-N1-i46" firstAttribute="centerY" secondItem="9zE-HP-tyo" secondAttribute="centerY" id="v5P-n1-ll7"/>
                                     <constraint firstItem="Goz-DX-TA2" firstAttribute="centerX" secondItem="Xf1-3L-HXq" secondAttribute="centerX" id="vcc-ZG-S9b"/>
@@ -305,7 +299,9 @@
                             <constraint firstItem="eum-Kf-npF" firstAttribute="top" secondItem="FIn-XE-kXX" secondAttribute="top" id="xy6-1s-6IZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Skylander Name" largeTitleDisplayMode="always" id="QQk-5I-pRT"/>
+                    <navigationItem key="navigationItem" title="Skylander Name" largeTitleDisplayMode="always" id="QQk-5I-pRT">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="fAT-Ug-FLG"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="armorLabel" destination="9J2-CA-ksp" id="UFN-TT-YWL"/>
                         <outlet property="compatableGames" destination="VWT-IH-WPY" id="stK-x6-xIK"/>

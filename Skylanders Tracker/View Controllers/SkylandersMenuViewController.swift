@@ -197,39 +197,40 @@ extension SkylandersMenuViewController {
         tableView.reloadData()
     }
     
-    @IBAction func addFakeData() {
-        print("added data")
-        saveSkylander()
-        refreshData()
-        tableView.reloadData()
-    }
+//    @IBAction func addFakeData() {
+//        print("added data")
+//        saveSkylander()
+//        refreshData()
+//        tableView.reloadData()
+//    }
     
-    func saveSkylander() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let entity = NSEntityDescription.entity(forEntityName: "Skylander", in: managedContext)!
-        let skylander = NSManagedObject(entity: entity, insertInto: managedContext)
-        skylander.setValue("Trigger Happy", forKey: "name")
-        skylander.setValue("Trigger Happy", forKey: "baseName")
-        skylander.setValue(1, forKey: "series")
-        skylander.setValue(false, forKey: "isChecked")
-        skylander.setValue("", forKey: "varientText")
-        skylander.setValue("Spyro's Adventure", forKey: "game")
-//        skylander.setValue("Giants", forKey: "game")
-//        skylander.setValue("Swap Force", forKey: "game")
-//        skylander.setValue("Trap Team", forKey: "game")
-//        skylander.setValue("SuperChargers", forKey: "game")
-        
-        do {
-            try managedContext.save()
-            skylandersList.append(skylander)
-            refreshData()
-            tableView.reloadData()
-        }
-        catch let error as NSError {
-            print("Could not save. \(error), \(error.userInfo)")
-        }
-    }
+//    func saveSkylander() {
+//        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+//            return
+//        }
+//        let managedContext = appDelegate.persistentContainer.viewContext
+//        let entity = NSEntityDescription.entity(forEntityName: "Skylander", in: managedContext)!
+//        let skylander = NSManagedObject(entity: entity, insertInto: managedContext)
+//        skylander.setValue("Bash", forKey: "name")
+//        skylander.setValue("Bash", forKey: "baseName")
+//        skylander.setValue(1, forKey: "series")
+//        skylander.setValue(false, forKey: "isChecked")
+//        skylander.setValue("", forKey: "varientText")
+//        skylander.setValue("Spyro's Adventure", forKey: "game")
+//        skylander.setValue("Bash", forKey: "statsName")
+////        skylander.setValue("Giants", forKey: "game")
+////        skylander.setValue("Swap Force", forKey: "game")
+////        skylander.setValue("Trap Team", forKey: "game")
+////        skylander.setValue("SuperChargers", forKey: "game")
+//
+//        do {
+//            try managedContext.save()
+//            skylandersList.append(skylander)
+//            refreshData()
+//            tableView.reloadData()
+//        }
+//        catch let error as NSError {
+//            print("Could not save. \(error), \(error.userInfo)")
+//        }
+//    }
 }
