@@ -105,17 +105,41 @@ class SkylandersListTableViewController: UITableViewController {
 
 extension SkylandersListTableViewController {
     
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "cum"
+        }
+        if section == 1 {
+            return "gay"
+        }
+        if section == 2 {
+            return "LOLOLOL"
+        }
+        else {
+            return "error"
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return skylandersCount
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cellIdentifier = "SkylanderCell"
-        tableView.rowHeight = 66
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! SkylanderCell
-        cell.configure(for: skylandersToDisplay[indexPath.row])
-        return cell
+//        if let cum = sectionIndexTitles(for: tableView) {
+//            if cum[0] == "cum" {
+        if indexPath.section == 0 {
+                let cellIdentifier = "SkylanderCell"
+                tableView.rowHeight = 66
+                let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! SkylanderCell
+                cell.configure(for: skylandersToDisplay[indexPath.row])
+                return cell
+            }
+//        }
+        return tableView.dequeueReusableCell(withIdentifier: "NothingFoundCell")!
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
