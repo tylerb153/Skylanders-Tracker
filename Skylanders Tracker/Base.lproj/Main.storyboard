@@ -299,9 +299,7 @@
                             <constraint firstItem="eum-Kf-npF" firstAttribute="top" secondItem="FIn-XE-kXX" secondAttribute="top" id="xy6-1s-6IZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Skylander Name" largeTitleDisplayMode="always" id="QQk-5I-pRT">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="fAT-Ug-FLG"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Skylander Name" largeTitleDisplayMode="always" id="QQk-5I-pRT"/>
                     <connections>
                         <outlet property="armorLabel" destination="9J2-CA-ksp" id="UFN-TT-YWL"/>
                         <outlet property="compatableGames" destination="VWT-IH-WPY" id="stK-x6-xIK"/>

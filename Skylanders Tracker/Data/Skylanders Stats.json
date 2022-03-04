@@ -1,5 +1,83 @@
 {
     "SkylandersStats" : [
+        
+        {
+            "statsName": "None Magic",
+            "element": "Magic",
+            "speed": 0,
+            "armor":  0,
+            "criticalHit": 0,
+            "elementalPower": 0,
+            "maxHealth": 0,
+            "startingHealth": 0
+        },
+
+        {
+            "statsName": "None Earth",
+            "element": "Earth",
+            "speed": 0,
+            "armor":  0,
+            "criticalHit": 0,
+            "elementalPower": 0,
+            "maxHealth": 0,
+            "startingHealth": 0
+        },
+
+        {
+            "statsName": "None Water",
+            "element": "Water",
+            "speed": 0,
+            "armor":  0,
+            "criticalHit": 0,
+            "elementalPower": 0,
+            "maxHealth": 0,
+            "startingHealth": 0
+        },
+
+        {
+            "statsName": "None Tech",
+            "element": "Tech",
+            "speed": 0,
+            "armor":  0,
+            "criticalHit": 0,
+            "elementalPower": 0,
+            "maxHealth": 0,
+            "startingHealth": 0
+        },
+
+        {
+            "statsName": "None Undead",
+            "element": "Undead",
+            "speed": 0,
+            "armor":  0,
+            "criticalHit": 0,
+            "elementalPower": 0,
+            "maxHealth": 0,
+            "startingHealth": 0
+        },
+
+        {
+            "statsName": "None Air",
+            "element": "Air",
+            "speed": 0,
+            "armor":  0,
+            "criticalHit": 0,
+            "elementalPower": 0,
+            "maxHealth": 0,
+            "startingHealth": 0
+        },
+
+        {
+            "statsName": "None Life",
+            "element": "Life",
+            "speed": 0,
+            "armor":  0,
+            "criticalHit": 0,
+            "elementalPower": 0,
+            "maxHealth": 0,
+            "startingHealth": 0
+        },
+
         {
             "statsName": "Spyro",
             "element": "Magic",
@@ -10,15 +88,390 @@
             "maxHealth": 560,
             "startingHealth": 280
         },
+
         {
-            "statsName":"Bash"
+            "statsName": "Legendary Spyro",
             "element": "Magic",
+            "speed": 50,
+            "armor":  18,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 560,
+            "startingHealth": 280
+        },
+
+        {
+            "statsName": "Voodood",
+            "element": "Magic",
+            "speed": 35,
+            "armor":  12,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 580,
+            "startingHealth": 290
+        },
+
+        {
+            "statsName": "Double Trouble",
+            "element": "Magic",
+            "speed": 35,
+            "armor":  18,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 500,
+            "startingHealth": 250
+        },
+
+        {
+            "statsName": "Wrecking Ball",
+            "element": "Magic",
+            "speed": 43,
+            "armor":  24,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 540,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Bash",
+            "element": "Earth",
+            "speed": 35,
+            "armor":  12,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 620,
+            "startingHealth": 310
+        },
+
+        {
+            "statsName": "Legendary Bash",
+            "element": "Earth",
+            "speed": 35,
+            "armor":  24,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 620,
+            "startingHealth": 310
+        },
+
+        {
+            "statsName": "Terrafin",
+            "element": "Earth",
+            "speed": 35,
+            "armor":  18,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 620,
+            "startingHealth": 310
+        },
+
+        {
+            "statsName": "Dino-Rang",
+            "element": "Earth",
+            "speed": 43,
+            "armor":  30,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 600,
+            "startingHealth": 300
+        },
+
+        {
+            "statsName": "Prism Break",
+            "element": "Earth",
+            "speed": 35,
+            "armor":  18,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 580,
+            "startingHealth": 290
+        },
+
+        {
+            "statsName": "Zap",
+            "element": "Water",
+            "speed": 50,
+            "armor":  24,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 520,
+            "startingHealth": 260
+        },
+
+        {
+            "statsName": "Wham-Shell",
+            "element": "Water",
+            "speed": 50,
+            "armor":  18,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 600,
+            "startingHealth": 300
+        },
+
+        {
+            "statsName": "Gill Grunt",
+            "element": "Water",
+            "speed": 35,
+            "armor":  6,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 540,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Slam Bam",
+            "element": "Water",
+            "speed": 35,
+            "armor":  30,
+            "criticalHit": 10,
+            "elementalPower": 25,
+            "maxHealth": 620,
+            "startingHealth": 310
+        },
+
+        {
+            "statsName": "Sunburn",
+            "element": "Fire",
+            "speed": 43,
+            "armor":  24,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 560,
+            "startingHealth": 280
+        },
+
+        {
+            "statsName": "Eruptor",
+            "element": "Fire",
+            "speed": 35,
+            "armor":  18,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 580,
+            "startingHealth": 290
+        },
+
+        {
+            "statsName": "Ignitor",
+            "element": "Fire",
+            "speed": 43,
+            "armor":  12,
+            "criticalHit": 40,
+            "elementalPower": 25,
+            "maxHealth": 480,
+            "startingHealth": 240
+        },
+
+        {
+            "statsName": "Flameslinger",
+            "element": "Fire",
+            "speed": 50,
+            "armor":  24,
+            "criticalHit": 40,
+            "elementalPower": 25,
+            "maxHealth": 500,
+            "startingHealth": 250
+        },
+
+        {
+            "statsName": "Drobot",
+            "element": "Tech",
+            "speed": 43,
+            "armor":  24,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 580,
+            "startingHealth": 290
+        },
+
+        {
+            "statsName": "Drill Sergeant",
+            "element": "Tech",
+            "speed": 43,
+            "armor":  12,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 580,
+            "startingHealth": 290
+        },
+
+        {
+            "statsName": "Boomer",
+            "element": "Tech",
+            "speed": 35,
+            "armor":  18,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 460,
+            "startingHealth": 230
+        },
+
+        {
+            "statsName": "Trigger Happy",
+            "element": "Tech",
+            "speed": 50,
+            "armor":  30,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 400,
+            "startingHealth": 200
+        },
+
+        {
+            "statsName": "Legendary Trigger Happy",
+            "element": "Tech",
+            "speed": 50,
+            "armor":  42,
+            "criticalHit": 40,
+            "elementalPower": 25,
+            "maxHealth": 400,
+            "startingHealth": 200
+        },
+
+        {
+            "statsName": "Cynder",
+            "element": "Undead",
+            "speed": 43,
+            "armor":  18,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 520,
+            "startingHealth": 260
+        },
+
+        {
+            "statsName": "Hex",
+            "element": "Undead",
+            "speed": 43,
+            "armor":  18,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 540,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Chop Chop",
+            "element": "Undead",
+            "speed": 50,
+            "armor":  24,
+            "criticalHit": 10,
+            "elementalPower": 25,
+            "maxHealth": 600,
+            "startingHealth": 300
+        },
+
+        {
+            "statsName": "Legendary Chop Chop",
+            "element": "Undead",
+            "speed": 50,
+            "armor":  30,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 600,
+            "startingHealth": 300
+        },
+
+        {
+            "statsName": "Ghost Roaster",
+            "element": "Undead",
+            "speed": 43,
+            "armor":  24,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 560,
+            "startingHealth": 280
+        },
+
+        {
+            "statsName": "Whirlwind",
+            "element": "Air",
+            "speed": 50,
+            "armor":  18,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 540,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Sonic Boom",
+            "element": "Air",
             "speed": 50,
             "armor":  18,
             "criticalHit": 30,
             "elementalPower": 25,
             "maxHealth": 560,
             "startingHealth": 280
+        },
+
+        {
+            "statsName": "Warnado",
+            "element": "Air",
+            "speed": 35,
+            "armor":  30,
+            "criticalHit": 10,
+            "elementalPower": 25,
+            "maxHealth": 620,
+            "startingHealth": 310
+        },
+
+        {
+            "statsName": "Lightning Rod",
+            "element": "Air",
+            "speed": 43,
+            "armor":  18,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 580,
+            "startingHealth": 290
+        },
+
+        {
+            "statsName": "Camo",
+            "element": "Life",
+            "speed": 50,
+            "armor":  24,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 600,
+            "startingHealth": 300
+        }, 
+
+        {
+            "statsName": "Zook",
+            "element": "Life",
+            "speed": 43,
+            "armor":  30,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 520,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Stump Smash",
+            "element": "Life",
+            "speed": 43,
+            "armor":  30,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 680,
+            "startingHealth": 340
+        },
+
+        {
+            "statsName": "Stealth Elf",
+            "element": "Life",
+            "speed": 50,
+            "armor":  12,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 540,
+            "startingHealth": 270
         }
     ]
 }

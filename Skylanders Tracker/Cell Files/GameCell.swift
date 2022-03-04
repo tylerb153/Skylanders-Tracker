@@ -65,5 +65,7 @@ class GameCell: UITableViewCell {
             }
         default: gameImageView.image = defaultImage
         }
+        
+        gameImageView.layer.cornerRadius = gameImageView.bounds.width / 5
     }
 }

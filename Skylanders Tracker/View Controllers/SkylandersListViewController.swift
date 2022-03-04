@@ -104,6 +104,7 @@ class SkylandersListTableViewController: UITableViewController {
 }
 
 extension SkylandersListTableViewController {
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return skylandersCount
     }
