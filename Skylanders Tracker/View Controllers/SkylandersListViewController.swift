@@ -10,15 +10,18 @@ import CoreData
 
 class SkylandersListTableViewController: UITableViewController {
 
+    //MARK: - Variables
     @IBOutlet weak var searchBar: UISearchBar!
     
     var skylandersList: [NSManagedObject] = []
     lazy var skylandersToDisplay: [NSManagedObject] = getSkylandersToDisplay()
     lazy var skylandersCount = skylandersToDisplay.count
+    lazy var sectionsToDisplay: [String] = getSections()
     var chosenSkylander: String?
     var chosenGame: String?
     var skylanderToSend: NSManagedObject?
     
+    //MARK: - View did/will appear
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
@@ -28,11 +31,9 @@ class SkylandersListTableViewController: UITableViewController {
         refreshData()
         if let chosenSkylander = chosenSkylander {
             navigationItem.title = chosenSkylander
-            searchBar.placeholder = "Search for a series"
         }
         if let chosenGame = chosenGame {
             navigationItem.title = chosenGame
-            searchBar.placeholder = "Search for a Skylander"
         }
         
         let searchBarHeight = searchBar.frame.size.height
@@ -53,10 +54,7 @@ class SkylandersListTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    // MARK: Actions
-    
-    
-    // MARK: - Data Refresh
+    // MARK: - Data Processing
     func refreshData() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
@@ -70,6 +68,7 @@ class SkylandersListTableViewController: UITableViewController {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
         skylandersCount = skylandersToDisplay.count
+        sectionsToDisplay = getSections()
 //        print(skylandersList)
     }
     
@@ -94,6 +93,42 @@ class SkylandersListTableViewController: UITableViewController {
         return skylandersToDisplay
     }
     
+    
+    private func getSections() -> [String] {
+        var sectionsToDisplay: [String] = []
+        
+        for skylander in skylandersToDisplay {
+            var varient = skylander.value(forKey: "varientText") as! String
+            if varient == "" {
+                varient = "Skylanders"
+            }
+            if !sectionsToDisplay.contains(varient) {
+                sectionsToDisplay.append(varient)
+            }
+        }
+        if let index = sectionsToDisplay.firstIndex(of: "") {
+            sectionsToDisplay.remove(at: index)
+        }
+        print(sectionsToDisplay)
+        return sectionsToDisplay
+    }
+    
+    private func getSkylandersSection(varientText: String) -> [NSManagedObject] {
+        var sectionSkylanders: [NSManagedObject] = []
+        var ModifiedVarientText = varientText
+        if varientText == "Skylanders" {
+            ModifiedVarientText = ""
+        }
+        
+        for skylander in skylandersToDisplay {
+            if skylander.value(forKey: "varientText") as! String == ModifiedVarientText {
+                sectionSkylanders.append(skylander)
+            }
+        }
+        
+        return sectionSkylanders
+    }
+    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "DisplaySkylander" {
@@ -106,39 +141,22 @@ class SkylandersListTableViewController: UITableViewController {
 extension SkylandersListTableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return sectionsToDisplay.count
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 {
-            return "cum"
-        }
-        if section == 1 {
-            return "gay"
-        }
-        if section == 2 {
-            return "LOLOLOL"
-        }
-        else {
-            return "error"
-        }
+        return sectionsToDisplay[section]
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return skylandersCount
+        return getSkylandersSection(varientText: sectionsToDisplay[section]).count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        if let cum = sectionIndexTitles(for: tableView) {
-//            if cum[0] == "cum" {
         if indexPath.section == 0 {
-                let cellIdentifier = "SkylanderCell"
-                tableView.rowHeight = 66
-                let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! SkylanderCell
-                cell.configure(for: skylandersToDisplay[indexPath.row])
-                return cell
+            let cell = configureCell(varientText: sectionsToDisplay[indexPath.section], row: indexPath.row)
+            return cell
             }
-//        }
         return tableView.dequeueReusableCell(withIdentifier: "NothingFoundCell")!
     }
     
@@ -146,5 +164,13 @@ extension SkylandersListTableViewController {
         
         skylanderToSend = skylandersToDisplay[indexPath.row]
         self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
+    }
+    
+    func configureCell(varientText: String, row: Int) -> UITableViewCell {
+        let cellIdentifier = "SkylanderCell"
+        tableView.rowHeight = 66
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! SkylanderCell
+        cell.configure(for: getSkylandersSection(varientText: varientText)[row])
+        return cell
     }
 }

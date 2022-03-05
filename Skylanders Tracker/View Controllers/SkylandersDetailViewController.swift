@@ -52,6 +52,7 @@ class SkylandersDetailViewController: UIViewController {
         if varient == "Dark" {
             skylanderImage.backgroundColor = UIColor.black
         }
+        skylanderImage.layer.cornerRadius = skylanderImage.bounds.width / 5
     }
     
     // MARK: - Helper Functions

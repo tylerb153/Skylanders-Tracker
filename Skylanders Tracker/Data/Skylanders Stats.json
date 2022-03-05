@@ -79,6 +79,17 @@
         },
 
         {
+            "statsName": "Magic Item",
+            "element": "Magic Item",
+            "speed": 0,
+            "armor": 0,
+            "criticalHit": 0,
+            "elementalPower": 0,
+            "maxHealth": 0,
+            "startingHealth": 0
+        },
+
+        {
             "statsName": "Spyro",
             "element": "Magic",
             "speed": 50,
