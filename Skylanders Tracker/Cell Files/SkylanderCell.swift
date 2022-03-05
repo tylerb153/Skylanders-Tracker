@@ -80,7 +80,7 @@ class SkylanderCell: UITableViewCell {
     func configure(for skylander: NSManagedObject) {
         self.skylander = skylander
         let name = skylander.value(forKey: "name") as! String
-        let baseName = skylander.value(forKey: "baseName") as! String
+//        let baseName = skylander.value(forKey: "baseName") as! String
         let series = skylander.value(forKey: "series") as! Int
         let check = skylander.value(forKey: "isChecked") as! Bool
         setName(givenName: name)

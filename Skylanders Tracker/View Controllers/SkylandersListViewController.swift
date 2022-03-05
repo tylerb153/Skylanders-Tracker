@@ -21,10 +21,7 @@ class SkylandersListTableViewController: UITableViewController {
     var chosenGame: String?
     var skylanderToSend: NSManagedObject?
     
-    //MARK: - View did/will appear
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
+    //MARK: - View did appear
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -109,7 +106,7 @@ class SkylandersListTableViewController: UITableViewController {
         if let index = sectionsToDisplay.firstIndex(of: "") {
             sectionsToDisplay.remove(at: index)
         }
-        print(sectionsToDisplay)
+//        print(sectionsToDisplay)
         return sectionsToDisplay
     }
     
@@ -159,7 +156,7 @@ extension SkylandersListTableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        skylanderToSend = skylandersToDisplay[indexPath.row]
+        skylanderToSend = getSkylandersSection(varientText: sectionsToDisplay[indexPath.section])[indexPath.row]
         self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
     }
     
