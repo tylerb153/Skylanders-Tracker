@@ -12,6 +12,7 @@ class SkylanderSelectCell: UITableViewCell {
 
     @IBOutlet weak var skylanderName: UILabel!
     @IBOutlet weak var skylanderImage: UIImageView!
+    @IBOutlet weak var checkmark: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -38,6 +39,15 @@ class SkylanderSelectCell: UITableViewCell {
     }
     
     // MARK: - Configure Cell Methods
+    
+    func updateCheckmark(checked: Bool) {
+        if checked {
+            checkmark.image = UIImage(systemName: "checkmark")
+        }
+        else {
+            checkmark.image = UIImage()
+        }
+    }
     
     func configure(for skylander: NSManagedObject) {
 //        let name = skylander.value(forKey: "name") as! String

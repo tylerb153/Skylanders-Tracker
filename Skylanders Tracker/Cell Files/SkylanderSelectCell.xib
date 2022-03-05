@@ -22,29 +22,41 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skylander Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJA-mp-onW">
-                        <rect key="frame" x="66" y="21" width="144" height="24"/>
+                        <rect key="frame" x="66" y="21" width="311.5" height="24"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="56j-j8-unF">
+                        <rect key="frame" x="353.5" y="21.5" width="24" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="56j-j8-unF" secondAttribute="height" multiplier="1:1" id="65s-qZ-e8M"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="bn4-uo-9bV" firstAttribute="leading" secondItem="8Hh-8b-wS4" secondAttribute="leading" constant="8" id="5p4-1i-XsV"/>
+                    <constraint firstAttribute="trailing" secondItem="56j-j8-unF" secondAttribute="trailing" constant="8" id="FaN-b2-s9d"/>
                     <constraint firstItem="GJA-mp-onW" firstAttribute="centerY" secondItem="8Hh-8b-wS4" secondAttribute="centerY" id="N3r-l6-sSa"/>
                     <constraint firstAttribute="bottom" secondItem="bn4-uo-9bV" secondAttribute="bottom" constant="8" id="Spw-J0-wTf"/>
                     <constraint firstItem="bn4-uo-9bV" firstAttribute="centerY" secondItem="8Hh-8b-wS4" secondAttribute="centerY" id="UgC-7F-DDP"/>
                     <constraint firstItem="GJA-mp-onW" firstAttribute="leading" secondItem="bn4-uo-9bV" secondAttribute="trailing" constant="8" id="aMo-gZ-48H"/>
                     <constraint firstItem="bn4-uo-9bV" firstAttribute="top" secondItem="8Hh-8b-wS4" secondAttribute="top" constant="8" id="hex-Td-Yxw"/>
+                    <constraint firstAttribute="trailing" secondItem="GJA-mp-onW" secondAttribute="trailing" constant="8" id="iGk-Xu-aau"/>
+                    <constraint firstItem="56j-j8-unF" firstAttribute="top" secondItem="GJA-mp-onW" secondAttribute="top" id="itr-mJ-ITT"/>
+                    <constraint firstItem="56j-j8-unF" firstAttribute="bottom" secondItem="GJA-mp-onW" secondAttribute="bottom" id="y3r-Q2-GO5"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="checkmark" destination="56j-j8-unF" id="G02-QC-EHi"/>
                 <outlet property="skylanderImage" destination="bn4-uo-9bV" id="QmU-gm-GPr"/>
                 <outlet property="skylanderName" destination="GJA-mp-onW" id="q4Z-2Q-ecm"/>
             </connections>
-            <point key="canvasLocation" x="164" y="15"/>
+            <point key="canvasLocation" x="166.66666666666669" y="-10.044642857142856"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="circle" catalog="system" width="128" height="121"/>
         <image name="square" catalog="system" width="128" height="114"/>
     </resources>
 </document>

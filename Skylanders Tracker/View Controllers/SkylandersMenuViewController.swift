@@ -152,6 +152,7 @@ extension SkylandersMenuViewController: UITableViewDelegate, UITableViewDataSour
             tableView.rowHeight = 66
             let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! SkylanderSelectCell
             cell.configure(for: skylandersToDisplay[indexPath.row])
+            cell.updateCheckmark(checked: checkedOff(index: indexPath.row))
             return cell
         }
     }
@@ -165,6 +166,18 @@ extension SkylandersMenuViewController: UITableViewDelegate, UITableViewDataSour
             chosenGame = games[indexPath.row]
             self.performSegue(withIdentifier: "ChoseGame", sender: Any?.self)
         }
+    }
+    
+    private func checkedOff(index: Int) -> Bool {
+        let skylanderToCheckName = skylandersToDisplay[index].value(forKey: "baseName") as! String
+        for skylander in skylandersList {
+            if skylander.value(forKey: "baseName") as! String == skylanderToCheckName {
+                if skylander.value(forKey: "isChecked") as! Bool && skylander.value(forKey: "varientText") as! String != "Sidekick" {
+                    return true
+                }
+            }
+        }
+        return false
     }
 }
 // MARK: - Data Save
