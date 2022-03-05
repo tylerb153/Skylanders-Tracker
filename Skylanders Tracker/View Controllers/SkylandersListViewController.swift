@@ -153,11 +153,8 @@ extension SkylandersListTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.section == 0 {
-            let cell = configureCell(varientText: sectionsToDisplay[indexPath.section], row: indexPath.row)
-            return cell
-            }
-        return tableView.dequeueReusableCell(withIdentifier: "NothingFoundCell")!
+        let cell = configureCell(varientText: sectionsToDisplay[indexPath.section], row: indexPath.row)
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
