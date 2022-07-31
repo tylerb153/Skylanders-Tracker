@@ -86,7 +86,6 @@ class SkylandersDetailViewController: UIViewController {
     }
     
     private func tintGame() {
-        let game = "Spyro's Adventure"
         let color = UIColor(named: game)
         
         skylanderGame.backgroundColor = color
@@ -95,7 +94,7 @@ class SkylandersDetailViewController: UIViewController {
     private func setLabels() {
         let skylanderStats = getStats()!
 
-        skylanderSpeed.text = "\(skylanderStats.value(forKey: "speed") as! Int)"
+        skylanderSpeed.text = String(describing: skylanderStats.value(forKey: "speed") as! Int)
         skylanderArmor.text = String(describing: skylanderStats.value(forKey: "armor") as! Int)
         skylanderCriticalHit.text = String(describing: skylanderStats.value(forKey: "criticalHit") as! Int)
         skylanderElementalPower.text = String(describing: skylanderStats.value(forKey: "elementalPower") as! Int)
@@ -143,6 +142,9 @@ class SkylandersDetailViewController: UIViewController {
         }
         if chosenSkylander?.value(forKey: "worksWithTrapTeam") as! Bool {
             displayString += "Trap Team\n"
+        }
+        if chosenSkylander?.value(forKey: "worksWithSuperChargers") as! Bool {
+            displayString += "SuperChargers\n"
         }
         if chosenSkylander?.value(forKey: "worksWithSuperChargers") as! Bool {
             displayString += "Imaginators\n"

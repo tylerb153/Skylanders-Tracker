@@ -513,288 +513,849 @@
             "worksWithImaginators": true
         },
 
+            {
+                "name": "Sidekick Terrabite",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Terrafin",
+                "isChecked": false,
+                "varientText": "Sidekick",
+                "statsName": "None Earth",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Sidekick Gill Runt",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Gill Grunt",
+                "isChecked": false,
+                "varientText": "Sidekick",
+                "statsName": "None Water",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Sidekick Trigger Snappy",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Trigger Happy",
+                "isChecked": false,
+                "varientText": "Sidekick",
+                "statsName": "None Tech",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Sidekick Whisper Elf",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Stealth Elf",
+                "isChecked": false,
+                "varientText": "Sidekick",
+                "statsName": "None Life",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+            {
+                "name": "Pirate Seas",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Pirate Seas",
+                "isChecked": false,
+                "varientText": "Magic Item",
+                "statsName": "Magic Item",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Ghost Swords",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Pirate Seas",
+                "isChecked": false,
+                "varientText": "Magic Item",
+                "statsName": "Magic Item",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Hidden Treasure",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Pirate Seas",
+                "isChecked": false,
+                "varientText": "Magic Item",
+                "statsName": "Magic Item",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Empire of Ice",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Empire of Ice",
+                "isChecked": false,
+                "varientText": "Magic Item",
+                "statsName": "Magic Item",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Anvil Rain",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Empire of Ice",
+                "isChecked": false,
+                "varientText": "Magic Item",
+                "statsName": "Magic Item",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Sky-Iron Shield",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Empire of Ice",
+                "isChecked": false,
+                "varientText": "Magic Item",
+                "statsName": "Magic Item",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Dragon's Peak",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Dragon's Peak",
+                "isChecked": false,
+                "varientText": "Magic Item",
+                "statsName": "Magic Item",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Sparx Dragonfly",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Dragon's Peak",
+                "isChecked": false,
+                "varientText": "Magic Item",
+                "statsName": "Magic Item",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Winged Boots",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Dragon's Peak",
+                "isChecked": false,
+                "varientText": "Magic Item",
+                "statsName": "Magic Item",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Darklight Crypt",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Darklight Crypt",
+                "isChecked": false,
+                "varientText": "Magic Item",
+                "statsName": "Magic Item",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Time Twister",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Darklight Crypt",
+                "isChecked": false,
+                "varientText": "Magic Item",
+                "statsName": "Magic Item",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Healing Elixir",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Darklight Crypt",
+                "isChecked": false,
+                "varientText": "Magic Item",
+                "statsName": "Magic Item",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Volcanic Vault",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Volcanic Vault",
+                "isChecked": false,
+                "varientText": "Magic Item",
+                "statsName": "Magic Item",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Dark Spyro",
+                "game": "Spyro's Adventure",
+                "series": 1,
+                "baseName": "Spyro",
+                "isChecked": false,
+                "varientText": "Dark",
+                "statsName": "Spyro",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Legendary Spyro",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Spyro",
+                "isChecked": false,
+                "varientText": "Legendary",
+                "statsName": "Legendary Spyro",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Legendary Bash",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Bash",
+                "isChecked": false,
+                "varientText": "Legendary",
+                "statsName": "Legendary Bash",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Legendary Trigger Happy",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Trigger Happy",
+                "isChecked": false,
+                "varientText": "Legendary",
+                "statsName": "Legendary Trigger Happy",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Legendary Chop Chop",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Chop Chop",
+                "isChecked": false,
+                "varientText": "Legendary",
+                "statsName": "Legendary Chop Chop",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Chrome Spyro",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Spyro",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Spyro",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Glow-in-the-dark Wrecking Ball",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Wrecking Ball",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Wrecking Ball",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Blue Bash",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Bash",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Bash",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Silver Dino-Rang",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Dino-Rang",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Dino-Rang",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Glow-in-the-dark Zap",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Zap",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Zap",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+            
+            {
+                "name": "Crystal Clear Wham-Shell",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Wham-Shell",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Wham-Shell",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Green Gill Grunt",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Gill Grunt",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Gill Grunt",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Gold Flameslinger",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Flameslinger",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Flameslinger",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Silver Eruptor",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Eruptor",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Eruptor",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Silver Boomer",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Boomer",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Boomer",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Gold Drill Sergeant",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Drill Sergeant",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Drill Sergeant",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Red Drill Sergeant",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Drill Sergeant",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Drill Sergeant",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Pearl Hex",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Hex",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Hex",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Crystal Clear Cynder",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Cynder",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Cynder",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Glow-in-the-dark Cynder",
+                "game": "Giants",
+                "series": 0,
+                "baseName": "Cynder",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Cynder",
+                "worksWithSpyrosAdventure": false,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Metallic Purple Cynder",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Cynder",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Cynder",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Gold Chop Chop",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Chop Chop",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Chop Chop",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Crystal Clear Whirlwind",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Whirlwind",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Whirlwind",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Glow-in-the-dark Warnado",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Warnado",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Warnado",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Red Camo",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Camo",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Camo",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Flocked Stump Smash",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Stump Smash",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Stump Smash",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            {
+                "name": "Crystal Clear Stealth Elf",
+                "game": "Spyro's Adventure",
+                "series": 0,
+                "baseName": "Stealth Elf",
+                "isChecked": false,
+                "varientText": "Chase",
+                "statsName": "Stealth Elf",
+                "worksWithSpyrosAdventure": true,
+                "worksWithGiants": true,
+                "worksWithSwapForce": true,
+                "worksWithTrapTeam": true,
+                "worksWithSuperChargers": true,
+                "worksWithImaginators": true
+            },
+
+            
+
+    {
+        "name": "Ninjini",
+        "game": "Giants",
+        "series": 0,
+        "baseName": "Ninjini",
+        "isChecked": false,
+        "varientText": "Giant",
+        "statsName": "Ninjini",
+        "worksWithSpyrosAdventure": false,
+        "worksWithGiants": true,
+        "worksWithSwapForce": true,
+        "worksWithTrapTeam": true,
+        "worksWithSuperChargers": true,
+        "worksWithImaginators": true
+    },
+
+    {
+        "name": "Hot Head",
+        "game": "Giants",
+        "series": 0,
+        "baseName": "Hot Head",
+        "isChecked": false,
+        "varientText": "Giant",
+        "statsName": "Hot Head",
+        "worksWithSpyrosAdventure": false,
+        "worksWithGiants": true,
+        "worksWithSwapForce": true,
+        "worksWithTrapTeam": true,
+        "worksWithSuperChargers": true,
+        "worksWithImaginators": true
+    },
+
+    {
+        "name": "Thumpback",
+        "game": "Giants",
+        "series": 0,
+        "baseName": "Thumpback",
+        "isChecked": false,
+        "varientText": "Giant",
+        "statsName": "Thumpback",
+        "worksWithSpyrosAdventure": false,
+        "worksWithGiants": true,
+        "worksWithSwapForce": true,
+        "worksWithTrapTeam": true,
+        "worksWithSuperChargers": true,
+        "worksWithImaginators": true
+    },
+
+    {
+        "name": "Eye-Brawl",
+        "game": "Giants",
+        "series": 0,
+        "baseName": "Eye-Brawl",
+        "isChecked": false,
+        "varientText": "Giant",
+        "statsName": "Eye-Brawl",
+        "worksWithSpyrosAdventure": false,
+        "worksWithGiants": true,
+        "worksWithSwapForce": true,
+        "worksWithTrapTeam": true,
+        "worksWithSuperChargers": true,
+        "worksWithImaginators": true
+    },
+
+    {
+        "name": "Bouncer",
+        "game": "Giants",
+        "series": 0,
+        "baseName": "Bouncer",
+        "isChecked": false,
+        "varientText": "Giant",
+        "statsName": "Bouncer",
+        "worksWithSpyrosAdventure": false,
+        "worksWithGiants": true,
+        "worksWithSwapForce": true,
+        "worksWithTrapTeam": true,
+        "worksWithSuperChargers": true,
+        "worksWithImaginators": true
+    },
+
+    {
+        "name": "Tree Rex",
+        "game": "Giants",
+        "series": 0,
+        "baseName": "Tree Rex",
+        "isChecked": false,
+        "varientText": "Giant",
+        "statsName": "Tree Rex",
+        "worksWithSpyrosAdventure": false,
+        "worksWithGiants": true,
+        "worksWithSwapForce": true,
+        "worksWithTrapTeam": true,
+        "worksWithSuperChargers": true,
+        "worksWithImaginators": true
+    },
+
+    {
+        "name": "Crusher",
+        "game": "Giants",
+        "series": 0,
+        "baseName": "Crusher",
+        "isChecked": false,
+        "varientText": "Giant",
+        "statsName": "Crusher",
+        "worksWithSpyrosAdventure": false,
+        "worksWithGiants": true,
+        "worksWithSwapForce": true,
+        "worksWithTrapTeam": true,
+        "worksWithSuperChargers": true,
+        "worksWithImaginators": true
+    },
+
+    {
+        "name": "Swarm",
+        "game": "Giants",
+        "series": 0,
+        "baseName": "Swarm",
+        "isChecked": false,
+        "varientText": "Giant",
+        "statsName": "Swarm",
+        "worksWithSpyrosAdventure": false,
+        "worksWithGiants": true,
+        "worksWithSwapForce": true,
+        "worksWithTrapTeam": true,
+        "worksWithSuperChargers": true,
+        "worksWithImaginators": true
+    },
+
+
+
 
         {
-            "name": "Sidekick Terrabite",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Terrafin",
-            "isChecked": false,
-            "varientText": "Sidekick",
-            "statsName": "None Earth",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Sidekick Gill Runt",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Gill Grunt",
-            "isChecked": false,
-            "varientText": "Sidekick",
-            "statsName": "None Water",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Sidekick Trigger Snappy",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Trigger Happy",
-            "isChecked": false,
-            "varientText": "Sidekick",
-            "statsName": "None Tech",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Sidekick Whisper Elf",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Stealth Elf",
-            "isChecked": false,
-            "varientText": "Sidekick",
-            "statsName": "None Life",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-
-        {
-            "name": "Pirate Seas",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Pirate Seas",
-            "isChecked": false,
-            "varientText": "Magic Item",
-            "statsName": "Magic Item",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Ghost Swords",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Pirate Seas",
-            "isChecked": false,
-            "varientText": "Magic Item",
-            "statsName": "Magic Item",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Hidden Treasure",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Pirate Seas",
-            "isChecked": false,
-            "varientText": "Magic Item",
-            "statsName": "Magic Item",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Empire of Ice",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Empire of Ice",
-            "isChecked": false,
-            "varientText": "Magic Item",
-            "statsName": "Magic Item",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Anvil Rain",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Empire of Ice",
-            "isChecked": false,
-            "varientText": "Magic Item",
-            "statsName": "Magic Item",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Sky-Iron Shield",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Empire of Ice",
-            "isChecked": false,
-            "varientText": "Magic Item",
-            "statsName": "Magic Item",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Dragon's Peak",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Dragon's Peak",
-            "isChecked": false,
-            "varientText": "Magic Item",
-            "statsName": "Magic Item",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Sparx Dragonfly",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Dragon's Peak",
-            "isChecked": false,
-            "varientText": "Magic Item",
-            "statsName": "Magic Item",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Winged Boots",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Dragon's Peak",
-            "isChecked": false,
-            "varientText": "Magic Item",
-            "statsName": "Magic Item",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Darklight Crypt",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Darklight Crypt",
-            "isChecked": false,
-            "varientText": "Magic Item",
-            "statsName": "Magic Item",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Time Twister",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Darklight Crypt",
-            "isChecked": false,
-            "varientText": "Magic Item",
-            "statsName": "Magic Item",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Healing Elixir",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Darklight Crypt",
-            "isChecked": false,
-            "varientText": "Magic Item",
-            "statsName": "Magic Item",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Volcanic Vault",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Volcanic Vault",
-            "isChecked": false,
-            "varientText": "Magic Item",
-            "statsName": "Magic Item",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-
-        {
-            "name": "Dark Spyro",
-            "game": "Spyro's Adventure",
-            "series": 1,
+            "name": "Spyro",
+            "game": "Giants",
+            "series": 2,
             "baseName": "Spyro",
             "isChecked": false,
-            "varientText": "Dark",
+            "varientText": "",
             "statsName": "Spyro",
             "worksWithSpyrosAdventure": true,
             "worksWithGiants": true,
@@ -804,373 +1365,13 @@
             "worksWithImaginators": true
         },
 
-
         {
-            "name": "Legendary Spyro",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Spyro",
-            "isChecked": false,
-            "varientText": "Legendary",
-            "statsName": "Legendary Spyro",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Legendary Bash",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Bash",
-            "isChecked": false,
-            "varientText": "Legendary",
-            "statsName": "Legendary Bash",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Legendary Trigger Happy",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Trigger Happy",
-            "isChecked": false,
-            "varientText": "Legendary",
-            "statsName": "Legendary Trigger Happy",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Legendary Chop Chop",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Chop Chop",
-            "isChecked": false,
-            "varientText": "Legendary",
-            "statsName": "Legendary Chop Chop",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-
-
-        
-        {
-            "name": "Chrome Spyro",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Spyro",
-            "isChecked": false,
-            "varientText": "Chase",
-            "statsName": "Spyro",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Silver Dino-Rang",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Dino-Rang",
-            "isChecked": false,
-            "varientText": "Chase",
-            "statsName": "Dino-Rang",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Gold Flameslinger",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Flameslinger",
-            "isChecked": false,
-            "varientText": "Chase",
-            "statsName": "Flameslinger",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Silver Eruptor",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Eruptor",
-            "isChecked": false,
-            "varientText": "Chase",
-            "statsName": "Eruptor",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Silver Boomer",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Boomer",
-            "isChecked": false,
-            "varientText": "Chase",
-            "statsName": "Boomer",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Gold Drill Sergeant",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Drill Sergeant",
-            "isChecked": false,
-            "varientText": "Chase",
-            "statsName": "Drill Sergeant",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Gold Chop Chop",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Chop Chop",
-            "isChecked": false,
-            "varientText": "Chase",
-            "statsName": "Chop Chop",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-
-        {
-            "name": "Blue Bash",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Bash",
-            "isChecked": false,
-            "varientText": "Chase",
-            "statsName": "Bash",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Green Gill Grunt",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Gill Grunt",
-            "isChecked": false,
-            "varientText": "Chase",
-            "statsName": "Gill Grunt",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Red Drill Sergeant",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Drill Sergeant",
-            "isChecked": false,
-            "varientText": "Chase",
-            "statsName": "Drill Sergeant",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Metallic Purple Cynder",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Cynder",
-            "isChecked": false,
-            "varientText": "Chase",
-            "statsName": "Cynder",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Pearl Hex",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Hex",
-            "isChecked": false,
-            "varientText": "Chase",
-            "statsName": "Hex",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Red Camo",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Camo",
-            "isChecked": false,
-            "varientText": "Chase",
-            "statsName": "Camo",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-
-        {
-            "name": "Crystal Clear Wham-Shell",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Wham-Shell",
-            "isChecked": false,
-            "varientText": "Chase",
-            "statsName": "Wham-Shell",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Crystal Clear Cynder",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Cynder",
-            "isChecked": false,
-            "varientText": "Chase",
-            "statsName": "Cynder",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Crystal Clear Whirlwind",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Whirlwind",
-            "isChecked": false,
-            "varientText": "Chase",
-            "statsName": "Whirlwind",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Crystal Clear Stealth Elf",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Stealth Elf",
-            "isChecked": false,
-            "varientText": "Chase",
-            "statsName": "Stealth Elf",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-
-        {
-            "name": "Flocked Stump Smash",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Stump Smash",
-            "isChecked": false,
-            "varientText": "Chase",
-            "statsName": "Stump Smash",
-            "worksWithSpyrosAdventure": true,
-            "worksWithGiants": true,
-            "worksWithSwapForce": true,
-            "worksWithTrapTeam": true,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-
-        {
-            "name": "Glow-in-the-dark Wrecking Ball",
-            "game": "Spyro's Adventure",
-            "series": 0,
+            "name": "Wrecking Ball",
+            "game": "Giants",
+            "series": 2,
             "baseName": "Wrecking Ball",
             "isChecked": false,
-            "varientText": "Chase",
+            "varientText": "",
             "statsName": "Wrecking Ball",
             "worksWithSpyrosAdventure": true,
             "worksWithGiants": true,
@@ -1181,12 +1382,124 @@
         },
 
         {
-            "name": "Glow-in-the-dark Zap",
-            "game": "Spyro's Adventure",
-            "series": 0,
+            "name": "Double Trouble",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Double Trouble",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Double Trouble",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Pop Fizz",
+            "game": "Giants",
+            "series": 1,
+            "baseName": "Pop Fizz",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Pop Fizz",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Ignitor",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Ignitor",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Ignitor",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Eruptor",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Eruptor",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Eruptor",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Flameslinger",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Flameslinger",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Flameslinger",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Hot Dog",
+            "game": "Giants",
+            "series": 1,
+            "baseName": "Hot Dog",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Hot Dog",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Slam Bam",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Slam Bam",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Slam Bam",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Zap",
+            "game": "Giants",
+            "series": 2,
             "baseName": "Zap",
             "isChecked": false,
-            "varientText": "Chase",
+            "varientText": "",
             "statsName": "Zap",
             "worksWithSpyrosAdventure": true,
             "worksWithGiants": true,
@@ -1197,14 +1510,2336 @@
         },
 
         {
-            "name": "Glow-in-the-dark Warnado",
-            "game": "Spyro's Adventure",
-            "series": 0,
-            "baseName": "Warnado",
+            "name": "Gill Grunt",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Gill Grunt",
             "isChecked": false,
-            "varientText": "Chase",
+            "varientText": "",
+            "statsName": "Gill Grunt",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Chill",
+            "game": "Giants",
+            "series": 1,
+            "baseName": "Chill",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Chill",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Cynder",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Cynder",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Cynder",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Chop Chop",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Chop Chop",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Chop Chop",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Hex",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Hex",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Hex",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Fright Rider",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Fright Rider",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Fright Rider",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Drill Sergeant",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Drill Sergeant",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Drill Sergeant",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Trigger Happy",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Trigger Happy",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Trigger Happy",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Drobot",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Drobot",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Drobot",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Sprocket",
+            "game": "Giants",
+            "series": 1,
+            "baseName": "Sprocket",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Sprocket",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Stealth Elf",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Stealth Elf",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Stealth Elf",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Zook",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Zook",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Zook",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Stump Smash",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Stump Smash",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Stump Smash",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Shroomboom",
+            "game": "Giants",
+            "series": 1,
+            "baseName": "Shroomboom",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Shroomboom",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Terrafin",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Terrafin",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Terrafin",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Bash",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Bash",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Bash",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Prism Break",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Prism Break",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Prism Break",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Flashwing",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Flashwing",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Flashwing",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Sonic Boom",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Sonic Boom",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Sonic Boom",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Whirlwind",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Whirlwind",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Whirlwind",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Lightning Rod",
+            "game": "Giants",
+            "series": 2,
+            "baseName": "Lightning Rod",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Lightning Rod",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Jet-Vac",
+            "game": "Giants",
+            "series": 1,
+            "baseName": "Jet-Vac",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Jet-Vac",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+
+    
+        {
+            "name": "Hoot Loop",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Hoot Loop",
+            "isChecked": false,
+            "varientText": "Swappers",
+            "statsName": "Hoot Loop",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Trap Shadow",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Trap Shadow",
+            "isChecked": false,
+            "varientText": "Swappers",
+            "statsName": "Trap Shadow",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Blast Zone",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Blast Zone",
+            "isChecked": false,
+            "varientText": "Swappers",
+            "statsName": "Blast Zone",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Fire Kraken",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Fire Kraken",
+            "isChecked": false,
+            "varientText": "Swappers",
+            "statsName": "Fire Kraken",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Wash Buckler",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Wash Buckler",
+            "isChecked": false,
+            "varientText": "Swappers",
+            "statsName": "Wash Buckler",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Freeze Blade",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Freeze Blade",
+            "isChecked": false,
+            "varientText": "Swappers",
+            "statsName": "Freeze Blade",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Rattle Shake",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Rattle Shake",
+            "isChecked": false,
+            "varientText": "Swappers",
+            "statsName": "Rattle Shake",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Night Shift",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Night Shift",
+            "isChecked": false,
+            "varientText": "Swappers",
+            "statsName": "Night Shift",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Magna Charge",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Magna Charge",
+            "isChecked": false,
+            "varientText": "Swappers",
+            "statsName": "Magna Charge",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Spy Rise",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Spy Rise",
+            "isChecked": false,
+            "varientText": "Swappers",
+            "statsName": "Spy Rise",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Stink Bomb",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Stink Bomb",
+            "isChecked": false,
+            "varientText": "Swappers",
+            "statsName": "Stink Bomb",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Grilla Drilla",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Grilla Drilla",
+            "isChecked": false,
+            "varientText": "Swappers",
+            "statsName": "Grilla Drilla",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Rubble Rouser",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Rubble Rouser",
+            "isChecked": false,
+            "varientText": "Swappers",
+            "statsName": "Rubble Rouser",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Doom Stone",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Doom Stone",
+            "isChecked": false,
+            "varientText": "Swappers",
+            "statsName": "Doom Stone",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Free Ranger",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Free Ranger",
+            "isChecked": false,
+            "varientText": "Swappers",
+            "statsName": "Free Ranger",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Boom Jet",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Boom Jet",
+            "isChecked": false,
+            "varientText": "Swappers",
+            "statsName": "Boom Jet",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Mega Ram Spyro",
+            "game": "Swap Force",
+            "series": 3,
+            "baseName": "Spyro",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Spyro",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Super Gulp Pop Fizz",
+            "game": "Swap Force",
+            "series": 2,
+            "baseName": "Pop Fizz",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Pop Fizz",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Dune Bug",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Dune Bug",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Dune Bug",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Star Strike",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Star Strike",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Star Strike",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+
+        {
+            "name": "Lava Barf Eruptor",
+            "game": "Swap Force",
+            "series": 3,
+            "baseName": "Eruptor",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Eruptor",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Fire Bone Hot Dog",
+            "game": "Swap Force",
+            "series": 2,
+            "baseName": "Hot Dog",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Hot Dog",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Fryno",
+            "game": "Swap Force",
+            "series": 1,
+            "baseName": "Fryno",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Fryno",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Smolderdash",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Smolderdash",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Smolderdash",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Anchors Away Gill Grunt",
+            "game": "Swap Force",
+            "series": 3,
+            "baseName": "Gill Grunt",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Gill Grunt",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Blizzard Chill",
+            "game": "Swap Force",
+            "series": 2,
+            "baseName": "Chill",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Chill",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Rip Tide",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Rip Tide",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Rip Tide",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Punk Shock",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Punk Shock",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Punk Shock",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Twin Blade Chop Chop",
+            "game": "Swap Force",
+            "series": 3,
+            "baseName": "Chop Chop",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Chop Chop",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Phantom Cynder",
+            "game": "Swap Force",
+            "series": 3,
+            "baseName": "Cynder",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Cynder",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Roller Brawl",
+            "game": "Swap Force",
+            "series": 1,
+            "baseName": "Roller Brawl",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Roller Brawl",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Grim Creeper",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Grim Creeper",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Grim Creeper",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+
+        {
+            "name": "Big Bang Trigger Happy",
+            "game": "Swap Force",
+            "series": 3,
+            "baseName": "Trigger Happy",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Trigger Happy",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Heavy Duty Sprocket",
+            "game": "Swap Force",
+            "series": 2,
+            "baseName": "Sprocket",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Sprocket",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Wind-Up",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Wind-Up",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Wind-Up",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Countdown",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Countdown",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Countdown",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Ninja Stealth Elf",
+            "game": "Swap Force",
+            "series": 3,
+            "baseName": "Stealth Elf",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Stealth Elf",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Thorn Horn Camo",
+            "game": "Swap Force",
+            "series": 2,
+            "baseName": "Camo",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Camo",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Zoo Lou",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Zoo Lou",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Zoo Lou",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Bumble Blast",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Bumble Blast",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Bumble Blast",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Hyper Beam Prism Break",
+            "game": "Swap Force",
+            "series": 3,
+            "baseName": "Prism Break",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Prism Break",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Knockout Terrafin",
+            "game": "Swap Force",
+            "series": 3,
+            "baseName": "Terrafin",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Terrafin",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Scorp",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Scorp",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Scorp",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Slobber Tooth",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Slobber Tooth",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Slobber Tooth",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+    
+        {
+            "name": "Horn Blast Whirlwind",
+            "game": "Swap Force",
+            "series": 3,
+            "baseName": "Whirlwind",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Whirlwind",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Turbo Jet-Vac",
+            "game": "Swap Force",
+            "series": 2,
+            "baseName": "Jet-Vac",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Jet-Vac",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Pop Thorn",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Pop Thorn",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Pop Thorn",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Scratch",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Scratch",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Scratch",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+
+
+
+        {
+            "name": "LightCore Pop Fizz",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Pop Fizz",
+            "isChecked": false,
+            "varientText": "LightCore",
+            "statsName": "Pop Fizz",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "LightCore Eruptor",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Eruptor",
+            "isChecked": false,
+            "varientText": "LightCore",
+            "statsName": "Eruptor",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "LightCore Chill",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Chill",
+            "isChecked": false,
+            "varientText": "LightCore",
+            "statsName": "Chill",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "LightCore Hex",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Hex",
+            "isChecked": false,
+            "varientText": "LightCore",
+            "statsName": "Hex",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "LightCore Drobot",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Drobot",
+            "isChecked": false,
+            "varientText": "LightCore",
+            "statsName": "Drobot",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "LightCore Shroomboom",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Shroomboom",
+            "isChecked": false,
+            "varientText": "LightCore",
+            "statsName": "Shroomboom",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "LightCore Prism Break",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Prism Break",
+            "isChecked": false,
+            "varientText": "LightCore",
+            "statsName": "Prism Break",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "LightCore Jet-Vac",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Jet-Vac",
+            "isChecked": false,
+            "varientText": "LightCore",
+            "statsName": "Jet-Vac",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "LightCore Star Strike",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "LightCore Star Strike",
+            "isChecked": false,
+            "varientText": "LightCore",
+            "statsName": "Star Strike",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "LightCore Smolderdash",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "LightCore Smolderdash",
+            "isChecked": false,
+            "varientText": "LightCore",
+            "statsName": "Smolderdash",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "LightCore Wham-Shell",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "LightCore Wham-Shell",
+            "isChecked": false,
+            "varientText": "LightCore",
+            "statsName": "Wham-Shell",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "LightCore Grim Creeper",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "LightCore Grim Creeper",
+            "isChecked": false,
+            "varientText": "LightCore",
+            "statsName": "Grim Creeper",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "LightCore Countdown",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "LightCore Countdown",
+            "isChecked": false,
+            "varientText": "LightCore",
+            "statsName": "Countdown",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "LightCore Bumble Blast",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "LightCore Bumble Blast",
+            "isChecked": false,
+            "varientText": "LightCore",
+            "statsName": "Bumble Blast",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "LightCore Flashwing",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "LightCore Flashwing",
+            "isChecked": false,
+            "varientText": "LightCore",
+            "statsName": "Flashwing",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "LightCore Warnado",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "LightCore Warnado",
+            "isChecked": false,
+            "varientText": "LightCore",
             "statsName": "Warnado",
             "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+        
+
+        
+
+        {
+            "name": "Sidekick Mini Jini",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Ninjini",
+            "isChecked": false,
+            "varientText": "Sidekick",
+            "statsName": "None Magic",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Sidekick Thumpling",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Thumpback",
+            "isChecked": false,
+            "varientText": "Sidekick",
+            "statsName": "None Water",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Sidekick Eye Small",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Eye Brawl",
+            "isChecked": false,
+            "varientText": "Sidekick",
+            "statsName": "None Death",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Sidekick Barkley",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Tree Rex",
+            "isChecked": false,
+            "varientText": "Sidekick",
+            "statsName": "None Life",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+
+        
+
+        {
+            "name": "Dragonfire Cannon",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Dragonfire Cannon",
+            "isChecked": false,
+            "varientText": "Magic Item",
+            "statsName": "Magic Item",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Golden Dragonfire Cannon",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Golden Dragonfire Cannon",
+            "isChecked": false,
+            "varientText": "Magic Item",
+            "statsName": "Magic Item",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Platinum Treasure Chest",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Platinum Treasure Chest",
+            "isChecked": false,
+            "varientText": "Magic Item",
+            "statsName": "Magic Item",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Scorpion Striker Catapult",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Scorpion Striker Catapult",
+            "isChecked": false,
+            "varientText": "Magic Item",
+            "statsName": "Magic Item",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Arkeyan Crossbow",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Magic Item",
+            "isChecked": false,
+            "varientText": "Magic Item",
+            "statsName": "Magic Item",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Battle Hammer",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Magic Item",
+            "isChecked": false,
+            "varientText": "Magic Item",
+            "statsName": "Magic Item",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Fiery Forge",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Magic Item",
+            "isChecked": false,
+            "varientText": "Magic Item",
+            "statsName": "Magic Item",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Groove Machine",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Magic Item",
+            "isChecked": false,
+            "varientText": "Magic Item",
+            "statsName": "Magic Item",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Platinum Sheep",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Magic Item",
+            "isChecked": false,
+            "varientText": "Magic Item",
+            "statsName": "Magic Item",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Sheep Wreck Island",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Magic Item",
+            "isChecked": false,
+            "varientText": "Magic Item",
+            "statsName": "Magic Item",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Sky Diamond",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Magic Item",
+            "isChecked": false,
+            "varientText": "Magic Item",
+            "statsName": "Magic Item",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Tower of Time",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Magic Item",
+            "isChecked": false,
+            "varientText": "Magic Item",
+            "statsName": "Magic Item",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "UFO Hat",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Magic Item",
+            "isChecked": false,
+            "varientText": "Magic Item",
+            "statsName": "Magic Item",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        
+
+        {
+            "name": "Dark Spyro",
+            "game": "Swap Force",
+            "series": 3,
+            "baseName": "Spyro",
+            "isChecked": false,
+            "varientText": "Dark",
+            "statsName": "Spyro",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Dark Blast Zone",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Blast Zone",
+            "isChecked": false,
+            "varientText": "Dark",
+            "statsName": "Blast Zone",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Dark Wash Buckler",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Wash Buckler",
+            "isChecked": false,
+            "varientText": "Dark",
+            "statsName": "Wash Buckler",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Dark Stealth Elf",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Stealth Elf",
+            "isChecked": false,
+            "varientText": "Dark",
+            "statsName": "Stealth Elf",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Dark Slobber Tooth",
+            "game": "Swap Force",
+            "series": 0,
+            "baseName": "Slobber Tooth",
+            "isChecked": false,
+            "varientText": "Dark",
+            "statsName": "Slobber Tooth",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+
+        
+
+        {
+            "name": "Legendary Bouncer",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Bouncer",
+            "isChecked": false,
+            "varientText": "Legendary",
+            "statsName": "Bouncer",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Legendary LightCore Chill",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Chill",
+            "isChecked": false,
+            "varientText": "Legendary",
+            "statsName": "Chill",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Legendary Ignitor",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Ignitor",
+            "isChecked": false,
+            "varientText": "Legendary",
+            "statsName": "Ignitor",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Legendary Jet-Vac",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Jet-Vac",
+            "isChecked": false,
+            "varientText": "Legendary",
+            "statsName": "Jet-Vac",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Legendary Slam Bam",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Slam Bam",
+            "isChecked": false,
+            "varientText": "Legendary",
+            "statsName": "Slam Bam",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Legendary Stealth Elf",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Stealth Elf",
+            "isChecked": false,
+            "varientText": "Legendary",
+            "statsName": "Stealth Elf",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Scarlet Ninjini",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Ninjini",
+            "isChecked": false,
+            "varientText": "In-Game",
+            "statsName": "Ninjini",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Gnarly Tree Rex",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Tree Rex",
+            "isChecked": false,
+            "varientText": "In-Game",
+            "statsName": "Tree Rex",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Granite Crusher",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Crusher",
+            "isChecked": false,
+            "varientText": "In-Game",
+            "statsName": "Crusher",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Punch Pop Fizz",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Pop Fizz",
+            "isChecked": false,
+            "varientText": "In-Game",
+            "statsName": "Pop Fizz",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Royal Double Trouble",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Double Trouble",
+            "isChecked": false,
+            "varientText": "In-Game",
+            "statsName": "Double Trouble",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Molten Hot Dog",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Hot Dog",
+            "isChecked": false,
+            "varientText": "In-Game",
+            "statsName": "Hot Dog",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Jade Flashwing",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Flashwing",
+            "isChecked": false,
+            "varientText": "In-Game",
+            "statsName": "Flashwing",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Polar Whirlwind",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Whirlwind",
+            "isChecked": false,
+            "varientText": "In-Game",
+            "statsName": "Whirlwind",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+
+
+
+        
+        
+
+        
+
+
+        {
+            "name": "Metallic Blue Chop Chop",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Chop Chop",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Chop Chop",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Metallic Green Gill Grunt",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Gill Grunt",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Gill Grunt",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Metallic Green Shroomboom",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Shroomboom",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Shroomboom",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Metallic Purple Eye-Brawl",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Eye-Brawl",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Eye-Brawl",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Metallic Purple Lightning Rod",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Lightning Rod",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Lightning Rod",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Metallic Purple Wrecking Ball",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Wrecking Ball",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Wrecking Ball",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+
+        
+
+        
+
+        
+
+        
+
+
+        {
+            "name": "Sparkle Hot Head",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Hot Head",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Hot Head",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Sparkle Sonic Boom",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Sonic Boom",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Sonic Boom",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Sparkle Sprocket",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Sprocket",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Sprocket",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+
+        
+
+        {
+            "name": "White Flocked Eruptor",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Eruptor",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Eruptor",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "White Flocked LightCore Prism Break",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Prism Break",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Prism Break",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "White Flocked Stump Smash",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Stump Smash",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Stump Smash",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+
+        
+
+        
+
+        
+
+        
+
+        {
+            "name": "Glow-in-the-dark Fright Rider",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Fright Rider",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Fright Rider",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Glow-in-the-dark Sonic Boom",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Sonic Boom",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Sonic Boom",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+
+        {
+            "name": "Battlegrounds Double Trouble",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Double Trouble",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Double Trouble",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "E3 Hot Dog",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Hot Dog",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Hot Dog",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Employee Edition LightCore Prism Break",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Prism Break",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Prism Break",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Halloween Fright Rider",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Fright Rider",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Fright Rider",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Pumpkin Eye-Brawl",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Eye-Brawl",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Eye-Brawl",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Stone Whirlwind",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Whirlwind",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Whirlwind",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Stone Zook",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Zook",
+            "isChecked": false,
+            "varientText": "Chase",
+            "statsName": "Zook",
+            "worksWithSpyrosAdventure": false,
             "worksWithGiants": true,
             "worksWithSwapForce": true,
             "worksWithTrapTeam": true,
@@ -1213,3 +3848,20 @@
         }
     ]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

@@ -99,6 +99,9 @@ class SkylandersListTableViewController: UITableViewController {
             if varient == "" {
                 varient = "Skylanders"
             }
+            if varient == "Giant" {
+                varient = "Giants"
+            }
             if !sectionsToDisplay.contains(varient) {
                 sectionsToDisplay.append(varient)
             }
@@ -112,9 +115,11 @@ class SkylandersListTableViewController: UITableViewController {
     
     private func getSkylandersSection(varientText: String) -> [NSManagedObject] {
         var sectionSkylanders: [NSManagedObject] = []
-        var ModifiedVarientText = varientText
-        if varientText == "Skylanders" {
-            ModifiedVarientText = ""
+        var ModifiedVarientText: String
+        switch varientText {
+        case "Skylanders": ModifiedVarientText = ""
+        case "Giants": ModifiedVarientText = "Giant"
+        default: ModifiedVarientText = varientText
         }
         
         for skylander in skylandersToDisplay {

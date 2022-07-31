@@ -1,6 +1,5 @@
 {
     "SkylandersStats" : [
-        
         {
             "statsName": "None Magic",
             "element": "Magic",
@@ -483,6 +482,336 @@
             "elementalPower": 25,
             "maxHealth": 540,
             "startingHealth": 270
-        }
+        },
+
+        {
+            "statsName": "Crusher",
+            "element": "Earth",
+            "speed": 20,
+            "armor":  24,
+            "criticalHit": 40,
+            "elementalPower": 25,
+            "maxHealth": 1201,
+            "startingHealth": 470
+        },
+
+        {
+            "statsName": "Granite Crusher",
+            "element": "Earth",
+            "speed": 20,
+            "armor":  30,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 1201,
+            "startingHealth": 470
+        },
+
+        {
+            "statsName": "Flashwing",
+            "element": "Earth",
+            "speed": 43,
+            "armor":  24,
+            "criticalHit": 10,
+            "elementalPower": 25,
+            "maxHealth": 665,
+            "startingHealth": 260
+        },
+
+        {
+            "statsName": "Jade Flashwing",
+            "element": "Earth",
+            "speed": 43,
+            "armor":  30,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 665,
+            "startingHealth": 260
+        },
+
+        {
+            "statsName": "Bouncer",
+            "element": "Tech",
+            "speed": 60,
+            "armor":  24,
+            "criticalHit": 60,
+            "elementalPower": 25,
+            "maxHealth": 1099,
+            "startingHealth": 430
+        },
+
+        {
+            "statsName": "Legendary Bouncer",
+            "element": "Tech",
+            "speed": 60,
+            "armor":  36,
+            "criticalHit": 60,
+            "elementalPower": 25,
+            "maxHealth": 1099,
+            "startingHealth": 430
+        },
+
+        {
+            "statsName": "Sprocket",
+            "element": "Tech",
+            "speed": 43,
+            "armor":  30,
+            "criticalHit": 10,
+            "elementalPower": 25,
+            "maxHealth": 613,
+            "startingHealth": 240
+        },
+
+        {
+            "statsName": "Eye-Brawl",
+            "element": "Undead",
+            "speed": 20,
+            "armor":  30,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 1099,
+            "startingHealth": 430
+        },
+
+        {
+            "statsName": "Fright Rider",
+            "element": "Undead",
+            "speed": 43,
+            "armor":  12,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 690,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Tree Rex",
+            "element": "Life",
+            "speed": 20,
+            "armor":  24,
+            "criticalHit": 40,
+            "elementalPower": 25,
+            "maxHealth": 1099,
+            "startingHealth": 430
+        },
+
+        {
+            "statsName": "Gnarly Tree Rex",
+            "element": "Life",
+            "speed": 20,
+            "armor":  30,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 1099,
+            "startingHealth": 430
+        },
+
+        {
+            "statsName": "Shroomboom",
+            "element": "Life",
+            "speed": 43,
+            "armor":  18,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 665,
+            "startingHealth": 260
+        },
+
+        {
+            "statsName": "Legendary Stealth Elf",
+            "element": "Life",
+            "speed": 50,
+            "armor":  18,
+            "criticalHit": 70,
+            "elementalPower": 25,
+            "maxHealth": 690,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Hot Head",
+            "element": "Fire",
+            "speed": 20,
+            "armor":  12,
+            "criticalHit": 80,
+            "elementalPower": 25,
+            "maxHealth": 1099,
+            "startingHealth": 410
+        },
+
+        {
+            "statsName": "Hot Dog",
+            "element": "Fire",
+            "speed": 43,
+            "armor":  6,
+            "criticalHit": 60,
+            "elementalPower": 25,
+            "maxHealth": 639,
+            "startingHealth": 250
+        },
+
+        {
+            "statsName": "Molten Hot Dog",
+            "element": "Fire",
+            "speed": 43,
+            "armor":  12,
+            "criticalHit": 70,
+            "elementalPower": 25,
+            "maxHealth": 639,
+            "startingHealth": 250
+        },
+
+        {
+            "statsName": "Legendary Ignitor",
+            "element": "Fire",
+            "speed": 43,
+            "armor":  24,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 613,
+            "startingHealth": 240
+        },
+
+        {
+            "statsName": "Ninjini",
+            "element": "Magic",
+            "speed": 60,
+            "armor":  48,
+            "criticalHit": 80,
+            "elementalPower": 25,
+            "maxHealth": 1048,
+            "startingHealth": 410
+        },
+
+        {
+            "statsName": "Scarlet Ninjini",
+            "element": "Magic",
+            "speed": 60,
+            "armor":  54,
+            "criticalHit": 90,
+            "elementalPower": 25,
+            "maxHealth": 1048,
+            "startingHealth": 410
+        },
+
+        {
+            "statsName": "Pop Fizz",
+            "element": "Magic",
+            "speed": 43,
+            "armor":  18,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 690,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Punch Pop Fizz",
+            "element": "Magic",
+            "speed": 43,
+            "armor":  24,
+            "criticalHit": 40,
+            "elementalPower": 25,
+            "maxHealth": 690,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Royal Double Trouble",
+            "element": "Magic",
+            "speed": 35,
+            "armor":  18,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 639,
+            "startingHealth": 250
+        },
+
+        {
+            "statsName": "Swarm",
+            "element": "Air",
+            "speed": 20,
+            "armor":  12,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 1022,
+            "startingHealth": 400
+        },
+
+        {
+            "statsName": "Jet-Vac",
+            "element": "Air",
+            "speed": 50,
+            "armor":  12,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 613,
+            "startingHealth": 240
+        },
+
+        {
+            "statsName": "Legendary Jet-Vac",
+            "element": "Air",
+            "speed": 50,
+            "armor":  18,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 613,
+            "startingHealth": 240
+        },
+
+        {
+            "statsName": "Polar Whirlwind",
+            "element": "Air",
+            "speed": 50,
+            "armor":  18,
+            "criticalHit": 70,
+            "elementalPower": 25,
+            "maxHealth": 690,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Thumpback",
+            "element": "Water",
+            "speed": 20,
+            "armor":  30,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 1176,
+            "startingHealth": 460
+        },
+
+        {
+            "statsName": "Chill",
+            "element": "Water",
+            "speed": 43,
+            "armor":  24,
+            "criticalHit": 10,
+            "elementalPower": 25,
+            "maxHealth": 665,
+            "startingHealth": 260
+        },
+
+        {
+            "statsName": "Legendary Chill",
+            "element": "Water",
+            "speed": 43,
+            "armor":  36,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 665,
+            "startingHealth": 260
+        },
+
+        {
+            "statsName": "Legendary Slam Bam",
+            "element": "Water",
+            "speed": 35,
+            "armor":  36,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 792,
+            "startingHealth": 310
+        },
     ]
 }
