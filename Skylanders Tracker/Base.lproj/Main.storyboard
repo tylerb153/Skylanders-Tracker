@@ -90,7 +90,7 @@
                         <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="Search for a Skylander" id="6tf-dS-H86">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
                         </searchBar>
                         <connections>
                             <outlet property="dataSource" destination="65o-ky-9rp" id="bFY-6N-fuv"/>
@@ -335,7 +335,7 @@
                         <subviews>
                             <searchBar contentMode="redraw" placeholder="Search for a Skylander" translatesAutoresizingMaskIntoConstraints="NO" id="gsC-5x-rze">
                                 <rect key="frame" x="0.0" y="88" width="414" height="51"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="search"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
                                 <scopeButtonTitles>
                                     <string>Title</string>
                                     <string>Title</string>
