@@ -22,15 +22,15 @@
 		2F10582927CB8FF500CF67CF /* SkylandersStatsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10582827CB8FF500CF67CF /* SkylandersStatsList.swift */; };
 		2F2A5FCD27CB88B000B046CB /* SkylanderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2A5FCC27CB88B000B046CB /* SkylanderObject.swift */; };
 		2F2A5FCF27CB88EE00B046CB /* SkylandersStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2A5FCE27CB88EE00B046CB /* SkylandersStats.swift */; };
+		2F2F415B28A479AB00FDF1AE /* Skylanders Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F2F415A28A479AB00FDF1AE /* Skylanders Data.json */; };
 		2F39382727C8C4AB005C5D18 /* SkylanderSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F39382627C8C4AB005C5D18 /* SkylanderSelectCell.xib */; };
 		2F39382927C8C5D5005C5D18 /* SkylanderSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39382827C8C5D5005C5D18 /* SkylanderSelectCell.swift */; };
-		2F5A3BB12891CFD700769296 /* Skylanders Stats.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F5A3BAF2891CFD700769296 /* Skylanders Stats.json */; };
+		2F6280DA28A04BC100319D03 /* Skylanders Stats.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F6280D928A04BC100319D03 /* Skylanders Stats.json */; };
 		2FD970B227C3620300283528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD970B127C3620300283528 /* AppDelegate.swift */; };
 		2FD970B427C3620300283528 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD970B327C3620300283528 /* SceneDelegate.swift */; };
 		2FD970B927C3620300283528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD970B727C3620300283528 /* Main.storyboard */; };
 		2FD970BB27C3620400283528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD970BA27C3620400283528 /* Assets.xcassets */; };
 		2FD970BE27C3620400283528 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD970BC27C3620400283528 /* LaunchScreen.storyboard */; };
-		2FE6E14B28972E7F00DD3C1A /* Skylanders Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FE6E14A28972E7F00DD3C1A /* Skylanders Data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,9 +49,10 @@
 		2F10582827CB8FF500CF67CF /* SkylandersStatsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylandersStatsList.swift; sourceTree = "<group>"; };
 		2F2A5FCC27CB88B000B046CB /* SkylanderObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylanderObject.swift; sourceTree = "<group>"; };
 		2F2A5FCE27CB88EE00B046CB /* SkylandersStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylandersStats.swift; sourceTree = "<group>"; };
+		2F2F415A28A479AB00FDF1AE /* Skylanders Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Skylanders Data.json"; sourceTree = "<group>"; };
 		2F39382627C8C4AB005C5D18 /* SkylanderSelectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkylanderSelectCell.xib; sourceTree = "<group>"; };
 		2F39382827C8C5D5005C5D18 /* SkylanderSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylanderSelectCell.swift; sourceTree = "<group>"; };
-		2F5A3BAF2891CFD700769296 /* Skylanders Stats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Skylanders Stats.json"; sourceTree = "<group>"; };
+		2F6280D928A04BC100319D03 /* Skylanders Stats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Skylanders Stats.json"; sourceTree = "<group>"; };
 		2FD970AE27C3620300283528 /* Skylanders Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skylanders Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD970B127C3620300283528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FD970B327C3620300283528 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +60,6 @@
 		2FD970BA27C3620400283528 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FD970BD27C3620400283528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FD970BF27C3620400283528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FE6E14A28972E7F00DD3C1A /* Skylanders Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Skylanders Data.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +82,8 @@
 				2F10582627CB8CA300CF67CF /* SkylandersObjectList.swift */,
 				2F10582827CB8FF500CF67CF /* SkylandersStatsList.swift */,
 				2F2A5FCE27CB88EE00B046CB /* SkylandersStats.swift */,
-				2FE6E14A28972E7F00DD3C1A /* Skylanders Data.json */,
-				2F5A3BAF2891CFD700769296 /* Skylanders Stats.json */,
+				2F6280D928A04BC100319D03 /* Skylanders Stats.json */,
+				2F2F415A28A479AB00FDF1AE /* Skylanders Data.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -210,8 +210,8 @@
 				2FD970B927C3620300283528 /* Main.storyboard in Resources */,
 				2F0F5D1427C37EC100FB29FC /* SkylanderCell.xib in Resources */,
 				2F0F5D1627C383C100FB29FC /* GameCell.xib in Resources */,
-				2FE6E14B28972E7F00DD3C1A /* Skylanders Data.json in Resources */,
-				2F5A3BB12891CFD700769296 /* Skylanders Stats.json in Resources */,
+				2F2F415B28A479AB00FDF1AE /* Skylanders Data.json in Resources */,
+				2F6280DA28A04BC100319D03 /* Skylanders Stats.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -813,5 +813,16 @@
             "maxHealth": 792,
             "startingHealth": 310
         },
+
+        {
+            "statsName": "Hoot Loop",
+            "element": "Magic",
+            "speed": 0,
+            "armor":  0,
+            "criticalHit": 0,
+            "elementalPower": 0,
+            "maxHealth": 0,
+            "startingHealth": 0
+        }
     ]
 }

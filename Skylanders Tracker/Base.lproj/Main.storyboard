@@ -335,11 +335,22 @@
                         <subviews>
                             <searchBar contentMode="redraw" placeholder="Search for a Skylander" translatesAutoresizingMaskIntoConstraints="NO" id="gsC-5x-rze">
                                 <rect key="frame" x="0.0" y="88" width="414" height="51"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="search"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="JVV-Oa-RAx" id="wjI-Ta-Gap"/>
+                                </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Pfn-YL-3Dv">
                                 <rect key="frame" x="0.0" y="147" width="414" height="749"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="JVV-Oa-RAx" id="tPs-hH-q0g"/>
+                                    <outlet property="delegate" destination="JVV-Oa-RAx" id="fT7-zQ-UTD"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6ff-aq-Scz"/>
@@ -356,7 +367,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Search" largeTitleDisplayMode="never" id="0dS-Yj-17t"/>
                     <connections>
-                        <segue destination="Xum-Ah-VWP" kind="show" identifier="SearchedSkylander" id="j9q-D0-eET"/>
+                        <outlet property="searchBar" destination="gsC-5x-rze" id="p5P-42-sRu"/>
+                        <outlet property="tableView" destination="Pfn-YL-3Dv" id="KU3-cp-Icj"/>
+                        <segue destination="Xum-Ah-VWP" kind="show" identifier="DisplaySkylander" id="j9q-D0-eET"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gn7-vV-o2I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -383,8 +396,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Fjb-27-xG1"/>
-        <segue reference="Ve8-fG-c2C"/>
+        <segue reference="j9q-D0-eET"/>
+        <segue reference="4Lc-0q-Bbt"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="gear" catalog="system" width="128" height="119"/>
