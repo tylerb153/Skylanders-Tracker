@@ -18,6 +18,7 @@ class SearchViewController: UIViewController {
     
     var skylanderToSend: NSManagedObject?
     var searchText: String = ""
+    var nothingFound = false
     
     
     override func viewDidLoad() {
@@ -27,8 +28,11 @@ class SearchViewController: UIViewController {
 //        print(skylandersList)
 //        print(skylandersCount)
         
-        let cellNib = UINib(nibName: "SkylanderCell", bundle: nil)
+        var cellNib = UINib(nibName: "SkylanderCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "SkylanderCell")
+        
+        cellNib = UINib(nibName: "NothingFoundCell", bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: "NothingFoundCell")
         
         tableView.reloadData()
     }
@@ -79,10 +83,24 @@ class SearchViewController: UIViewController {
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        print(skylandersCount)
+        if skylandersCount == 0 {
+//            print("Nothing Found")
+            nothingFound = true
+            return 1
+        }
+        nothingFound = false
         return skylandersCount
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if nothingFound == true {
+            let cellIdentifier = "NothingFoundCell"
+            tableView.rowHeight = 44
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)!
+            return cell
+        }
+        
+        
         let cellIdentifier = "SkylanderCell"
         tableView.rowHeight = 66
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! SkylanderCell
@@ -91,9 +109,11 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        skylanderToSend = skylandersToDisplay[indexPath.row]
-        self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
-        tableView.deselectRow(at: indexPath, animated: true)
+        if !nothingFound {
+            skylanderToSend = skylandersToDisplay[indexPath.row]
+            self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
 }
 
