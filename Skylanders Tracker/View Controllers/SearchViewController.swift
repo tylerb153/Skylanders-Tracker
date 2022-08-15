@@ -31,7 +31,6 @@ class SearchViewController: UIViewController {
         tableView.register(cellNib, forCellReuseIdentifier: "SkylanderCell")
         
         tableView.reloadData()
-//        print("3")
     }
     
 // MARK: - Navigation
@@ -109,5 +108,19 @@ extension SearchViewController:UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
         tableView.reloadData()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
+        searchBar.setShowsCancelButton(true, animated: true)
+        return true
+    }
+    
+    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
+        searchBar.setShowsCancelButton(false, animated: true)
+        return true
     }
 }
