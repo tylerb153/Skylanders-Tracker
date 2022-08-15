@@ -60,7 +60,7 @@
                                     <action selector="deleteData" destination="gcy-bb-8iw" id="4gQ-PE-FPl"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Settings" image="gear" catalog="system" style="plain" id="mY9-ac-g7z"/>
+                            <barButtonItem title="Settings" image="gear" catalog="system" id="mY9-ac-g7z"/>
                         </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="F0Y-zv-Pxb">
                             <connections>
@@ -260,6 +260,7 @@
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WnW-N1-i46" secondAttribute="trailing" constant="8" id="gT4-12-0dm"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m95-bj-f8K" secondAttribute="trailing" constant="8" id="jSU-Yg-z2q"/>
                                     <constraint firstAttribute="bottom" secondItem="IEQ-51-60a" secondAttribute="bottom" constant="20" symbolic="YES" id="lIL-2Q-fdx"/>
+                                    <constraint firstItem="gyd-yf-8dX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VkJ-aH-uqU" secondAttribute="trailing" constant="18" id="rp7-vO-LHl"/>
                                     <constraint firstItem="m95-bj-f8K" firstAttribute="leading" secondItem="IEQ-51-60a" secondAttribute="trailing" constant="16" id="sOU-Le-v9A"/>
                                     <constraint firstItem="a6y-m3-ehr" firstAttribute="leading" secondItem="WnW-N1-i46" secondAttribute="leading" id="t6N-0d-Mqq"/>
                                     <constraint firstItem="WnW-N1-i46" firstAttribute="centerY" secondItem="9zE-HP-tyo" secondAttribute="centerY" id="v5P-n1-ll7"/>
