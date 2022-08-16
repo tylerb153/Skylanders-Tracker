@@ -118,7 +118,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 //MARK: Search Bar Delegate
-extension SearchViewController:UISearchBarDelegate {
+extension SearchViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         self.searchText = searchText
 //        print(self.searchText)

@@ -14,12 +14,14 @@ class SkylandersListTableViewController: UITableViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     
     var skylandersList: [NSManagedObject] = []
-    lazy var skylandersToDisplay: [NSManagedObject] = getSkylandersToDisplay()
-    lazy var skylandersCount = skylandersToDisplay.count
-    lazy var sectionsToDisplay: [String] = getSections()
+    var skylandersToDisplay: [NSManagedObject]{getSkylandersToDisplay()}
+    var skylandersCount: Int{skylandersToDisplay.count}
+    var sectionsToDisplay: [String] {getSections()}
     var chosenSkylander: String?
     var chosenGame: String?
     var skylanderToSend: NSManagedObject?
+    var searchText: String = ""
+    var nothingFound = false
     
     //MARK: - View did appear
     override func viewDidLoad() {
@@ -64,8 +66,6 @@ class SkylandersListTableViewController: UITableViewController {
         catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
-        skylandersCount = skylandersToDisplay.count
-        sectionsToDisplay = getSections()
 //        print(skylandersList)
     }
     
@@ -75,7 +75,15 @@ class SkylandersListTableViewController: UITableViewController {
             for skylander in skylandersList {
                 let skylanderBaseName = skylander.value(forKey: "baseName") as! String
                 if skylanderBaseName == chosenSkylander {
-                    skylandersToDisplay.append(skylander)
+                    let skylanderName = skylander.value(forKey: "name") as! String
+                    if searchText != ""{
+                        if skylanderName.uppercased().contains(searchText.uppercased()) {
+                            skylandersToDisplay.append(skylander)
+                        }
+                    }
+                    else {
+                        skylandersToDisplay.append(skylander)
+                    }
                 }
             }
         }
@@ -83,13 +91,20 @@ class SkylandersListTableViewController: UITableViewController {
             for skylander in skylandersList {
                 let skylanderGame = skylander.value(forKey: "game") as! String
                 if skylanderGame == chosenGame {
-                    skylandersToDisplay.append(skylander)
+                    let skylanderName = skylander.value(forKey: "name") as! String
+                    if searchText != ""{
+                        if skylanderName.uppercased().contains(searchText.uppercased()) {
+                            skylandersToDisplay.append(skylander)
+                        }
+                    }
+                    else {
+                        skylandersToDisplay.append(skylander)
+                    }
                 }
             }
         }
         return skylandersToDisplay
     }
-    
     
     private func getSections() -> [String] {
         var sectionsToDisplay: [String] = []
@@ -143,26 +158,50 @@ class SkylandersListTableViewController: UITableViewController {
 extension SkylandersListTableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
+        if skylandersCount == 0 {
+//            print("Nothing Found")
+            nothingFound = true
+            return 1
+        }
+        nothingFound = false
         return sectionsToDisplay.count
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if nothingFound {
+            return ""
+        }
         return sectionsToDisplay[section]
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        print(skylandersCount)
+        if skylandersCount == 0 {
+//            print("Nothing Found")
+            nothingFound = true
+            return 1
+        }
+        nothingFound = false
         return getSkylandersSection(varientText: sectionsToDisplay[section]).count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if nothingFound == true {
+            let cellIdentifier = "NothingFoundCell"
+            tableView.rowHeight = 44
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)!
+            return cell
+        }
+        
         let cell = configureCell(varientText: sectionsToDisplay[indexPath.section], row: indexPath.row)
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if !nothingFound {
         skylanderToSend = getSkylandersSection(varientText: sectionsToDisplay[indexPath.section])[indexPath.row]
-        self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
+            self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
+        }
     }
     
     func configureCell(varientText: String, row: Int) -> UITableViewCell {
@@ -171,5 +210,33 @@ extension SkylandersListTableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! SkylanderCell
         cell.configure(for: getSkylandersSection(varientText: varientText)[row])
         return cell
+    }
+}
+
+//MARK: Search Bar Delegate
+extension SkylandersListTableViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        self.searchText = searchText
+//        print(self.searchText)
+        tableView.reloadData()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        tableView.reloadData()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
+        searchBar.setShowsCancelButton(true, animated: true)
+        return true
+    }
+    
+    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
+        searchBar.setShowsCancelButton(false, animated: true)
+        return true
     }
 }

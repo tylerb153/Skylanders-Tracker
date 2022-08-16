@@ -4258,10 +4258,930 @@
             "worksWithTrapTeam": true,
             "worksWithSuperChargers": true,
             "worksWithImaginators": true
+        },
+
+        {
+            "name": "Blastermind",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Blastermind",
+            "isChecked": false,
+            "varientText": "Trap Master",
+            "statsName": "Blastermind",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Enigma",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Enigma",
+            "isChecked": false,
+            "varientText": "Trap Master",
+            "statsName": "Enigma",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Snap Shot",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Snap Shot",
+            "isChecked": false,
+            "varientText": "Trap Master",
+            "statsName": "Snap Shot",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Lob-Star",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Lob-Star",
+            "isChecked": false,
+            "varientText": "Trap Master",
+            "statsName": "Lob-Star",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Wildfire",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Wildfire",
+            "isChecked": false,
+            "varientText": "Trap Master",
+            "statsName": "Wildfire",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Ka-Boom",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Ka-Boom",
+            "isChecked": false,
+            "varientText": "Trap Master",
+            "statsName": "Ka-Boom",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Tuff Luck",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Tuff Luck",
+            "isChecked": false,
+            "varientText": "Trap Master",
+            "statsName": "Tuff Luck",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Bushwhack",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Bushwhack",
+            "isChecked": false,
+            "varientText": "Trap Master",
+            "statsName": "Bushwhack",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Gusto",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Gusto",
+            "isChecked": false,
+            "varientText": "Trap Master",
+            "statsName": "Gusto",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Thunderbolt",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Thunderbolt",
+            "isChecked": false,
+            "varientText": "Trap Master",
+            "statsName": "Thunderbolt",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Jawbreaker",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Jawbreaker",
+            "isChecked": false,
+            "varientText": "Trap Master",
+            "statsName": "Jawbreaker",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Gearshift",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Gearshift",
+            "isChecked": false,
+            "varientText": "Trap Master",
+            "statsName": "Gearshift",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Wallop",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Wallop",
+            "isChecked": false,
+            "varientText": "Trap Master",
+            "statsName": "Wallop",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Head Rush",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Head Rush",
+            "isChecked": false,
+            "varientText": "Trap Master",
+            "statsName": "Head Rush",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Krypt King",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Krypt King",
+            "isChecked": false,
+            "varientText": "Trap Master",
+            "statsName": "Krypt King",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Short Cut",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Short Cut",
+            "isChecked": false,
+            "varientText": "Trap Master",
+            "statsName": "Short Cut",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Knight Light",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Knight Light",
+            "isChecked": false,
+            "varientText": "Trap Master",
+            "statsName": "Knight Light",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Knight Mare",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Knight Mare",
+            "isChecked": false,
+            "varientText": "Trap Master",
+            "statsName": "Knight Mare",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Fizzy Frenzy Pop Fizz",
+            "game": "Trap Team",
+            "series": 3,
+            "baseName": "Pop Fizz",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Pop Fizz",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Deja Vu",
+            "game": "Trap Team",
+            "series": 1,
+            "baseName": "Deja Vu",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Deja Vu",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Cobra Cadabra",
+            "game": "Trap Team",
+            "series": 1,
+            "baseName": "Cobra Cadabra",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Cobra Cadabra",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        
+        {
+            "name": "Tidal Wave Gill Grunt",
+            "game": "Trap Team",
+            "series": 4,
+            "baseName": "Gill Grunt",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Gill Grunt",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+        
+        {
+            "name": "Echo",
+            "game": "Trap Team",
+            "series": 1,
+            "baseName": "Echo",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Echo",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Flip Wreck",
+            "game": "Trap Team",
+            "series": 1,
+            "baseName": "Flip Wreck",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Flip Wreck",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Hog Wild Fryno",
+            "game": "Trap Team",
+            "series": 2,
+            "baseName": "Fryno",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Fryno",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Torch",
+            "game": "Trap Team",
+            "series": 1,
+            "baseName": "Torch",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Torch",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Trail Blazer",
+            "game": "Trap Team",
+            "series": 1,
+            "baseName": "Trail Blazer",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Trail Blazer",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Sure Shot Shroomboom",
+            "game": "Trap Team",
+            "series": 2,
+            "baseName": "Shroomboom",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Shroomboom",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Food Fight",
+            "game": "Trap Team",
+            "series": 1,
+            "baseName": "Food Fight",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Food Fight",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+    
+        {
+            "name": "High Five",
+            "game": "Trap Team",
+            "series": 1,
+            "baseName": "High Five",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "High Five",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+
+        {
+            "name": "Full Blast Jet-Vac",
+            "game": "Trap Team",
+            "series": 3,
+            "baseName": "Jet-Vac",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Jet-Vac",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": true,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Fling Kong",
+            "game": "Trap Team",
+            "series": 1,
+            "baseName": "Fling Kong",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Fling Kong",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Blades",
+            "game": "Trap Team",
+            "series": 1,
+            "baseName": "Blades",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Blades",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Tread Head",
+            "game": "Trap Team",
+            "series": 1,
+            "baseName": "Tread Head",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Tread Head",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Chopper",
+            "game": "Trap Team",
+            "series": 1,
+            "baseName": "Chopper",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Chopper",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Rocky Roll",
+            "game": "Trap Team",
+            "series": 1,
+            "baseName": "Rocky Roll",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Rocky Roll",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Fist Bump",
+            "game": "Trap Team",
+            "series": 1,
+            "baseName": "Fist Bump",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Fist Bump",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Funny Bone",
+            "game": "Trap Team",
+            "series": 1,
+            "baseName": "Funny Bone",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Funny Bone",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Bat Spin",
+            "game": "Trap Team",
+            "series": 1,
+            "baseName": "Bat Spin",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Bat Spin",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Spotlight",
+            "game": "Trap Team",
+            "series": 1,
+            "baseName": "Spotlight",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Spotlight",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Blackout",
+            "game": "Trap Team",
+            "series": 1,
+            "baseName": "Blackout",
+            "isChecked": false,
+            "varientText": "",
+            "statsName": "Blackout",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Mini Jini",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Ninjini",
+            "isChecked": false,
+            "varientText": "Mini",
+            "statsName": "Mini Jini",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Spry",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Spyro",
+            "isChecked": false,
+            "varientText": "Mini",
+            "statsName": "Spry",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Thumpling",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Thumpback",
+            "isChecked": false,
+            "varientText": "Mini",
+            "statsName": "Thumpling",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Gill Runt",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Gill Grunt",
+            "isChecked": false,
+            "varientText": "Mini",
+            "statsName": "Gill Runt",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Small Fry",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Fryno",
+            "isChecked": false,
+            "varientText": "Mini",
+            "statsName": "Small Fry",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        
+        {
+            "name": "Weeruptor",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Eruptor",
+            "isChecked": false,
+            "varientText": "Mini",
+            "statsName": "Weeruptor",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Whisper Elf",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Stealth Elf",
+            "isChecked": false,
+            "varientText": "Mini",
+            "statsName": "Whisper Elf",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Barkley",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Tree Rex",
+            "isChecked": false,
+            "varientText": "Mini",
+            "statsName": "Barkley",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Pet Vac",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Jet-Vac",
+            "isChecked": false,
+            "varientText": "Mini",
+            "statsName": "Pet Vac",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Breeze",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Whirlwind",
+            "isChecked": false,
+            "varientText": "Mini",
+            "statsName": "Breeze",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Trigger Snappy",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Trigger Happy",
+            "isChecked": false,
+            "varientText": "Mini",
+            "statsName": "Trigger Snappy",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+
+        {
+            "name": "Drobit",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Drobot",
+            "isChecked": false,
+            "varientText": "Mini",
+            "statsName": "Drobit",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Terrabite",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Terrafin",
+            "isChecked": false,
+            "varientText": "Mini",
+            "statsName": "Terrabite",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Bop",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Bash",
+            "isChecked": false,
+            "varientText": "Mini",
+            "statsName": "Bop",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+
+        {
+            "name": "Hijinx",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Hex",
+            "isChecked": false,
+            "varientText": "Mini",
+            "statsName": "Hijinx",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Eye Small",
+            "game": "Trap Team",
+            "series": 0,
+            "baseName": "Eye-Brawl",
+            "isChecked": false,
+            "varientText": "Mini",
+            "statsName": "Eye Small",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
         }
 
 
 
+
+
+        
 
 
 

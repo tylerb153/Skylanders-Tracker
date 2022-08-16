@@ -95,6 +95,9 @@
                                 <string>Title</string>
                                 <string>Title</string>
                             </scopeButtonTitles>
+                            <connections>
+                                <outlet property="delegate" destination="65o-ky-9rp" id="6N8-Kt-CEL"/>
+                            </connections>
                         </searchBar>
                         <connections>
                             <outlet property="dataSource" destination="65o-ky-9rp" id="bFY-6N-fuv"/>
@@ -401,7 +404,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Fjb-27-xG1"/>
+        <segue reference="j9q-D0-eET"/>
         <segue reference="4Lc-0q-Bbt"/>
     </inferredMetricsTieBreakers>
     <resources>
