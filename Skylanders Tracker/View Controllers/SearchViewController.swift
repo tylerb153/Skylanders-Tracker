@@ -111,8 +111,20 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if !nothingFound {
             skylanderToSend = skylandersToDisplay[indexPath.row]
-            self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
+//            self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
             tableView.deselectRow(at: indexPath, animated: true)
+            
+            //Implemented until detail page is finished
+            let checked = skylanderToSend?.value(forKey: "isChecked") as! Bool
+            if checked {
+                skylanderToSend?.setValue(false, forKey: "isChecked")
+            }
+            else {
+                skylanderToSend?.setValue(true, forKey: "isChecked")
+            }
+            tableView.reloadData()
+            
+
         }
     }
 }

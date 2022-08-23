@@ -155,6 +155,7 @@ class SkylandersListTableViewController: UITableViewController {
     }
 }
 
+// MARK: - Table View Delegate
 extension SkylandersListTableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -199,8 +200,19 @@ extension SkylandersListTableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if !nothingFound {
-        skylanderToSend = getSkylandersSection(varientText: sectionsToDisplay[indexPath.section])[indexPath.row]
-            self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
+            skylanderToSend = getSkylandersSection(varientText: sectionsToDisplay[indexPath.section])[indexPath.row]
+//            self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
+            tableView.deselectRow(at: indexPath, animated: true)
+            
+            //Implemented until detail page is made correctly
+            let checked = skylanderToSend?.value(forKey: "isChecked") as! Bool
+            if checked {
+                skylanderToSend?.setValue(false, forKey: "isChecked")
+            }
+            else {
+                skylanderToSend?.setValue(true, forKey: "isChecked")
+            }
+            tableView.reloadData()
         }
     }
     
