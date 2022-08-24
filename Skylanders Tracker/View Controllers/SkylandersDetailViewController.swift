@@ -39,7 +39,7 @@ class SkylandersDetailViewController: UIViewController {
     lazy var image = getImage()
     lazy var game = chosenSkylander!.value(forKey: "game") as! String
     lazy var statsName = chosenSkylander!.value(forKey: "statsName") as! String
-    lazy var varient = chosenSkylander!.value(forKey: "varientText") as! String
+    lazy var variant = chosenSkylander!.value(forKey: "variantText") as! String
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,7 @@ class SkylandersDetailViewController: UIViewController {
         skylanderGame.text = game
         tintGame()
         setLabels()
-        if varient == "Dark" {
+        if variant == "Dark" {
             skylanderImage.backgroundColor = UIColor.black
         }
         skylanderImage.layer.cornerRadius = skylanderImage.bounds.width / 5
@@ -77,8 +77,8 @@ class SkylandersDetailViewController: UIViewController {
     
     private func configureSeries() -> String {
         if series == 0 {
-            let varient = chosenSkylander?.value(forKey: "varientText") as! String
-            return varient
+            let variant = chosenSkylander?.value(forKey: "variantText") as! String
+            return variant
         }
         else {
             return "Series \(series)"

@@ -89,7 +89,7 @@ class DataBuilder {
         skylander.setValue(jsonSkylander.series, forKey: "series")
         skylander.setValue(jsonSkylander.baseName, forKey: "baseName")
         skylander.setValue(jsonSkylander.isChecked, forKey: "isChecked")
-        skylander.setValue(jsonSkylander.varientText, forKey: "varientText")
+        skylander.setValue(jsonSkylander.variantText, forKey: "variantText")
         skylander.setValue(jsonSkylander.statsName, forKey: "statsName")
         skylander.setValue(jsonSkylander.worksWithSpyrosAdventure, forKey: "worksWithSpyrosAdventure")
         skylander.setValue(jsonSkylander.worksWithGiants, forKey: "worksWithGiants")

@@ -83,17 +83,23 @@ class SkylanderCell: UITableViewCell {
 //        let baseName = skylander.value(forKey: "baseName") as! String
         let series = skylander.value(forKey: "series") as! Int
         let check = skylander.value(forKey: "isChecked") as! Bool
+        let variant = skylander.value(forKey: "variantText") as! String
         setName(givenName: name)
         setSeries(givenSeries: series)
-        setImage(givenImage: UIImage(named: configureName(name: name, series: series)))
+        setImage(givenImage: UIImage(named: configureName(name: name, series: series, variant: variant)))
         tintBorder()
         setChecked(givenCheck: check)
     }
     
-    private func configureName(name: String, series: Int) -> String {
+    private func configureName(name: String, series: Int, variant: String) -> String {
 //        return "\(name)1"
         if series == 0 {
-            return "\(name)1"
+            if variant == "Villians" || variant == "Doom Raiders" || variant == "Villian Variants" {
+                return "\(name)V"
+            }
+            else {
+                return "\(name)1"
+            }
         }
         else {
             return "\(name)\(series)"

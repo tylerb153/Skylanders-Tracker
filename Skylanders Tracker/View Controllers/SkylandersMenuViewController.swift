@@ -172,7 +172,7 @@ extension SkylandersMenuViewController: UITableViewDelegate, UITableViewDataSour
         let skylanderToCheckName = skylandersToDisplay[index].value(forKey: "baseName") as! String
         for skylander in skylandersList {
             if skylander.value(forKey: "baseName") as! String == skylanderToCheckName {
-                if skylander.value(forKey: "isChecked") as! Bool && skylander.value(forKey: "varientText") as! String != "Sidekick" {
+                if skylander.value(forKey: "isChecked") as! Bool && skylander.value(forKey: "variantText") as! String != "Sidekick" {
                     return true
                 }
             }
@@ -228,7 +228,7 @@ extension SkylandersMenuViewController {
 //        skylander.setValue("Bash", forKey: "baseName")
 //        skylander.setValue(1, forKey: "series")
 //        skylander.setValue(false, forKey: "isChecked")
-//        skylander.setValue("", forKey: "varientText")
+//        skylander.setValue("", forKey: "variantText")
 //        skylander.setValue("Spyro's Adventure", forKey: "game")
 //        skylander.setValue("Bash", forKey: "statsName")
 ////        skylander.setValue("Giants", forKey: "game")

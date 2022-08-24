@@ -13,7 +13,7 @@ struct SkylanderObject: Codable {
     var series = -1
     var baseName = ""
     var isChecked = false
-    var varientText = ""
+    var variantText = ""
     var statsName = ""
     var worksWithSpyrosAdventure = false
     var worksWithGiants = false

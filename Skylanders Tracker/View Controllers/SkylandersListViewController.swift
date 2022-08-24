@@ -110,15 +110,15 @@ class SkylandersListTableViewController: UITableViewController {
         var sectionsToDisplay: [String] = []
         
         for skylander in skylandersToDisplay {
-            var varient = skylander.value(forKey: "varientText") as! String
-            if varient == "" {
-                varient = "Skylanders"
+            var variant = skylander.value(forKey: "variantText") as! String
+            if variant == "" {
+                variant = "Skylanders"
             }
-            if varient == "Giant" {
-                varient = "Giants"
+            if variant == "Giant" {
+                variant = "Giants"
             }
-            if !sectionsToDisplay.contains(varient) {
-                sectionsToDisplay.append(varient)
+            if !sectionsToDisplay.contains(variant) {
+                sectionsToDisplay.append(variant)
             }
         }
         if let index = sectionsToDisplay.firstIndex(of: "") {
@@ -128,17 +128,17 @@ class SkylandersListTableViewController: UITableViewController {
         return sectionsToDisplay
     }
     
-    private func getSkylandersSection(varientText: String) -> [NSManagedObject] {
+    private func getSkylandersSection(variantText: String) -> [NSManagedObject] {
         var sectionSkylanders: [NSManagedObject] = []
-        var ModifiedVarientText: String
-        switch varientText {
-        case "Skylanders": ModifiedVarientText = ""
-        case "Giants": ModifiedVarientText = "Giant"
-        default: ModifiedVarientText = varientText
+        var ModifiedvariantText: String
+        switch variantText {
+        case "Skylanders": ModifiedvariantText = ""
+        case "Giants": ModifiedvariantText = "Giant"
+        default: ModifiedvariantText = variantText
         }
         
         for skylander in skylandersToDisplay {
-            if skylander.value(forKey: "varientText") as! String == ModifiedVarientText {
+            if skylander.value(forKey: "variantText") as! String == ModifiedvariantText {
                 sectionSkylanders.append(skylander)
             }
         }
@@ -183,7 +183,7 @@ extension SkylandersListTableViewController {
             return 1
         }
         nothingFound = false
-        return getSkylandersSection(varientText: sectionsToDisplay[section]).count
+        return getSkylandersSection(variantText: sectionsToDisplay[section]).count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -194,13 +194,13 @@ extension SkylandersListTableViewController {
             return cell
         }
         
-        let cell = configureCell(varientText: sectionsToDisplay[indexPath.section], row: indexPath.row)
+        let cell = configureCell(variantText: sectionsToDisplay[indexPath.section], row: indexPath.row)
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if !nothingFound {
-            skylanderToSend = getSkylandersSection(varientText: sectionsToDisplay[indexPath.section])[indexPath.row]
+            skylanderToSend = getSkylandersSection(variantText: sectionsToDisplay[indexPath.section])[indexPath.row]
 //            self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
             tableView.deselectRow(at: indexPath, animated: true)
             
@@ -216,11 +216,11 @@ extension SkylandersListTableViewController {
         }
     }
     
-    func configureCell(varientText: String, row: Int) -> UITableViewCell {
+    func configureCell(variantText: String, row: Int) -> UITableViewCell {
         let cellIdentifier = "SkylanderCell"
         tableView.rowHeight = 66
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! SkylanderCell
-        cell.configure(for: getSkylandersSection(varientText: varientText)[row])
+        cell.configure(for: getSkylandersSection(variantText: variantText)[row])
         return cell
     }
 }
