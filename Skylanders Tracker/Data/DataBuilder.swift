@@ -47,7 +47,7 @@ class DataBuilder {
 //                    print(jsonSkylanders)
                 }
                 else {
-                    print("error")
+                    print("error in decode Data")
                 }
             }
            
@@ -57,7 +57,7 @@ class DataBuilder {
 //                print(jsonStats)
             }
             else {
-                print("error")
+                print("error in decode stats")
             }
            
         default: print("Incorrect Data Types")
