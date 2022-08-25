@@ -2419,6 +2419,22 @@
         },
 
         {
+            "name": "Golden Flameslinger",
+            "game": "Giants",
+            "series": 0,
+            "baseName": "Flameslinger",
+            "isChecked": false,
+            "variantText": "",
+            "statsName": "Flameslinger",
+            "worksWithSpyrosAdventure": true,
+            "worksWithGiants": true,
+            "worksWithSwapForce": true,
+            "worksWithTrapTeam": true,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
             "name": "E3 Hot Dog",
             "game": "Giants",
             "series": 0,
