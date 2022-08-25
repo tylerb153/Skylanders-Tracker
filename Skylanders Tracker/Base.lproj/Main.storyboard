@@ -49,19 +49,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Skylanders Menu Placeholder" id="KXS-ev-Jda">
-                        <leftBarButtonItems>
-                            <barButtonItem systemItem="save" id="EL7-PZ-TEt">
-                                <connections>
-                                    <action selector="runJsonParse" destination="gcy-bb-8iw" id="mLe-h0-0Pi"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="trash" id="Ew1-sS-cPD">
-                                <connections>
-                                    <action selector="deleteData" destination="gcy-bb-8iw" id="4gQ-PE-FPl"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Settings" image="gear" catalog="system" id="mY9-ac-g7z"/>
-                        </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="F0Y-zv-Pxb">
                             <connections>
                                 <segue destination="JVV-Oa-RAx" kind="show" id="wTR-98-rET"/>
@@ -408,7 +395,6 @@
         <segue reference="4Lc-0q-Bbt"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="square" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
