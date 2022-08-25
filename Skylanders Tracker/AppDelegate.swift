@@ -24,6 +24,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print(applicationDocumentsDirectory)
         
         _ = persistentContainer
+        
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        let managedContext = appDelegate?.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Skylander")
+        do {
+            let skylandersCount = try managedContext?.count(for: fetchRequest) ?? -1
+            switch skylandersCount {
+            case 0:
+                DataBuilder.saveSkylanders()
+                
+            case -1:
+                print("Error in fetch request")
+                
+            default:
+                print("Skylanders Exist")
+            }
+        }
+        catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
         return true
     }
 
@@ -73,7 +93,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Core Data Saving support
 
-    func saveContext () {
+    func saveContext() {
         let context = persistentContainer.viewContext
         if context.hasChanges {
             do {
@@ -86,6 +106,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
 }
 
