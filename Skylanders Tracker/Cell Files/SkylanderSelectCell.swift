@@ -53,13 +53,19 @@ class SkylanderSelectCell: UITableViewCell {
 //        let name = skylander.value(forKey: "name") as! String
         let baseName = skylander.value(forKey: "baseName") as! String
         let series = skylander.value(forKey: "series") as! Int
+        let variant = skylander.value(forKey: "variantText") as! String
         setName(givenName: baseName)
-        setImage(givenImage: UIImage(named: configureName(name: baseName, series: series)))
+        setImage(givenImage: UIImage(named: configureName(name: baseName, series: series, variant: variant)))
     }
     
-    private func configureName(name: String, series: Int) -> String {
+    private func configureName(name: String, series: Int, variant: String) -> String {
         if series == 0 {
-            return "\(name)1"
+            if variant == "Villians" || variant == "Doom Raiders" || variant == "Villian Variants" {
+                return "\(name)V"
+            }
+            else {
+                return "\(name)1"
+            }
         }
         else {
             return "\(name)\(series)"
