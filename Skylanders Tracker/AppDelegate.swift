@@ -32,7 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let skylandersCount = try managedContext?.count(for: fetchRequest) ?? -1
             switch skylandersCount {
             case 0:
-                DataBuilder.saveSkylanders()
+                print("Added Skylanders")
+//                DataBuilder.saveSkylanders()
                 
             case -1:
                 print("Error in fetch request")

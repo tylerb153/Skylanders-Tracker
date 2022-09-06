@@ -52,10 +52,8 @@ class SkylanderSelectCell: UITableViewCell {
     func configure(for skylander: NSManagedObject) {
 //        let name = skylander.value(forKey: "name") as! String
         let baseName = skylander.value(forKey: "baseName") as! String
-        let series = skylander.value(forKey: "series") as! Int
-        let variant = skylander.value(forKey: "variantText") as! String
         setName(givenName: baseName)
-        setImage(givenImage: UIImage(named: configureName(name: baseName, series: series, variant: variant)))
+        setImage(givenImage: ConfigureImage(skylander: skylander))
     }
     
     private func configureName(name: String, series: Int, variant: String) -> String {

@@ -22,9 +22,11 @@
 		2F10582927CB8FF500CF67CF /* SkylandersStatsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10582827CB8FF500CF67CF /* SkylandersStatsList.swift */; };
 		2F2A5FCD27CB88B000B046CB /* SkylanderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2A5FCC27CB88B000B046CB /* SkylanderObject.swift */; };
 		2F2A5FCF27CB88EE00B046CB /* SkylandersStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2A5FCE27CB88EE00B046CB /* SkylandersStats.swift */; };
+		2F33D9C628BD55D00046B41F /* TrapsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F33D9C528BD55D00046B41F /* TrapsDetailViewController.swift */; };
 		2F39382727C8C4AB005C5D18 /* SkylanderSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F39382627C8C4AB005C5D18 /* SkylanderSelectCell.xib */; };
 		2F39382927C8C5D5005C5D18 /* SkylanderSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39382827C8C5D5005C5D18 /* SkylanderSelectCell.swift */; };
 		2F6280DA28A04BC100319D03 /* Skylanders Stats.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F6280D928A04BC100319D03 /* Skylanders Stats.json */; };
+		2F93F39528BECD0B00444CAC /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F93F39428BECD0B00444CAC /* HelperFunctions.swift */; };
 		2FD970B227C3620300283528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD970B127C3620300283528 /* AppDelegate.swift */; };
 		2FD970B427C3620300283528 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD970B327C3620300283528 /* SceneDelegate.swift */; };
 		2FD970B927C3620300283528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD970B727C3620300283528 /* Main.storyboard */; };
@@ -49,9 +51,11 @@
 		2F10582827CB8FF500CF67CF /* SkylandersStatsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylandersStatsList.swift; sourceTree = "<group>"; };
 		2F2A5FCC27CB88B000B046CB /* SkylanderObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylanderObject.swift; sourceTree = "<group>"; };
 		2F2A5FCE27CB88EE00B046CB /* SkylandersStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylandersStats.swift; sourceTree = "<group>"; };
+		2F33D9C528BD55D00046B41F /* TrapsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrapsDetailViewController.swift; sourceTree = "<group>"; };
 		2F39382627C8C4AB005C5D18 /* SkylanderSelectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkylanderSelectCell.xib; sourceTree = "<group>"; };
 		2F39382827C8C5D5005C5D18 /* SkylanderSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylanderSelectCell.swift; sourceTree = "<group>"; };
 		2F6280D928A04BC100319D03 /* Skylanders Stats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Skylanders Stats.json"; sourceTree = "<group>"; };
+		2F93F39428BECD0B00444CAC /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HelperFunctions.swift; path = "Cell Files/HelperFunctions.swift"; sourceTree = "<group>"; };
 		2FD970AE27C3620300283528 /* Skylanders Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skylanders Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD970B127C3620300283528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FD970B327C3620300283528 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 		2F0F5D7227C6A47B00FB29FC /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2F33D9C528BD55D00046B41F /* TrapsDetailViewController.swift */,
 				2F0F5D1D27C3A20100FB29FC /* SkylandersMenuViewController.swift */,
 				2F0F5D1B27C3955200FB29FC /* SkylandersListViewController.swift */,
 				2F0F5D1727C38DE100FB29FC /* SkylandersDetailViewController.swift */,
@@ -132,6 +137,7 @@
 		2FD970B027C3620300283528 /* Skylanders Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				2F93F39428BECD0B00444CAC /* HelperFunctions.swift */,
 				2FD970B127C3620300283528 /* AppDelegate.swift */,
 				2FD970B327C3620300283528 /* SceneDelegate.swift */,
 				2F0F5D7227C6A47B00FB29FC /* View Controllers */,
@@ -228,12 +234,14 @@
 				2F0F5D1E27C3A20100FB29FC /* SkylandersMenuViewController.swift in Sources */,
 				2F0F5D2227C3A76B00FB29FC /* GameCell.swift in Sources */,
 				2F0F5D1C27C3955200FB29FC /* SkylandersListViewController.swift in Sources */,
+				2F33D9C628BD55D00046B41F /* TrapsDetailViewController.swift in Sources */,
 				2F2A5FCF27CB88EE00B046CB /* SkylandersStats.swift in Sources */,
 				2F0F5D1827C38DE100FB29FC /* SkylandersDetailViewController.swift in Sources */,
 				2F0F5D2A27C3FC4C00FB29FC /* SkylandersList.xcdatamodeld in Sources */,
 				2F2A5FCD27CB88B000B046CB /* SkylanderObject.swift in Sources */,
 				2F0F5D3D27C4044600FB29FC /* DataBuilder.swift in Sources */,
 				2F39382927C8C5D5005C5D18 /* SkylanderSelectCell.swift in Sources */,
+				2F93F39528BECD0B00444CAC /* HelperFunctions.swift in Sources */,
 				2F10582727CB8CA300CF67CF /* SkylandersObjectList.swift in Sources */,
 				2FD970B227C3620300283528 /* AppDelegate.swift in Sources */,
 				2FD970B427C3620300283528 /* SceneDelegate.swift in Sources */,

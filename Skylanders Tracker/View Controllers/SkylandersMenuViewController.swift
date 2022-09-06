@@ -24,7 +24,7 @@ class SkylandersMenuViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        refreshData()
+        reloadData()
         tableView.reloadData()
     }
     
@@ -47,7 +47,7 @@ class SkylandersMenuViewController: UIViewController {
         cellNib = UINib(nibName: "SkylanderCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "SkylanderCell")
         
-        refreshData()
+        reloadData()
         tableView.reloadData()
     }
     
@@ -61,24 +61,14 @@ class SkylandersMenuViewController: UIViewController {
             navigationItem.title = "Skylanders"
             segmentSelected = 1
         }
-        refreshData()
+        reloadData()
         tableView.reloadData()
     }
     
     // MARK: - Data
     
-    func refreshData() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Skylander")
-        do {
-            skylandersList = try managedContext.fetch(fetchRequest)
-        }
-        catch let error as NSError {
-            print("Could not fetch. \(error), \(error.userInfo)")
-        }
+    func reloadData() {
+        skylandersList = RefreshData()!
         skylandersToDisplay = getSkylandersToDisplay()
         skylandersCount = skylandersToDisplay.count
         games = getGames()
@@ -184,7 +174,7 @@ extension SkylandersMenuViewController: UITableViewDelegate, UITableViewDataSour
 extension SkylandersMenuViewController {
     
     @IBAction func deleteData() {
-        refreshData()
+        reloadData()
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
         }
@@ -198,7 +188,7 @@ extension SkylandersMenuViewController {
         catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
         }
-        refreshData()
+        reloadData()
         tableView.reloadData()
         
     }
@@ -206,7 +196,7 @@ extension SkylandersMenuViewController {
     @IBAction func runJsonParse() {
         print("running")
         DataBuilder.saveSkylanders()
-        refreshData()
+        reloadData()
         tableView.reloadData()
     }
     
