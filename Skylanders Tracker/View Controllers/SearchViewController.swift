@@ -39,9 +39,15 @@ class SearchViewController: UIViewController {
     
 // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "DisplaySkylander" {
+        switch segue.identifier {
+        case "DisplaySkylander":
             let SkylandersDetailViewController = segue.destination as! SkylandersDetailViewController
             SkylandersDetailViewController.chosenSkylander = skylanderToSend
+        case "DisplayTrap":
+            let TrapsDetailViewController = segue.destination as! TrapsDetailViewController
+            TrapsDetailViewController.chosenTrap = skylanderToSend
+        default:
+            print("Error in send")
         }
     }
 
@@ -111,18 +117,30 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if !nothingFound {
             skylanderToSend = skylandersToDisplay[indexPath.row]
-//            self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
+            let type = skylanderToSend?.value(forKey: "variantText") as! String
+            switch type {
+            case "Traps":
+                self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
+            case "Legendary Trap":
+                self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
+            case "Dark Trap":
+                self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
+            case "Chase Trap":
+                self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
+            default:
+                self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
+            }
             tableView.deselectRow(at: indexPath, animated: true)
             
             //Implemented until detail page is finished
-            let checked = skylanderToSend?.value(forKey: "isChecked") as! Bool
-            if checked {
-                skylanderToSend?.setValue(false, forKey: "isChecked")
-            }
-            else {
-                skylanderToSend?.setValue(true, forKey: "isChecked")
-            }
-            tableView.reloadData()
+//            let checked = skylanderToSend?.value(forKey: "isChecked") as! Bool
+//            if checked {
+//                skylanderToSend?.setValue(false, forKey: "isChecked")
+//            }
+//            else {
+//                skylanderToSend?.setValue(true, forKey: "isChecked")
+//            }
+//            tableView.reloadData()
             
 
         }

@@ -12,12 +12,14 @@ class TrapsDetailViewController: UIViewController {
     @IBOutlet var trapImage: UIImageView!
     @IBOutlet var villianLabel: UILabel!
     @IBOutlet var trapElementLabel: UILabel!
+    @IBOutlet var trapDesignLabel: UILabel!
     
     var chosenTrap: NSManagedObject!
     lazy var name = chosenTrap.value(forKey: "name") as! String
     
     
     override func viewDidLoad() {
+        navigationItem.title = name
         SetImage()
 //        SetLabels()
     }
