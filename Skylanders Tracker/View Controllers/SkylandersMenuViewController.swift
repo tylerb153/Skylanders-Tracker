@@ -68,7 +68,7 @@ class SkylandersMenuViewController: UIViewController {
     // MARK: - Data
     
     func reloadData() {
-        skylandersList = RefreshData()!
+        skylandersList = RefreshData(entityName: "Skylander")!
         skylandersToDisplay = getSkylandersToDisplay()
         skylandersCount = skylandersToDisplay.count
         games = getGames()
@@ -174,20 +174,7 @@ extension SkylandersMenuViewController: UITableViewDelegate, UITableViewDataSour
 extension SkylandersMenuViewController {
     
     @IBAction func deleteData() {
-        reloadData()
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        let managedContext = appDelegate.persistentContainer.viewContext
-        for i in skylandersList {
-            managedContext.delete(i)
-        }
-        do {
-            try managedContext.save()
-        }
-        catch let error as NSError {
-            print("Could not save. \(error), \(error.userInfo)")
-        }
+        DataBuilder.DeleteData()
         reloadData()
         tableView.reloadData()
         

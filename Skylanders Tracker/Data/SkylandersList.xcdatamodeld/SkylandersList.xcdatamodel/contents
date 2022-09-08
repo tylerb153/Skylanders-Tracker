@@ -25,8 +25,15 @@
         <attribute name="startingHealth" attributeType="Integer 32" defaultValueString="-1" usesScalarValueType="YES"/>
         <attribute name="statsName" attributeType="String" defaultValueString=""/>
     </entity>
+    <entity name="TrapDetails" representedClassName="TrapDetails" syncable="YES" codeGenerationType="class">
+        <attribute name="design" attributeType="String" defaultValueString=""/>
+        <attribute name="element" attributeType="String" defaultValueString=""/>
+        <attribute name="statsName" attributeType="String" defaultValueString=""/>
+        <attribute name="villiansCapturable" attributeType="String" defaultValueString=""/>
+    </entity>
     <elements>
         <element name="Skylander" positionX="-54" positionY="-9" width="128" height="224"/>
         <element name="SkylanderStats" positionX="-36" positionY="81" width="128" height="149"/>
+        <element name="TrapDetails" positionX="-45" positionY="99" width="128" height="89"/>
     </elements>
 </model>

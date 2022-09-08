@@ -27,7 +27,7 @@ class SkylandersListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        skylandersList = RefreshData()!
+        skylandersList = RefreshData(entityName: "Skylander")!
         if let chosenSkylander = chosenSkylander {
             navigationItem.title = chosenSkylander
         }

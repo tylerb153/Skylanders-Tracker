@@ -128,20 +128,7 @@ class SkylandersDetailViewController: UIViewController {
     
     // MARK: - Data Functions
     private func getStats() -> NSManagedObject? {
-        var statsList: [NSManagedObject] = []
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            print("error in get data")
-            return nil
-        }
-        let managedContext = appDelegate.persistentContainer.viewContext
-        
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "SkylanderStats")
-        do {
-            statsList = try managedContext.fetch(fetchRequest)
-        }
-        catch {
-            print("error")
-        }
+        let statsList = RefreshData(entityName: "SkylanderStats")!
         for skylanderStats in statsList {
             if skylanderStats.value(forKey: "statsName") as! String == statsName {
                 return skylanderStats

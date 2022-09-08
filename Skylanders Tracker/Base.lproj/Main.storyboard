@@ -349,7 +349,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Villians that can be trapped by this trap" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="99" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ojs-v7-wvI">
-                                <rect key="frame" x="20" y="552" width="374" height="20.5"/>
+                                <rect key="frame" x="20" y="605" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -367,6 +367,12 @@
                                     <constraint firstAttribute="width" secondItem="Nfd-35-2Ti" secondAttribute="height" multiplier="1:1" id="1xb-Yf-aSz"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Villians this trap can capture:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLJ-C5-cvy">
+                                <rect key="frame" x="0.0" y="560" width="414" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sHj-Jk-Gu9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -377,11 +383,14 @@
                             <constraint firstItem="sHj-Jk-Gu9" firstAttribute="trailing" secondItem="Nfd-35-2Ti" secondAttribute="trailing" constant="8" id="AuD-E6-h6R"/>
                             <constraint firstItem="KTJ-x9-XUK" firstAttribute="leading" secondItem="sHj-Jk-Gu9" secondAttribute="leading" id="B0Y-W5-pmC"/>
                             <constraint firstItem="sHj-Jk-Gu9" firstAttribute="trailing" secondItem="Ojs-v7-wvI" secondAttribute="trailing" constant="20" id="Cw2-CS-gvN"/>
+                            <constraint firstItem="Ojs-v7-wvI" firstAttribute="top" secondItem="fLJ-C5-cvy" secondAttribute="bottom" constant="16" id="EHg-oW-rwh"/>
+                            <constraint firstItem="fLJ-C5-cvy" firstAttribute="top" secondItem="Nfd-35-2Ti" secondAttribute="bottom" constant="16" id="RkC-A3-SyE"/>
                             <constraint firstItem="KTJ-x9-XUK" firstAttribute="top" secondItem="sHj-Jk-Gu9" secondAttribute="top" id="TKx-Bs-uE9"/>
                             <constraint firstItem="Nfd-35-2Ti" firstAttribute="top" secondItem="j3Z-YB-gYO" secondAttribute="bottom" constant="8" id="X5a-gd-IQl"/>
-                            <constraint firstItem="Ojs-v7-wvI" firstAttribute="top" secondItem="Nfd-35-2Ti" secondAttribute="bottom" constant="8" id="XgI-vd-XQK"/>
                             <constraint firstItem="Nfd-35-2Ti" firstAttribute="leading" secondItem="sHj-Jk-Gu9" secondAttribute="leading" constant="8" id="efn-uy-KyJ"/>
+                            <constraint firstItem="sHj-Jk-Gu9" firstAttribute="trailing" secondItem="fLJ-C5-cvy" secondAttribute="trailing" id="mRW-ew-xSj"/>
                             <constraint firstItem="sHj-Jk-Gu9" firstAttribute="trailing" secondItem="j3Z-YB-gYO" secondAttribute="trailing" id="uLf-2Q-69h"/>
+                            <constraint firstItem="fLJ-C5-cvy" firstAttribute="leading" secondItem="sHj-Jk-Gu9" secondAttribute="leading" id="wSl-Jj-d3f"/>
                             <constraint firstItem="sHj-Jk-Gu9" firstAttribute="trailing" secondItem="KTJ-x9-XUK" secondAttribute="trailing" id="xj7-XN-wNK"/>
                             <constraint firstItem="j3Z-YB-gYO" firstAttribute="leading" secondItem="sHj-Jk-Gu9" secondAttribute="leading" id="yEx-7p-Djb"/>
                         </constraints>
@@ -392,6 +401,7 @@
                         <outlet property="trapElementLabel" destination="KTJ-x9-XUK" id="LMT-Pe-XwU"/>
                         <outlet property="trapImage" destination="Nfd-35-2Ti" id="9EM-lw-rIO"/>
                         <outlet property="villianLabel" destination="Ojs-v7-wvI" id="3IG-Je-W9J"/>
+                        <outlet property="villianTitle" destination="fLJ-C5-cvy" id="mdO-2U-6f6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gK2-0s-43d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

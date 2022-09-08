@@ -13,15 +13,21 @@ class DataBuilder {
     
     private static var jsonSkylanders: [SkylanderObject] = []
     private static var jsonStats: [SkylandersStats] = []
+    private static var jsonTrapDetails: [TrapsDetails] = []
     
     // MARK: - JSON parse
     private static func getData(type dataType: String) -> Data? {
         var name = ""
-        if dataType == "Data" {
+        switch dataType {
+        case "Data":
             name = "Skylanders Data"
-        }
-        else {
+        case "Stats":
             name = "Skylanders Stats"
+        case "Traps":
+            name = "Traps Details"
+        default:
+            print("Error in getData in DataBuilder")
+            return nil
         }
         do {
             if let bundlePath = Bundle.main.path(forResource: name, ofType: "json"),
@@ -36,7 +42,7 @@ class DataBuilder {
     }
     
     private static func parseJson(type dataType: String) {
-        guard let data = getData(type: dataType) else {print("error"); return}
+        guard let data = getData(type: dataType) else {print("error in parseJSON"); return}
         
         let decoder = JSONDecoder()
         switch dataType {
@@ -59,8 +65,13 @@ class DataBuilder {
             else {
                 print("error in decode stats")
             }
+            
+        case "Traps":
+            if let result = try? decoder.decode(TrapsDetailsList.self, from: data) {
+                jsonTrapDetails = result.TrapsDetails
+            }
            
-        default: print("Incorrect Data Types")
+        default: print("Incorrect Data Type")
         }
     }
     
@@ -68,11 +79,15 @@ class DataBuilder {
         
         parseJson(type: "Data")
         parseJson(type: "Stats")
+        parseJson(type: "Traps")
         for jsonSkylander in jsonSkylanders {
             saveSkylander(jsonSkylander: jsonSkylander)
         }
         for jsonStat in jsonStats {
             saveStats(jsonStats: jsonStat)
+        }
+        for jsonTrapDetail in jsonTrapDetails {
+            saveTrapDetails(jsonTrapDetails: jsonTrapDetail)
         }
     }
     
@@ -122,6 +137,59 @@ class DataBuilder {
         stats.setValue(jsonStats.elementalPower, forKey: "elementalPower")
         stats.setValue(jsonStats.maxHealth, forKey: "maxHealth")
         stats.setValue(jsonStats.startingHealth, forKey: "startingHealth")
+        
+        do {
+            try managedContext.save()
+        }
+        catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
+    private static func saveTrapDetails(jsonTrapDetails: TrapsDetails) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "TrapDetails", in: managedContext)!
+        
+        let trapDetail = NSManagedObject(entity: entity, insertInto: managedContext)
+        trapDetail.setValue(jsonTrapDetails.statsName, forKey: "statsName")
+        trapDetail.setValue(jsonTrapDetails.element, forKey: "element")
+        trapDetail.setValue(jsonTrapDetails.design, forKey: "design")
+        trapDetail.setValue(jsonTrapDetails.villiansCapturable, forKey: "villiansCapturable")
+        
+        do {
+            try managedContext.save()
+        }
+        catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
+    static func DeleteData() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+    let fetchRequestList = [
+        NSFetchRequest<NSManagedObject>(entityName: "Skylander"),
+        NSFetchRequest<NSManagedObject>(entityName: "SkylanderStats"),
+        NSFetchRequest<NSManagedObject>(entityName: "TrapDetails")
+    ]
+        
+        for i in fetchRequestList {
+            do {
+                let list = try managedContext.fetch(i)
+                for j in list {
+                    managedContext.delete(j)
+                }
+            }
+            catch let error as NSError {
+                print("Could not fetch. \(error), \(error.userInfo)")
+            }
+        }
         
         do {
             try managedContext.save()

@@ -13,15 +13,17 @@ class TrapsDetailViewController: UIViewController {
     @IBOutlet var villianLabel: UILabel!
     @IBOutlet var trapElementLabel: UILabel!
     @IBOutlet var trapDesignLabel: UILabel!
+    @IBOutlet var villianTitle: UILabel!
     
     var chosenTrap: NSManagedObject!
     lazy var name = chosenTrap.value(forKey: "name") as! String
+    lazy var statsName = chosenTrap.value(forKey: "statsName") as! String
     
     
     override func viewDidLoad() {
         navigationItem.title = name
         SetImage()
-//        SetLabels()
+        SetLabels()
     }
     
 //MARK: - Helper Functions
@@ -35,5 +37,30 @@ class TrapsDetailViewController: UIViewController {
     }
     
     private func SetLabels() {
+        let trapDetails = getDetails()
+        if trapDetails != nil {
+            trapElementLabel.text = trapDetails!.value(forKey: "element") as? String
+            trapDesignLabel.text = trapDetails!.value(forKey: "design") as? String
+            villianLabel.text = trapDetails!.value(forKey: "villiansCapturable") as? String
+        }
+        else {
+            trapElementLabel.text = ""
+            trapDesignLabel.text = ""
+            villianLabel.text = ""
+            
+            villianTitle.isHidden = true
+        }
+        
+    }
+    
+    private func getDetails() -> NSManagedObject? {
+        let detailsList = RefreshData(entityName: "TrapDetails")!
+        for i in detailsList {
+            if statsName == i.value(forKey: "statsName") as! String {
+                return i
+            }
+        }
+        
+        return nil
     }
 }

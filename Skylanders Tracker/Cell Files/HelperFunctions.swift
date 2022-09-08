@@ -31,13 +31,13 @@ private func configureName(name: String, series: Int, variant: String) -> String
 }
     
 //MARK: - Data Functions
-func RefreshData() -> [NSManagedObject]? {
+func RefreshData(entityName: String) -> [NSManagedObject]? {
     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
         print("Error in RefreshData()")
         return nil
     }
     let managedContext = appDelegate.persistentContainer.viewContext
-    let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Skylander")
+    let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: entityName)
     do {
         return try managedContext.fetch(fetchRequest)
     }

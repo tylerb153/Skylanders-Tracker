@@ -1,0 +1,10 @@
+{
+    "TrapsDetails": [
+        {
+            "statsName": "Kaos Trap",
+            "element": "Kaos",
+            "design": "",
+            "villiansCapturable": "Kaos"
+        }
+    ]
+}
