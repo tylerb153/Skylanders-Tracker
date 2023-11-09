@@ -74,6 +74,7 @@ class SearchViewController: UIViewController {
             if searchText != ""{
                 if skylanderName.uppercased().contains(searchText.uppercased()) {
                     skylandersToDisplay.append(skylander)
+//                    print(skylandersToDisplay.sorted(by: <#T##(NSManagedObject, NSManagedObject) throws -> Bool#>))
                 }
             }
             else {
