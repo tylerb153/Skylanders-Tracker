@@ -99,9 +99,6 @@ class SkylandersListTableViewController: UITableViewController {
             if variant == "" {
                 variant = "Skylanders"
             }
-            if variant == "Giant" {
-                variant = "Giants"
-            }
             if !sectionsToDisplay.contains(variant) {
                 sectionsToDisplay.append(variant)
             }
@@ -118,7 +115,6 @@ class SkylandersListTableViewController: UITableViewController {
         var ModifiedvariantText: String
         switch variantText {
         case "Skylanders": ModifiedvariantText = ""
-        case "Giants": ModifiedvariantText = "Giant"
         default: ModifiedvariantText = variantText
         }
         
