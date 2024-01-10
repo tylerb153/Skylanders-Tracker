@@ -110,6 +110,7 @@
                         <outlet property="searchBar" destination="6tf-dS-H86" id="ZJE-tF-ZjK"/>
                         <segue destination="Xum-Ah-VWP" kind="show" identifier="DisplaySkylander" id="Fjb-27-xG1"/>
                         <segue destination="DzU-xc-1Cc" kind="show" identifier="DisplayTrap" id="bz5-5T-Q9g"/>
+                        <segue destination="ddc-Rd-kz4" kind="show" identifier="DisplaySwapper" id="OIX-1U-RXH"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yTi-3N-5TF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -333,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOY-GP-D2e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3241" y="860"/>
+            <point key="canvasLocation" x="3194" y="860"/>
         </scene>
         <!--Trap Name-->
         <scene sceneID="mBO-0r-xR0">
@@ -455,6 +456,7 @@
                         <outlet property="tableView" destination="Pfn-YL-3Dv" id="KU3-cp-Icj"/>
                         <segue destination="Xum-Ah-VWP" kind="show" identifier="DisplaySkylander" id="j9q-D0-eET"/>
                         <segue destination="DzU-xc-1Cc" kind="show" identifier="DisplayTrap" id="79z-E6-3Py"/>
+                        <segue destination="ddc-Rd-kz4" kind="show" identifier="DisplaySwapper" id="WnL-Be-kgT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gn7-vV-o2I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -479,8 +481,238 @@
             </objects>
             <point key="canvasLocation" x="1095.6521739130435" y="55.580357142857139"/>
         </scene>
+        <!--Swapper Name-->
+        <scene sceneID="2cL-yn-rt3">
+            <objects>
+                <viewController id="ddc-Rd-kz4" customClass="SwappersDetailViewController" customModule="Skylanders_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YSy-N5-YaW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xl-sC-VnC">
+                                <rect key="frame" x="0.0" y="92" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tWO-wd-UlF">
+                                <rect key="frame" x="8" y="146" width="195" height="192.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tWO-wd-UlF" secondAttribute="height" multiplier="1:1" id="zXT-ZB-ysi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="Compatable Games" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eej-C9-Rbt">
+                                <rect key="frame" x="211" y="145" width="195" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtC-7T-7QH">
+                                <rect key="frame" x="211" y="210.5" width="195" height="129.5"/>
+                                <string key="text">All                                    games                         Skylander                                   is                                 compatible                           with</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8DL-Xd-sbQ">
+                                <rect key="frame" x="8" y="377" width="398" height="297"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character Stats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLo-2W-RrX">
+                                        <rect key="frame" x="118.5" y="0.0" width="161" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Speed:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cad-H5-0W8">
+                                        <rect key="frame" x="0.0" y="53" width="66.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Armor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqO-S1-syO">
+                                        <rect key="frame" x="0.0" y="93" width="66" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Critical Hit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtj-eL-LXH">
+                                        <rect key="frame" x="0.0" y="133" width="105.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Elemental Power:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMJ-38-vBR">
+                                        <rect key="frame" x="0.0" y="173" width="163" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Start Health:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCg-LS-Nzw">
+                                        <rect key="frame" x="0.0" y="213" width="120" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Maximum Health:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcD-Lc-nOn">
+                                        <rect key="frame" x="0.0" y="253" width="165" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4j-oi-FaE">
+                                        <rect key="frame" x="181" y="53" width="115" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Armor Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAR-z4-GrT">
+                                        <rect key="frame" x="181" y="93" width="113" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Critical Hit Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uV1-ia-6Nw">
+                                        <rect key="frame" x="181" y="133" width="145" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elemental Power Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MA-cK-Itr">
+                                        <rect key="frame" x="181" y="173" width="192" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Start Health Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XA-Ik-y1R">
+                                        <rect key="frame" x="181" y="213" width="157" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maximum Health Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dez-g6-eG2">
+                                        <rect key="frame" x="181" y="253" width="193.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="3MA-cK-Itr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rMJ-38-vBR" secondAttribute="trailing" constant="18" id="3CK-N4-n92"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Dez-g6-eG2" secondAttribute="trailing" constant="8" id="4Qb-Re-RSC"/>
+                                    <constraint firstItem="GAR-z4-GrT" firstAttribute="leading" secondItem="m4j-oi-FaE" secondAttribute="leading" id="4R3-jT-FJO"/>
+                                    <constraint firstItem="GAR-z4-GrT" firstAttribute="centerY" secondItem="GqO-S1-syO" secondAttribute="centerY" id="4d8-Dh-pEE"/>
+                                    <constraint firstItem="GAR-z4-GrT" firstAttribute="top" secondItem="m4j-oi-FaE" secondAttribute="bottom" constant="16" id="6qw-h7-Jt2"/>
+                                    <constraint firstItem="Cad-H5-0W8" firstAttribute="top" secondItem="rLo-2W-RrX" secondAttribute="bottom" constant="24" id="8Jn-q1-Qh7"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m4j-oi-FaE" secondAttribute="trailing" constant="8" id="Fy0-3o-ate"/>
+                                    <constraint firstItem="pcD-Lc-nOn" firstAttribute="leading" secondItem="8DL-Xd-sbQ" secondAttribute="leading" id="G3d-M1-faq"/>
+                                    <constraint firstItem="6XA-Ik-y1R" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PCg-LS-Nzw" secondAttribute="trailing" constant="8" symbolic="YES" id="GrM-5w-har"/>
+                                    <constraint firstItem="rMJ-38-vBR" firstAttribute="top" secondItem="rtj-eL-LXH" secondAttribute="bottom" constant="16" id="Gx2-g4-EWY"/>
+                                    <constraint firstItem="Dez-g6-eG2" firstAttribute="centerY" secondItem="pcD-Lc-nOn" secondAttribute="centerY" id="H5n-Ul-gNU"/>
+                                    <constraint firstItem="PCg-LS-Nzw" firstAttribute="top" secondItem="rMJ-38-vBR" secondAttribute="bottom" constant="16" id="ITJ-qL-HXb"/>
+                                    <constraint firstItem="6XA-Ik-y1R" firstAttribute="leading" secondItem="m4j-oi-FaE" secondAttribute="leading" id="Jeq-U5-07V"/>
+                                    <constraint firstItem="Dez-g6-eG2" firstAttribute="top" secondItem="6XA-Ik-y1R" secondAttribute="bottom" constant="16" id="Nej-RZ-UXB"/>
+                                    <constraint firstAttribute="bottom" secondItem="pcD-Lc-nOn" secondAttribute="bottom" constant="20" symbolic="YES" id="P4K-a9-zrn"/>
+                                    <constraint firstItem="rLo-2W-RrX" firstAttribute="top" secondItem="8DL-Xd-sbQ" secondAttribute="top" id="PQt-Qy-lBI"/>
+                                    <constraint firstItem="GqO-S1-syO" firstAttribute="top" secondItem="Cad-H5-0W8" secondAttribute="bottom" constant="16" id="UaJ-Xz-SOG"/>
+                                    <constraint firstItem="m4j-oi-FaE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Cad-H5-0W8" secondAttribute="trailing" constant="8" symbolic="YES" id="VKC-bR-lb3"/>
+                                    <constraint firstItem="rtj-eL-LXH" firstAttribute="top" secondItem="GqO-S1-syO" secondAttribute="bottom" constant="16" id="Ygi-fL-dTE"/>
+                                    <constraint firstItem="Dez-g6-eG2" firstAttribute="leading" secondItem="m4j-oi-FaE" secondAttribute="leading" id="Zee-hz-yhO"/>
+                                    <constraint firstItem="GAR-z4-GrT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GqO-S1-syO" secondAttribute="trailing" constant="8" symbolic="YES" id="aAL-KX-2Mq"/>
+                                    <constraint firstItem="uV1-ia-6Nw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rtj-eL-LXH" secondAttribute="trailing" constant="8" symbolic="YES" id="ajE-ID-dDV"/>
+                                    <constraint firstItem="rtj-eL-LXH" firstAttribute="leading" secondItem="8DL-Xd-sbQ" secondAttribute="leading" id="clS-N5-ymr"/>
+                                    <constraint firstItem="m4j-oi-FaE" firstAttribute="top" secondItem="rLo-2W-RrX" secondAttribute="bottom" constant="24" id="eqU-05-r4p"/>
+                                    <constraint firstItem="3MA-cK-Itr" firstAttribute="top" secondItem="uV1-ia-6Nw" secondAttribute="bottom" constant="16" id="gCU-aO-CNx"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6XA-Ik-y1R" secondAttribute="trailing" constant="8" id="hoZ-fY-gYq"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3MA-cK-Itr" secondAttribute="trailing" constant="8" id="i1z-9A-wdd"/>
+                                    <constraint firstItem="Cad-H5-0W8" firstAttribute="leading" secondItem="8DL-Xd-sbQ" secondAttribute="leading" id="jYS-5K-NIC"/>
+                                    <constraint firstItem="rLo-2W-RrX" firstAttribute="centerX" secondItem="8DL-Xd-sbQ" secondAttribute="centerX" id="jma-97-fli"/>
+                                    <constraint firstItem="uV1-ia-6Nw" firstAttribute="leading" secondItem="m4j-oi-FaE" secondAttribute="leading" id="kQg-OQ-6aH"/>
+                                    <constraint firstItem="rMJ-38-vBR" firstAttribute="leading" secondItem="8DL-Xd-sbQ" secondAttribute="leading" id="nRu-cK-Loe"/>
+                                    <constraint firstItem="uV1-ia-6Nw" firstAttribute="top" secondItem="GAR-z4-GrT" secondAttribute="bottom" constant="16" id="obP-pQ-JDS"/>
+                                    <constraint firstItem="6XA-Ik-y1R" firstAttribute="centerY" secondItem="PCg-LS-Nzw" secondAttribute="centerY" id="rUb-Fg-D3T"/>
+                                    <constraint firstItem="m4j-oi-FaE" firstAttribute="centerY" secondItem="Cad-H5-0W8" secondAttribute="centerY" id="sBH-c5-Rbo"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uV1-ia-6Nw" secondAttribute="trailing" constant="8" id="svW-BH-zeq"/>
+                                    <constraint firstItem="pcD-Lc-nOn" firstAttribute="top" secondItem="PCg-LS-Nzw" secondAttribute="bottom" constant="16" id="tHd-ZH-Mvy"/>
+                                    <constraint firstItem="6XA-Ik-y1R" firstAttribute="top" secondItem="3MA-cK-Itr" secondAttribute="bottom" constant="16" id="tSW-9R-Pyv"/>
+                                    <constraint firstItem="Dez-g6-eG2" firstAttribute="leading" secondItem="pcD-Lc-nOn" secondAttribute="trailing" constant="16" id="tn7-km-P3e"/>
+                                    <constraint firstItem="uV1-ia-6Nw" firstAttribute="centerY" secondItem="rtj-eL-LXH" secondAttribute="centerY" id="uC2-ei-ZGe"/>
+                                    <constraint firstItem="GqO-S1-syO" firstAttribute="leading" secondItem="8DL-Xd-sbQ" secondAttribute="leading" id="ua0-Ut-Wiq"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GAR-z4-GrT" secondAttribute="trailing" constant="8" id="vOp-oD-WYe"/>
+                                    <constraint firstItem="3MA-cK-Itr" firstAttribute="leading" secondItem="m4j-oi-FaE" secondAttribute="leading" id="w3O-b9-XyQ"/>
+                                    <constraint firstItem="3MA-cK-Itr" firstAttribute="centerY" secondItem="rMJ-38-vBR" secondAttribute="centerY" id="wWT-6I-0hY"/>
+                                    <constraint firstItem="PCg-LS-Nzw" firstAttribute="leading" secondItem="8DL-Xd-sbQ" secondAttribute="leading" id="zMK-sa-zuO"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96X-at-avS">
+                                <rect key="frame" x="211" y="92" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movement Type:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rk1-Jo-hLB">
+                                <rect key="frame" x="8" y="348" width="195" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PLD-dt-qA9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rk1-Jo-hLB" firstAttribute="top" secondItem="tWO-wd-UlF" secondAttribute="bottom" constant="8" id="21x-tK-V1g"/>
+                            <constraint firstItem="eej-C9-Rbt" firstAttribute="leading" secondItem="tWO-wd-UlF" secondAttribute="trailing" constant="8" id="2P3-HC-TdM"/>
+                            <constraint firstItem="8DL-Xd-sbQ" firstAttribute="leading" secondItem="PLD-dt-qA9" secondAttribute="leading" constant="8" id="2lw-Xa-tN5"/>
+                            <constraint firstItem="8Xl-sC-VnC" firstAttribute="leading" secondItem="PLD-dt-qA9" secondAttribute="leading" id="34Y-hV-gQH"/>
+                            <constraint firstItem="PLD-dt-qA9" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xtC-7T-7QH" secondAttribute="trailing" symbolic="YES" id="3Rd-kx-HHK"/>
+                            <constraint firstItem="tWO-wd-UlF" firstAttribute="top" secondItem="8Xl-sC-VnC" secondAttribute="bottom" constant="32" id="Cnd-IJ-nFc"/>
+                            <constraint firstItem="96X-at-avS" firstAttribute="top" secondItem="PLD-dt-qA9" secondAttribute="top" id="DWE-pR-fsJ"/>
+                            <constraint firstItem="PLD-dt-qA9" firstAttribute="trailing" secondItem="8DL-Xd-sbQ" secondAttribute="trailing" constant="8" id="Dmv-KK-yBP"/>
+                            <constraint firstItem="PLD-dt-qA9" firstAttribute="trailing" secondItem="eej-C9-Rbt" secondAttribute="trailing" constant="8" id="FpX-0N-1SU"/>
+                            <constraint firstItem="xtC-7T-7QH" firstAttribute="leading" secondItem="eej-C9-Rbt" secondAttribute="leading" id="HF4-vZ-s0r"/>
+                            <constraint firstItem="xtC-7T-7QH" firstAttribute="bottom" secondItem="tWO-wd-UlF" secondAttribute="bottom" id="KMp-rq-bH1"/>
+                            <constraint firstItem="96X-at-avS" firstAttribute="width" secondItem="8Xl-sC-VnC" secondAttribute="width" id="LFO-gt-6kT"/>
+                            <constraint firstItem="8DL-Xd-sbQ" firstAttribute="top" secondItem="rk1-Jo-hLB" secondAttribute="bottom" constant="8" id="NnG-WA-xhx"/>
+                            <constraint firstItem="xtC-7T-7QH" firstAttribute="top" secondItem="eej-C9-Rbt" secondAttribute="bottom" constant="8" id="W7y-xa-WEc"/>
+                            <constraint firstItem="8Xl-sC-VnC" firstAttribute="top" secondItem="PLD-dt-qA9" secondAttribute="top" id="a1q-Qp-d9i"/>
+                            <constraint firstItem="rk1-Jo-hLB" firstAttribute="leading" secondItem="tWO-wd-UlF" secondAttribute="leading" id="cQh-vd-fDC"/>
+                            <constraint firstItem="rk1-Jo-hLB" firstAttribute="trailing" secondItem="tWO-wd-UlF" secondAttribute="trailing" id="hqa-L4-0Nz"/>
+                            <constraint firstItem="eej-C9-Rbt" firstAttribute="top" secondItem="tWO-wd-UlF" secondAttribute="top" id="hux-4W-r1U"/>
+                            <constraint firstItem="tWO-wd-UlF" firstAttribute="leading" secondItem="PLD-dt-qA9" secondAttribute="leading" constant="8" id="mer-TL-480"/>
+                            <constraint firstItem="96X-at-avS" firstAttribute="leading" secondItem="8Xl-sC-VnC" secondAttribute="trailing" constant="8" id="xvC-c7-UW6"/>
+                            <constraint firstItem="eej-C9-Rbt" firstAttribute="width" secondItem="tWO-wd-UlF" secondAttribute="width" id="zOd-Pm-nLn"/>
+                            <constraint firstItem="PLD-dt-qA9" firstAttribute="trailing" secondItem="96X-at-avS" secondAttribute="trailing" id="zWs-af-eYD"/>
+                            <constraint firstItem="xtC-7T-7QH" firstAttribute="width" secondItem="tWO-wd-UlF" secondAttribute="width" id="zbw-Qt-eOu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Swapper Name" largeTitleDisplayMode="always" id="Ruy-bH-xFb"/>
+                    <connections>
+                        <outlet property="armorLabel" destination="GqO-S1-syO" id="VJf-Lp-iDO"/>
+                        <outlet property="compatableGames" destination="xtC-7T-7QH" id="88s-kq-wBJ"/>
+                        <outlet property="criticalHitLabel" destination="rtj-eL-LXH" id="c3r-0d-ZH2"/>
+                        <outlet property="elementalPowerLabel" destination="rMJ-38-vBR" id="oT5-79-v0J"/>
+                        <outlet property="maximumHealthLabel" destination="pcD-Lc-nOn" id="Hiz-bi-KvZ"/>
+                        <outlet property="skylanderArmor" destination="GAR-z4-GrT" id="gHb-pb-dzm"/>
+                        <outlet property="skylanderCriticalHit" destination="uV1-ia-6Nw" id="LRL-b0-hcV"/>
+                        <outlet property="skylanderElementalPower" destination="3MA-cK-Itr" id="llN-E6-EaQ"/>
+                        <outlet property="skylanderGame" destination="96X-at-avS" id="otQ-5u-vfF"/>
+                        <outlet property="skylanderImage" destination="tWO-wd-UlF" id="CmP-C8-mju"/>
+                        <outlet property="skylanderMaximumHealth" destination="Dez-g6-eG2" id="YLD-4U-lPz"/>
+                        <outlet property="skylanderSeries" destination="8Xl-sC-VnC" id="SfS-HY-d2v"/>
+                        <outlet property="skylanderSpeed" destination="m4j-oi-FaE" id="Krp-d9-zAI"/>
+                        <outlet property="skylanderStartHealth" destination="6XA-Ik-y1R" id="Z4n-ad-83Z"/>
+                        <outlet property="speedLabel" destination="Cad-H5-0W8" id="Cev-ys-QMm"/>
+                        <outlet property="startHealthLabel" destination="PCg-LS-Nzw" id="0NW-IU-sPs"/>
+                        <outlet property="swapperMovementType" destination="rk1-Jo-hLB" id="PhT-nw-dS6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Y0-Jb-aWu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3996" y="860"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="OIX-1U-RXH"/>
         <segue reference="bz5-5T-Q9g"/>
         <segue reference="Fjb-27-xG1"/>
         <segue reference="4Lc-0q-Bbt"/>

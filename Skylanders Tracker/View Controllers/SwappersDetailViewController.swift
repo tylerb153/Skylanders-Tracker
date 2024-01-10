@@ -10,7 +10,7 @@ import CoreData
 
 class SwappersDetailViewController: UIViewController {
     
-    //Label names changed only with SuperChargers and Imaginators
+    //Label names
     @IBOutlet weak var speedLabel: UILabel!
     @IBOutlet weak var armorLabel: UILabel!
     @IBOutlet weak var criticalHitLabel: UILabel!
@@ -31,15 +31,16 @@ class SwappersDetailViewController: UIViewController {
     @IBOutlet weak var compatableGames: UILabel!
     @IBOutlet weak var skylanderSeries: UILabel!
     @IBOutlet weak var skylanderGame: UILabel!
+    @IBOutlet weak var swapperMovementType: UILabel!
     
-    var chosenSkylander: NSManagedObject!
-    lazy var name = chosenSkylander.value(forKey: "name") as! String
-    lazy var baseName = chosenSkylander.value(forKey: "baseName") as! String
-    lazy var series = chosenSkylander.value(forKey: "series") as! Int
+    var chosenSwapper: NSManagedObject!
+    lazy var name = chosenSwapper.value(forKey: "name") as! String
+    lazy var baseName = chosenSwapper.value(forKey: "baseName") as! String
+    lazy var series = chosenSwapper.value(forKey: "series") as! Int
     lazy var image = getImage()
-    lazy var game = chosenSkylander.value(forKey: "game") as! String
-    lazy var statsName = chosenSkylander.value(forKey: "statsName") as! String
-    lazy var variant = chosenSkylander.value(forKey: "variantText") as! String
+    lazy var game = chosenSwapper.value(forKey: "game") as! String
+    lazy var statsName = chosenSwapper.value(forKey: "statsName") as! String
+    lazy var variant = chosenSwapper.value(forKey: "variantText") as! String
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +58,7 @@ class SwappersDetailViewController: UIViewController {
     
     // MARK: - Helper Functions
     private func getImage() -> UIImage {
-        if let image = ConfigureImage(skylander: chosenSkylander) {
+        if let image = ConfigureImage(skylander: chosenSwapper) {
             return image
         }
         else {
@@ -67,7 +68,7 @@ class SwappersDetailViewController: UIViewController {
     
     private func configureSeries() -> String {
         if series == 0 {
-            let variant = chosenSkylander?.value(forKey: "variantText") as! String
+            let variant = chosenSwapper?.value(forKey: "variantText") as! String
             return variant
         }
         else {
@@ -83,7 +84,7 @@ class SwappersDetailViewController: UIViewController {
     
     private func setLabels() {
         if let skylanderStats = getStats() {
-
+            swapperMovementType.text = String(describing: skylanderStats.value(forKey: "movementType")!)
         skylanderSpeed.text = String(describing: skylanderStats.value(forKey: "speed") as! Int)
         skylanderArmor.text = String(describing: skylanderStats.value(forKey: "armor") as! Int)
         skylanderCriticalHit.text = String(describing: skylanderStats.value(forKey: "criticalHit") as! Int)
@@ -92,6 +93,7 @@ class SwappersDetailViewController: UIViewController {
         skylanderMaximumHealth.text = String(describing: skylanderStats.value(forKey: "maxHealth") as! Int)
         }
         else {
+            swapperMovementType.text = "Unknown"
             skylanderSpeed.text = "0"
             skylanderArmor.text = "0"
             skylanderCriticalHit.text = "0"
@@ -104,22 +106,22 @@ class SwappersDetailViewController: UIViewController {
     
     private func setCompatibleGames() {
         var displayString = ""
-        if chosenSkylander.value(forKey: "worksWithSpyrosAdventure") as! Bool {
+        if chosenSwapper.value(forKey: "worksWithSpyrosAdventure") as! Bool {
             displayString += "Spyro's Adventure\n"
         }
-        if chosenSkylander.value(forKey: "worksWithGiants") as! Bool {
+        if chosenSwapper.value(forKey: "worksWithGiants") as! Bool {
             displayString += "Giants\n"
         }
-        if chosenSkylander.value(forKey: "worksWithSwapForce") as! Bool {
+        if chosenSwapper.value(forKey: "worksWithSwapForce") as! Bool {
             displayString += "Swap Force\n"
         }
-        if chosenSkylander.value(forKey: "worksWithTrapTeam") as! Bool {
+        if chosenSwapper.value(forKey: "worksWithTrapTeam") as! Bool {
             displayString += "Trap Team\n"
         }
-        if chosenSkylander.value(forKey: "worksWithSuperChargers") as! Bool {
+        if chosenSwapper.value(forKey: "worksWithSuperChargers") as! Bool {
             displayString += "SuperChargers\n"
         }
-        if chosenSkylander.value(forKey: "worksWithImaginators") as! Bool {
+        if chosenSwapper.value(forKey: "worksWithImaginators") as! Bool {
             displayString += "Imaginators"
         }
         
@@ -128,10 +130,10 @@ class SwappersDetailViewController: UIViewController {
     
     // MARK: - Data Functions
     private func getStats() -> NSManagedObject? {
-        let statsList = RefreshData(entityName: "SkylanderStats")!
-        for skylanderStats in statsList {
-            if skylanderStats.value(forKey: "statsName") as! String == statsName {
-                return skylanderStats
+        let statsList = RefreshData(entityName: "SwapperStatsTable")!
+        for swapperStats in statsList {
+            if swapperStats.value(forKey: "statsName") as! String == statsName {
+                return swapperStats
             }
         }
         return nil

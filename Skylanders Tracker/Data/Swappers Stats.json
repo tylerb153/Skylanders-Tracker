@@ -1,0 +1,207 @@
+{
+    "SwapperStats" : [
+        {
+            "statsName": "Hoot Loop",
+            "element": "Magic",
+            "movementType": "Teleport",
+            "speed": 43,
+            "armor":  12,
+            "criticalHit": 6,
+            "elementalPower": 25,
+            "maxHealth": 750,
+            "startingHealth": 250
+        },
+
+        {
+            "statsName": "Trap Shadow",
+            "element": "Magic",
+            "movementType": "Sneak",
+            "speed": 43,
+            "armor":  12,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 540,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Blast Zone",
+            "element": "Fire",
+            "movementType": "Rocket",
+            "speed": 43,
+            "armor":  24,
+            "criticalHit": 6,
+            "elementalPower": 25,
+            "maxHealth": 870,
+            "startingHealth": 290
+        },
+
+        {
+            "statsName": "Fire Kraken",
+            "element": "Fire",
+            "movementType": "Bounce",
+            "speed": 43,
+            "armor":  18,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 520,
+            "startingHealth": 260
+        },
+
+        {
+            "statsName": "Wash Buckler",
+            "element": "Water",
+            "movementType": "Climb",
+            "speed": 43,
+            "armor":  24,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 810,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Freeze Blade",
+            "element": "Water",
+            "movementType": "Speed",
+            "speed": 50,
+            "armor":  9,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 560,
+            "startingHealth": 280
+        },
+
+        {
+            "statsName": "Rattle Shake",
+            "element": "Undead",
+            "movementType": "Bounce",
+            "speed": 43,
+            "armor":  12,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 560,
+            "startingHealth": 280
+        },
+
+        {
+            "statsName": "Night Shift",
+            "element": "Undead",
+            "movementType": "Teleport",
+            "speed": 38,
+            "armor":  4,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 400,
+            "startingHealth": 200
+        },
+
+        {
+            "statsName": "Magna Charge",
+            "element": "Tech",
+            "movementType": "Speed",
+            "speed": 50,
+            "armor":  18,
+            "criticalHit": 6,
+            "elementalPower": 25,
+            "maxHealth": 560,
+            "startingHealth": 280
+        },
+
+        {
+            "statsName": "Spy Rise",
+            "element": "Tech",
+            "movementType": "Climb",
+            "speed": 43,
+            "armor":  18,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 540,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Stink Bomb",
+            "element": "Life",
+            "movementType": "Sneak",
+            "speed": 43,
+            "armor":  12,
+            "criticalHit": 6,
+            "elementalPower": 25,
+            "maxHealth": 540,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Grilla Drilla",
+            "element": "Life",
+            "movementType": "Dig",
+            "speed": 43,
+            "armor":  24,
+            "criticalHit": 4,
+            "elementalPower": 25,
+            "maxHealth": 580,
+            "startingHealth": 290
+        },
+
+        {
+            "statsName": "Rubble Rouser",
+            "element": "Earth",
+            "movementType": "Dig",
+            "speed": 35,
+            "armor":  24,
+            "criticalHit": 6,
+            "elementalPower": 25,
+            "maxHealth": 560,
+            "startingHealth": 280
+        },
+
+        {
+            "statsName": "Doom Stone",
+            "element": "Earth",
+            "movementType": "Spin",
+            "speed": 35,
+            "armor":  30,
+            "criticalHit": 6,
+            "elementalPower": 25,
+            "maxHealth": 560,
+            "startingHealth": 280
+        },
+
+        {
+            "statsName": "Free Ranger",
+            "element": "Air",
+            "movementType": "Spin",
+            "speed": 43,
+            "armor":  18,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 560,
+            "startingHealth": 280
+        },
+
+        {
+            "statsName": "Boom Jet",
+            "element": "Air",
+            "movementType": "Rocket",
+            "speed": 43,
+            "armor":  24,
+            "criticalHit": 6,
+            "elementalPower": 25,
+            "maxHealth": 520,
+            "startingHealth": 260
+        },
+
+        {
+            "statsName": "Legendary Night Shift",
+            "element": "Undead",
+            "movementType": "Teleport",
+            "speed": 35,
+            "armor":  4,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 400,
+            "startingHealth": 200
+        }
+    ]
+}

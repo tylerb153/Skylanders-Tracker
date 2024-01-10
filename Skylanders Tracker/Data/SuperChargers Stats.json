@@ -1,0 +1,219 @@
+{
+    "SuperChargersStats" : [
+        {
+            "statsName": "Astroblast",
+            "element": "Light",
+            "vehicle": "Sun Runner",
+            "speed": 35,
+            "armor":  18,
+            "criticalHit": 6,
+            "elementalPower": 25,
+            "maxHealth": 540,
+            "startingHealth": 180
+        },
+
+        {
+            "statsName": "Nightfall",
+            "element": "Dark",
+            "vehicle": "Sea Shadow",
+            "speed": 43,
+            "armor":  6,
+            "criticalHit": 10,
+            "elementalPower": 25,
+            "maxHealth": 460,
+            "startingHealth": 230
+        },
+
+        {
+            "statsName": "Fiesta",
+            "element": "Undead",
+            "vehicle": "Crypt Crusher",
+            "speed": 50,
+            "armor":  6,
+            "criticalHit": 4,
+            "elementalPower": 25,
+            "maxHealth": 690,
+            "startingHealth": 230
+        },
+
+        {
+            "statsName": "Bone Bash Roller",
+            "element": "Undead",
+            "vehicle": "Tomb Buggy",
+            "speed": 50,
+            "armor":  12,
+            "criticalHit": 6,
+            "elementalPower": 25,
+            "maxHealth": 660,
+            "startingHealth": 220
+        },
+
+        {
+            "statsName": "Stormblade",
+            "element": "Air",
+            "vehicle": "Sky Slicer",
+            "speed": 50,
+            "armor":  6,
+            "criticalHit": 6,
+            "elementalPower": 25,
+            "maxHealth": 690,
+            "startingHealth": 230
+        },
+
+        {
+            "statsName": "Hurricane Jet-Vac",
+            "element": "Air",
+            "vehicle": "Jet Steam",
+            "speed": 43,
+            "armor":  12,
+            "criticalHit": 6,
+            "elementalPower": 25,
+            "maxHealth": 480,
+            "startingHealth": 240
+        },
+
+        {
+            "statsName": "Smash Hit",
+            "element": "Earth",
+            "vehicle": "Thump Truck",
+            "speed": 35,
+            "armor":  24,
+            "criticalHit": 2,
+            "elementalPower": 25,
+            "maxHealth": 700,
+            "startingHealth": 350
+        },
+
+        {
+            "statsName": "Shark Shooter Terrafin",
+            "element": "Earth",
+            "vehicle": "Shark Tank",
+            "speed": 35,
+            "armor":  24,
+            "criticalHit": 4,
+            "elementalPower": 25,
+            "maxHealth": 540,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Super Shot Stealth Elf",
+            "element": "Life",
+            "vehicle": "Stealth Stinger",
+            "speed": 50,
+            "armor":  12,
+            "criticalHit": 6,
+            "elementalPower": 25,
+            "maxHealth": 570,
+            "startingHealth": 190
+        },
+
+        {
+            "statsName": "Thrillipede",
+            "element": "Life",
+            "vehicle": "Buzz Wing",
+            "speed": 50,
+            "armor":  12,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 560,
+            "startingHealth": 280
+        },
+
+        {
+            "statsName": "Lava Lance Eruptor",
+            "element": "Fire",
+            "vehicle": "Burn-Cycle",
+            "speed": 35,
+            "armor":  24,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 580,
+            "startingHealth": 290
+        },
+
+        {
+            "statsName": "Spitfire",
+            "element": "Fire",
+            "vehicle": "Hot Streak",
+            "speed": 50,
+            "armor":  18,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 400,
+            "startingHealth": 200
+        },
+
+        {
+            "statsName": "Deep Dive Gill Grunt",
+            "element": "Water",
+            "vehicle": "Reef Ripper",
+            "speed": 15,
+            "armor":  24,
+            "criticalHit": 6,
+            "elementalPower": 25,
+            "maxHealth": 810,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Dive-Clops",
+            "element": "Water",
+            "vehicle": "Dive Bomber",
+            "speed": 35,
+            "armor":  30,
+            "criticalHit": 4,
+            "elementalPower": 25,
+            "maxHealth": 500,
+            "startingHealth": 250
+        },
+
+        {
+            "statsName": "High Volt",
+            "element": "Tech",
+            "vehicle": "Shield Striker",
+            "speed": 50,
+            "armor":  24,
+            "criticalHit": 2,
+            "elementalPower": 25,
+            "maxHealth": 520,
+            "startingHealth": 260
+        },
+
+        {
+            "statsName": "Double Dare Trigger Happy",
+            "element": "Tech",
+            "vehicle": "Gold Rusher",
+            "speed": 50,
+            "armor":  18,
+            "criticalHit": 6,
+            "elementalPower": 25,
+            "maxHealth": 900,
+            "startingHealth": 300
+        },
+
+        {
+            "statsName": "Splat",
+            "element": "Magic",
+            "vehicle": "Splatter Splasher",
+            "speed": 43,
+            "armor":  6,
+            "criticalHit": 4,
+            "elementalPower": 25,
+            "maxHealth": 720,
+            "startingHealth": 240
+        },
+
+        {
+            "statsName": "Big Bubble Pop Fizz",
+            "element": "Magic",
+            "vehicle": "Soda Skimmer",
+            "speed": 43,
+            "armor":  24,
+            "criticalHit": 4,
+            "elementalPower": 25,
+            "maxHealth": 600,
+            "startingHealth": 300
+        }
+    ]
+}

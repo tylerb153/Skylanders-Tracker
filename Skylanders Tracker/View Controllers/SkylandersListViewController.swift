@@ -124,6 +124,9 @@ class SkylandersListTableViewController: UITableViewController {
         case "DisplayTrap":
             let TrapsDetailViewController = segue.destination as! TrapsDetailViewController
             TrapsDetailViewController.chosenTrap = skylanderToSend
+        case "DisplaySwapper":
+            let SwappersDetailViewController = segue.destination as! SwappersDetailViewController
+            SwappersDetailViewController.chosenSwapper = skylanderToSend
         default:
             print("Error in send")
         }
@@ -198,6 +201,8 @@ extension SkylandersListTableViewController {
                 self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
             case "Chase Trap":
                 self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
+            case "Swapper":
+                self.performSegue(withIdentifier: "DisplaySwapper", sender: Any?.self)
             default:
                 self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
             }

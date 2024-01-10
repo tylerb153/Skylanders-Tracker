@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct SwapperStatsList: Codable {
+    var SwapperStats: [SwapperStats]
+}

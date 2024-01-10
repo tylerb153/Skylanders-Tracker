@@ -10,7 +10,7 @@ import CoreData
 
 class SkylandersDetailViewController: UIViewController {
     
-    //Label names changed only with SuperChargers and Imaginators
+    //Label names
     @IBOutlet weak var speedLabel: UILabel!
     @IBOutlet weak var armorLabel: UILabel!
     @IBOutlet weak var criticalHitLabel: UILabel!

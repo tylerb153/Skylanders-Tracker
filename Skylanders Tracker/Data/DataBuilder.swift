@@ -13,7 +13,9 @@ class DataBuilder {
     
     private static var jsonSkylanders: [SkylanderObject] = []
     private static var jsonStats: [SkylandersStats] = []
+    private static var jsonSwapperStats: [SwapperStats] = []
     private static var jsonTrapDetails: [TrapsDetails] = []
+    private static var jsonSuperChargerStats: [SuperChargerStats] = []
     
     // MARK: - JSON parse
     private static func getData(type dataType: String) -> Data? {
@@ -25,6 +27,10 @@ class DataBuilder {
             name = "Skylanders Stats"
         case "Traps":
             name = "Traps Details"
+        case "Swappers":
+            name = "Swappers Stats"
+        case "SuperChargers":
+            name = "SuperChargers Stats"
         default:
             print("Error in getData in DataBuilder")
             return nil
@@ -70,6 +76,16 @@ class DataBuilder {
             if let result = try? decoder.decode(TrapsDetailsList.self, from: data) {
                 jsonTrapDetails = result.TrapsDetails
             }
+        
+        case "Swappers":
+            if let result = try? decoder.decode(SwapperStatsList.self, from: data) {
+                jsonSwapperStats = result.SwapperStats
+            }
+        
+        case "SuperChargers":
+            if let result = try? decoder.decode(SuperChargersStatsList.self, from: data) {
+                jsonSuperChargerStats = result.SuperChargerStats
+            }
            
         default: print("Incorrect Data Type")
         }
@@ -80,6 +96,9 @@ class DataBuilder {
         parseJson(type: "Data")
         parseJson(type: "Stats")
         parseJson(type: "Traps")
+        parseJson(type: "Swappers")
+        parseJson(type: "SuperChargers")
+        
         for jsonSkylander in jsonSkylanders {
             saveSkylander(jsonSkylander: jsonSkylander)
         }
@@ -88,6 +107,12 @@ class DataBuilder {
         }
         for jsonTrapDetail in jsonTrapDetails {
             saveTrapDetails(jsonTrapDetails: jsonTrapDetail)
+        }
+        for jsonSwapperStat in jsonSwapperStats {
+            saveSwapperStats(jsonSwapperStats: jsonSwapperStat)
+        }
+        for jsonSuperChargerStat in jsonSuperChargerStats {
+            saveSuperChargerStats(jsonSuperChargerStats: jsonSuperChargerStat)
         }
     }
     
@@ -167,6 +192,33 @@ class DataBuilder {
         }
     }
     
+    private static func saveSwapperStats(jsonSwapperStats: SwapperStats) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "SwapperStatsTable", in: managedContext)!
+        
+        let swapperStat = NSManagedObject(entity: entity, insertInto: managedContext)
+        swapperStat.setValue(jsonSwapperStats.statsName, forKey: "statsName")
+        swapperStat.setValue(jsonSwapperStats.element, forKey: "element")
+        swapperStat.setValue(jsonSwapperStats.movementType, forKey: "movementType")
+        swapperStat.setValue(jsonSwapperStats.speed, forKey: "speed")
+        swapperStat.setValue(jsonSwapperStats.armor, forKey: "armor")
+        swapperStat.setValue(jsonSwapperStats.criticalHit, forKey: "criticalHit")
+        swapperStat.setValue(jsonSwapperStats.elementalPower, forKey: "elementalPower")
+        swapperStat.setValue(jsonSwapperStats.maxHealth, forKey: "maxHealth")
+        swapperStat.setValue(jsonSwapperStats.startingHealth, forKey: "startingHealth")
+        
+        do {
+//            print(jsonSwapperStats)
+            try managedContext.save()
+        }
+        catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
     static func DeleteData() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
@@ -176,7 +228,8 @@ class DataBuilder {
     let fetchRequestList = [
         NSFetchRequest<NSManagedObject>(entityName: "Skylander"),
         NSFetchRequest<NSManagedObject>(entityName: "SkylanderStats"),
-        NSFetchRequest<NSManagedObject>(entityName: "TrapDetails")
+        NSFetchRequest<NSManagedObject>(entityName: "TrapDetails"),
+        NSFetchRequest<NSManagedObject>(entityName: "SwapperStatsTable")
     ]
         
         for i in fetchRequestList {
