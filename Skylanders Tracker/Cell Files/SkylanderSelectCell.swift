@@ -55,18 +55,4 @@ class SkylanderSelectCell: UITableViewCell {
         setName(givenName: baseName)
         setImage(givenImage: ConfigureImage(skylander: skylander))
     }
-    
-    private func configureName(name: String, series: Int, variant: String) -> String {
-        if series == 0 {
-            if variant == "Villians" || variant == "Doom Raiders" || variant == "Villian Variants" {
-                return "\(name)V"
-            }
-            else {
-                return "\(name)1"
-            }
-        }
-        else {
-            return "\(name)\(series)"
-        }
-    }
 }

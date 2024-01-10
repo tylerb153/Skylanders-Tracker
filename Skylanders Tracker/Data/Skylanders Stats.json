@@ -815,14 +815,906 @@
         },
 
         {
-            "statsName": "Hoot Loop",
+            "statsName": "Dune Bug",
             "element": "Magic",
-            "speed": 0,
-            "armor":  0,
-            "criticalHit": 0,
-            "elementalPower": 0,
-            "maxHealth": 0,
-            "startingHealth": 0
+            "speed": 25,
+            "armor":  24,
+            "criticalHit": 4,
+            "elementalPower": 25,
+            "maxHealth": 520,
+            "startingHealth": 260
+        },
+
+        {
+            "statsName": "Star Strike",
+            "element": "Magic",
+            "speed": 43,
+            "armor":  12,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 520,
+            "startingHealth": 260
+        },
+
+        {
+            "statsName": "Fryno",
+            "element": "Fire",
+            "speed": 43,
+            "armor":  6,
+            "criticalHit": 4,
+            "elementalPower": 25,
+            "maxHealth": 600,
+            "startingHealth": 300
+        },
+
+        {
+            "statsName": "Smolderdash",
+            "element": "Fire",
+            "speed": 43,
+            "armor":  12,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 560,
+            "startingHealth": 280
+        },
+
+        {
+            "statsName": "Rip Tide",
+            "element": "Water",
+            "speed": 43,
+            "armor":  30,
+            "criticalHit": 4,
+            "elementalPower": 25,
+            "maxHealth": -1,
+            "startingHealth": 300
+        },
+
+        {
+            "statsName": "Punk Shock",
+            "element": "Water",
+            "speed": 43,
+            "armor":  12,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 540,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Roller Brawl",
+            "element": "Undead",
+            "speed": 50,
+            "armor":  12,
+            "criticalHit": 7,
+            "elementalPower": 25,
+            "maxHealth": 780,
+            "startingHealth": 260
+        },
+
+        {
+            "statsName": "Grim Creeper",
+            "element": "Undead",
+            "speed": 43,
+            "armor":  6,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": -1,
+            "startingHealth": 250
+        },
+
+        {
+            "statsName": "Wind Up",
+            "element": "Tech",
+            "speed": 43,
+            "armor":  12,
+            "criticalHit": 4,
+            "elementalPower": 25,
+            "maxHealth": 500,
+            "startingHealth": 250
+        },
+
+        {
+            "statsName": "Countdown",
+            "element": "Tech",
+            "speed": 43,
+            "armor":  12,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 580,
+            "startingHealth": 290
+        },
+
+        {
+            "statsName": "Zoo Lou",
+            "element": "Life",
+            "speed": 43,
+            "armor":  18,
+            "criticalHit": 6,
+            "elementalPower": 25,
+            "maxHealth": 580,
+            "startingHealth": 290
+        },
+
+        {
+            "statsName": "Bumble Blast",
+            "element": "Life",
+            "speed": 35,
+            "armor":  24,
+            "criticalHit": 4,
+            "elementalPower": 25,
+            "maxHealth": -1,
+            "startingHealth": 320
+        },
+
+        {
+            "statsName": "Scorp",
+            "element": "Earth",
+            "speed": 35,
+            "armor":  18,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 520,
+            "startingHealth": 260
+        },
+
+        {
+            "statsName": "Slobber Tooth",
+            "element": "Earth",
+            "speed": 33,
+            "armor":  30,
+            "criticalHit": 2,
+            "elementalPower": 25,
+            "maxHealth": 600,
+            "startingHealth": 300
+        },
+
+        {
+            "statsName": "Pop Thorn",
+            "element": "Air",
+            "speed": 43,
+            "armor":  24,
+            "criticalHit": 6,
+            "elementalPower": 25,
+            "maxHealth": 560,
+            "startingHealth": 280
+        },
+
+        {
+            "statsName": "Scratch",
+            "element": "Air",
+            "speed": 50,
+            "armor":  6,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 780,
+            "startingHealth": 260
+        },
+
+
+        {
+            "statsName": "Blastermind",
+            "element": "Magic",
+            "speed": 70,
+            "armor":  30,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 747,
+            "startingHealth": 240
+        },
+
+        {
+            "statsName": "Enigma",
+            "element": "Magic",
+            "speed": 60,
+            "armor":  30,
+            "criticalHit": 60,
+            "elementalPower": 25,
+            "maxHealth": 964,
+            "startingHealth": 310
+        },
+
+        {
+            "statsName": "Snap Shot",
+            "element": "Water",
+            "speed": 70,
+            "armor":  24,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 902,
+            "startingHealth": 290
+        },
+
+        {
+            "statsName": "Lob-Star",
+            "element": "Water",
+            "speed": 60,
+            "armor":  30,
+            "criticalHit": 40,
+            "elementalPower": 25,
+            "maxHealth": 747,
+            "startingHealth": 240
+        },
+
+        {
+            "statsName": "Wildfire",
+            "element": "Fire",
+            "speed": 60,
+            "armor":  30,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 1126,
+            "startingHealth": 330
+        },
+
+        {
+            "statsName": "Ka-Boom",
+            "element": "Fire",
+            "speed": 60,
+            "armor":  12,
+            "criticalHit": 80,
+            "elementalPower": 25,
+            "maxHealth": 778,
+            "startingHealth": 250
+        },
+
+        {
+            "statsName": "Tuff Luck",
+            "element": "Life",
+            "speed": 85,
+            "armor":  48,
+            "criticalHit": 80,
+            "elementalPower": 25,
+            "maxHealth": 964,
+            "startingHealth": 310
+        },
+
+        {
+            "statsName": "Bushwhack",
+            "element": "Life",
+            "speed": 60,
+            "armor":  18,
+            "criticalHit": 60,
+            "elementalPower": 25,
+            "maxHealth": 902,
+            "startingHealth": 290
+        },
+
+        {
+            "statsName": "Gusto",
+            "element": "Air",
+            "speed": 60,
+            "armor":  30,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 1244,
+            "startingHealth": 400
+        },
+
+        {
+            "statsName": "Thunderbolt",
+            "element": "Air",
+            "speed": 60,
+            "armor":  48,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 1275,
+            "startingHealth": 410
+        },
+
+        {
+            "statsName": "Jawbreaker",
+            "element": "Tech",
+            "speed": 50,
+            "armor":  12,
+            "criticalHit": 70,
+            "elementalPower": 25,
+            "maxHealth": 1058,
+            "startingHealth": 340
+        },
+
+        {
+            "statsName": "Gearshift",
+            "element": "Tech",
+            "speed": 70,
+            "armor":  24,
+            "criticalHit": 40,
+            "elementalPower": 25,
+            "maxHealth": 933,
+            "startingHealth": 300
+        },
+
+        {
+            "statsName": "Wallop",
+            "element": "Earth",
+            "speed": 60,
+            "armor":  18,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 933,
+            "startingHealth": 300
+        },
+
+        {
+            "statsName": "Head Rush",
+            "element": "Earth",
+            "speed": 60,
+            "armor":  48,
+            "criticalHit": 10,
+            "elementalPower": 25,
+            "maxHealth": 1058,
+            "startingHealth": 340
+        },
+
+        {
+            "statsName": "Krypt King",
+            "element": "Undead",
+            "speed": 60,
+            "armor":  24,
+            "criticalHit": 40,
+            "elementalPower": 25,
+            "maxHealth": 933,
+            "startingHealth": 300
+        },
+
+        {
+            "statsName": "Short Cut",
+            "element": "Undead",
+            "speed": 70,
+            "armor":  18,
+            "criticalHit": 80,
+            "elementalPower": 25,
+            "maxHealth": 871,
+            "startingHealth": 280
+        },
+
+        {
+            "statsName": "Knight Light",
+            "element": "Light",
+            "speed": 70,
+            "armor":  12,
+            "criticalHit": 70,
+            "elementalPower": 25,
+            "maxHealth": 1337,
+            "startingHealth": 430
+        },
+
+        {
+            "statsName": "Knight Mare",
+            "element": "Dark",
+            "speed": 85,
+            "armor":  36,
+            "criticalHit": 40,
+            "elementalPower": 25,
+            "maxHealth": 1089,
+            "startingHealth": 350
+        },
+
+        {
+            "statsName": "Fizzy Frenzy Pop Fizz",
+            "element": "Magic",
+            "speed": 60,
+            "armor":  18,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 840,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Deja Vu",
+            "element": "Magic",
+            "speed": 60,
+            "armor":  18,
+            "criticalHit": 60,
+            "elementalPower": 25,
+            "maxHealth": 653,
+            "startingHealth": 210
+        },
+
+        {
+            "statsName": "Cobra Cadabra",
+            "element": "Magic",
+            "speed": 70,
+            "armor":  36,
+            "criticalHit": 40,
+            "elementalPower": 25,
+            "maxHealth": 902,
+            "startingHealth": 290
+        },
+
+        {
+            "statsName": "Tidal Wave Gill Grunt",
+            "element": "Water",
+            "speed": 50,
+            "armor":  6,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 840,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Echo",
+            "element": "Water",
+            "speed": 50,
+            "armor":  42,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 840,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Flip Wreck",
+            "element": "Water",
+            "speed": 60,
+            "armor":  30,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 933,
+            "startingHealth": 300
+        },
+
+        {
+            "statsName": "Hog Wild Fryno",
+            "element": "Fire",
+            "speed": 60,
+            "armor":  6,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 1126,
+            "startingHealth": 330
+        },
+
+        {
+            "statsName": "Torch",
+            "element": "Fire",
+            "speed": 60,
+            "armor":  12,
+            "criticalHit": 40,
+            "elementalPower": 25,
+            "maxHealth": 716,
+            "startingHealth": 230
+        },
+
+        {
+            "statsName": "Trail Blazer",
+            "element": "Fire",
+            "speed": 85,
+            "armor":  18,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 840,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Sure Shot Shroomboom",
+            "element": "Life",
+            "speed": 60,
+            "armor":  18,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 809,
+            "startingHealth": 260
+        },
+
+        {
+            "statsName": "Food Fight",
+            "element": "Life",
+            "speed": 60,
+            "armor":  18,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 809,
+            "startingHealth": 260
+        },
+
+        {
+            "statsName": "High Five",
+            "element": "Life",
+            "speed": 60,
+            "armor":  6,
+            "criticalHit": 70,
+            "elementalPower": 25,
+            "maxHealth": 840,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Full Blast Jet-Vac",
+            "element": "Air",
+            "speed": 70,
+            "armor":  30,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 747,
+            "startingHealth": 240
+        },
+
+        {
+            "statsName": "Fling Kong",
+            "element": "Air",
+            "speed": 70,
+            "armor":  12,
+            "criticalHit": 70,
+            "elementalPower": 25,
+            "maxHealth": 747,
+            "startingHealth": 240
+        },
+
+        {
+            "statsName": "Blades",
+            "element": "Air",
+            "speed": 60,
+            "armor":  30,
+            "criticalHit": 10,
+            "elementalPower": 25,
+            "maxHealth": 871,
+            "startingHealth": 280
+        },
+
+        {
+            "statsName": "Tread Head",
+            "element": "Tech",
+            "speed": 85,
+            "armor":  18,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 840,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Chopper",
+            "element": "Tech",
+            "speed": 60,
+            "armor":  6,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 778,
+            "startingHealth": 260
+        },
+
+        {
+            "statsName": "Rocky Roll",
+            "element": "Earth",
+            "speed": 60,
+            "armor":  30,
+            "criticalHit": 40,
+            "elementalPower": 25,
+            "maxHealth": 840,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Fist Bump",
+            "element": "Earth",
+            "speed": 60,
+            "armor":  30,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 871,
+            "startingHealth": 280
+        },
+
+        {
+            "statsName": "Funny Bone",
+            "element": "Undead",
+            "speed": 70,
+            "armor":  24,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 840,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Bat Spin",
+            "element": "Undead",
+            "speed": 85,
+            "armor":  12,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 747,
+            "startingHealth": 240
+        },
+
+        {
+            "statsName": "Spotlight",
+            "element": "Light",
+            "speed": 60,
+            "armor":  36,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 840,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Blackout",
+            "element": "Dark",
+            "speed": 60,
+            "armor":  24,
+            "criticalHit": 40,
+            "elementalPower": 25,
+            "maxHealth": 809,
+            "startingHealth": 260
+        },
+
+        {
+            "statsName": "Mini Jini",
+            "element": "Magic",
+            "speed": 85,
+            "armor":  48,
+            "criticalHit": 80,
+            "elementalPower": 25,
+            "maxHealth": 1275,
+            "startingHealth": 410
+        },
+
+        {
+            "statsName": "Spry",
+            "element": "Magic",
+            "speed": 70,
+            "armor":  18,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 871,
+            "startingHealth": 280
+        },
+
+        {
+            "statsName": "Thumpling",
+            "element": "Water",
+            "speed": 50,
+            "armor":  30,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 1431,
+            "startingHealth": 460
+        },
+
+        {
+            "statsName": "Weeruptor",
+            "element": "Fire",
+            "speed": 50,
+            "armor":  18,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 902,
+            "startingHealth": 290
+        },
+
+        {
+            "statsName": "Whisper Elf",
+            "element": "Life",
+            "speed": 70,
+            "armor":  12,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 840,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Barkley",
+            "element": "Life",
+            "speed": 50,
+            "armor":  24,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 1337,
+            "startingHealth": 430
+        },
+
+        {
+            "statsName": "Pet Vac",
+            "element": "Air",
+            "speed": 70,
+            "armor":  12,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 747,
+            "startingHealth": 240
+        },
+
+        {
+            "statsName": "Breeze",
+            "element": "Air",
+            "speed": 70,
+            "armor":  18,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 840,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Trigger Snappy",
+            "element": "Tech",
+            "speed": 70,
+            "armor":  30,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 622,
+            "startingHealth": 200
+        },
+
+        {
+            "statsName": "Drobit",
+            "element": "Tech",
+            "speed": 60,
+            "armor":  24,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 902,
+            "startingHealth": 290
+        },
+
+        {
+            "statsName": "Terrabite",
+            "element": "Earth",
+            "speed": 50,
+            "armor":  18,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 964,
+            "startingHealth": 310
+        },
+
+        {
+            "statsName": "Bop",
+            "element": "Earth",
+            "speed": 50,
+            "armor":  12,
+            "criticalHit": 20,
+            "elementalPower": 25,
+            "maxHealth": 964,
+            "startingHealth": 310
+        },
+
+        {
+            "statsName": "Hijinx",
+            "element": "Undead",
+            "speed": 60,
+            "armor":  18,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 840,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Eye Small",
+            "element": "Undead",
+            "speed": 50,
+            "armor":  30,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 1337,
+            "startingHealth": 430
+        },
+
+        {
+            "statsName": "Dark Snap Shot",
+            "element": "Water",
+            "speed": 70,
+            "armor":  36,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 1213,
+            "startingHealth": 390
+        },
+
+        {
+            "statsName": "Dark Wildfire",
+            "element": "Fire",
+            "speed": 60,
+            "armor":  48,
+            "criticalHit": 40,
+            "elementalPower": 25,
+            "maxHealth": 933,
+            "startingHealth": 300
+        },
+
+        {
+            "statsName": "Dark Food Fight",
+            "element": "Life",
+            "speed": 60,
+            "armor":  30,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 840,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Legendary Bushwhack",
+            "element": "Life",
+            "speed": 60,
+            "armor":  30,
+            "criticalHit": 80,
+            "elementalPower": 25,
+            "maxHealth": 933,
+            "startingHealth": 300
+        },
+
+        {
+            "statsName": "Legendary Jawbreaker",
+            "element": "Tech",
+            "speed": 60,
+            "armor":  30,
+            "criticalHit": 80,
+            "elementalPower": 25,
+            "maxHealth": 933,
+            "startingHealth": 300
+        },
+
+        {
+            "statsName": "Legendary Deja Vu",
+            "element": "Magic",
+            "speed": 60,
+            "armor":  24,
+            "criticalHit": 90,
+            "elementalPower": 25,
+            "maxHealth": 840,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Legendary Blades",
+            "element": "Air",
+            "speed": 70,
+            "armor":  18,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 747,
+            "startingHealth": 240
+        },
+
+        {
+            "statsName": "Winterfest Lob-Star",
+            "element": "Water",
+            "speed": 70,
+            "armor":  42,
+            "criticalHit": 60,
+            "elementalPower": 25,
+            "maxHealth": 840,
+            "startingHealth": 270
+        },
+
+        {
+            "statsName": "Nitro Head Rush",
+            "element": "Tech",
+            "speed": 60,
+            "armor":  72,
+            "criticalHit": 10,
+            "elementalPower": 25,
+            "maxHealth": 933,
+            "startingHealth": 300
+        },
+
+        {
+            "statsName": "Nitro Krypt King",
+            "element": "Undead",
+            "speed": 60,
+            "armor":  36,
+            "criticalHit": 60,
+            "elementalPower": 25,
+            "maxHealth": 933,
+            "startingHealth": 300
+        },
+
+        {
+            "statsName": "Love Potion Pop Fizz",
+            "element": "Magic",
+            "speed": 60,
+            "armor":  30,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 840,
+            "startingHealth": 270
         }
     ]
 }

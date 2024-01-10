@@ -18,7 +18,7 @@ func ConfigureImage(skylander: NSManagedObject) -> UIImage? {
 
 private func configureName(name: String, series: Int, variant: String) -> String {
     if series == 0 {
-        if variant == "Villians" || variant == "Doom Raiders" || variant == "Villian Variants" {
+        if variant == "Villian" || variant == "Doom Raider" || variant == "Villian Variant" {
             return "\(name)V"
         }
         else {

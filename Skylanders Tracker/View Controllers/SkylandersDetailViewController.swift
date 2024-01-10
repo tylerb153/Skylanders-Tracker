@@ -119,8 +119,8 @@ class SkylandersDetailViewController: UIViewController {
         if chosenSkylander.value(forKey: "worksWithSuperChargers") as! Bool {
             displayString += "SuperChargers\n"
         }
-        if chosenSkylander.value(forKey: "worksWithSuperChargers") as! Bool {
-            displayString += "Imaginators\n"
+        if chosenSkylander.value(forKey: "worksWithImaginators") as! Bool {
+            displayString += "Imaginators"
         }
         
         compatableGames.text = displayString

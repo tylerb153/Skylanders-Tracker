@@ -95,16 +95,10 @@ class SkylandersListTableViewController: UITableViewController {
         var sectionsToDisplay: [String] = []
         
         for skylander in skylandersToDisplay {
-            var variant = skylander.value(forKey: "variantText") as! String
-            if variant == "" {
-                variant = "Skylanders"
-            }
+            let variant = skylander.value(forKey: "variantText") as! String
             if !sectionsToDisplay.contains(variant) {
                 sectionsToDisplay.append(variant)
             }
-        }
-        if let index = sectionsToDisplay.firstIndex(of: "") {
-            sectionsToDisplay.remove(at: index)
         }
 //        print(sectionsToDisplay)
         return sectionsToDisplay
@@ -112,14 +106,8 @@ class SkylandersListTableViewController: UITableViewController {
     
     private func getSkylandersSection(variantText: String) -> [NSManagedObject] {
         var sectionSkylanders: [NSManagedObject] = []
-        var ModifiedvariantText: String
-        switch variantText {
-        case "Skylanders": ModifiedvariantText = ""
-        default: ModifiedvariantText = variantText
-        }
-        
         for skylander in skylandersToDisplay {
-            if skylander.value(forKey: "variantText") as! String == ModifiedvariantText {
+            if skylander.value(forKey: "variantText") as! String == variantText {
                 sectionSkylanders.append(skylander)
             }
         }
@@ -159,11 +147,19 @@ extension SkylandersListTableViewController {
         return sectionsToDisplay.count
     }
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection sectionNumber: Int) -> String? {
         if nothingFound {
             return ""
         }
-        return sectionsToDisplay[section]
+        var modifiedSectionsToDisplay: [String] = []
+        for section in sectionsToDisplay {
+            switch section {
+            case "": modifiedSectionsToDisplay.append("Skylanders")
+            default: modifiedSectionsToDisplay.append(section + "s")
+            }
+        }
+        
+        return modifiedSectionsToDisplay[sectionNumber]
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -194,7 +190,7 @@ extension SkylandersListTableViewController {
             skylanderToSend = getSkylandersSection(variantText: sectionsToDisplay[indexPath.section])[indexPath.row]
             let type = skylanderToSend?.value(forKey: "variantText") as! String
             switch type {
-            case "Traps":
+            case "Trap":
                 self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
             case "Legendary Trap":
                 self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
