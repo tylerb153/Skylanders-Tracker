@@ -236,7 +236,7 @@ class DataBuilder {
         swapperStat.setValue(jsonSuperChargerStats.elementalPower, forKey: "elementalPower")
         swapperStat.setValue(jsonSuperChargerStats.maxHealth, forKey: "maxHealth")
         swapperStat.setValue(jsonSuperChargerStats.startingHealth, forKey: "startingHealth")
-        
+//        print(swapperStat.value(forKey: "vehicle"))
         do {
 //            print(jsonSuperChargerStats)
             try managedContext.save()

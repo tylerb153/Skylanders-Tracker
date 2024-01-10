@@ -1,5 +1,5 @@
 //
-//  SwappersDetailViewController.swift
+//  SuperChargersDetailViewController.swift
 //  Skylanders Tracker
 //
 //  Created by Tyler Bischoff on 1/9/24.
@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class SwappersDetailViewController: UIViewController {
+class SuperChargersDetailViewController: UIViewController {
     
     //Label names
     @IBOutlet weak var speedLabel: UILabel!
@@ -31,16 +31,16 @@ class SwappersDetailViewController: UIViewController {
     @IBOutlet weak var compatableGames: UILabel!
     @IBOutlet weak var skylanderSeries: UILabel!
     @IBOutlet weak var skylanderGame: UILabel!
-    @IBOutlet weak var swapperMovementType: UILabel!
+    @IBOutlet weak var superChargerVehicle: UILabel!
     
-    var chosenSwapper: NSManagedObject!
-    lazy var name = chosenSwapper.value(forKey: "name") as! String
-    lazy var baseName = chosenSwapper.value(forKey: "baseName") as! String
-    lazy var series = chosenSwapper.value(forKey: "series") as! Int
+    var chosenSuperCharger: NSManagedObject!
+    lazy var name = chosenSuperCharger.value(forKey: "name") as! String
+    lazy var baseName = chosenSuperCharger.value(forKey: "baseName") as! String
+    lazy var series = chosenSuperCharger.value(forKey: "series") as! Int
     lazy var image = getImage()
-    lazy var game = chosenSwapper.value(forKey: "game") as! String
-    lazy var statsName = chosenSwapper.value(forKey: "statsName") as! String
-    lazy var variant = chosenSwapper.value(forKey: "variantText") as! String
+    lazy var game = chosenSuperCharger.value(forKey: "game") as! String
+    lazy var statsName = chosenSuperCharger.value(forKey: "statsName") as! String
+    lazy var variant = chosenSuperCharger.value(forKey: "variantText") as! String
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +58,7 @@ class SwappersDetailViewController: UIViewController {
     
     // MARK: - Helper Functions
     private func getImage() -> UIImage {
-        if let image = ConfigureImage(skylander: chosenSwapper) {
+        if let image = ConfigureImage(skylander: chosenSuperCharger) {
             return image
         }
         else {
@@ -68,7 +68,7 @@ class SwappersDetailViewController: UIViewController {
     
     private func configureSeries() -> String {
         if series == 0 {
-            let variant = chosenSwapper?.value(forKey: "variantText") as! String
+            let variant = chosenSuperCharger?.value(forKey: "variantText") as! String
             return variant
         }
         else {
@@ -84,16 +84,16 @@ class SwappersDetailViewController: UIViewController {
     
     private func setLabels() {
         if let skylanderStats = getStats() {
-            swapperMovementType.text = String(describing: skylanderStats.value(forKey: "movementType")!)
-        skylanderSpeed.text = String(describing: skylanderStats.value(forKey: "speed") as! Int)
-        skylanderArmor.text = String(describing: skylanderStats.value(forKey: "armor") as! Int)
-        skylanderCriticalHit.text = String(describing: skylanderStats.value(forKey: "criticalHit") as! Int)
-        skylanderElementalPower.text = String(describing: skylanderStats.value(forKey: "elementalPower") as! Int)
-        skylanderStartHealth.text = String(describing: skylanderStats.value(forKey: "startingHealth") as! Int)
-        skylanderMaximumHealth.text = String(describing: skylanderStats.value(forKey: "maxHealth") as! Int)
+            superChargerVehicle.text = String(describing: skylanderStats.value(forKey: "vehicle")!)
+            skylanderSpeed.text = String(describing: skylanderStats.value(forKey: "speed") as! Int)
+            skylanderArmor.text = String(describing: skylanderStats.value(forKey: "armor") as! Int)
+            skylanderCriticalHit.text = String(describing: skylanderStats.value(forKey: "criticalHit") as! Int)
+            skylanderElementalPower.text = String(describing: skylanderStats.value(forKey: "elementalPower") as! Int)
+            skylanderStartHealth.text = String(describing: skylanderStats.value(forKey: "startingHealth") as! Int)
+            skylanderMaximumHealth.text = String(describing: skylanderStats.value(forKey: "maxHealth") as! Int)
         }
         else {
-            swapperMovementType.text = "Unknown"
+            superChargerVehicle.text = "Unknown"
             skylanderSpeed.text = "0"
             skylanderArmor.text = "0"
             skylanderCriticalHit.text = "0"
@@ -106,22 +106,22 @@ class SwappersDetailViewController: UIViewController {
     
     private func setCompatibleGames() {
         var displayString = ""
-        if chosenSwapper.value(forKey: "worksWithSpyrosAdventure") as! Bool {
+        if chosenSuperCharger.value(forKey: "worksWithSpyrosAdventure") as! Bool {
             displayString += "Spyro's Adventure\n"
         }
-        if chosenSwapper.value(forKey: "worksWithGiants") as! Bool {
+        if chosenSuperCharger.value(forKey: "worksWithGiants") as! Bool {
             displayString += "Giants\n"
         }
-        if chosenSwapper.value(forKey: "worksWithSwapForce") as! Bool {
+        if chosenSuperCharger.value(forKey: "worksWithSwapForce") as! Bool {
             displayString += "Swap Force\n"
         }
-        if chosenSwapper.value(forKey: "worksWithTrapTeam") as! Bool {
+        if chosenSuperCharger.value(forKey: "worksWithTrapTeam") as! Bool {
             displayString += "Trap Team\n"
         }
-        if chosenSwapper.value(forKey: "worksWithSuperChargers") as! Bool {
+        if chosenSuperCharger.value(forKey: "worksWithSuperChargers") as! Bool {
             displayString += "SuperChargers\n"
         }
-        if chosenSwapper.value(forKey: "worksWithImaginators") as! Bool {
+        if chosenSuperCharger.value(forKey: "worksWithImaginators") as! Bool {
             displayString += "Imaginators"
         }
         
@@ -130,13 +130,14 @@ class SwappersDetailViewController: UIViewController {
     
     // MARK: - Data Functions
     private func getStats() -> NSManagedObject? {
-        let statsList = RefreshData(entityName: "SwapperStatsTable")!
-        for swapperStats in statsList {
-            if swapperStats.value(forKey: "statsName") as! String == statsName {
-                return swapperStats
+        let statsList = RefreshData(entityName: "SuperChargerStatsTable")!
+        for superChargerStats in statsList {
+            if superChargerStats.value(forKey: "statsName") as! String == statsName {
+                return superChargerStats
             }
         }
         return nil
 
     }
 }
+

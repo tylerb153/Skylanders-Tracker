@@ -127,6 +127,10 @@ class SkylandersListTableViewController: UITableViewController {
         case "DisplaySwapper":
             let SwappersDetailViewController = segue.destination as! SwappersDetailViewController
             SwappersDetailViewController.chosenSwapper = skylanderToSend
+        case "DisplaySuperCharger":
+            print(skylanderToSend)
+            let SuperChargersDetailViewController = segue.destination as! SuperChargersDetailViewController
+            SuperChargersDetailViewController.chosenSuperCharger = skylanderToSend
         default:
             print("Error in send")
         }
@@ -203,6 +207,8 @@ extension SkylandersListTableViewController {
                 self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
             case "Swapper":
                 self.performSegue(withIdentifier: "DisplaySwapper", sender: Any?.self)
+            case "SuperCharger":
+                self.performSegue(withIdentifier: "DisplaySuperCharger", sender: Any?.self)
             default:
                 self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
             }
