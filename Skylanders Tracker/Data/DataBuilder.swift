@@ -15,7 +15,7 @@ class DataBuilder {
     private static var jsonStats: [SkylandersStats] = []
     private static var jsonSwapperStats: [SwapperStats] = []
     private static var jsonTrapDetails: [TrapsDetails] = []
-    private static var jsonSuperChargerStats: [SuperChargerStats] = []
+    private static var jsonSuperChargerStats: [SuperChargersStats] = []
     
     // MARK: - JSON parse
     private static func getData(type dataType: String) -> Data? {
@@ -84,7 +84,7 @@ class DataBuilder {
         
         case "SuperChargers":
             if let result = try? decoder.decode(SuperChargersStatsList.self, from: data) {
-                jsonSuperChargerStats = result.SuperChargerStats
+                jsonSuperChargerStats = result.SuperChargersStats
             }
            
         default: print("Incorrect Data Type")
@@ -219,6 +219,33 @@ class DataBuilder {
         }
     }
     
+    private static func saveSuperChargerStats(jsonSuperChargerStats: SuperChargersStats) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "SuperChargerStatsTable", in: managedContext)!
+        
+        let swapperStat = NSManagedObject(entity: entity, insertInto: managedContext)
+        swapperStat.setValue(jsonSuperChargerStats.statsName, forKey: "statsName")
+        swapperStat.setValue(jsonSuperChargerStats.element, forKey: "element")
+        swapperStat.setValue(jsonSuperChargerStats.vehicle, forKey: "vehicle")
+        swapperStat.setValue(jsonSuperChargerStats.speed, forKey: "speed")
+        swapperStat.setValue(jsonSuperChargerStats.armor, forKey: "armor")
+        swapperStat.setValue(jsonSuperChargerStats.criticalHit, forKey: "criticalHit")
+        swapperStat.setValue(jsonSuperChargerStats.elementalPower, forKey: "elementalPower")
+        swapperStat.setValue(jsonSuperChargerStats.maxHealth, forKey: "maxHealth")
+        swapperStat.setValue(jsonSuperChargerStats.startingHealth, forKey: "startingHealth")
+        
+        do {
+//            print(jsonSuperChargerStats)
+            try managedContext.save()
+        }
+        catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
     static func DeleteData() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
@@ -229,7 +256,8 @@ class DataBuilder {
         NSFetchRequest<NSManagedObject>(entityName: "Skylander"),
         NSFetchRequest<NSManagedObject>(entityName: "SkylanderStats"),
         NSFetchRequest<NSManagedObject>(entityName: "TrapDetails"),
-        NSFetchRequest<NSManagedObject>(entityName: "SwapperStatsTable")
+        NSFetchRequest<NSManagedObject>(entityName: "SwapperStatsTable"),
+        NSFetchRequest<NSManagedObject>(entityName: "SuperChargerStatsTable")
     ]
         
         for i in fetchRequestList {

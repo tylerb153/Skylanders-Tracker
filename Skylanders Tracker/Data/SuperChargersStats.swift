@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SuperChargerStats: Codable {
+struct SuperChargersStats: Codable {
     var statsName = ""
     var element = ""
     var vehicle = ""

@@ -8,5 +8,5 @@
 import Foundation
 
 struct SuperChargersStatsList: Codable {
-    var SuperChargerStats: [SuperChargerStats]
+    var SuperChargersStats: [SuperChargersStats]
 }
