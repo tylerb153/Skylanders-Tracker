@@ -1,0 +1,366 @@
+{
+    "SenseisStats" : [
+        {
+            "statsName": "Aurora",
+            "element": "Light",
+            "battleClass": "Swashbuckler",
+            "speed": 20,
+            "armor":  10,
+            "attack": 10,
+            "luck": 6,
+            "health": 240
+        },
+
+        {
+            "statsName": "Starcast",
+            "element": "Dark",
+            "battleClass": "Ninja",
+            "speed": 15,
+            "armor":  6,
+            "attack": 6,
+            "luck": 8,
+            "health": 290
+        },
+
+        {
+            "statsName": "Mysticat",
+            "element": "Magic",
+            "battleClass": "Sorcerer",
+            "speed": 15,
+            "armor":  2,
+            "attack": 6,
+            "luck": 14,
+            "health": 220
+        },
+
+        {
+            "statsName": "Buckshot",
+            "element": "Magic",
+            "battleClass": "Bowslinger",
+            "speed": 15,
+            "armor":  4,
+            "attack": 4,
+            "luck": 12,
+            "health": 240
+        },
+
+        {
+            "statsName": "King Pen",
+            "element": "Water",
+            "battleClass": "Brawler",
+            "speed": 8,
+            "armor":  10,
+            "attack": 12,
+            "luck": 6,
+            "health": 300
+        },
+
+        {
+            "statsName": "Tidepool",
+            "element": "Water",
+            "battleClass": "Quickshot",
+            "speed": 15,
+            "armor":  8,
+            "attack": 8,
+            "luck": 8,
+            "health": 280
+        },
+
+        {
+            "statsName": "Ember",
+            "element": "Fire",
+            "battleClass": "Sentinel",
+            "speed": 8,
+            "armor":  4,
+            "attack": 14,
+            "luck": 6,
+            "health": 260
+        },
+
+        {
+            "statsName": "Flare Wolf",
+            "element": "Fire",
+            "battleClass": "Bazooker",
+            "speed": 15,
+            "armor":  6,
+            "attack": 8,
+            "luck": 10,
+            "health": 270
+        },
+
+        {
+            "statsName": "Air Strike",
+            "element": "Air",
+            "battleClass": "Brawler",
+            "speed": 12,
+            "armor":  12,
+            "attack": 8,
+            "luck": 8,
+            "health": 300
+        },
+
+        {
+            "statsName": "Wild Storm",
+            "element": "Air",
+            "battleClass": "Knight",
+            "speed": 15,
+            "armor":  14,
+            "attack": 6,
+            "luck": 8,
+            "health": 310
+        },
+
+        {
+            "statsName": "Barbella",
+            "element": "Earth",
+            "battleClass": "Sentinel",
+            "speed": 8,
+            "armor":  14,
+            "attack": 10,
+            "luck": 8,
+            "health": 350
+        },
+
+        {
+            "statsName": "Tri-Tip",
+            "element": "Earth",
+            "battleClass": "Smasher",
+            "speed": 8,
+            "armor":  10,
+            "attack": 6,
+            "luck": 10,
+            "health": 370
+        },
+
+        {
+            "statsName": "Chopscotch",
+            "element": "Undead",
+            "battleClass": "Smasher",
+            "speed": 15,
+            "armor":  8,
+            "attack": 12,
+            "luck": 4,
+            "health": 310
+        },
+
+        {
+            "statsName": "Pit Boss",
+            "element": "Undead",
+            "battleClass": "Sorcerer",
+            "speed": 8,
+            "armor":  8,
+            "attack": 8,
+            "luck": 8,
+            "health": 250
+        },
+
+        {
+            "statsName": "Chain Reaction",
+            "element": "Tech",
+            "battleClass": "Swashbuckler",
+            "speed": 8,
+            "armor":  10,
+            "attack": 2,
+            "luck": 10,
+            "health": 240
+        },
+
+        {
+            "statsName": "Ro-Bow",
+            "element": "Tech",
+            "battleClass": "Bowslinger",
+            "speed": 8,
+            "armor":  4,
+            "attack": 10,
+            "luck": 6,
+            "health": 210
+        },
+
+        {
+            "statsName": "Dr. Neo Cortex",
+            "element": "Tech",
+            "battleClass": "Sorcerer",
+            "speed": 8,
+            "armor":  6,
+            "attack": 8,
+            "luck": 8,
+            "health": 280
+        },
+    
+        {
+            "statsName": "Boom Bloom",
+            "element": "Life",
+            "battleClass": "Ninja",
+            "speed": 8,
+            "armor":  8,
+            "attack": 6,
+            "luck": 8,
+            "health": 320
+        },
+
+        {
+            "statsName": "Ambush",
+            "element": "Life",
+            "battleClass": "Knight",
+            "speed": 8,
+            "armor":  8,
+            "attack": 10,
+            "luck": 8,
+            "health": 340
+        },
+
+        {
+            "statsName": "Crash Bandicoot",
+            "element": "Life",
+            "battleClass": "Brawler",
+            "speed": 15,
+            "armor":  2,
+            "attack": 10,
+            "luck": 12,
+            "health": 150
+        },
+
+        {
+            "statsName": "Kaos",
+            "element": "Kaos",
+            "battleClass": "Kaos",
+            "speed": 8,
+            "armor":  8,
+            "attack": 12,
+            "luck": 12,
+            "health": 280
+        },
+
+        {
+            "statsName": "Blaster-Tron",
+            "element": "Light",
+            "battleClass": "Knight",
+            "speed": 8,
+            "armor":  12,
+            "attack": 8,
+            "luck": 6,
+            "health": 330
+        },
+
+        {
+            "statsName": "Hood Sickle",
+            "element": "Dark",
+            "battleClass": "Sentinel",
+            "speed": 8,
+            "armor":  8,
+            "attack": 14,
+            "luck": 4,
+            "health": 330
+        },
+
+        {
+            "statsName": "Pain-Yatta",
+            "element": "Magic",
+            "battleClass": "Smasher",
+            "speed": 15,
+            "armor":  8,
+            "attack": 4,
+            "luck": 14,
+            "health": 280
+        },
+
+        {
+            "statsName": "Grave Clobber",
+            "element": "Water",
+            "battleClass": "Brawler",
+            "speed": 2,
+            "armor":  12,
+            "attack": 10,
+            "luck": 6,
+            "health": 400
+        },
+
+        {
+            "statsName": "Tae Kwon Crow",
+            "element": "Fire",
+            "battleClass": "Ninja",
+            "speed": 11,
+            "armor":  6,
+            "attack": 8,
+            "luck": 8,
+            "health": 200
+        },
+
+        {
+            "statsName": "Bad Juju",
+            "element": "Air",
+            "battleClass": "Swashbuckler",
+            "speed": 12,
+            "armor":  12,
+            "attack": 8,
+            "luck": 4,
+            "health": 230
+        },
+
+        {
+            "statsName": "Golden Queen",
+            "element": "Earth",
+            "battleClass": "Sorcerer",
+            "speed": 8,
+            "armor":  8,
+            "attack": 4,
+            "luck": 12,
+            "health": 270
+        },
+
+        {
+            "statsName": "Wolfgang",
+            "element": "Undead",
+            "battleClass": "Bowslinger",
+            "speed": 15,
+            "armor":  6,
+            "attack": 8,
+            "luck": 4,
+            "health": 230
+        },
+
+        {
+            "statsName": "Dr. Krankcase",
+            "element": "Tech",
+            "battleClass": "Quickshot",
+            "speed": 8,
+            "armor":  10,
+            "attack": 8,
+            "luck": 10,
+            "health": 240
+        },
+
+        {
+            "statsName": "Chompy Mage",
+            "element": "Life",
+            "battleClass": "Bazooker",
+            "speed": 15,
+            "armor":  8,
+            "attack": 12,
+            "luck": 2,
+            "health": 300
+        },
+
+        {
+            "statsName": "Legendary Tri-Tip",
+            "element": "Earth",
+            "battleClass": "Smasher",
+            "speed": 8,
+            "armor":  20,
+            "attack": 16,
+            "luck": 10,
+            "health": 370
+        },
+
+        {
+            "statsName": "Legendary Pit Boss",
+            "element": "Undead",
+            "battleClass": "Sorcerer",
+            "speed": 18,
+            "armor":  8,
+            "attack": 18,
+            "luck": 8,
+            "health": 250
+        }
+    ]
+}

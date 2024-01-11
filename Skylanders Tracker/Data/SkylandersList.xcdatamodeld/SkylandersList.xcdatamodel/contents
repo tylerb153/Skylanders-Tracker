@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23C71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="SenseisStatsTable" representedClassName="SenseisStatsTable" syncable="YES" codeGenerationType="class">
+        <attribute name="armor" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="attack" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="battleClass" optional="YES" attributeType="String"/>
+        <attribute name="element" optional="YES" attributeType="String"/>
+        <attribute name="health" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="luck" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="speed" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="statsName" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="Skylander" representedClassName="Skylander" syncable="YES" codeGenerationType="class">
         <attribute name="baseName" attributeType="String" defaultValueString=""/>
         <attribute name="game" attributeType="String" defaultValueString=""/>

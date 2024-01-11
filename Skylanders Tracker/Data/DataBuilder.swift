@@ -16,6 +16,7 @@ class DataBuilder {
     private static var jsonSwapperStats: [SwapperStats] = []
     private static var jsonTrapDetails: [TrapsDetails] = []
     private static var jsonSuperChargerStats: [SuperChargersStats] = []
+    private static var jsonSenseiStats: [SenseisStats] = []
     
     // MARK: - JSON parse
     private static func getData(type dataType: String) -> Data? {
@@ -31,6 +32,8 @@ class DataBuilder {
             name = "Swappers Stats"
         case "SuperChargers":
             name = "SuperChargers Stats"
+        case "Senseis":
+            name = "Senseis Stats"
         default:
             print("Error in getData in DataBuilder")
             return nil
@@ -86,6 +89,10 @@ class DataBuilder {
             if let result = try? decoder.decode(SuperChargersStatsList.self, from: data) {
                 jsonSuperChargerStats = result.SuperChargersStats
             }
+        case "Senseis":
+            if let result = try? decoder.decode(SenseisStatsList.self, from: data) {
+                jsonSenseiStats = result.SenseisStats
+            }
            
         default: print("Incorrect Data Type")
         }
@@ -98,6 +105,7 @@ class DataBuilder {
         parseJson(type: "Traps")
         parseJson(type: "Swappers")
         parseJson(type: "SuperChargers")
+        parseJson(type: "Senseis")
         
         for jsonSkylander in jsonSkylanders {
             saveSkylander(jsonSkylander: jsonSkylander)
@@ -113,6 +121,9 @@ class DataBuilder {
         }
         for jsonSuperChargerStat in jsonSuperChargerStats {
             saveSuperChargerStats(jsonSuperChargerStats: jsonSuperChargerStat)
+        }
+        for jsonSenseiStat in jsonSenseiStats {
+            saveSenseiStats(jsonSenseiStats: jsonSenseiStat)
         }
     }
     
@@ -239,6 +250,30 @@ class DataBuilder {
 //        print(swapperStat.value(forKey: "vehicle"))
         do {
 //            print(jsonSuperChargerStats)
+            try managedContext.save()
+        }
+        catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
+    private static func saveSenseiStats(jsonSenseiStats: SenseisStats) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "SenseisStatsTable", in: managedContext)!
+        
+        let senseiStat = NSManagedObject(entity: entity, insertInto: managedContext)
+        senseiStat.setValue(jsonSenseiStats.statsName, forKey: "statsName")
+        senseiStat.setValue(jsonSenseiStats.element, forKey: "element")
+        senseiStat.setValue(jsonSenseiStats.battleClass, forKey: "battleClass")
+        senseiStat.setValue(jsonSenseiStats.speed, forKey: "speed")
+        senseiStat.setValue(jsonSenseiStats.armor, forKey: "armor")
+        senseiStat.setValue(jsonSenseiStats.attack, forKey: "attack")
+        senseiStat.setValue(jsonSenseiStats.luck, forKey: "luck")
+        senseiStat.setValue(jsonSenseiStats.health, forKey: "health")
+        do {
             try managedContext.save()
         }
         catch let error as NSError {

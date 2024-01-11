@@ -100,12 +100,12 @@ class SuperChargersDetailViewController: UIViewController {
         }
         else {
             superChargerVehicle.text = "Unknown"
-            skylanderSpeed.text = "0"
-            skylanderArmor.text = "0"
-            skylanderCriticalHit.text = "0"
-            skylanderElementalPower.text = "0"
-            skylanderStartHealth.text = "0"
-            skylanderMaximumHealth.text = "0"
+            skylanderSpeed.text = "Unknown"
+            skylanderArmor.text = "Unknown"
+            skylanderCriticalHit.text = "Unknown"
+            skylanderElementalPower.text = "Unknown"
+            skylanderStartHealth.text = "Unknown"
+            skylanderMaximumHealth.text = "Unknown"
         }
         setCompatibleGames()
     }

@@ -131,6 +131,9 @@ class SkylandersListTableViewController: UITableViewController {
 //            print(skylanderToSend)
             let SuperChargersDetailViewController = segue.destination as! SuperChargersDetailViewController
             SuperChargersDetailViewController.chosenSuperCharger = skylanderToSend
+        case "DisplaySensei":
+            let SenseisDetailViewController = segue.destination as! SenseisDetailViewController
+            SenseisDetailViewController.chosenSensei = skylanderToSend
         default:
             print("Error in send")
         }
@@ -205,6 +208,9 @@ extension SkylandersListTableViewController {
             else if (type.contains("SuperCharger")) {
                 type = "SuperCharger"
             }
+            else if (type.contains("Sensei")) {
+                type = "Sensei"
+            }
 
             switch type {
             case "Trap":
@@ -213,6 +219,8 @@ extension SkylandersListTableViewController {
                 self.performSegue(withIdentifier: "DisplaySwapper", sender: Any?.self)
             case "SuperCharger":
                 self.performSegue(withIdentifier: "DisplaySuperCharger", sender: Any?.self)
+            case "Sensei":
+                self.performSegue(withIdentifier: "DisplaySensei", sender: Any?.self)
             default:
                 self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
             }

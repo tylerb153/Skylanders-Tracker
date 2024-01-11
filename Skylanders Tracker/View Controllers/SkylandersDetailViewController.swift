@@ -66,6 +66,9 @@ class SkylandersDetailViewController: UIViewController {
     }
     
     private func configureSeries() -> String {
+        if variant == "Eon's Elite" {
+            skylanderSeries.backgroundColor = UIColor(named: "Elite Gold")
+        }
         if series == 0 {
             let variant = chosenSkylander?.value(forKey: "variantText") as! String
             return variant
