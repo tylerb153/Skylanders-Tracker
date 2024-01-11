@@ -128,7 +128,7 @@ class SkylandersListTableViewController: UITableViewController {
             let SwappersDetailViewController = segue.destination as! SwappersDetailViewController
             SwappersDetailViewController.chosenSwapper = skylanderToSend
         case "DisplaySuperCharger":
-            print(skylanderToSend)
+//            print(skylanderToSend)
             let SuperChargersDetailViewController = segue.destination as! SuperChargersDetailViewController
             SuperChargersDetailViewController.chosenSuperCharger = skylanderToSend
         default:
@@ -195,15 +195,19 @@ extension SkylandersListTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if !nothingFound {
             skylanderToSend = getSkylandersSection(variantText: sectionsToDisplay[indexPath.section])[indexPath.row]
-            let type = skylanderToSend?.value(forKey: "variantText") as! String
+            var type = skylanderToSend?.value(forKey: "variantText") as! String
+            if (type.contains("Swapper")) {
+                type = "Swapper"
+            }
+            else if (type.contains("Trap") && !type.contains("Trap Master")) {
+                type = "Trap"
+            }
+            else if (type.contains("SuperCharger")) {
+                type = "SuperCharger"
+            }
+
             switch type {
             case "Trap":
-                self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
-            case "Legendary Trap":
-                self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
-            case "Dark Trap":
-                self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
-            case "Chase Trap":
                 self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
             case "Swapper":
                 self.performSegue(withIdentifier: "DisplaySwapper", sender: Any?.self)

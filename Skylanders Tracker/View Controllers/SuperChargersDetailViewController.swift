@@ -85,12 +85,18 @@ class SuperChargersDetailViewController: UIViewController {
     private func setLabels() {
         if let skylanderStats = getStats() {
             superChargerVehicle.text = String(describing: skylanderStats.value(forKey: "vehicle")!)
-            skylanderSpeed.text = String(describing: skylanderStats.value(forKey: "speed") as! Int)
-            skylanderArmor.text = String(describing: skylanderStats.value(forKey: "armor") as! Int)
-            skylanderCriticalHit.text = String(describing: skylanderStats.value(forKey: "criticalHit") as! Int)
-            skylanderElementalPower.text = String(describing: skylanderStats.value(forKey: "elementalPower") as! Int)
-            skylanderStartHealth.text = String(describing: skylanderStats.value(forKey: "startingHealth") as! Int)
-            skylanderMaximumHealth.text = String(describing: skylanderStats.value(forKey: "maxHealth") as! Int)
+            let speedStat = skylanderStats.value(forKey: "speed") as! Int
+            skylanderSpeed.text = speedStat != -1 ? String(speedStat) : "Unknown"
+            let armorStat = skylanderStats.value(forKey: "armor") as! Int
+            skylanderArmor.text = armorStat != -1 ? String(armorStat) : "Unknown"
+            let criticalHitStat = skylanderStats.value(forKey: "criticalHit") as! Int
+            skylanderCriticalHit.text = criticalHitStat != -1 ? String(criticalHitStat) : "Unknown"
+            let elementalPowerStat = skylanderStats.value(forKey: "elementalPower") as! Int
+            skylanderElementalPower.text = elementalPowerStat != -1 ? String(elementalPowerStat) : "Unknown"
+            let startingHealthStat = skylanderStats.value(forKey: "startingHealth") as! Int
+            skylanderStartHealth.text = startingHealthStat != -1 ? String(startingHealthStat) : "Unknown"
+            let maxHealthStat = skylanderStats.value(forKey: "maxHealth") as! Int
+            skylanderMaximumHealth.text = maxHealthStat != -1 ? String(maxHealthStat) : "Unknown"
         }
         else {
             superChargerVehicle.text = "Unknown"

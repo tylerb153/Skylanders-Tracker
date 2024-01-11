@@ -485,6 +485,50 @@
         },
 
         {
+            "statsName": "Sidekick Terrabite",
+            "element": "Earth",
+            "speed": 50,
+            "armor":  18,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 620,
+            "startingHealth": 310
+        },
+
+        {
+            "statsName": "Sidekick Gill Runt",
+            "element": "Water",
+            "speed": -1,
+            "armor":  -1,
+            "criticalHit": -1,
+            "elementalPower": -1,
+            "maxHealth": -1,
+            "startingHealth": -1
+        },
+
+        {
+            "statsName": "Sidekick Trigger Snappy",
+            "element": "Tech",
+            "speed": 70,
+            "armor":  30,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 400,
+            "startingHealth": 200
+        },
+
+        {
+            "statsName": "Sidekick Whisper Elf",
+            "element": "Life",
+            "speed": 70,
+            "armor":  12,
+            "criticalHit": 50,
+            "elementalPower": 25,
+            "maxHealth": 540,
+            "startingHealth": 270
+        },
+
+        {
             "statsName": "Crusher",
             "element": "Earth",
             "speed": 20,
@@ -815,6 +859,50 @@
         },
 
         {
+            "statsName": "Sidekick Mini Jini",
+            "element": "Magic",
+            "speed": 85,
+            "armor":  48,
+            "criticalHit": 80,
+            "elementalPower": 60,
+            "maxHealth": 820,
+            "startingHealth": 410
+        },
+
+        {
+            "statsName": "Sidekick Thumpling",
+            "element": "Water",
+            "speed": -1,
+            "armor":  -1,
+            "criticalHit": -1,
+            "elementalPower": -1,
+            "maxHealth": -1,
+            "startingHealth": -1
+        },
+
+        {
+            "statsName": "Sidekick Eye Small",
+            "element": "Undead",
+            "speed": 50,
+            "armor":  30,
+            "criticalHit": 50,
+            "elementalPower": 53,
+            "maxHealth": 860,
+            "startingHealth": 430
+        },
+
+        {
+            "statsName": "Sidekick Barkley",
+            "element": "Life",
+            "speed": -1,
+            "armor":  -1,
+            "criticalHit": -1,
+            "elementalPower": -1,
+            "maxHealth": -1,
+            "startingHealth": -1
+        },
+
+        {
             "statsName": "Dune Bug",
             "element": "Magic",
             "speed": 25,
@@ -989,7 +1077,6 @@
             "maxHealth": 780,
             "startingHealth": 260
         },
-
 
         {
             "statsName": "Blastermind",
@@ -1715,6 +1802,160 @@
             "elementalPower": 25,
             "maxHealth": 840,
             "startingHealth": 270
+        },
+    
+        {
+            "statsName": "Elite Spyro",
+            "element": "Magic",
+            "speed": 70,
+            "armor":  54,
+            "criticalHit": 90,
+            "elementalPower": 25,
+            "maxHealth": 2612,
+            "startingHealth": 840
+        },
+
+        {
+            "statsName": "Elite Terrafin",
+            "element": "Earth",
+            "speed": 50,
+            "armor":  54,
+            "criticalHit": 90,
+            "elementalPower": 25,
+            "maxHealth": 2892,
+            "startingHealth": 930
+        },
+
+        {
+            "statsName": "Elite Gill Grunt",
+            "element": "Water",
+            "speed": 50,
+            "armor":  18,
+            "criticalHit": 150,
+            "elementalPower": 25,
+            "maxHealth": 2519,
+            "startingHealth": 810
+        },
+
+        {
+            "statsName": "Elite Eruptor",
+            "element": "Fire",
+            "speed": 50,
+            "armor":  54,
+            "criticalHit": 90,
+            "elementalPower": 25,
+            "maxHealth": 2706,
+            "startingHealth": 870
+        },
+
+        {
+            "statsName": "Elite Trigger Happy",
+            "element": "Tech",
+            "speed": 70,
+            "armor":  90,
+            "criticalHit": 150,
+            "elementalPower": 25,
+            "maxHealth": 1866,
+            "startingHealth": 600
+        },
+
+        {
+            "statsName": "Elite Chop Chop",
+            "element": "Undead",
+            "speed": 70,
+            "armor":  72,
+            "criticalHit": 30,
+            "elementalPower": 25,
+            "maxHealth": 2799,
+            "startingHealth": 900
+        },
+
+        {
+            "statsName": "Elite Whirlwind",
+            "element": "Air",
+            "speed": 70,
+            "armor":  54,
+            "criticalHit": 150,
+            "elementalPower": 25,
+            "maxHealth": 2519,
+            "startingHealth": 810
+        },
+
+        {
+            "statsName": "Elite Stealth Elf",
+            "element": "Life",
+            "speed": 70,
+            "armor":  36,
+            "criticalHit": 150,
+            "elementalPower": 25,
+            "maxHealth": 2519,
+            "startingHealth": 810
+        },
+
+        {
+            "statsName": "Elite Voodood",
+            "element": "Magic",
+            "speed": -1,
+            "armor":  -1,
+            "criticalHit": -1,
+            "elementalPower": -1,
+            "maxHealth": -1,
+            "startingHealth": -1
+        },
+
+        {
+            "statsName": "Elite Dino-Rang",
+            "element": "Earth",
+            "speed": -1,
+            "armor":  80,
+            "criticalHit": -1,
+            "elementalPower": -1,
+            "maxHealth": -1,
+            "startingHealth": -1
+        },
+
+        {
+            "statsName": "Elite Slam Bam",
+            "element": "Water",
+            "speed": 40,
+            "armor":  86,
+            "criticalHit": 27,
+            "elementalPower": 39,
+            "maxHealth": 2750,
+            "startingHealth": 5500
+        },
+
+        {
+            "statsName": "Elite Boomer",
+            "element": "Tech",
+            "speed": -1,
+            "armor":  -1,
+            "criticalHit": -1,
+            "elementalPower": -1,
+            "maxHealth": -1,
+            "startingHealth": -1
+        },
+
+        {
+            "statsName": "Elite Ghost Roaster",
+            "element": "Undead",
+            "speed": -1,
+            "armor":  -1,
+            "criticalHit": -1,
+            "elementalPower": -1,
+            "maxHealth": -1,
+            "startingHealth": -1
+        },
+
+        {
+            "statsName": "Elite Zook",
+            "element": "Life",
+            "speed": -1,
+            "armor":  -1,
+            "criticalHit": -1,
+            "elementalPower": -1,
+            "maxHealth": -1,
+            "startingHealth": -1
         }
     ]
 }

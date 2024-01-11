@@ -37,7 +37,7 @@
         },
 
         {
-            "statsName": "Bone Bash Roller",
+            "statsName": "Bone Bash Roller Brawl",
             "element": "Undead",
             "vehicle": "Tomb Buggy",
             "speed": 50,
@@ -121,6 +121,18 @@
         },
 
         {
+            "statsName": "Turbo Charge Donkey Kong",
+            "element": "Life",
+            "vehicle": "Barrel Blaster",
+            "speed": -1,
+            "armor":  -1,
+            "criticalHit": -1,
+            "elementalPower": 25,
+            "maxHealth": -1,
+            "startingHealth": -1
+        },
+
+        {
             "statsName": "Lava Lance Eruptor",
             "element": "Fire",
             "vehicle": "Burn-Cycle",
@@ -142,6 +154,18 @@
             "elementalPower": 25,
             "maxHealth": 400,
             "startingHealth": 200
+        },
+
+        {
+            "statsName": "Hammer Slam Bowser",
+            "element": "Fire",
+            "vehicle": "Clown Cruiser",
+            "speed": -1,
+            "armor":  -1,
+            "criticalHit": -1,
+            "elementalPower": -1,
+            "maxHealth": -1,
+            "startingHealth": -1
         },
 
         {
@@ -214,6 +238,102 @@
             "elementalPower": 25,
             "maxHealth": 600,
             "startingHealth": 300
+        },
+
+        {
+            "statsName": "Dark Super Shot Stealth Elf",
+            "element": "Life",
+            "vehicle": "Stealth Stinger",
+            "speed": 50,
+            "armor":  12,
+            "criticalHit": 8,
+            "elementalPower": 25,
+            "maxHealth": 480,
+            "startingHealth": 240
+        },
+
+        {
+            "statsName": "Dark Turbo Charge Donkey Kong",
+            "element": "Life",
+            "vehicle": "Dark Barrel Blaster",
+            "speed": -1,
+            "armor":  -1,
+            "criticalHit": -1,
+            "elementalPower": 25,
+            "maxHealth": -1,
+            "startingHealth": -1
+        },
+
+        {
+            "statsName": "Dark Spitfire",
+            "element": "Fire",
+            "vehicle": "Dark Hot Streak",
+            "speed": 50,
+            "armor":  18,
+            "criticalHit": 8,
+            "elementalPower": 30,
+            "maxHealth": 600,
+            "startingHealth": 200
+        },
+
+        {
+            "statsName": "Dark Hammer Slam Bowser",
+            "element": "Fire",
+            "vehicle": "Dark Clown Cruiser",
+            "speed": -1,
+            "armor":  -1,
+            "criticalHit": -1,
+            "elementalPower": -1,
+            "maxHealth": -1,
+            "startingHealth": -1
+        },
+
+        {
+            "statsName": "Legendary Astroblast",
+            "element": "Light",
+            "vehicle": "Legendary Sun Runner",
+            "speed": 35,
+            "armor":  18,
+            "criticalHit": 16,
+            "elementalPower": 25,
+            "maxHealth": 460,
+            "startingHealth": 230
+        },
+
+        {
+            "statsName": "Power Blue Trigger Happy",
+            "element": "Tech",
+            "vehicle": "Power Blue Gold Rusher",
+            "speed": 50,
+            "armor":  18,
+            "criticalHit": 6,
+            "elementalPower": 25,
+            "maxHealth": 900,
+            "startingHealth": 300
+        },
+
+        {
+            "statsName": "Power Blue Splat",
+            "element": "Magic",
+            "vehicle": "Power Blue Splatter Splasher",
+            "speed": 43,
+            "armor":  6,
+            "criticalHit": 4,
+            "elementalPower": 25,
+            "maxHealth": 480,
+            "startingHealth": 240
+        },
+
+        {
+            "statsName": "Birthday Bash Big Bubble Pop Fizz",
+            "element": "Magic",
+            "vehicle": "Soda Skimmer",
+            "speed": 43,
+            "armor":  24,
+            "criticalHit": 6,
+            "elementalPower": 25,
+            "maxHealth": 650,
+            "startingHealth": 325
         }
     ]
 }
