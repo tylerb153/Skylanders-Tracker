@@ -80,7 +80,7 @@ class DataBuilder {
             
         case "Traps":
             if let result = try? decoder.decode(TrapsDetailsList.self, from: data) {
-                print(result.TrapDetails[0])
+//                print(result.TrapDetails[0])
                 jsonTrapDetails = result.TrapDetails
             }
             else {

@@ -12,10 +12,13 @@ class VillainCell: UITableViewCell {
     
     var isChecked = false
     var villain: NSManagedObject?
+    var trapDetails: NSManagedObject?
     
     @IBOutlet weak var villainName: UILabel!
     @IBOutlet weak var villainImage: UIImageView!
     @IBOutlet weak var checkmarkImage: UIButton!
+    
+    lazy var villainStatsName = villain!.value(forKey: "statsName") as! String
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -56,30 +59,48 @@ class VillainCell: UITableViewCell {
         if givenCheck {
             checkmarkImage.setImage(UIImage(systemName: "checkmark.circle.fill"), for: UIControl.State.normal)
             isChecked = true
-//            skylander!.setValue(true, forKey: "isChecked")
-//            saveSkylander()
+            var villainsTrappedArray: [String] = getTrappedVillains()
+            if !villainsTrappedArray.contains(villainStatsName) {
+                villainsTrappedArray.append(villainStatsName)
+                trapDetails!.setValue(villainsTrappedArray, forKey: "villiansCaptured")
+            }
+            saveTrap()
         }
         else {
             checkmarkImage.setImage(UIImage(systemName: "checkmark.circle"), for: UIControl.State.normal)
             isChecked = false
-//            skylander!.setValue(false, forKey: "isChecked")
-//            saveSkylander()
+            var villainsTrappedArray: [String] = getTrappedVillains()
+            if villainsTrappedArray.contains(villainStatsName) {
+                villainsTrappedArray.removeAll { $0 == villainStatsName}
+                trapDetails!.setValue(villainsTrappedArray, forKey: "villiansCaptured")
+            }
+            saveTrap()
         }
+        print("This is the array called from the database \(trapDetails?.value(forKey: "villiansCaptured") as! [String])")
     }
     
     // MARK: - Configure Cell Methods
     
-    func configure(for villain: NSManagedObject) {
+    func configure(for villain: NSManagedObject, chosenTrap trapDetails: NSManagedObject?) {
         self.villain = villain
+        self.trapDetails = trapDetails
         let name = villain.value(forKey: "name") as! String
-        let check = false
+        var check: Bool {
+            let villainsTrappedArray = getTrappedVillains()
+            if  villainsTrappedArray.contains(villainStatsName) {
+                return true
+            }
+            else {
+                return false
+            }
+        }
         setName(givenName: name)
         setImage(givenImage: ConfigureImage(skylander: villain))
         setChecked(givenCheck: check)
     }
     
     // MARK: - Save Checkmark
-    private func saveSkylander() {
+    private func saveTrap() {
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
@@ -91,6 +112,14 @@ class VillainCell: UITableViewCell {
         catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
         }
+    }
+    
+    private func getTrappedVillains() -> [String] {
+        guard let villainsTrappedArray: [String] = trapDetails?.value(forKey: "villiansCaptured") as? [String] else {
+            print("Could not get villains trapped array in VillainCell")
+            return [""]
+        }
+        return villainsTrappedArray
     }
 }
 
