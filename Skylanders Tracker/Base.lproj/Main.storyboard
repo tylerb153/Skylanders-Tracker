@@ -113,6 +113,7 @@
                         <segue destination="ddc-Rd-kz4" kind="show" identifier="DisplaySwapper" id="OIX-1U-RXH"/>
                         <segue destination="nFS-Te-dLN" kind="show" identifier="DisplaySuperCharger" id="PuH-nF-Juk"/>
                         <segue destination="w4x-4L-exC" kind="show" identifier="DisplaySensei" id="1TJ-y7-BJq"/>
+                        <segue destination="Rnm-sa-Hrl" kind="show" identifier="DisplayVillain" id="4X6-Ny-0dC"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yTi-3N-5TF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -463,6 +464,7 @@
                         <segue destination="ddc-Rd-kz4" kind="show" identifier="DisplaySwapper" id="WnL-Be-kgT"/>
                         <segue destination="nFS-Te-dLN" kind="show" identifier="DisplaySuperCharger" id="pC5-kb-aoR"/>
                         <segue destination="w4x-4L-exC" kind="show" identifier="DisplaySensei" id="xaK-zn-ybd"/>
+                        <segue destination="Rnm-sa-Hrl" kind="show" identifier="DisplayVillain" id="FiH-B5-pw0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gn7-vV-o2I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1153,8 +1155,85 @@
             </objects>
             <point key="canvasLocation" x="5646" y="860"/>
         </scene>
+        <!--Villain Name-->
+        <scene sceneID="nFC-qS-AEy">
+            <objects>
+                <viewController id="Rnm-sa-Hrl" customClass="VillainsDetailViewController" customModule="Skylanders_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5CC-bA-g99">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Villain Element" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m01-r8-5o5">
+                                <rect key="frame" x="0.0" y="92" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="z9V-mZ-vCD">
+                                <rect key="frame" x="107" y="122" width="200" height="197.5"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="z9V-mZ-vCD" secondAttribute="height" multiplier="1:1" id="2ru-IC-li8"/>
+                                    <constraint firstAttribute="height" constant="200" id="Wfb-wc-W4S"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trapped in:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhd-fU-j8J">
+                                <rect key="frame" x="8" y="337" width="398" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nsw-e8-JCM">
+                                <rect key="frame" x="0.0" y="372" width="414" height="490"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Rnm-sa-Hrl" id="hP2-aL-nr7"/>
+                                    <outlet property="delegate" destination="Rnm-sa-Hrl" id="b0T-3e-JWE"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doom Raider" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2i-Dj-9kv">
+                                <rect key="frame" x="203" y="92" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1ua-Im-DJn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="z9V-mZ-vCD" firstAttribute="top" secondItem="m01-r8-5o5" secondAttribute="bottom" constant="8" id="40n-1Z-wZE"/>
+                            <constraint firstItem="1ua-Im-DJn" firstAttribute="trailing" secondItem="nsw-e8-JCM" secondAttribute="trailing" id="6C0-Tr-JXF"/>
+                            <constraint firstItem="z9V-mZ-vCD" firstAttribute="centerX" secondItem="5CC-bA-g99" secondAttribute="centerX" id="6bP-od-QTC"/>
+                            <constraint firstItem="1ua-Im-DJn" firstAttribute="bottom" secondItem="nsw-e8-JCM" secondAttribute="bottom" id="6fj-OF-PfU"/>
+                            <constraint firstItem="nsw-e8-JCM" firstAttribute="top" secondItem="rhd-fU-j8J" secondAttribute="bottom" constant="8" symbolic="YES" id="Lgz-3N-3Eb"/>
+                            <constraint firstItem="m01-r8-5o5" firstAttribute="top" secondItem="1ua-Im-DJn" secondAttribute="top" id="McF-0Z-MJk"/>
+                            <constraint firstItem="1ua-Im-DJn" firstAttribute="trailing" secondItem="U2i-Dj-9kv" secondAttribute="trailing" constant="8" id="Poc-qI-7RC"/>
+                            <constraint firstItem="m01-r8-5o5" firstAttribute="leading" secondItem="1ua-Im-DJn" secondAttribute="leading" id="Ubz-2t-xkb"/>
+                            <constraint firstItem="U2i-Dj-9kv" firstAttribute="width" secondItem="m01-r8-5o5" secondAttribute="width" id="ZQT-4k-ob5"/>
+                            <constraint firstItem="U2i-Dj-9kv" firstAttribute="bottom" secondItem="m01-r8-5o5" secondAttribute="bottom" id="bwU-Sl-bO7"/>
+                            <constraint firstItem="U2i-Dj-9kv" firstAttribute="leading" secondItem="m01-r8-5o5" secondAttribute="trailing" id="cCe-gZ-m5c"/>
+                            <constraint firstItem="nsw-e8-JCM" firstAttribute="leading" secondItem="1ua-Im-DJn" secondAttribute="leading" id="dfO-FU-nxi"/>
+                            <constraint firstItem="1ua-Im-DJn" firstAttribute="trailing" secondItem="rhd-fU-j8J" secondAttribute="trailing" constant="8" id="m4x-iI-ppM"/>
+                            <constraint firstItem="rhd-fU-j8J" firstAttribute="leading" secondItem="1ua-Im-DJn" secondAttribute="leading" constant="8" id="p4m-4Z-Q4T"/>
+                            <constraint firstItem="rhd-fU-j8J" firstAttribute="top" secondItem="z9V-mZ-vCD" secondAttribute="bottom" constant="16" id="rgZ-fe-xsB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Villain Name" largeTitleDisplayMode="always" id="Www-51-4va"/>
+                    <connections>
+                        <outlet property="doomRaiderLabel" destination="U2i-Dj-9kv" id="Ic9-sb-A6U"/>
+                        <outlet property="trapTable" destination="nsw-e8-JCM" id="OKD-PJ-Reb"/>
+                        <outlet property="villainElementLabel" destination="m01-r8-5o5" id="9z0-Yq-TRR"/>
+                        <outlet property="villainImage" destination="z9V-mZ-vCD" id="dqY-fz-OII"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zRj-pU-x3o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3582.608695652174" y="1603.7946428571429"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="FiH-B5-pw0"/>
         <segue reference="xaK-zn-ybd"/>
         <segue reference="pC5-kb-aoR"/>
         <segue reference="WnL-Be-kgT"/>

@@ -1,24 +1,26 @@
 //
-//  VillainCell.swift
+//  TrapCell.swift
 //  Skylanders Tracker
 //
-//  Created by Tyler Bischoff on 1/11/24.
+//  Created by Tyler Bischoff on 1/12/24.
 //
 
 import UIKit
 import CoreData
 
-class VillainCell: UITableViewCell {
+class TrapCell: UITableViewCell {
     
     var isChecked = false
-    var villain: NSManagedObject?
-    var trapDetails: NSManagedObject?
+    var trap: NSManagedObject?
+    var villainDetails: NSManagedObject?
     
     @IBOutlet weak var villainName: UILabel!
     @IBOutlet weak var villainImage: UIImageView!
     @IBOutlet weak var checkmarkImage: UIButton!
     
-    lazy var villainStatsName = villain!.value(forKey: "statsName") as! String
+    lazy var statsName = trap!.value(forKey: "statsName") as! String
+    lazy var trapDetails = getDetails()
+    lazy var villainStatsName = villainDetails?.value(forKey: "statsName") as! String
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -65,7 +67,6 @@ class VillainCell: UITableViewCell {
                 trapDetails!.setValue(villainsTrappedArray, forKey: "villiansCaptured")
             }
             saveTrap()
-//            print(trapDetails!.value(forKey: "villiansCaptured") as! [String])
         }
         else {
             checkmarkImage.setImage(UIImage(systemName: "checkmark.circle"), for: UIControl.State.normal)
@@ -80,12 +81,36 @@ class VillainCell: UITableViewCell {
 //        print("This is the array called from the database \(trapDetails?.value(forKey: "villiansCaptured") as! [String])")
     }
     
+    private func getDetails() -> NSManagedObject? {
+        let detailsList = RefreshData(entityName: "TrapDetails")!
+        //        print(detailsList)
+        for i in detailsList {
+            if trap?.value(forKey: "statsName") as! String == i.value(forKey: "statsName") as! String {
+                //                print(i)
+                return i
+            }
+        }
+        return nil
+    }
+    
+    private func getVillainDetails(villainStatsName: String) -> NSManagedObject? {
+        guard let villainDetails = RefreshData(entityName: "VillianDetailsTable") else {
+            return nil
+        }
+        for i in villainDetails {
+            if villainStatsName == i.value(forKey: "statsName") as! String {
+                return i
+            }
+        }
+        return nil
+    }
+    
     // MARK: - Configure Cell Methods
     
-    func configure(for villain: NSManagedObject, chosenTrap trapDetails: NSManagedObject?) {
-        self.villain = villain
-        self.trapDetails = trapDetails
-        let name = villain.value(forKey: "name") as! String
+    func configure(for trap: NSManagedObject, villainDetails: NSManagedObject) {
+        self.trap = trap
+        self.villainDetails = villainDetails
+        let name = trap.value(forKey: "name") as! String
         var check: Bool {
             let villainsTrappedArray = getTrappedVillains()
             if  villainsTrappedArray.contains(villainStatsName) {
@@ -95,9 +120,8 @@ class VillainCell: UITableViewCell {
                 return false
             }
         }
-//        print(check)
         setName(givenName: name)
-        setImage(givenImage: ConfigureImage(skylander: villain))
+        setImage(givenImage: ConfigureImage(skylander: trap))
         setChecked(givenCheck: check)
     }
     
@@ -121,8 +145,6 @@ class VillainCell: UITableViewCell {
             print("Could not get villains trapped array in VillainCell")
             return [""]
         }
-//        print(villainsTrappedArray)
         return villainsTrappedArray
     }
 }
-

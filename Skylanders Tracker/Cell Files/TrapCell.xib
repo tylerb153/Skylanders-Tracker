@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrapCell" id="KGk-i7-Jjw" customClass="TrapCell" customModule="Skylanders_Tracker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trap Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8VT-Cj-Wr4">
+                        <rect key="frame" x="108" y="21" width="95.666666666666686" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uG4-hg-Vct">
+                        <rect key="frame" x="58" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="uG4-hg-Vct" secondAttribute="height" multiplier="1:1" id="wkQ-CG-Osh"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="checkmark" catalog="system">
+                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="toggleCheckmark:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eTH-9Q-Ojw"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aXL-ss-gMY">
+                        <rect key="frame" x="8" y="9.6666666666666643" width="50" height="47"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="aXL-ss-gMY" secondAttribute="height" multiplier="1:1" id="Ner-6f-6G2"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aXL-ss-gMY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0tM-Oi-hKO"/>
+                    <constraint firstItem="8VT-Cj-Wr4" firstAttribute="leading" secondItem="uG4-hg-Vct" secondAttribute="trailing" id="5CG-3I-mdH"/>
+                    <constraint firstItem="8VT-Cj-Wr4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7Jk-nk-ExU"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8VT-Cj-Wr4" secondAttribute="trailing" constant="8" id="7O3-1C-hKU"/>
+                    <constraint firstItem="uG4-hg-Vct" firstAttribute="leading" secondItem="aXL-ss-gMY" secondAttribute="trailing" id="DDx-0N-VBV"/>
+                    <constraint firstItem="aXL-ss-gMY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="MND-2y-55R"/>
+                    <constraint firstItem="uG4-hg-Vct" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NRl-Ks-3xW"/>
+                    <constraint firstItem="aXL-ss-gMY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="NY1-hB-4lK"/>
+                    <constraint firstItem="uG4-hg-Vct" firstAttribute="width" secondItem="aXL-ss-gMY" secondAttribute="width" id="kZZ-jO-rwo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkmarkImage" destination="uG4-hg-Vct" id="vEJ-3A-crr"/>
+                <outlet property="villainImage" destination="aXL-ss-gMY" id="amO-oO-5uJ"/>
+                <outlet property="villainName" destination="8VT-Cj-Wr4" id="aok-1i-Cf1"/>
+            </connections>
+            <point key="canvasLocation" x="134.35114503816794" y="-12.67605633802817"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
+        <image name="square" catalog="system" width="128" height="114"/>
+    </resources>
+</document>
