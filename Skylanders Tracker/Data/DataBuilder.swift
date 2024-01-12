@@ -17,6 +17,7 @@ class DataBuilder {
     private static var jsonTrapDetails: [TrapsDetails] = []
     private static var jsonSuperChargerStats: [SuperChargersStats] = []
     private static var jsonSenseiStats: [SenseisStats] = []
+    private static var jsonVillainDetails: [VillianDetails] = []
     
     // MARK: - JSON parse
     private static func getData(type dataType: String) -> Data? {
@@ -34,8 +35,10 @@ class DataBuilder {
             name = "SuperChargers Stats"
         case "Senseis":
             name = "Senseis Stats"
+        case "Villains":
+            name = "Villians Details"
         default:
-            print("Error in getData in DataBuilder")
+            print("Error in getData in DataBuilder with type \(dataType)")
             return nil
         }
         do {
@@ -51,7 +54,7 @@ class DataBuilder {
     }
     
     private static func parseJson(type dataType: String) {
-        guard let data = getData(type: dataType) else {print("error in parseJSON"); return}
+        guard let data = getData(type: dataType) else {print("error in parseJSON with type \(dataType)"); return}
         
         let decoder = JSONDecoder()
         switch dataType {
@@ -62,7 +65,7 @@ class DataBuilder {
 //                    print(jsonSkylanders)
                 }
                 else {
-                    print("error in decode Data")
+                    print("Error in decode \(dataType) in DataBuilder")
                 }
             }
            
@@ -72,41 +75,61 @@ class DataBuilder {
 //                print(jsonStats)
             }
             else {
-                print("error in decode stats")
+                print("Error in decode \(dataType) in DataBuilder")
             }
             
         case "Traps":
             if let result = try? decoder.decode(TrapsDetailsList.self, from: data) {
-//                print(result.TrapDetails[0])
+                print(result.TrapDetails[0])
                 jsonTrapDetails = result.TrapDetails
+            }
+            else {
+                print("Error in decode \(dataType) in DataBuilder")
             }
         
         case "Swappers":
             if let result = try? decoder.decode(SwapperStatsList.self, from: data) {
                 jsonSwapperStats = result.SwapperStats
             }
+            else {
+                print("Error in decode \(dataType) in DataBuilder")
+            }
         
         case "SuperChargers":
             if let result = try? decoder.decode(SuperChargersStatsList.self, from: data) {
                 jsonSuperChargerStats = result.SuperChargersStats
             }
+            else {
+                print("Error in decode \(dataType) in DataBuilder")
+            }
         case "Senseis":
             if let result = try? decoder.decode(SenseisStatsList.self, from: data) {
                 jsonSenseiStats = result.SenseisStats
+            }
+            else {
+                print("Error in decode \(dataType) in DataBuilder")
+            }
+        case "Villains":
+            if let result = try? decoder.decode(VillianDetailsList.self, from: data) {
+                jsonVillainDetails = result.VillianDetails
+            }
+            else {
+                print("Error in decode \(dataType) in DataBuilder")
             }
            
         default: print("Incorrect Data Type")
         }
     }
     
-    public static func saveSkylanders() {
-        
+    public static func saveData() {
+        print("Saving Data")
         parseJson(type: "Data")
         parseJson(type: "Stats")
         parseJson(type: "Traps")
         parseJson(type: "Swappers")
         parseJson(type: "SuperChargers")
         parseJson(type: "Senseis")
+        parseJson(type: "Villains")
         
         for jsonSkylander in jsonSkylanders {
             saveSkylander(jsonSkylander: jsonSkylander)
@@ -125,6 +148,9 @@ class DataBuilder {
         }
         for jsonSenseiStat in jsonSenseiStats {
             saveSenseiStats(jsonSenseiStats: jsonSenseiStat)
+        }
+        for jsonVillainDetail in jsonVillainDetails {
+            saveVillainDetails(jsonVillainDetails: jsonVillainDetail)
         }
     }
     
@@ -195,7 +221,7 @@ class DataBuilder {
         trapDetail.setValue(jsonTrapDetails.element, forKey: "element")
         trapDetail.setValue(jsonTrapDetails.design, forKey: "design")
         trapDetail.setValue(jsonTrapDetails.villiansCaptured, forKey: "villiansCaptured")
-//        print(trapDetail.value(forKey: "villiansCaptured") as! [String])
+//        print(trapDetail.value(forKey: "villainsCaptured") as! [String])
         do {
             try managedContext.save()
         }
@@ -282,7 +308,26 @@ class DataBuilder {
         }
     }
     
+    private static func saveVillainDetails(jsonVillainDetails: VillianDetails) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "VillianDetailsTable", in: managedContext)!
+        
+        let VillainDetail = NSManagedObject(entity: entity, insertInto: managedContext)
+        VillainDetail.setValue(jsonVillainDetails.statsName, forKey: "statsName")
+        VillainDetail.setValue(jsonVillainDetails.element, forKey: "element")
+        do {
+            try managedContext.save()
+        }
+        catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
     static func DeleteData() {
+        print("Deleting Data")
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
         }
@@ -293,7 +338,9 @@ class DataBuilder {
         NSFetchRequest<NSManagedObject>(entityName: "SkylanderStats"),
         NSFetchRequest<NSManagedObject>(entityName: "TrapDetails"),
         NSFetchRequest<NSManagedObject>(entityName: "SwapperStatsTable"),
-        NSFetchRequest<NSManagedObject>(entityName: "SuperChargerStatsTable")
+        NSFetchRequest<NSManagedObject>(entityName: "SuperChargerStatsTable"),
+        NSFetchRequest<NSManagedObject>(entityName: "SenseisStatsTable"),
+        NSFetchRequest<NSManagedObject>(entityName: "VillianDetailsTable")
     ]
         
         for i in fetchRequestList {

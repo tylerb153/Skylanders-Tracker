@@ -182,7 +182,7 @@ extension SkylandersMenuViewController {
     
     @IBAction func runJsonParse() {
         print("running")
-        DataBuilder.saveSkylanders()
+        DataBuilder.saveData()
         reloadData()
         tableView.reloadData()
     }

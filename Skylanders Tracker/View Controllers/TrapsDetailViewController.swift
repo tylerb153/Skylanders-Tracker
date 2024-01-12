@@ -8,22 +8,28 @@
 import UIKit
 import CoreData
 
-class TrapsDetailViewController: UIViewController {
+class TrapsDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var trapImage: UIImageView!
-    @IBOutlet var villianLabel: UILabel!
     @IBOutlet var trapElementLabel: UILabel!
     @IBOutlet var trapDesignLabel: UILabel!
-    @IBOutlet var villianTitle: UILabel!
+    @IBOutlet var villainTable: UITableView!
+    
+    lazy var villainsTrapable: [NSManagedObject] = getVillainsTrapable()
     
     var chosenTrap: NSManagedObject!
     lazy var name = chosenTrap.value(forKey: "name") as! String
     lazy var statsName = chosenTrap.value(forKey: "statsName") as! String
+    lazy var element = getDetails()?.value(forKey: "element") as? String ?? ""
     
     
     override func viewDidLoad() {
         navigationItem.title = name
         SetImage()
         SetLabels()
+        
+        let cellNib = UINib(nibName: "SkylanderCell", bundle: nil)
+        villainTable.register(cellNib, forCellReuseIdentifier: "SkylanderCell")
+        villainTable.reloadData()
     }
     
 //MARK: - Helper Functions
@@ -40,36 +46,81 @@ class TrapsDetailViewController: UIViewController {
         let trapDetails = getDetails()
 //        print(trapDetails)
         if trapDetails != nil {
-            trapElementLabel.text = trapDetails!.value(forKey: "element") as? String
+            trapElementLabel.text = element
             trapDesignLabel.text = trapDetails!.value(forKey: "design") as? String
-            let villiansCaptured = trapDetails?.value(forKey: "villiansCaptured") as? [String] ?? [""]
+            let villainsCaptured = trapDetails?.value(forKey: "villiansCaptured") as? [String] ?? [""]
             
-            var capturedVilliansString = ""
-            for i in villiansCaptured {
-                capturedVilliansString += "\(i)\n"
-            }
-            print(capturedVilliansString)
-            villianLabel.text = capturedVilliansString
-//            print(trapDetails!.value(forKey: "villiansCaptured") as? [String] ?? "Default Value")
+            
         }
         else {
             trapElementLabel.text = ""
             trapDesignLabel.text = ""
-            villianLabel.text = ""
-            
-            villianTitle.isHidden = true
         }
         
     }
     
     private func getDetails() -> NSManagedObject? {
         let detailsList = RefreshData(entityName: "TrapDetails")!
+        print(detailsList)
         for i in detailsList {
             if statsName == i.value(forKey: "statsName") as! String {
+//                print(i)
                 return i
             }
         }
         
         return nil
+    }
+    private func getVillainsTrapable() -> [NSManagedObject] {
+        guard let villainList = RefreshData(entityName: "VillianDetailsTable") else {
+            return []
+        }
+//        print(villainList)
+        var villainsTrapable: [NSManagedObject] = []
+        for i in villainList {
+//            print(i)
+            if element == i.value(forKey: "element") as! String {
+                villainsTrapable.append(i)
+            }
+        }
+//        print(villainsTrapable)
+        return villainsTrapable
+    }
+}
+
+
+// MARK: - UITableViewDataSource methods
+
+extension TrapsDetailViewController {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return villainsTrapable.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var villain: NSManagedObject? {
+            let statsName = villainsTrapable[indexPath.row].value(forKey: "statsName") as! String
+            guard let skylandersArray = RefreshData(entityName: "Skylander") else {
+                return nil
+            }
+            for skylander in skylandersArray {
+                if skylander.value(forKey: "statsName") as! String == statsName {
+//                    print(skylander)
+                    return skylander
+                }
+            }
+            return nil
+        }
+        
+        let cell = configureCell(villain: villain!)
+        return cell
+    }
+    
+    func configureCell(villain: NSManagedObject) -> UITableViewCell {
+        let cellIdentifier = "SkylanderCell"
+        villainTable.rowHeight = 66
+        let cell = villainTable.dequeueReusableCell(withIdentifier: cellIdentifier) as! SkylanderCell
+        cell.configure(for: villain)
+        return cell
     }
 }

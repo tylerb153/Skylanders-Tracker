@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             default:
                 print("Skylanders Exist")
                 DataBuilder.DeleteData()
-                DataBuilder.saveSkylanders()
+                DataBuilder.saveData()
             }
         }
         catch let error as NSError {
