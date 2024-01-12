@@ -34,6 +34,9 @@
 		2FB7C86E2B4FA7200032C2DC /* Senseis Stats.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB7C86D2B4FA7200032C2DC /* Senseis Stats.json */; };
 		2FB7C8702B4FA7F90032C2DC /* SenseiStatsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7C86F2B4FA7F90032C2DC /* SenseiStatsList.swift */; };
 		2FB7C8722B4FA8310032C2DC /* SenseiStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7C8712B4FA8310032C2DC /* SenseiStats.swift */; };
+		2FB7C8742B50A9E40032C2DC /* Villians Details.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB7C8732B50A9E40032C2DC /* Villians Details.json */; };
+		2FB7C8762B50AA080032C2DC /* VillianDetailsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7C8752B50AA080032C2DC /* VillianDetailsList.swift */; };
+		2FB7C8782B50AA910032C2DC /* VillianDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7C8772B50AA910032C2DC /* VillianDetails.swift */; };
 		2FD970B227C3620300283528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD970B127C3620300283528 /* AppDelegate.swift */; };
 		2FD970B427C3620300283528 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD970B327C3620300283528 /* SceneDelegate.swift */; };
 		2FD970B927C3620300283528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD970B727C3620300283528 /* Main.storyboard */; };
@@ -78,6 +81,9 @@
 		2FB7C86D2B4FA7200032C2DC /* Senseis Stats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Senseis Stats.json"; sourceTree = "<group>"; };
 		2FB7C86F2B4FA7F90032C2DC /* SenseiStatsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenseiStatsList.swift; sourceTree = "<group>"; };
 		2FB7C8712B4FA8310032C2DC /* SenseiStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenseiStats.swift; sourceTree = "<group>"; };
+		2FB7C8732B50A9E40032C2DC /* Villians Details.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Villians Details.json"; sourceTree = "<group>"; };
+		2FB7C8752B50AA080032C2DC /* VillianDetailsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillianDetailsList.swift; sourceTree = "<group>"; };
+		2FB7C8772B50AA910032C2DC /* VillianDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillianDetails.swift; sourceTree = "<group>"; };
 		2FD970AE27C3620300283528 /* Skylanders Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skylanders Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD970B127C3620300283528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FD970B327C3620300283528 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,12 +130,15 @@
 				2FF6983B2B4E44C200A298F0 /* SuperChargersStats.swift */,
 				2FB7C86F2B4FA7F90032C2DC /* SenseiStatsList.swift */,
 				2FB7C8712B4FA8310032C2DC /* SenseiStats.swift */,
+				2FB7C8752B50AA080032C2DC /* VillianDetailsList.swift */,
+				2FB7C8772B50AA910032C2DC /* VillianDetails.swift */,
 				2F8A1F182B4C7A1C0084FB0B /* Skylanders Data.json */,
 				2F6280D928A04BC100319D03 /* Skylanders Stats.json */,
 				2FF698282B4E2CDC00A298F0 /* Swappers Stats.json */,
 				2FFEEDEE28C969720004FE1B /* Traps Details.json */,
 				2FF698292B4E2CDC00A298F0 /* SuperChargers Stats.json */,
 				2FB7C86D2B4FA7200032C2DC /* Senseis Stats.json */,
+				2FB7C8732B50A9E40032C2DC /* Villians Details.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -265,6 +274,7 @@
 				2F0F5D1627C383C100FB29FC /* GameCell.xib in Resources */,
 				2FB7C86E2B4FA7200032C2DC /* Senseis Stats.json in Resources */,
 				2F8A1F192B4C7A1C0084FB0B /* Skylanders Data.json in Resources */,
+				2FB7C8742B50A9E40032C2DC /* Villians Details.json in Resources */,
 				2F6280DA28A04BC100319D03 /* Skylanders Stats.json in Resources */,
 				2FF6982A2B4E2CDC00A298F0 /* Swappers Stats.json in Resources */,
 			);
@@ -277,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB7C8762B50AA080032C2DC /* VillianDetailsList.swift in Sources */,
 				2FF6983E2B4E4D5600A298F0 /* SuperChargersDetailViewController.swift in Sources */,
 				2FFEEDE528C960AD0004FE1B /* TrapsDetailsList.swift in Sources */,
 				2FB7C8722B4FA8310032C2DC /* SenseiStats.swift in Sources */,
@@ -302,6 +313,7 @@
 				2F93F39528BECD0B00444CAC /* HelperFunctions.swift in Sources */,
 				2F0732CF2B4E28BD000BAF36 /* SwapperStatsList.swift in Sources */,
 				2F10582727CB8CA300CF67CF /* SkylandersObjectList.swift in Sources */,
+				2FB7C8782B50AA910032C2DC /* VillianDetails.swift in Sources */,
 				2FD970B227C3620300283528 /* AppDelegate.swift in Sources */,
 				2FD970B427C3620300283528 /* SceneDelegate.swift in Sources */,
 				2FF6983A2B4E449800A298F0 /* SuperChargersStatsList.swift in Sources */,

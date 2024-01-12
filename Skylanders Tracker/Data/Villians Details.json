@@ -1,0 +1,235 @@
+{
+    "VillianDetails": [
+        {
+            "statsName": "Kaos",
+            "element": "Kaos"
+        },
+    
+        {
+            "statsName": "Gulper",
+            "element": "Water"
+        },
+
+        {
+            "statsName": "Chef Pepper Jack",
+            "element": "Fire"
+        },
+
+        {
+            "statsName": "Chompy Mage",
+            "element": "Life"
+        },
+
+        {
+            "statsName": "Dreamcatcher",
+            "element": "Air"
+        },
+
+        {
+            "statsName": "Dr. Krankcase",
+            "element": "Tech"
+        },
+
+        {
+            "statsName": "Golden Queen",
+            "element": "Earth"
+        },
+
+        {
+            "statsName": "Wolfgang",
+            "element": "Undead"
+        },
+
+        {
+            "statsName": "Luminous",
+            "element": "Light"
+        },
+
+        {
+            "statsName": "Nightshade",
+            "element": "Dark"
+        },
+
+        {
+            "statsName": "Bomb Shell",
+            "element": "Magic"
+        },
+
+        {
+            "statsName": "Pain-Yatta",
+            "element": "Magic"
+        },
+
+        {
+            "statsName": "Rage Mage",
+            "element": "Magic"
+        },
+
+        {
+            "statsName": "Slobber Trap",
+            "element": "Water"
+        },
+
+        {
+            "statsName": "Chill Bill",
+            "element": "Water"
+        },
+
+        {
+            "statsName": "Brawl and Chain",
+            "element": "Water"
+        },
+
+        {
+            "statsName": "Cross Crow",
+            "element": "Water"
+        },
+
+        {
+            "statsName": "Threatpack",
+            "element": "Water"
+        },
+
+        {
+            "statsName": "Scrap Shooter",
+            "element": "Fire"
+        },
+
+        {
+            "statsName": "Grinnade",
+            "element": "Fire"
+        },
+
+        {
+            "statsName": "Smoke Scream",
+            "element": "Fire"
+        },
+
+        {
+            "statsName": "Sheep Creep",
+            "element": "Life"
+        },
+
+        {
+            "statsName": "Broccoli Guy",
+            "element": "Life"
+        },
+
+        {
+            "statsName": "Cuckoo Clocker",
+            "element": "Life"
+        },
+
+        {
+            "statsName": "Shield Shredder",
+            "element": "Life"
+        },
+
+        {
+            "statsName": "Chompy",
+            "element": "Life"
+        },
+
+        {
+            "statsName": "Buzzer Beak",
+            "element": "Air"
+        },
+
+        {
+            "statsName": "Krankenstein",
+            "element": "Air"
+        },
+
+        {
+            "statsName": "Bad Juju",
+            "element": "Air"
+        },
+
+        {
+            "statsName": "Bruiser Cruiser",
+            "element": "Tech"
+        },
+
+        {
+            "statsName": "Shrednaught",
+            "element": "Tech"
+        },
+
+        {
+            "statsName": "Brawlrus",
+            "element": "Tech"
+        },
+
+        {
+            "statsName": "Trolling Thunder",
+            "element": "Tech"
+        },
+
+        {
+            "statsName": "Mad Lobs",
+            "element": "Tech"
+        },
+
+        {
+            "statsName": "Tussle Sprout",
+            "element": "Earth"
+        },
+
+        {
+            "statsName": "Chomp Chest",
+            "element": "Earth"
+        },
+
+        {
+            "statsName": "Grave Clobber",
+            "element": "Earth"
+        },
+
+        {
+            "statsName": "Masker Mind",
+            "element": "Undead"
+        },
+
+        {
+            "statsName": "Hood Sickle",
+            "element": "Undead"
+        },
+
+        {
+            "statsName": "Bone Chompy",
+            "element": "Undead"
+        },
+
+        {
+            "statsName": "Eye Five",
+            "element": "Light"
+        },
+
+        {
+            "statsName": "Lob Goblin",
+            "element": "Light"
+        },
+
+        {
+            "statsName": "Blaster-Tron",
+            "element": "Light"
+        },
+
+        {
+            "statsName": "Tae Kwon Crow",
+            "element": "Dark"
+        },
+
+        {
+            "statsName": "Eye Scream",
+            "element": "Dark"
+        },
+
+        {
+            "statsName": "Fisticuffs",
+            "element": "Dark"
+        }
+
+
+    ]
+}

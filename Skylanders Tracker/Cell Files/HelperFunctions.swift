@@ -44,7 +44,6 @@ func RefreshData(entityName: String) -> [NSManagedObject]? {
     catch let error as NSError {
         print("Could not fetch. \(error), \(error.userInfo)")
     }
-//        print(skylandersList)
     print("Error in RefreshData()")
     return nil
 }

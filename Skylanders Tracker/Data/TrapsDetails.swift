@@ -11,5 +11,5 @@ struct TrapsDetails: Codable {
     var statsName = ""
     var element = ""
     var design = ""
-    var villiansCapturable = ""
+    var villiansCaptured: [String]
 }

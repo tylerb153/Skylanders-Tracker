@@ -4,7 +4,378 @@
             "statsName": "Kaos Trap",
             "element": "Kaos",
             "design": "",
-            "villiansCapturable": "Kaos"
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Axe of Illusion",
+            "element": "Magic",
+            "design": "Axe",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Arcane Hourglass",
+            "element": "Magic",
+            "design": "Hourglass",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Biter's Bane",
+            "element": "Magic",
+            "design": "Log Holder",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Rune Rocket",
+            "element": "Magic",
+            "design": "Rocket",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Sorcerous Skull",
+            "element": "Magic",
+            "design": "Skull",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Spell Slapper",
+            "element": "Magic",
+            "design": "Totem",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Soaking Staff",
+            "element": "Water",
+            "design": "Angel",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Aqua Axe",
+            "element": "Water",
+            "design": "Axe",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Frost Helm",
+            "element": "Water",
+            "design": "Flying Helmet",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Flood Flask",
+            "element": "Water",
+            "design": "Jughead",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Wet Walter",
+            "element": "Water",
+            "design": "Log Holder",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Tidal Tiki",
+            "element": "Water",
+            "design": "Tiki",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Spark Spear",
+            "element": "Fire",
+            "design": "Captain's Hat",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Fire Flower",
+            "element": "Fire",
+            "design": "Scepter",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Scorching Stopper",
+            "element": "Fire",
+            "design": "Screamer",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Eternal Flame",
+            "element": "Fire",
+            "design": "Torch",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Searing Spinner",
+            "element": "Fire",
+            "design": "Totem",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Blazing Belch",
+            "element": "Fire",
+            "design": "Yawn",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Weed Whacker",
+            "element": "Life",
+            "design": "Hammer",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Seed Serpent",
+            "element": "Life",
+            "design": "Snake",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Jade Blade",
+            "element": "Life",
+            "design": "Sword",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Emerald Energy",
+            "element": "Life",
+            "design": "Torch",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Oak Eagle",
+            "element": "Life",
+            "design": "Toucan",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Shrub Shrieker",
+            "element": "Life",
+            "design": "Yawn",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Tempest Timer",
+            "element": "Air",
+            "design": "Hourglass",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Drafty Decanter",
+            "element": "Air",
+            "design": "Jughead",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Storm Warning",
+            "element": "Air",
+            "design": "Screamer",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Cloudy Cobra",
+            "element": "Air",
+            "design": "Snake",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Cyclone Sabre",
+            "element": "Air",
+            "design": "Sword",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Breezy Bird",
+            "element": "Air",
+            "design": "Toucan",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Automatic Angel",
+            "element": "Tech",
+            "design": "Angel",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Makers Mana",
+            "element": "Tech",
+            "design": "Flying Helmet",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Grabbing Gadget",
+            "element": "Tech",
+            "design": "Hand",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Topsy Techy",
+            "element": "Tech",
+            "design": "Handstand",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Factory Flower",
+            "element": "Tech",
+            "design": "Scepter",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Slag Hammer",
+            "element": "Earth",
+            "design": "Hammer",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Rubble Trouble",
+            "element": "Earth",
+            "design": "Handstand",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Dust of Time",
+            "element": "Earth",
+            "design": "Hourglass",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Banded Boulder",
+            "element": "Earth",
+            "design": "Orb",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Spinning Sandstorm",
+            "element": "Earth",
+            "design": "Totem",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Rock Hawk",
+            "element": "Earth",
+            "design": "Toucan",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Haunted Hatchet",
+            "element": "Undead",
+            "design": "Axe",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Dream Piercer",
+            "element": "Undead",
+            "design": "Captain's Hat",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Grim Gripper",
+            "element": "Undead",
+            "design": "Hand",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Spirit Sphere",
+            "element": "Undead",
+            "design": "Orb",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Spectral Skull",
+            "element": "Undead",
+            "design": "Skull",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Spooky Snake",
+            "element": "Undead",
+            "design": "Snake",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Heavenly Hawk",
+            "element": "Light",
+            "design": "Owl",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Shining Ship",
+            "element": "Light",
+            "design": "Rocket",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Beam Scream",
+            "element": "Light",
+            "design": "Yawn",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Ghastly Grimace",
+            "element": "Dark",
+            "design": "Handstand",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Shadow Spider",
+            "element": "Dark",
+            "design": "Spider",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Dark Dagger",
+            "element": "Dark",
+            "design": "Sword",
+            "villiansCaptured": []
         }
     ]
 }

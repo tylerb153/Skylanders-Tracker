@@ -38,10 +38,19 @@ class TrapsDetailViewController: UIViewController {
     
     private func SetLabels() {
         let trapDetails = getDetails()
+//        print(trapDetails)
         if trapDetails != nil {
             trapElementLabel.text = trapDetails!.value(forKey: "element") as? String
             trapDesignLabel.text = trapDetails!.value(forKey: "design") as? String
-            villianLabel.text = trapDetails!.value(forKey: "villiansCapturable") as? String
+            let villiansCaptured = trapDetails?.value(forKey: "villiansCaptured") as? [String] ?? [""]
+            
+            var capturedVilliansString = ""
+            for i in villiansCaptured {
+                capturedVilliansString += "\(i)\n"
+            }
+            print(capturedVilliansString)
+            villianLabel.text = capturedVilliansString
+//            print(trapDetails!.value(forKey: "villiansCaptured") as? [String] ?? "Default Value")
         }
         else {
             trapElementLabel.text = ""

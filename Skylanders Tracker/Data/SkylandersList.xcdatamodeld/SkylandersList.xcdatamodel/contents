@@ -61,6 +61,10 @@
         <attribute name="design" attributeType="String" defaultValueString=""/>
         <attribute name="element" attributeType="String" defaultValueString=""/>
         <attribute name="statsName" attributeType="String" defaultValueString=""/>
-        <attribute name="villiansCapturable" attributeType="String" defaultValueString=""/>
+        <attribute name="villiansCaptured" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformerName"/>
+    </entity>
+    <entity name="VillianDetailsTable" representedClassName="VillianDetailsTable" syncable="YES" codeGenerationType="class">
+        <attribute name="element" optional="YES" attributeType="String"/>
+        <attribute name="statsName" optional="YES" attributeType="String"/>
     </entity>
 </model>

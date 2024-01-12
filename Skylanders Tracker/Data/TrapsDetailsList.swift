@@ -8,5 +8,5 @@
 import Foundation
 
 struct TrapsDetailsList: Codable {
-    var TrapsDetails: [TrapsDetails]
+    var TrapDetails: [TrapsDetails]
 }

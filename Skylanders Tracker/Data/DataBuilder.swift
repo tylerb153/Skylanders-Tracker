@@ -77,7 +77,8 @@ class DataBuilder {
             
         case "Traps":
             if let result = try? decoder.decode(TrapsDetailsList.self, from: data) {
-                jsonTrapDetails = result.TrapsDetails
+//                print(result.TrapDetails[0])
+                jsonTrapDetails = result.TrapDetails
             }
         
         case "Swappers":
@@ -193,8 +194,8 @@ class DataBuilder {
         trapDetail.setValue(jsonTrapDetails.statsName, forKey: "statsName")
         trapDetail.setValue(jsonTrapDetails.element, forKey: "element")
         trapDetail.setValue(jsonTrapDetails.design, forKey: "design")
-        trapDetail.setValue(jsonTrapDetails.villiansCapturable, forKey: "villiansCapturable")
-        
+        trapDetail.setValue(jsonTrapDetails.villiansCaptured, forKey: "villiansCaptured")
+//        print(trapDetail.value(forKey: "villiansCaptured") as! [String])
         do {
             try managedContext.save()
         }
