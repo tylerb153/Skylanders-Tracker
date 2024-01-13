@@ -19,7 +19,7 @@ class TrapCell: UITableViewCell {
     @IBOutlet weak var checkmarkImage: UIButton!
     
     lazy var statsName = trap!.value(forKey: "statsName") as! String
-    lazy var trapDetails = getDetails()
+    var trapDetails: NSManagedObject? {getDetails()}
     lazy var villainStatsName = villainDetails?.value(forKey: "statsName") as! String
     
     override func awakeFromNib() {
@@ -58,6 +58,7 @@ class TrapCell: UITableViewCell {
     }
     
     private func setChecked(givenCheck: Bool) {
+//        print(trap?.value(forKey: "name") as! String + " is check as \(isChecked) before setChecked runs and givenCheck is \(givenCheck)")
         if givenCheck {
             checkmarkImage.setImage(UIImage(systemName: "checkmark.circle.fill"), for: UIControl.State.normal)
             isChecked = true
@@ -66,7 +67,6 @@ class TrapCell: UITableViewCell {
                 villainsTrappedArray.append(villainStatsName)
                 trapDetails!.setValue(villainsTrappedArray, forKey: "villiansCaptured")
             }
-            saveTrap()
         }
         else {
             checkmarkImage.setImage(UIImage(systemName: "checkmark.circle"), for: UIControl.State.normal)
@@ -76,8 +76,9 @@ class TrapCell: UITableViewCell {
                 villainsTrappedArray.removeAll { $0 == villainStatsName}
                 trapDetails!.setValue(villainsTrappedArray, forKey: "villiansCaptured")
             }
-            saveTrap()
         }
+        saveTrap()
+//        print(trap?.value(forKey: "name") as! String + " is check as \(isChecked) after setChecked saves and givenCheck is \(givenCheck) it should now appear to be checked as \(isChecked)\n")
 //        print("This is the array called from the database \(trapDetails?.value(forKey: "villiansCaptured") as! [String])")
     }
     
@@ -111,8 +112,11 @@ class TrapCell: UITableViewCell {
         self.trap = trap
         self.villainDetails = villainDetails
         let name = trap.value(forKey: "name") as! String
+        print("------Configured------")
+        print(name)
         var check: Bool {
             let villainsTrappedArray = getTrappedVillains()
+            print(villainsTrappedArray)
             if  villainsTrappedArray.contains(villainStatsName) {
                 return true
             }
@@ -120,6 +124,7 @@ class TrapCell: UITableViewCell {
                 return false
             }
         }
+        print("\(check)\n")
         setName(givenName: name)
         setImage(givenImage: ConfigureImage(skylander: trap))
         setChecked(givenCheck: check)
