@@ -34,6 +34,13 @@ class VillainsDetailViewController: UIViewController, UITableViewDelegate, UITab
         trapTable.reloadData()
     }
     
+//    @IBAction func refresh() {
+//        trapTable.reloadData()
+////        for i in villainTrappedBy {
+////            print("\(i.value(forKey: "statsName") as! String): \(i.value(forKey: "villiansCaptured") as! [String])")
+////        }
+//    }
+    
 //MARK: - Helper Functions
     private func SetImage() {
         if let image = ConfigureImage(skylander: chosenVillain) {
@@ -88,12 +95,13 @@ extension VillainsDetailViewController {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var trap: NSManagedObject! {
             let statsName = villainTrappedBy[indexPath.row].value(forKey: "statsName") as! String
+            print(statsName)
             guard let skylandersArray = RefreshData(entityName: "Skylander") else {
                 return nil
             }
             for skylander in skylandersArray {
                 if skylander.value(forKey: "statsName") as! String == statsName {
-//                    print(skylander)
+                    print(skylander)
                     return skylander
                 }
             }
@@ -143,7 +151,7 @@ extension VillainsDetailViewController {
 
 extension VillainsDetailViewController: TrapsPopupDelegate {
     func popupDidClose() {
-//        print("TrapsPopup Closed")
+        print("TrapsPopup Closed")
         trapTable.reloadData()
     }
 }
