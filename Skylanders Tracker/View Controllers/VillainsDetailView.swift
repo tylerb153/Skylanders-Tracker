@@ -14,7 +14,7 @@ class VillainsDetailViewController: UIViewController, UITableViewDelegate, UITab
     @IBOutlet var doomRaiderLabel: UILabel!
     @IBOutlet var trapTable: UITableView!
     
-    lazy var villainTrappedIn: [NSManagedObject] = getTraps()
+    lazy var villainTrappedBy: [NSManagedObject] = getTraps()
     
     var chosenVillain: NSManagedObject!
     lazy var name = chosenVillain.value(forKey: "name") as! String
@@ -22,6 +22,7 @@ class VillainsDetailViewController: UIViewController, UITableViewDelegate, UITab
     lazy var variant = chosenVillain.value(forKey: "variantText") as? String ?? ""
     lazy var element = getDetails()?.value(forKey: "element") as? String ?? ""
     
+    var trapToSend: NSManagedObject?
     
     override func viewDidLoad() {
         navigationItem.title = name
@@ -64,13 +65,14 @@ class VillainsDetailViewController: UIViewController, UITableViewDelegate, UITab
         guard let trapList = RefreshData(entityName: "TrapDetails") else {
             return []
         }
-        var villainsTrappedIn: [NSManagedObject] = []
+        var villainsTrappedBy: [NSManagedObject] = []
         for i in trapList {
             if i.value(forKey: "element") as! String == element { //}(i.value(forKey: "villiansCaptured") as! [String]).contains(statsName) {
-                villainsTrappedIn.append(i)
+                villainsTrappedBy.append(i)
             }
         }
-        return villainsTrappedIn
+//        print(villainsTrappedBy)
+        return villainsTrappedBy
     }
 }
 
@@ -80,12 +82,12 @@ class VillainsDetailViewController: UIViewController, UITableViewDelegate, UITab
 extension VillainsDetailViewController {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return villainTrappedIn.count
+        return villainTrappedBy.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var villain: NSManagedObject! {
-            let statsName = villainTrappedIn[indexPath.row].value(forKey: "statsName") as! String
+        var trap: NSManagedObject! {
+            let statsName = villainTrappedBy[indexPath.row].value(forKey: "statsName") as! String
             guard let skylandersArray = RefreshData(entityName: "Skylander") else {
                 return nil
             }
@@ -98,8 +100,26 @@ extension VillainsDetailViewController {
             return nil
         }
         
-        let cell = configureCell(trap: villain)
+        let cell = configureCell(trap: trap)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+    trapToSend = {
+            let statsName = villainTrappedBy[indexPath.row].value(forKey: "statsName") as! String
+            guard let skylandersArray = RefreshData(entityName: "Skylander") else {
+                print("Error in RefreshingData in VillainsDetailView in accessoryButtonTappedForRowWith")
+                return nil
+            }
+            for skylander in skylandersArray {
+                if skylander.value(forKey: "statsName") as! String == statsName {
+//                    print(skylander)
+                    return skylander
+                }
+            }
+        return nil
+    }()
+        self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
     }
     
     func configureCell(trap: NSManagedObject) -> UITableViewCell {
@@ -108,5 +128,11 @@ extension VillainsDetailViewController {
         let cell = trapTable.dequeueReusableCell(withIdentifier: cellIdentifier) as! TrapCell
         cell.configure(for: trap, villainDetails: getDetails()!)
         return cell
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let TrapsDetailViewController = segue.destination as! TrapsDetailViewController
+        TrapsDetailViewController.chosenTrap = trapToSend
     }
 }
