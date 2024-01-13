@@ -119,7 +119,7 @@ extension VillainsDetailViewController {
             }
         return nil
     }()
-        self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
+        self.performSegue(withIdentifier: "DisplayTrapPopup", sender: Any?.self)
     }
     
     func configureCell(trap: NSManagedObject) -> UITableViewCell {
@@ -133,7 +133,17 @@ extension VillainsDetailViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let navigationController = segue.destination as? UINavigationController
-        let TrapsDetailViewController = navigationController?.topViewController as! TrapsDetailViewController
-        TrapsDetailViewController.chosenTrap = trapToSend
+        let TrapsPopupDetailViewController = navigationController?.topViewController as! TrapsPopupDetailViewController
+        TrapsPopupDetailViewController.delegate = self
+        TrapsPopupDetailViewController.chosenTrap = trapToSend
+    }
+}
+
+//MARK: - Popup Delegate
+
+extension VillainsDetailViewController: TrapsPopupDelegate {
+    func popupDidClose() {
+//        print("TrapsPopup Closed")
+        trapTable.reloadData()
     }
 }

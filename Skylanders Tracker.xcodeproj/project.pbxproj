@@ -37,6 +37,7 @@
 		2FB7C8742B50A9E40032C2DC /* Villians Details.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB7C8732B50A9E40032C2DC /* Villians Details.json */; };
 		2FB7C8762B50AA080032C2DC /* VillianDetailsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7C8752B50AA080032C2DC /* VillianDetailsList.swift */; };
 		2FB7C8782B50AA910032C2DC /* VillianDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7C8772B50AA910032C2DC /* VillianDetails.swift */; };
+		2FC27F542B5230510005BBA8 /* TrapsPopupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC27F532B5230510005BBA8 /* TrapsPopupDetailViewController.swift */; };
 		2FD970B227C3620300283528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD970B127C3620300283528 /* AppDelegate.swift */; };
 		2FD970B427C3620300283528 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD970B327C3620300283528 /* SceneDelegate.swift */; };
 		2FD970B927C3620300283528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD970B727C3620300283528 /* Main.storyboard */; };
@@ -89,6 +90,7 @@
 		2FB7C8732B50A9E40032C2DC /* Villians Details.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Villians Details.json"; sourceTree = "<group>"; };
 		2FB7C8752B50AA080032C2DC /* VillianDetailsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillianDetailsList.swift; sourceTree = "<group>"; };
 		2FB7C8772B50AA910032C2DC /* VillianDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillianDetails.swift; sourceTree = "<group>"; };
+		2FC27F532B5230510005BBA8 /* TrapsPopupDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrapsPopupDetailViewController.swift; sourceTree = "<group>"; };
 		2FD970AE27C3620300283528 /* Skylanders Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skylanders Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD970B127C3620300283528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FD970B327C3620300283528 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,14 +179,31 @@
 				2F0F5D1D27C3A20100FB29FC /* SkylandersMenuViewController.swift */,
 				2F0F5D1B27C3955200FB29FC /* SkylandersListViewController.swift */,
 				2F0F5D1927C3950200FB29FC /* SearchViewController.swift */,
+				2FC27F512B5230140005BBA8 /* Detail View Controllers */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2FC27F512B5230140005BBA8 /* Detail View Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				2F0F5D1727C38DE100FB29FC /* SkylandersDetailViewController.swift */,
 				2FF698372B4E328E00A298F0 /* SwappersDetailViewController.swift */,
 				2F33D9C528BD55D00046B41F /* TrapsDetailViewController.swift */,
 				2FF6983D2B4E4D5600A298F0 /* SuperChargersDetailViewController.swift */,
 				2FB7C86B2B4F96A50032C2DC /* SenseisDetailViewController.swift */,
 				2FDCC6072B51DC9D0034667A /* VillainsDetailView.swift */,
+				2FC27F522B5230290005BBA8 /* Popup View Controllers */,
 			);
-			path = "View Controllers";
+			path = "Detail View Controllers";
+			sourceTree = "<group>";
+		};
+		2FC27F522B5230290005BBA8 /* Popup View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2FC27F532B5230510005BBA8 /* TrapsPopupDetailViewController.swift */,
+			);
+			path = "Popup View Controllers";
 			sourceTree = "<group>";
 		};
 		2FD970A527C3620300283528 = {
@@ -319,6 +338,7 @@
 				2F0F5D1A27C3950200FB29FC /* SearchViewController.swift in Sources */,
 				2F0F5D1E27C3A20100FB29FC /* SkylandersMenuViewController.swift in Sources */,
 				2F0F5D2227C3A76B00FB29FC /* GameCell.swift in Sources */,
+				2FC27F542B5230510005BBA8 /* TrapsPopupDetailViewController.swift in Sources */,
 				2F0F5D1C27C3955200FB29FC /* SkylandersListViewController.swift in Sources */,
 				2F33D9C628BD55D00046B41F /* TrapsDetailViewController.swift in Sources */,
 				2FFEEDE328C960300004FE1B /* TrapsDetails.swift in Sources */,

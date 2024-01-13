@@ -1224,7 +1224,7 @@
                         <outlet property="trapTable" destination="nsw-e8-JCM" id="OKD-PJ-Reb"/>
                         <outlet property="villainElementLabel" destination="m01-r8-5o5" id="9z0-Yq-TRR"/>
                         <outlet property="villainImage" destination="z9V-mZ-vCD" id="dqY-fz-OII"/>
-                        <segue destination="dl5-Fo-4ee" kind="showDetail" identifier="DisplayTrap" id="UZN-Nn-izO"/>
+                        <segue destination="dl5-Fo-4ee" kind="showDetail" identifier="DisplayTrapPopup" id="UZN-Nn-izO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zRj-pU-x3o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1234,7 +1234,7 @@
         <!--Trap Name-->
         <scene sceneID="Xtp-Ze-vrC">
             <objects>
-                <viewController id="izQ-EE-lY6" customClass="TrapsDetailViewController" customModule="Skylanders_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="izQ-EE-lY6" customClass="TrapsPopupDetailViewController" customModule="Skylanders_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cqw-1Z-kXv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
