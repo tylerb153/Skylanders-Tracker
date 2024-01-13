@@ -1218,7 +1218,13 @@
                             <constraint firstItem="rhd-fU-j8J" firstAttribute="top" secondItem="z9V-mZ-vCD" secondAttribute="bottom" constant="16" id="rgZ-fe-xsB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Villain Name" largeTitleDisplayMode="always" id="Www-51-4va"/>
+                    <navigationItem key="navigationItem" title="Villain Name" largeTitleDisplayMode="always" id="Www-51-4va">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="refresh" id="TnW-Bc-0t8">
+                            <connections>
+                                <action selector="refresh" destination="Rnm-sa-Hrl" id="Aie-nB-Rhf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="doomRaiderLabel" destination="U2i-Dj-9kv" id="Ic9-sb-A6U"/>
                         <outlet property="trapTable" destination="nsw-e8-JCM" id="OKD-PJ-Reb"/>

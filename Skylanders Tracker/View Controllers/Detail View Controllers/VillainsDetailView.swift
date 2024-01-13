@@ -95,13 +95,12 @@ extension VillainsDetailViewController {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var trap: NSManagedObject! {
             let statsName = villainTrappedBy[indexPath.row].value(forKey: "statsName") as! String
-            print(statsName)
             guard let skylandersArray = RefreshData(entityName: "Skylander") else {
                 return nil
             }
             for skylander in skylandersArray {
                 if skylander.value(forKey: "statsName") as! String == statsName {
-                    print(skylander)
+//                    print(skylander)
                     return skylander
                 }
             }
