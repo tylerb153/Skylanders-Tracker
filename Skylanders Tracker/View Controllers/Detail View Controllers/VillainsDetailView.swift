@@ -132,7 +132,8 @@ extension VillainsDetailViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let TrapsDetailViewController = segue.destination as! TrapsDetailViewController
+        let navigationController = segue.destination as? UINavigationController
+        let TrapsDetailViewController = navigationController?.topViewController as! TrapsDetailViewController
         TrapsDetailViewController.chosenTrap = trapToSend
     }
 }

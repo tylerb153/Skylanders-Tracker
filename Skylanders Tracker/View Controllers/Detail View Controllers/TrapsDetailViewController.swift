@@ -23,6 +23,8 @@ class TrapsDetailViewController: UIViewController, UITableViewDelegate, UITableV
     
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = name
         SetImage()
         SetLabels()
