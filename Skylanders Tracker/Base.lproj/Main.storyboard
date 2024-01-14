@@ -372,7 +372,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QXm-3z-oex">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QXm-3z-oex">
                                 <rect key="frame" x="0.0" y="371.5" width="414" height="490.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
@@ -408,11 +408,12 @@
                         <outlet property="trapElementLabel" destination="KTJ-x9-XUK" id="Gnt-kO-4lM"/>
                         <outlet property="trapImage" destination="Nfd-35-2Ti" id="9EM-lw-rIO"/>
                         <outlet property="villainTable" destination="QXm-3z-oex" id="QHI-36-Y3Y"/>
+                        <segue destination="c3P-v8-pvn" kind="showDetail" identifier="DisplayVillainPopup" id="xiO-a1-5VV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gK2-0s-43d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2777" y="1604"/>
+            <point key="canvasLocation" x="1971" y="1696"/>
         </scene>
         <!--Search-->
         <scene sceneID="tvc-td-dh6">
@@ -1229,9 +1230,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zRj-pU-x3o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3582.608695652174" y="1603.7946428571429"/>
+            <point key="canvasLocation" x="3649" y="1696"/>
         </scene>
-        <!--Trap Name-->
+        <!--Popup Trap Name-->
         <scene sceneID="Xtp-Ze-vrC">
             <objects>
                 <viewController id="izQ-EE-lY6" customClass="TrapsPopupDetailViewController" customModule="Skylanders_Tracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -1265,7 +1266,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PMn-JV-kYM">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PMn-JV-kYM">
                                 <rect key="frame" x="0.0" y="371.5" width="414" height="490.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
@@ -1295,7 +1296,7 @@
                             <constraint firstItem="4HZ-Yz-kV2" firstAttribute="trailing" secondItem="Nly-4W-wvr" secondAttribute="trailing" constant="8" id="sF2-8V-W0K"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Trap Name" largeTitleDisplayMode="always" id="mJu-wn-Y0f"/>
+                    <navigationItem key="navigationItem" title="Popup Trap Name" largeTitleDisplayMode="always" id="mJu-wn-Y0f"/>
                     <connections>
                         <outlet property="trapDesignLabel" destination="OJr-I4-Xap" id="XWy-Jn-C6f"/>
                         <outlet property="trapElementLabel" destination="XDe-lp-5fi" id="ju1-3b-fPJ"/>
@@ -1305,7 +1306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qHj-6j-RjZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4492.753623188406" y="2290.8482142857142"/>
+            <point key="canvasLocation" x="4526" y="2423"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aJT-eC-A9L">
@@ -1323,7 +1324,101 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5dW-cF-K0N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3582.608695652174" y="2290.8482142857142"/>
+            <point key="canvasLocation" x="3648" y="2422"/>
+        </scene>
+        <!--Popup Villain Name-->
+        <scene sceneID="YeL-ax-d33">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" id="iL1-KI-2e7" customClass="VillainsPopupDetailViewController" customModule="Skylanders_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i2q-1y-W50">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Villain Element" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbd-Oc-6SD">
+                                <rect key="frame" x="0.0" y="92" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="C9Q-Ym-MJu">
+                                <rect key="frame" x="107" y="122" width="200" height="197.5"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="C9Q-Ym-MJu" secondAttribute="height" multiplier="1:1" id="ApZ-TX-mO2"/>
+                                    <constraint firstAttribute="height" constant="200" id="R4E-lb-yvY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trapped by:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n40-yr-YYi">
+                                <rect key="frame" x="8" y="337" width="398" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="neT-NS-OI1">
+                                <rect key="frame" x="0.0" y="372" width="414" height="490"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="iL1-KI-2e7" id="pxr-pi-UHe"/>
+                                    <outlet property="delegate" destination="iL1-KI-2e7" id="RhX-Nl-ahh"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doom Raider" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwd-is-gX0">
+                                <rect key="frame" x="203" y="92" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CcI-XY-xl1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="fwd-is-gX0" firstAttribute="width" secondItem="bbd-Oc-6SD" secondAttribute="width" id="15S-Z5-Rlp"/>
+                            <constraint firstItem="n40-yr-YYi" firstAttribute="leading" secondItem="CcI-XY-xl1" secondAttribute="leading" constant="8" id="6vX-Ze-cd7"/>
+                            <constraint firstItem="neT-NS-OI1" firstAttribute="top" secondItem="n40-yr-YYi" secondAttribute="bottom" constant="8" symbolic="YES" id="967-1u-UMI"/>
+                            <constraint firstItem="fwd-is-gX0" firstAttribute="leading" secondItem="bbd-Oc-6SD" secondAttribute="trailing" id="Atb-pH-Zu3"/>
+                            <constraint firstItem="CcI-XY-xl1" firstAttribute="bottom" secondItem="neT-NS-OI1" secondAttribute="bottom" id="DeG-pG-VIL"/>
+                            <constraint firstItem="fwd-is-gX0" firstAttribute="bottom" secondItem="bbd-Oc-6SD" secondAttribute="bottom" id="GYr-kW-Bz6"/>
+                            <constraint firstItem="CcI-XY-xl1" firstAttribute="trailing" secondItem="neT-NS-OI1" secondAttribute="trailing" id="HAO-0c-Zwz"/>
+                            <constraint firstItem="n40-yr-YYi" firstAttribute="top" secondItem="C9Q-Ym-MJu" secondAttribute="bottom" constant="16" id="HBv-KW-ROv"/>
+                            <constraint firstItem="CcI-XY-xl1" firstAttribute="trailing" secondItem="n40-yr-YYi" secondAttribute="trailing" constant="8" id="IBW-Yr-KZr"/>
+                            <constraint firstItem="CcI-XY-xl1" firstAttribute="trailing" secondItem="fwd-is-gX0" secondAttribute="trailing" constant="8" id="Paa-gx-GUP"/>
+                            <constraint firstItem="bbd-Oc-6SD" firstAttribute="top" secondItem="CcI-XY-xl1" secondAttribute="top" id="SXh-Oh-6i0"/>
+                            <constraint firstItem="neT-NS-OI1" firstAttribute="leading" secondItem="CcI-XY-xl1" secondAttribute="leading" id="XxF-nv-Yz9"/>
+                            <constraint firstItem="bbd-Oc-6SD" firstAttribute="leading" secondItem="CcI-XY-xl1" secondAttribute="leading" id="eNF-cM-zDQ"/>
+                            <constraint firstItem="C9Q-Ym-MJu" firstAttribute="top" secondItem="bbd-Oc-6SD" secondAttribute="bottom" constant="8" id="gOX-HH-gMt"/>
+                            <constraint firstItem="C9Q-Ym-MJu" firstAttribute="centerX" secondItem="i2q-1y-W50" secondAttribute="centerX" id="wna-zd-SR3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Popup Villain Name" largeTitleDisplayMode="always" id="cFO-0N-IXC"/>
+                    <connections>
+                        <outlet property="doomRaiderLabel" destination="fwd-is-gX0" id="iUf-NH-TXF"/>
+                        <outlet property="trapTable" destination="neT-NS-OI1" id="VrU-J2-26R"/>
+                        <outlet property="villainElementLabel" destination="bbd-Oc-6SD" id="Lzz-wy-J0H"/>
+                        <outlet property="villainImage" destination="C9Q-Ym-MJu" id="XYW-sp-euv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bd4-kc-oFo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2777" y="2422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="otO-ba-rsF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c3P-v8-pvn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4i5-cA-Cfo">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iL1-KI-2e7" kind="relationship" relationship="rootViewController" id="iy5-CQ-jq6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Esn-uj-cj6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1971" y="2423"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

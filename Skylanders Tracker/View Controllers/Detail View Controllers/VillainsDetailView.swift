@@ -150,7 +150,7 @@ extension VillainsDetailViewController {
 
 extension VillainsDetailViewController: TrapsPopupDelegate {
     func popupDidClose() {
-        print("TrapsPopup Closed")
+//        print("TrapsPopup Closed")
         trapTable.reloadData()
     }
 }

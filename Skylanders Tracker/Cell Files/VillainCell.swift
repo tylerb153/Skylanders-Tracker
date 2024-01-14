@@ -18,7 +18,7 @@ class VillainCell: UITableViewCell {
     @IBOutlet weak var villainImage: UIImageView!
     @IBOutlet weak var checkmarkImage: UIButton!
     
-    lazy var villainStatsName = villain!.value(forKey: "statsName") as! String
+    var villainStatsName: String {villain!.value(forKey: "statsName") as! String}
     
     override func awakeFromNib() {
         super.awakeFromNib()

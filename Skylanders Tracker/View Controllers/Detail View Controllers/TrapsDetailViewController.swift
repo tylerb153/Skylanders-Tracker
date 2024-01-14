@@ -21,6 +21,8 @@ class TrapsDetailViewController: UIViewController, UITableViewDelegate, UITableV
     lazy var statsName = chosenTrap.value(forKey: "statsName") as! String
     lazy var element = getDetails()?.value(forKey: "element") as? String ?? ""
     
+    var villainToSend: NSManagedObject?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -115,11 +117,39 @@ extension TrapsDetailViewController {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        let skylandersList:[NSManagedObject] = RefreshData(entityName: "Skylander") ?? []
+        let villainStatsName = villainsTrapable[indexPath.row].value(forKey: "statsName") as! String
+        for i in skylandersList {
+            if villainStatsName == i.value(forKey:"statsName") as! String {
+                villainToSend = i
+                self.performSegue(withIdentifier: "DisplayVillainPopup", sender: Any?.self)
+                return
+            }
+        }
+    }
+    
     func configureCell(villain: NSManagedObject) -> UITableViewCell {
         let cellIdentifier = "VillainCell"
         villainTable.rowHeight = 66
         let cell = villainTable.dequeueReusableCell(withIdentifier: cellIdentifier) as! VillainCell
         cell.configure(for: villain, chosenTrap: getDetails())
         return cell
+    }
+    
+    //MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let navigationController = segue.destination as? UINavigationController
+        let VillainsPopupDetailViewController = navigationController?.topViewController as! VillainsPopupDetailViewController
+        VillainsPopupDetailViewController.delegate = self
+        VillainsPopupDetailViewController.chosenVillain = villainToSend
+    }
+}
+
+//MARK: - Popup Delegate
+
+extension TrapsDetailViewController: VillainsPopupDelegate {
+    func popupDidClose() {
+        villainTable.reloadData()
     }
 }

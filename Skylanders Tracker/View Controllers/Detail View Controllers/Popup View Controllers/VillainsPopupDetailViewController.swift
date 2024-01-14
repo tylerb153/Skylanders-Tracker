@@ -1,33 +1,32 @@
 //
-//  TrapsPopupDetailViewController.swift
+//  VillainsPopupDetailViewController.swift
 //  Skylanders Tracker
 //
-//  Created by Tyler Bischoff on 1/12/24.
+//  Created by Tyler Bischoff on 1/13/24.
 //
 
 import UIKit
 import CoreData
 
-protocol TrapsPopupDelegate: AnyObject {
+protocol VillainsPopupDelegate: AnyObject {
     func popupDidClose()
 }
 
-class TrapsPopupDetailViewController: TrapsDetailViewController {
+class VillainsPopupDetailViewController: VillainsDetailViewController {
     
-    weak var delegate: TrapsPopupDelegate?
+    weak var delegate: VillainsPopupDelegate?
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
+            super.viewDidLoad()
+        }
     
     override func viewWillDisappear(_ animated: Bool) {
         self.delegate?.popupDidClose()
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var villain: NSManagedObject! {
-            let statsName = villainsTrapable[indexPath.row].value(forKey: "statsName") as! String
+        var trap: NSManagedObject! {
+            let statsName = villainTrappedBy[indexPath.row].value(forKey: "statsName") as! String
             guard let skylandersArray = RefreshData(entityName: "Skylander") else {
                 return nil
             }
@@ -40,7 +39,7 @@ class TrapsPopupDetailViewController: TrapsDetailViewController {
             return nil
         }
         
-        let cell = configureCell(villain: villain)
+        let cell = configureCell(trap: trap)
         cell.accessoryType = .none
         return cell
     }

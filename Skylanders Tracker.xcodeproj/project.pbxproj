@@ -29,6 +29,7 @@
 		2F39382927C8C5D5005C5D18 /* SkylanderSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39382827C8C5D5005C5D18 /* SkylanderSelectCell.swift */; };
 		2F6280DA28A04BC100319D03 /* Skylanders Stats.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F6280D928A04BC100319D03 /* Skylanders Stats.json */; };
 		2F8A1F192B4C7A1C0084FB0B /* Skylanders Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F8A1F182B4C7A1C0084FB0B /* Skylanders Data.json */; };
+		2F9193842B5357BD003E15C3 /* VillainsPopupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9193832B5357BD003E15C3 /* VillainsPopupDetailViewController.swift */; };
 		2F93F39528BECD0B00444CAC /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F93F39428BECD0B00444CAC /* HelperFunctions.swift */; };
 		2FB7C86C2B4F96A50032C2DC /* SenseisDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7C86B2B4F96A50032C2DC /* SenseisDetailViewController.swift */; };
 		2FB7C86E2B4FA7200032C2DC /* Senseis Stats.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB7C86D2B4FA7200032C2DC /* Senseis Stats.json */; };
@@ -82,6 +83,7 @@
 		2F39382827C8C5D5005C5D18 /* SkylanderSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylanderSelectCell.swift; sourceTree = "<group>"; };
 		2F6280D928A04BC100319D03 /* Skylanders Stats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Skylanders Stats.json"; sourceTree = "<group>"; };
 		2F8A1F182B4C7A1C0084FB0B /* Skylanders Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Skylanders Data.json"; sourceTree = "<group>"; };
+		2F9193832B5357BD003E15C3 /* VillainsPopupDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillainsPopupDetailViewController.swift; sourceTree = "<group>"; };
 		2F93F39428BECD0B00444CAC /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HelperFunctions.swift; path = "Cell Files/HelperFunctions.swift"; sourceTree = "<group>"; };
 		2FB7C86B2B4F96A50032C2DC /* SenseisDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenseisDetailViewController.swift; sourceTree = "<group>"; };
 		2FB7C86D2B4FA7200032C2DC /* Senseis Stats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Senseis Stats.json"; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				2FC27F532B5230510005BBA8 /* TrapsPopupDetailViewController.swift */,
+				2F9193832B5357BD003E15C3 /* VillainsPopupDetailViewController.swift */,
 			);
 			path = "Popup View Controllers";
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				2F93F39528BECD0B00444CAC /* HelperFunctions.swift in Sources */,
 				2F0732CF2B4E28BD000BAF36 /* SwapperStatsList.swift in Sources */,
 				2F10582727CB8CA300CF67CF /* SkylandersObjectList.swift in Sources */,
+				2F9193842B5357BD003E15C3 /* VillainsPopupDetailViewController.swift in Sources */,
 				2FB7C8782B50AA910032C2DC /* VillianDetails.swift in Sources */,
 				2FD970B227C3620300283528 /* AppDelegate.swift in Sources */,
 				2FD970B427C3620300283528 /* SceneDelegate.swift in Sources */,
