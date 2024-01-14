@@ -59,6 +59,7 @@
 		2FF6983A2B4E449800A298F0 /* SuperChargersStatsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF698392B4E449800A298F0 /* SuperChargersStatsList.swift */; };
 		2FF6983C2B4E44C200A298F0 /* SuperChargersStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF6983B2B4E44C200A298F0 /* SuperChargersStats.swift */; };
 		2FF6983E2B4E4D5600A298F0 /* SuperChargersDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF6983D2B4E4D5600A298F0 /* SuperChargersDetailViewController.swift */; };
+		2FF75F4A2B547AF00024324B /* SuperChargersPopupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF75F492B547AF00024324B /* SuperChargersPopupDetailViewController.swift */; };
 		2FFEEDE328C960300004FE1B /* TrapsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFEEDE228C960300004FE1B /* TrapsDetails.swift */; };
 		2FFEEDE528C960AD0004FE1B /* TrapsDetailsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFEEDE428C960AD0004FE1B /* TrapsDetailsList.swift */; };
 		2FFEEDEF28C969720004FE1B /* Traps Details.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FFEEDEE28C969720004FE1B /* Traps Details.json */; };
@@ -119,6 +120,7 @@
 		2FF698392B4E449800A298F0 /* SuperChargersStatsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperChargersStatsList.swift; sourceTree = "<group>"; };
 		2FF6983B2B4E44C200A298F0 /* SuperChargersStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperChargersStats.swift; sourceTree = "<group>"; };
 		2FF6983D2B4E4D5600A298F0 /* SuperChargersDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperChargersDetailViewController.swift; sourceTree = "<group>"; };
+		2FF75F492B547AF00024324B /* SuperChargersPopupDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperChargersPopupDetailViewController.swift; sourceTree = "<group>"; };
 		2FFEEDE228C960300004FE1B /* TrapsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrapsDetails.swift; sourceTree = "<group>"; };
 		2FFEEDE428C960AD0004FE1B /* TrapsDetailsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrapsDetailsList.swift; sourceTree = "<group>"; };
 		2FFEEDEE28C969720004FE1B /* Traps Details.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Traps Details.json"; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 			children = (
 				2FC27F532B5230510005BBA8 /* TrapsPopupDetailViewController.swift */,
 				2F9193832B5357BD003E15C3 /* VillainsPopupDetailViewController.swift */,
+				2FF75F492B547AF00024324B /* SuperChargersPopupDetailViewController.swift */,
 			);
 			path = "Popup View Controllers";
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				2FF698382B4E328E00A298F0 /* SwappersDetailViewController.swift in Sources */,
 				2F10582927CB8FF500CF67CF /* SkylandersStatsList.swift in Sources */,
 				2F0732CC2B4E281B000BAF36 /* SwapperStats.swift in Sources */,
+				2FF75F4A2B547AF00024324B /* SuperChargersPopupDetailViewController.swift in Sources */,
 				2FDCC6052B50F7550034667A /* VillainCell.swift in Sources */,
 				2FB7C8702B4FA7F90032C2DC /* SenseiStatsList.swift in Sources */,
 				2F0F5D2027C3A6EA00FB29FC /* SkylanderCell.swift in Sources */,

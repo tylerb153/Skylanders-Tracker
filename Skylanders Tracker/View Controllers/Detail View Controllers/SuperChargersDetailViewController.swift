@@ -33,6 +33,8 @@ class SuperChargersDetailViewController: UIViewController {
     @IBOutlet weak var skylanderGame: UILabel!
     @IBOutlet weak var superChargerVehicle: UILabel!
     
+    @IBOutlet weak var vehicleButton: UIButton!
+    
     var chosenSuperCharger: NSManagedObject!
     lazy var name = chosenSuperCharger.value(forKey: "name") as! String
     lazy var baseName = chosenSuperCharger.value(forKey: "baseName") as! String
@@ -144,6 +146,25 @@ class SuperChargersDetailViewController: UIViewController {
         }
         return nil
 
+    }
+}
+
+extension SuperChargersDetailViewController {
+    @IBAction func detailDisclosurePressed() {
+        self.performSegue(withIdentifier: "DisplayVehiclePopup", sender: Any?.self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let navigationController = segue.destination as? UINavigationController
+        let VehiclesDetailViewController = navigationController?.topViewController as! VehiclesDetailViewController
+        VehiclesDetailViewController.chosenVehicle = {
+            let skylandersList = RefreshData(entityName: "Skylander")!
+            for skylander in skylandersList {
+                if skylander.value(forKey: "name") as? String == superChargerVehicle.text {
+                    return skylander
+                }
+            }
+            return nil
+        }()
     }
 }
 

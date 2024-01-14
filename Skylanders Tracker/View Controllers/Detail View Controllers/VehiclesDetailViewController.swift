@@ -25,6 +25,8 @@ class VehiclesDetailViewController: UIViewController {
     @IBOutlet weak var vehicleGame: UILabel!
     @IBOutlet weak var vehicleSuperCharger: UILabel!
     
+    @IBOutlet var superChargerButton: UIButton!
+    
     var chosenVehicle: NSManagedObject!
     lazy var name = chosenVehicle.value(forKey: "name") as! String
     lazy var baseName = chosenVehicle.value(forKey: "baseName") as! String
@@ -33,6 +35,8 @@ class VehiclesDetailViewController: UIViewController {
     lazy var game = chosenVehicle.value(forKey: "game") as! String
     lazy var statsName = chosenVehicle.value(forKey: "statsName") as! String
     lazy var variant = chosenVehicle.value(forKey: "variantText") as! String
+    
+    lazy var superCharger = getSuperCharger()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,7 +80,7 @@ class VehiclesDetailViewController: UIViewController {
     
     private func setLabels() {
         if let vehicleStats = getStats() {
-            vehicleSuperCharger.text = String(describing: getSuperCharger()?.value(forKey: "name") ?? "")
+            vehicleSuperCharger.text = String(describing: superCharger?.value(forKey: "name") ?? "")
             vehicleTerrain.text = vehicleStats.value(forKey: "terrain") as? String ?? "Unknown"
             let topSpeed = vehicleStats.value(forKey: "topSpeed") as! Int
             vehicleTopSpeed.text = topSpeed != -1 ? String(topSpeed) : "Unknown"
@@ -170,6 +174,18 @@ class VehiclesDetailViewController: UIViewController {
             }
         }
         return nil
+    }
+}
+
+// MARK: - Navigation
+extension VehiclesDetailViewController {
+    @IBAction func detailDisclosurePressed() {
+        self.performSegue(withIdentifier: "DisplaySuperChargerPopup", sender: Any?.self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let navigationController = segue.destination as? UINavigationController
+        let SuperChargersDetailViewController = navigationController?.topViewController as! SuperChargersDetailViewController
+        SuperChargersDetailViewController.chosenSuperCharger = superCharger
     }
 }
 

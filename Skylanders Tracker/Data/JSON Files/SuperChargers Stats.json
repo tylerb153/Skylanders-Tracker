@@ -63,7 +63,7 @@
         {
             "statsName": "Hurricane Jet-Vac",
             "element": "Air",
-            "vehicle": "Jet Steam",
+            "vehicle": "Jet Stream",
             "speed": 43,
             "armor":  12,
             "criticalHit": 6,

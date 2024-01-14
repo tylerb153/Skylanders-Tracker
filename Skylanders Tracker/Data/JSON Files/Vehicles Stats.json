@@ -218,28 +218,6 @@
             "armor": -1,
             "handling": -1,
             "weight": -1
-        },
-
-        {
-            "statsName": "Power Blue Gold Rusher",
-            "element": "Tech",
-            "terrain": "Land",
-            "topSpeed": -1,
-            "acceleration": -1,
-            "armor": -1,
-            "handling": -1,
-            "weight": -1
-        },
-
-        {
-            "statsName": "Power Blue Splatter Splasher",
-            "element": "Magic",
-            "terrain": "Sea",
-            "topSpeed": 85,
-            "acceleration": -1,
-            "armor": -1,
-            "handling": -1,
-            "weight": -1
         }
     ]
 }
