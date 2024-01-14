@@ -379,6 +379,15 @@
         },
 
         {
+            "statsName": "Ultimate Kaos Trap",
+            "element": "Kaos",
+            "design": "",
+            "villiansCaptured": []
+        },
+
+
+
+        {
             "statsName": "Legendary Flood Flask Trap",
             "element": "Water",
             "design": "Jughead",

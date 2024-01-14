@@ -12,7 +12,7 @@ class SkylanderCell: UITableViewCell {
 
     var isChecked = false
     var isVillain: Bool {
-        if variant.contains("Villian") || variant.contains("Doom Raider") {
+        if !variant.contains("Sensei") && variant.contains("Villian") || variant.contains("Doom Raider") {
             return true
         } else {
             return false
