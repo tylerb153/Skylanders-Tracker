@@ -77,8 +77,23 @@ class VillainCell: UITableViewCell {
             }
             saveTrap()
         }
+        villain?.setValue(checkVillainChecked(), forKey: "isChecked")
+        saveTrap()
 //        print("This is the array called from the database \(trapDetails?.value(forKey: "villiansCaptured") as! [String])")
     }
+    
+    //MARK: - Helper Methods
+    private func checkVillainChecked() -> Bool {
+        let trapArray = RefreshData(entityName: "TrapDetails") ?? []
+        for i in trapArray {
+            let statsName = villainStatsName
+            if ((i.value(forKey: "villiansCaptured") as! [String]).contains(statsName)) {
+                return true
+            }
+        }
+        return false
+    }
+    
     
     // MARK: - Configure Cell Methods
     

@@ -11,7 +11,16 @@ import CoreData
 class SkylanderCell: UITableViewCell {
 
     var isChecked = false
+    var isVillain: Bool {
+        if variant.contains("Villian") || variant.contains("Doom Raider") {
+            return true
+        } else {
+            return false
+        }
+    }
+    
     var skylander: NSManagedObject?
+    var variant: String = ""
     
     @IBOutlet weak var skylanderName: UILabel!
     @IBOutlet weak var seriesNumber: UILabel!
@@ -30,6 +39,10 @@ class SkylanderCell: UITableViewCell {
     
     // MARK: Action
     @IBAction func toggleCheckmark(_ sender: Any) {
+        if isVillain {
+            return
+        }
+    
         if isChecked {
             setChecked(givenCheck: false)
         }
@@ -62,17 +75,41 @@ class SkylanderCell: UITableViewCell {
     
     private func setChecked(givenCheck: Bool) {
         if givenCheck {
-            checkmarkImage.setImage(UIImage(systemName: "checkmark.circle.fill"), for: UIControl.State.normal)
+            if isVillain {
+                checkmarkImage.setImage(UIImage(systemName: "checkmark"), for: UIControl.State.normal)
+            } else {
+                checkmarkImage.setImage(UIImage(systemName: "checkmark.circle.fill"), for: UIControl.State.normal)
+            }
             isChecked = true
             skylander!.setValue(true, forKey: "isChecked")
             saveSkylander()
         }
         else {
-            checkmarkImage.setImage(UIImage(systemName: "checkmark.circle"), for: UIControl.State.normal)
+            if isVillain {
+                checkmarkImage.setImage(UIImage(systemName: "xmark"), for: UIControl.State.normal)
+            } else {
+                checkmarkImage.setImage(UIImage(systemName: "checkmark.circle"), for: UIControl.State.normal)
+            }
             isChecked = false
             skylander!.setValue(false, forKey: "isChecked")
             saveSkylander()
         }
+    }
+    
+    
+    //MARK: - Helper Methods
+    func findVillainChecked() -> Bool {
+        guard let trapDetailsArray = RefreshData(entityName: "TrapDetails") else {
+            return false
+        }
+        for trap in trapDetailsArray {
+            let villainsTrapped = trap.value(forKey: "villiansCaptured") as! [String]
+            if villainsTrapped.contains(skylander?.value(forKey: "statsName") as! String) {
+                return true
+            }
+            
+        }
+        return false
     }
     
     // MARK: - Configure Cell Methods
@@ -87,7 +124,12 @@ class SkylanderCell: UITableViewCell {
         setSeries(givenSeries: series)
         setImage(givenImage: ConfigureImage(skylander: skylander))
         tintBorder()
-        setChecked(givenCheck: check)
+        variant = skylander.value(forKey: "variantText") as? String ?? ""
+        if isVillain {
+            setChecked(givenCheck: findVillainChecked())
+        } else {
+            setChecked(givenCheck: check)
+        }
     }
     
     private func tintBorder() {

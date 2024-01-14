@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -12,7 +12,7 @@
             <rect key="frame" x="0.0" y="0.0" width="377" height="66"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N9H-Ie-rYW" id="lyZ-hc-9gD">
-                <rect key="frame" x="0.0" y="0.0" width="348.5" height="66"/>
+                <rect key="frame" x="0.0" y="0.0" width="346.5" height="66"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UGw-AO-WAs">
@@ -22,19 +22,19 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skylander Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Fi7-7N-KJl">
-                        <rect key="frame" x="102" y="21" width="144" height="24"/>
+                        <rect key="frame" x="108" y="21" width="144" height="24"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FwI-4Z-NkJ">
-                        <rect key="frame" x="294" y="25.5" width="46.5" height="15"/>
+                        <rect key="frame" x="292" y="25.5" width="46.5" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.5" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gmy-Xe-C2S">
-                        <rect key="frame" x="58" y="11" width="44" height="44"/>
+                        <rect key="frame" x="58" y="8" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="Gmy-Xe-C2S" secondAttribute="height" multiplier="1:1" id="sTP-ky-ZOX"/>
                         </constraints>
@@ -57,7 +57,10 @@
                     <constraint firstItem="FwI-4Z-NkJ" firstAttribute="centerY" secondItem="lyZ-hc-9gD" secondAttribute="centerY" id="XhF-ME-zG0"/>
                     <constraint firstAttribute="trailing" secondItem="FwI-4Z-NkJ" secondAttribute="trailing" constant="8" id="gFd-Oi-Igo"/>
                     <constraint firstItem="FwI-4Z-NkJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fi7-7N-KJl" secondAttribute="trailing" constant="8" id="mza-bh-M9Z"/>
+                    <constraint firstItem="Gmy-Xe-C2S" firstAttribute="top" secondItem="UGw-AO-WAs" secondAttribute="top" id="o21-oM-Yfc"/>
+                    <constraint firstItem="Gmy-Xe-C2S" firstAttribute="height" secondItem="UGw-AO-WAs" secondAttribute="height" id="pw1-Wn-l9F"/>
                     <constraint firstItem="Gmy-Xe-C2S" firstAttribute="centerY" secondItem="lyZ-hc-9gD" secondAttribute="centerY" id="ti0-sQ-8HL"/>
+                    <constraint firstItem="Gmy-Xe-C2S" firstAttribute="width" secondItem="UGw-AO-WAs" secondAttribute="width" id="zH8-zZ-VuU"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

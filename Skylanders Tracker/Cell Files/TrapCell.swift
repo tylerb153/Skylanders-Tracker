@@ -67,6 +67,7 @@ class TrapCell: UITableViewCell {
                 villainsTrappedArray.append(villainStatsName)
                 trapDetails!.setValue(villainsTrappedArray, forKey: "villiansCaptured")
             }
+            saveTrap()
         }
         else {
             checkmarkImage.setImage(UIImage(systemName: "checkmark.circle"), for: UIControl.State.normal)
@@ -76,8 +77,12 @@ class TrapCell: UITableViewCell {
                 villainsTrappedArray.removeAll { $0 == villainStatsName}
                 trapDetails!.setValue(villainsTrappedArray, forKey: "villiansCaptured")
             }
+            saveTrap()
         }
+        let villain = getVillain()
+        villain?.setValue(checkVillainChecked(), forKey: "isChecked")
         saveTrap()
+        
 //        print(trap?.value(forKey: "name") as! String + " is check as \(isChecked) after setChecked saves and givenCheck is \(givenCheck) it should now appear to be checked as \(isChecked)\n")
 //        print("This is the array called from the database \(trapDetails?.value(forKey: "villiansCaptured") as! [String])")
     }
@@ -101,6 +106,28 @@ class TrapCell: UITableViewCell {
         for i in villainDetails {
             if villainStatsName == i.value(forKey: "statsName") as! String {
                 return i
+            }
+        }
+        return nil
+    }
+    
+    //MARK: - Helper Methods
+    private func checkVillainChecked() -> Bool {
+        let trapArray = RefreshData(entityName: "TrapDetails") ?? []
+        for i in trapArray {
+            let statsName = villainStatsName
+            if ((i.value(forKey: "villiansCaptured") as! [String]).contains(statsName)) {
+                return true
+            }
+        }
+        return false
+    }
+    
+    private func getVillain() -> NSManagedObject? {
+        let skylandersList = RefreshData(entityName: "Skylander") ?? []
+        for skylander in skylandersList {
+            if skylander.value(forKey: "statsName") as! String == villainStatsName {
+                return skylander
             }
         }
         return nil

@@ -26,6 +26,7 @@ class SkylandersListTableViewController: UITableViewController {
     //MARK: - View did appear
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Ran viewDidLoad() in SkylandersListViewController")
         
         skylandersList = RefreshData(entityName: "Skylander")!
         if let chosenSkylander = chosenSkylander {
@@ -52,6 +53,13 @@ class SkylandersListTableViewController: UITableViewController {
         
         tableView.reloadData()
     }
+
+    override func viewIsAppearing(_ animated: Bool) {
+        super.viewIsAppearing(animated)
+        print("Ran viewIsAppearing() in SkylandersListViewController")
+        tableView.reloadData()
+    }
+    
     
     // MARK: - Data Processing
     func getSkylandersToDisplay() -> [NSManagedObject] {
