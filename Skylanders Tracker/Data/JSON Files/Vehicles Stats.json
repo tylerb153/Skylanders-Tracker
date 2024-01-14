@@ -1,0 +1,245 @@
+{
+    "VehicleStats" : [
+        {
+            "statsName": "Sun Runner",
+            "element": "Light",
+            "terrain": "Sky",
+            "topSpeed": -1,
+            "acceleration": 80,
+            "armor": -1,
+            "handling": 75,
+            "weight": -1
+        },
+
+        {
+            "statsName": "Sea Shadow",
+            "element": "Dark",
+            "terrain": "Sea",
+            "topSpeed": 80,
+            "acceleration": 70,
+            "armor": -1,
+            "handling": 30,
+            "weight": 30
+        },
+
+        {
+            "statsName": "Crypt Crusher",
+            "element": "Undead",
+            "terrain": "Land",
+            "topSpeed": -1,
+            "acceleration": -1,
+            "armor": -1,
+            "handling": -1,
+            "weight": -1
+        },
+
+        {
+            "statsName": "Tomb Buggy",
+            "element": "Undead",
+            "terrain": "Land",
+            "topSpeed": 50,
+            "acceleration": 55,
+            "armor": -1,
+            "handling": 85,
+            "weight": -1
+        },
+
+        {
+            "statsName": "Sky Slicer",
+            "element": "Air",
+            "terrain": "Sky",
+            "topSpeed": -1,
+            "acceleration": -1,
+            "armor": -1,
+            "handling": -1,
+            "weight": -1
+        },
+
+        {
+            "statsName": "Jet Stream",
+            "element": "Air",
+            "terrain": "Sky",
+            "topSpeed": -1,
+            "acceleration": -1,
+            "armor": -1,
+            "handling": -1,
+            "weight": -1
+        },
+
+        {
+            "statsName": "Clown Cruiser",
+            "element": "Air",
+            "terrain": "Sky",
+            "topSpeed": 80,
+            "acceleration": 20,
+            "armor": -1,
+            "handling": 0,
+            "weight": -1
+        },
+
+        {
+            "statsName": "Thump Truck",
+            "element": "Earth",
+            "terrain": "Land",
+            "topSpeed": -1,
+            "acceleration": -1,
+            "armor": -1,
+            "handling": -1,
+            "weight": -1
+        },
+
+        {
+            "statsName": "Shark Tank",
+            "element": "Earth",
+            "terrain": "Land",
+            "topSpeed": -1,
+            "acceleration": -1,
+            "armor": -1,
+            "handling": -1,
+            "weight": -1
+        },
+
+        {
+            "statsName": "Stealth Stinger",
+            "element": "Life",
+            "terrain": "Sky",
+            "topSpeed": -1,
+            "acceleration": -1,
+            "armor": -1,
+            "handling": -1,
+            "weight": -1
+        },
+
+        {
+            "statsName": "Buzz Wing",
+            "element": "Life",
+            "terrain": "Sky",
+            "topSpeed": -1,
+            "acceleration": -1,
+            "armor": -1,
+            "handling": -1,
+            "weight": -1
+        },
+
+        {
+            "statsName": "Burn-Cycle",
+            "element": "Fire",
+            "terrain": "Land",
+            "topSpeed": -1,
+            "acceleration": -1,
+            "armor": -1,
+            "handling": -1,
+            "weight": -1
+        },
+
+        {
+            "statsName": "Hot Streak",
+            "element": "Fire",
+            "terrain": "Land",
+            "topSpeed": 80,
+            "acceleration": 75,
+            "armor": -1,
+            "handling": 65,
+            "weight": -1
+        },
+
+        {
+            "statsName": "Reef Ripper",
+            "element": "Water",
+            "terrain": "Sea",
+            "topSpeed": 55,
+            "acceleration": 45,
+            "armor": 750,
+            "handling": 60,
+            "weight": -1
+        },
+
+        {
+            "statsName": "Dive Bomber",
+            "element": "Water",
+            "terrain": "Sea",
+            "topSpeed": 75,
+            "acceleration": 20,
+            "armor": 900,
+            "handling": 30,
+            "weight": 80
+        },
+
+        {
+            "statsName": "Shield Striker",
+            "element": "Tech",
+            "terrain": "Land",
+            "topSpeed": -1,
+            "acceleration": -1,
+            "armor": -1,
+            "handling": -1,
+            "weight": -1
+        },
+
+        {
+            "statsName": "Gold Rusher",
+            "element": "Tech",
+            "terrain": "Land",
+            "topSpeed": -1,
+            "acceleration": -1,
+            "armor": -1,
+            "handling": -1,
+            "weight": -1
+        },
+
+        {
+            "statsName": "Barrel Blaster",
+            "element": "Tech",
+            "terrain": "Land",
+            "topSpeed": 80,
+            "acceleration": 80,
+            "armor": -1,
+            "handling": 65,
+            "weight": 45
+        },
+
+        {
+            "statsName": "Splatter Splasher",
+            "element": "Magic",
+            "terrain": "Sea",
+            "topSpeed": 85,
+            "acceleration": -1,
+            "armor": -1,
+            "handling": -1,
+            "weight": -1
+        },
+
+        {
+            "statsName": "Soda Skimmer",
+            "element": "Magic",
+            "terrain": "Sea",
+            "topSpeed": -1,
+            "acceleration": -1,
+            "armor": -1,
+            "handling": -1,
+            "weight": -1
+        },
+
+        {
+            "statsName": "Power Blue Gold Rusher",
+            "element": "Tech",
+            "terrain": "Land",
+            "topSpeed": -1,
+            "acceleration": -1,
+            "armor": -1,
+            "handling": -1,
+            "weight": -1
+        },
+
+        {
+            "statsName": "Power Blue Splatter Splasher",
+            "element": "Magic",
+            "terrain": "Sea",
+            "topSpeed": 85,
+            "acceleration": -1,
+            "armor": -1,
+            "handling": -1,
+            "weight": -1
+        }
+    ]
+}

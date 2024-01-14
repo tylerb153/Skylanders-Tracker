@@ -29,6 +29,10 @@
 		2F39382927C8C5D5005C5D18 /* SkylanderSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39382827C8C5D5005C5D18 /* SkylanderSelectCell.swift */; };
 		2F6280DA28A04BC100319D03 /* Skylanders Stats.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F6280D928A04BC100319D03 /* Skylanders Stats.json */; };
 		2F8A1F192B4C7A1C0084FB0B /* Skylanders Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F8A1F182B4C7A1C0084FB0B /* Skylanders Data.json */; };
+		2F8C992D2B53AC69007C3BA9 /* Vehicles Stats.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F8C992C2B53AC69007C3BA9 /* Vehicles Stats.json */; };
+		2F8C99312B53AD27007C3BA9 /* VehicleStatsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C99302B53AD27007C3BA9 /* VehicleStatsList.swift */; };
+		2F8C99332B53AD61007C3BA9 /* VehiclesStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C99322B53AD61007C3BA9 /* VehiclesStats.swift */; };
+		2F8C99352B53B021007C3BA9 /* VehiclesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C99342B53B021007C3BA9 /* VehiclesDetailViewController.swift */; };
 		2F9193842B5357BD003E15C3 /* VillainsPopupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9193832B5357BD003E15C3 /* VillainsPopupDetailViewController.swift */; };
 		2F93F39528BECD0B00444CAC /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F93F39428BECD0B00444CAC /* HelperFunctions.swift */; };
 		2FB7C86C2B4F96A50032C2DC /* SenseisDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7C86B2B4F96A50032C2DC /* SenseisDetailViewController.swift */; };
@@ -83,6 +87,10 @@
 		2F39382827C8C5D5005C5D18 /* SkylanderSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylanderSelectCell.swift; sourceTree = "<group>"; };
 		2F6280D928A04BC100319D03 /* Skylanders Stats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Skylanders Stats.json"; sourceTree = "<group>"; };
 		2F8A1F182B4C7A1C0084FB0B /* Skylanders Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Skylanders Data.json"; sourceTree = "<group>"; };
+		2F8C992C2B53AC69007C3BA9 /* Vehicles Stats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Vehicles Stats.json"; sourceTree = "<group>"; };
+		2F8C99302B53AD27007C3BA9 /* VehicleStatsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleStatsList.swift; sourceTree = "<group>"; };
+		2F8C99322B53AD61007C3BA9 /* VehiclesStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesStats.swift; sourceTree = "<group>"; };
+		2F8C99342B53B021007C3BA9 /* VehiclesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesDetailViewController.swift; sourceTree = "<group>"; };
 		2F9193832B5357BD003E15C3 /* VillainsPopupDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillainsPopupDetailViewController.swift; sourceTree = "<group>"; };
 		2F93F39428BECD0B00444CAC /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HelperFunctions.swift; path = "Cell Files/HelperFunctions.swift"; sourceTree = "<group>"; };
 		2FB7C86B2B4F96A50032C2DC /* SenseisDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenseisDetailViewController.swift; sourceTree = "<group>"; };
@@ -132,27 +140,8 @@
 			children = (
 				2F0F5D2827C3FC4C00FB29FC /* SkylandersList.xcdatamodeld */,
 				2F0F5D3C27C4044600FB29FC /* DataBuilder.swift */,
-				2F10582627CB8CA300CF67CF /* SkylandersObjectList.swift */,
-				2F2A5FCC27CB88B000B046CB /* SkylanderObject.swift */,
-				2F10582827CB8FF500CF67CF /* SkylandersStatsList.swift */,
-				2F2A5FCE27CB88EE00B046CB /* SkylandersStats.swift */,
-				2F0732CE2B4E28BD000BAF36 /* SwapperStatsList.swift */,
-				2F0732CB2B4E281B000BAF36 /* SwapperStats.swift */,
-				2FFEEDE428C960AD0004FE1B /* TrapsDetailsList.swift */,
-				2FFEEDE228C960300004FE1B /* TrapsDetails.swift */,
-				2FB7C8752B50AA080032C2DC /* VillianDetailsList.swift */,
-				2FB7C8772B50AA910032C2DC /* VillianDetails.swift */,
-				2FF698392B4E449800A298F0 /* SuperChargersStatsList.swift */,
-				2FF6983B2B4E44C200A298F0 /* SuperChargersStats.swift */,
-				2FB7C86F2B4FA7F90032C2DC /* SenseiStatsList.swift */,
-				2FB7C8712B4FA8310032C2DC /* SenseiStats.swift */,
-				2F8A1F182B4C7A1C0084FB0B /* Skylanders Data.json */,
-				2F6280D928A04BC100319D03 /* Skylanders Stats.json */,
-				2FF698282B4E2CDC00A298F0 /* Swappers Stats.json */,
-				2FFEEDEE28C969720004FE1B /* Traps Details.json */,
-				2FF698292B4E2CDC00A298F0 /* SuperChargers Stats.json */,
-				2FB7C86D2B4FA7200032C2DC /* Senseis Stats.json */,
-				2FB7C8732B50A9E40032C2DC /* Villians Details.json */,
+				2F8C992F2B53AC8F007C3BA9 /* Structs */,
+				2F8C992E2B53AC76007C3BA9 /* JSON Files */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -186,15 +175,54 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		2F8C992E2B53AC76007C3BA9 /* JSON Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F8A1F182B4C7A1C0084FB0B /* Skylanders Data.json */,
+				2F6280D928A04BC100319D03 /* Skylanders Stats.json */,
+				2FF698282B4E2CDC00A298F0 /* Swappers Stats.json */,
+				2FFEEDEE28C969720004FE1B /* Traps Details.json */,
+				2FF698292B4E2CDC00A298F0 /* SuperChargers Stats.json */,
+				2F8C992C2B53AC69007C3BA9 /* Vehicles Stats.json */,
+				2FB7C86D2B4FA7200032C2DC /* Senseis Stats.json */,
+				2FB7C8732B50A9E40032C2DC /* Villians Details.json */,
+			);
+			path = "JSON Files";
+			sourceTree = "<group>";
+		};
+		2F8C992F2B53AC8F007C3BA9 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				2F10582627CB8CA300CF67CF /* SkylandersObjectList.swift */,
+				2F2A5FCC27CB88B000B046CB /* SkylanderObject.swift */,
+				2F10582827CB8FF500CF67CF /* SkylandersStatsList.swift */,
+				2F2A5FCE27CB88EE00B046CB /* SkylandersStats.swift */,
+				2F0732CE2B4E28BD000BAF36 /* SwapperStatsList.swift */,
+				2F0732CB2B4E281B000BAF36 /* SwapperStats.swift */,
+				2FFEEDE428C960AD0004FE1B /* TrapsDetailsList.swift */,
+				2FFEEDE228C960300004FE1B /* TrapsDetails.swift */,
+				2FB7C8752B50AA080032C2DC /* VillianDetailsList.swift */,
+				2FB7C8772B50AA910032C2DC /* VillianDetails.swift */,
+				2FF698392B4E449800A298F0 /* SuperChargersStatsList.swift */,
+				2FF6983B2B4E44C200A298F0 /* SuperChargersStats.swift */,
+				2F8C99302B53AD27007C3BA9 /* VehicleStatsList.swift */,
+				2F8C99322B53AD61007C3BA9 /* VehiclesStats.swift */,
+				2FB7C86F2B4FA7F90032C2DC /* SenseiStatsList.swift */,
+				2FB7C8712B4FA8310032C2DC /* SenseiStats.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
 		2FC27F512B5230140005BBA8 /* Detail View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				2F0F5D1727C38DE100FB29FC /* SkylandersDetailViewController.swift */,
 				2FF698372B4E328E00A298F0 /* SwappersDetailViewController.swift */,
 				2F33D9C528BD55D00046B41F /* TrapsDetailViewController.swift */,
-				2FF6983D2B4E4D5600A298F0 /* SuperChargersDetailViewController.swift */,
-				2FB7C86B2B4F96A50032C2DC /* SenseisDetailViewController.swift */,
 				2FDCC6072B51DC9D0034667A /* VillainsDetailViewController.swift */,
+				2FF6983D2B4E4D5600A298F0 /* SuperChargersDetailViewController.swift */,
+				2F8C99342B53B021007C3BA9 /* VehiclesDetailViewController.swift */,
+				2FB7C86B2B4F96A50032C2DC /* SenseisDetailViewController.swift */,
 				2FC27F522B5230290005BBA8 /* Popup View Controllers */,
 			);
 			path = "Detail View Controllers";
@@ -305,6 +333,7 @@
 				2F0F5D1227C37E4F00FB29FC /* NothingFoundCell.xib in Resources */,
 				2FDCC6062B50F7550034667A /* VillainCell.xib in Resources */,
 				2FDCC60C2B51E0980034667A /* TrapCell.xib in Resources */,
+				2F8C992D2B53AC69007C3BA9 /* Vehicles Stats.json in Resources */,
 				2FD970BE27C3620400283528 /* LaunchScreen.storyboard in Resources */,
 				2FFEEDEF28C969720004FE1B /* Traps Details.json in Resources */,
 				2FD970BB27C3620400283528 /* Assets.xcassets in Resources */,
@@ -332,6 +361,7 @@
 				2FDCC6082B51DC9D0034667A /* VillainsDetailViewController.swift in Sources */,
 				2FB7C8722B4FA8310032C2DC /* SenseiStats.swift in Sources */,
 				2FB7C86C2B4F96A50032C2DC /* SenseisDetailViewController.swift in Sources */,
+				2F8C99352B53B021007C3BA9 /* VehiclesDetailViewController.swift in Sources */,
 				2FF698382B4E328E00A298F0 /* SwappersDetailViewController.swift in Sources */,
 				2F10582927CB8FF500CF67CF /* SkylandersStatsList.swift in Sources */,
 				2F0732CC2B4E281B000BAF36 /* SwapperStats.swift in Sources */,
@@ -354,6 +384,8 @@
 				2F39382927C8C5D5005C5D18 /* SkylanderSelectCell.swift in Sources */,
 				2F93F39528BECD0B00444CAC /* HelperFunctions.swift in Sources */,
 				2F0732CF2B4E28BD000BAF36 /* SwapperStatsList.swift in Sources */,
+				2F8C99332B53AD61007C3BA9 /* VehiclesStats.swift in Sources */,
+				2F8C99312B53AD27007C3BA9 /* VehicleStatsList.swift in Sources */,
 				2F10582727CB8CA300CF67CF /* SkylandersObjectList.swift in Sources */,
 				2F9193842B5357BD003E15C3 /* VillainsPopupDetailViewController.swift in Sources */,
 				2FB7C8782B50AA910032C2DC /* VillianDetails.swift in Sources */,

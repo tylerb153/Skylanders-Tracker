@@ -26,7 +26,7 @@ class SkylandersListTableViewController: UITableViewController {
     //MARK: - View did appear
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Ran viewDidLoad() in SkylandersListViewController")
+//        print("Ran viewDidLoad() in SkylandersListViewController")
         
         skylandersList = RefreshData(entityName: "Skylander")!
         if let chosenSkylander = chosenSkylander {
@@ -56,7 +56,7 @@ class SkylandersListTableViewController: UITableViewController {
 
     override func viewIsAppearing(_ animated: Bool) {
         super.viewIsAppearing(animated)
-        print("Ran viewIsAppearing() in SkylandersListViewController")
+//        print("Ran viewIsAppearing() in SkylandersListViewController")
         tableView.reloadData()
     }
     
@@ -145,6 +145,9 @@ class SkylandersListTableViewController: UITableViewController {
         case "DisplayVillain":
             let VillainsDetailViewController = segue.destination as! VillainsDetailViewController
             VillainsDetailViewController.chosenVillain = skylanderToSend
+        case "DisplayVehicle":
+            let VehiclesDetailViewController = segue.destination as! VehiclesDetailViewController
+            VehiclesDetailViewController.chosenVehicle = skylanderToSend
         default:
             print("Error in send")
         }
@@ -225,6 +228,9 @@ extension SkylandersListTableViewController {
             else if (type.contains("Villian") || type.contains("Doom Raider")) {
                 type = "Villain"
             }
+            else if (type.contains("Vehicle")) {
+                type = "Vehicle"
+            }
 
             switch type {
             case "Trap":
@@ -237,6 +243,8 @@ extension SkylandersListTableViewController {
                 self.performSegue(withIdentifier: "DisplaySensei", sender: Any?.self)
             case "Villain":
                 self.performSegue(withIdentifier: "DisplayVillain", sender: Any?.self)
+            case "Vehicle":
+                self.performSegue(withIdentifier: "DisplayVehicle", sender: Any?.self)
             default:
                 self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
             }

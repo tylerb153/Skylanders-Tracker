@@ -7964,6 +7964,22 @@
         },
 
         {
+            "name": "Clown Cruiser",
+            "game": "SuperChargers",
+            "series": 0,
+            "baseName": "Clown Cruiser",
+            "isChecked": false,
+            "variantText": "Vehicle",
+            "statsName": "Clown Cruiser",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": false,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
             "name": "Thump Truck",
             "game": "SuperChargers",
             "series": 0,
@@ -8028,22 +8044,6 @@
         },
 
         {
-            "name": "Barrel Blaster",
-            "game": "SuperChargers",
-            "series": 0,
-            "baseName": "Barrel Blaster",
-            "isChecked": false,
-            "variantText": "Vehicle",
-            "statsName": "Barrel Blaster",
-            "worksWithSpyrosAdventure": false,
-            "worksWithGiants": false,
-            "worksWithSwapForce": false,
-            "worksWithTrapTeam": false,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
             "name": "Burn-Cycle",
             "game": "SuperChargers",
             "series": 0,
@@ -8067,22 +8067,6 @@
             "isChecked": false,
             "variantText": "Vehicle",
             "statsName": "Hot Streak",
-            "worksWithSpyrosAdventure": false,
-            "worksWithGiants": false,
-            "worksWithSwapForce": false,
-            "worksWithTrapTeam": false,
-            "worksWithSuperChargers": true,
-            "worksWithImaginators": true
-        },
-
-        {
-            "name": "Clown Cruiser",
-            "game": "SuperChargers",
-            "series": 0,
-            "baseName": "Clown Cruiser",
-            "isChecked": false,
-            "variantText": "Vehicle",
-            "statsName": "Clown Cruiser",
             "worksWithSpyrosAdventure": false,
             "worksWithGiants": false,
             "worksWithSwapForce": false,
@@ -8147,6 +8131,22 @@
             "isChecked": false,
             "variantText": "Vehicle",
             "statsName": "Gold Rusher",
+            "worksWithSpyrosAdventure": false,
+            "worksWithGiants": false,
+            "worksWithSwapForce": false,
+            "worksWithTrapTeam": false,
+            "worksWithSuperChargers": true,
+            "worksWithImaginators": true
+        },
+
+        {
+            "name": "Barrel Blaster",
+            "game": "SuperChargers",
+            "series": 0,
+            "baseName": "Barrel Blaster",
+            "isChecked": false,
+            "variantText": "Vehicle",
+            "statsName": "Barrel Blaster",
             "worksWithSpyrosAdventure": false,
             "worksWithGiants": false,
             "worksWithSwapForce": false,
@@ -8803,7 +8803,7 @@
             "baseName": "Gold Rusher",
             "isChecked": false,
             "variantText": "In-Game Vehicle Variant",
-            "statsName": "Gold Rusher",
+            "statsName": "Power Blue Gold Rusher",
             "worksWithSpyrosAdventure": false,
             "worksWithGiants": false,
             "worksWithSwapForce": false,
@@ -8817,9 +8817,9 @@
             "game": "SuperChargers",
             "series": 0,
             "baseName": "Splatter Splasher",
-            "isChecked": false,
+            "isChecked":  false,
             "variantText": "In-Game Vehicle Variant",
-            "statsName": "Splatter Splasher",
+            "statsName": "Power Blue Splatter Splasher",
             "worksWithSpyrosAdventure": false,
             "worksWithGiants": false,
             "worksWithSwapForce": false,

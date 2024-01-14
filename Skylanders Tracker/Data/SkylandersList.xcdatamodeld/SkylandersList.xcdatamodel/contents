@@ -63,6 +63,16 @@
         <attribute name="statsName" attributeType="String" defaultValueString=""/>
         <attribute name="villiansCaptured" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformerName"/>
     </entity>
+    <entity name="VehicleStatsTable" representedClassName="VehicleStatsTable" syncable="YES" codeGenerationType="class">
+        <attribute name="acceleration" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="armor" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="element" optional="YES" attributeType="String"/>
+        <attribute name="handling" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="statsName" optional="YES" attributeType="String"/>
+        <attribute name="terrain" optional="YES" attributeType="String"/>
+        <attribute name="topSpeed" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
     <entity name="VillianDetailsTable" representedClassName="VillianDetailsTable" syncable="YES" codeGenerationType="class">
         <attribute name="element" optional="YES" attributeType="String"/>
         <attribute name="specialTrap" optional="YES" attributeType="String"/>

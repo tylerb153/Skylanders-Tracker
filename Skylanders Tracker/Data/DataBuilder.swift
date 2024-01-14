@@ -18,6 +18,7 @@ class DataBuilder {
     private static var jsonSuperChargerStats: [SuperChargersStats] = []
     private static var jsonSenseiStats: [SenseisStats] = []
     private static var jsonVillainDetails: [VillianDetails] = []
+    private static var jsonVehicleStats: [VehiclesStats] = []
     
     // MARK: - JSON parse
     private static func getData(type dataType: String) -> Data? {
@@ -37,6 +38,8 @@ class DataBuilder {
             name = "Senseis Stats"
         case "Villains":
             name = "Villians Details"
+        case "Vehicles":
+            name = "Vehicles Stats"
         default:
             print("Error in getData in DataBuilder with type \(dataType)")
             return nil
@@ -55,7 +58,6 @@ class DataBuilder {
     
     private static func parseJson(type dataType: String) {
         guard let data = getData(type: dataType) else {print("error in parseJSON with type \(dataType)"); return}
-        
         let decoder = JSONDecoder()
         switch dataType {
         case "Data":
@@ -116,6 +118,15 @@ class DataBuilder {
             else {
                 print("Error in decode \(dataType) in DataBuilder")
             }
+        case "Vehicles":
+//            print(String(data: data, encoding: .utf8) ?? "Invalid JSON Data")
+            do {
+                let result = try decoder.decode(VehicleStatsList.self, from: data)
+                jsonVehicleStats = result.VehicleStats
+            } catch let error {
+                print("Error decoding \(dataType) in DataBuilder: \(error)")
+            }
+
            
         default: print("Incorrect Data Type")
         }
@@ -130,6 +141,7 @@ class DataBuilder {
         parseJson(type: "SuperChargers")
         parseJson(type: "Senseis")
         parseJson(type: "Villains")
+        parseJson(type: "Vehicles")
         
         for jsonSkylander in jsonSkylanders {
             saveSkylander(jsonSkylander: jsonSkylander)
@@ -151,6 +163,9 @@ class DataBuilder {
         }
         for jsonVillainDetail in jsonVillainDetails {
             saveVillainDetails(jsonVillainDetails: jsonVillainDetail)
+        }
+        for jsonVehicleStat in jsonVehicleStats {
+            saveVehicleStats(jsonVehicleStats: jsonVehicleStat)
         }
     }
     
@@ -319,6 +334,30 @@ class DataBuilder {
         VillainDetail.setValue(jsonVillainDetails.statsName, forKey: "statsName")
         VillainDetail.setValue(jsonVillainDetails.element, forKey: "element")
         VillainDetail.setValue(jsonVillainDetails.specialTrap, forKey: "specialTrap")
+        do {
+            try managedContext.save()
+        }
+        catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
+    private static func saveVehicleStats(jsonVehicleStats: VehiclesStats) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "VehicleStatsTable", in: managedContext)!
+        
+        let VehicleStat = NSManagedObject(entity: entity, insertInto: managedContext)
+        VehicleStat.setValue(jsonVehicleStats.statsName, forKey: "statsName")
+        VehicleStat.setValue(jsonVehicleStats.element, forKey: "element")
+        VehicleStat.setValue(jsonVehicleStats.terrain, forKey: "terrain")
+        VehicleStat.setValue(jsonVehicleStats.topSpeed, forKey: "topSpeed")
+        VehicleStat.setValue(jsonVehicleStats.acceleration, forKey: "acceleration")
+        VehicleStat.setValue(jsonVehicleStats.armor, forKey: "armor")
+        VehicleStat.setValue(jsonVehicleStats.handling, forKey: "handling")
+        VehicleStat.setValue(jsonVehicleStats.weight, forKey: "weight")
         do {
             try managedContext.save()
         }
