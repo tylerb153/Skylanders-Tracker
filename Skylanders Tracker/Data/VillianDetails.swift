@@ -10,4 +10,5 @@ import Foundation
 struct VillianDetails: Codable {
     var statsName = ""
     var element = ""
+    var specialTrap = ""
 }

@@ -2,234 +2,314 @@
     "VillianDetails": [
         {
             "statsName": "Kaos",
-            "element": "Kaos"
+            "element": "Kaos",
+            "specialTrap": ""
         },
     
         {
             "statsName": "Gulper",
-            "element": "Water"
+            "element": "Water",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Chef Pepper Jack",
-            "element": "Fire"
+            "element": "Fire",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Chompy Mage",
-            "element": "Life"
+            "element": "Life",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Dreamcatcher",
-            "element": "Air"
+            "element": "Air",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Dr. Krankcase",
-            "element": "Tech"
+            "element": "Tech",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Golden Queen",
-            "element": "Earth"
+            "element": "Earth",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Wolfgang",
-            "element": "Undead"
+            "element": "Undead",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Luminous",
-            "element": "Light"
+            "element": "Light",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Nightshade",
-            "element": "Dark"
+            "element": "Dark",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Bomb Shell",
-            "element": "Magic"
+            "element": "Magic",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Pain-Yatta",
-            "element": "Magic"
+            "element": "Magic",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Rage Mage",
-            "element": "Magic"
+            "element": "Magic",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Slobber Trap",
-            "element": "Water"
+            "element": "Water",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Chill Bill",
-            "element": "Water"
+            "element": "Water",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Brawl and Chain",
-            "element": "Water"
+            "element": "Water",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Cross Crow",
-            "element": "Water"
+            "element": "Water",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Threatpack",
-            "element": "Water"
+            "element": "Water",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Scrap Shooter",
-            "element": "Fire"
+            "element": "Fire",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Grinnade",
-            "element": "Fire"
+            "element": "Fire",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Smoke Scream",
-            "element": "Fire"
+            "element": "Fire",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Sheep Creep",
-            "element": "Life"
+            "element": "Life",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Broccoli Guy",
-            "element": "Life"
+            "element": "Life",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Cuckoo Clocker",
-            "element": "Life"
+            "element": "Life",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Shield Shredder",
-            "element": "Life"
+            "element": "Life",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Chompy",
-            "element": "Life"
+            "element": "Life",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Buzzer Beak",
-            "element": "Air"
+            "element": "Air",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Krankenstein",
-            "element": "Air"
+            "element": "Air",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Bad Juju",
-            "element": "Air"
+            "element": "Air",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Bruiser Cruiser",
-            "element": "Tech"
+            "element": "Tech",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Shrednaught",
-            "element": "Tech"
+            "element": "Tech",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Brawlrus",
-            "element": "Tech"
+            "element": "Tech",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Trolling Thunder",
-            "element": "Tech"
+            "element": "Tech",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Mad Lobs",
-            "element": "Tech"
+            "element": "Tech",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Tussle Sprout",
-            "element": "Earth"
+            "element": "Earth",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Chomp Chest",
-            "element": "Earth"
+            "element": "Earth",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Grave Clobber",
-            "element": "Earth"
+            "element": "Earth",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Masker Mind",
-            "element": "Undead"
+            "element": "Undead",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Hood Sickle",
-            "element": "Undead"
+            "element": "Undead",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Bone Chompy",
-            "element": "Undead"
+            "element": "Undead",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Eye Five",
-            "element": "Light"
+            "element": "Light",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Lob Goblin",
-            "element": "Light"
+            "element": "Light",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Blaster-Tron",
-            "element": "Light"
+            "element": "Light",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Tae Kwon Crow",
-            "element": "Dark"
+            "element": "Dark",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Eye Scream",
-            "element": "Dark"
+            "element": "Dark",
+            "specialTrap": ""
         },
 
         {
             "statsName": "Fisticuffs",
-            "element": "Dark"
+            "element": "Dark",
+            "specialTrap": ""
+        },
+
+        {
+            "statsName": "Outlaw Brawl and Chain",
+            "element": "Water",
+            "specialTrap": "Wet Walter"
+        },
+
+        {
+            "statsName": "Steamed Broccoli Guy",
+            "element": "Life",
+            "specialTrap": "Oak Eagle"
+        },
+
+        {
+            "statsName": "Riot Shield Shredder",
+            "element": "Life",
+            "specialTrap": "Emerald Energy"
+        },
+
+        {
+            "statsName": "Steampunk Shrednaught",
+            "element": "Tech",
+            "specialTrap": "Makers Mana"
+        },
+
+        {
+            "statsName": "Red Hot Tussle Sprout",
+            "element": "Earth",
+            "specialTrap": "Spinning Sandstorm"
+        },
+
+        {
+            "statsName": "Rebel Lob Goblin",
+            "element": "Light",
+            "specialTrap": "Shining Ship"
         }
-
-
     ]
 }

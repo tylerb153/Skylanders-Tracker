@@ -65,6 +65,7 @@
     </entity>
     <entity name="VillianDetailsTable" representedClassName="VillianDetailsTable" syncable="YES" codeGenerationType="class">
         <attribute name="element" optional="YES" attributeType="String"/>
+        <attribute name="specialTrap" optional="YES" attributeType="String"/>
         <attribute name="statsName" optional="YES" attributeType="String"/>
     </entity>
 </model>

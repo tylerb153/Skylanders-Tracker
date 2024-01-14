@@ -318,6 +318,7 @@ class DataBuilder {
         let VillainDetail = NSManagedObject(entity: entity, insertInto: managedContext)
         VillainDetail.setValue(jsonVillainDetails.statsName, forKey: "statsName")
         VillainDetail.setValue(jsonVillainDetails.element, forKey: "element")
+        VillainDetail.setValue(jsonVillainDetails.specialTrap, forKey: "specialTrap")
         do {
             try managedContext.save()
         }

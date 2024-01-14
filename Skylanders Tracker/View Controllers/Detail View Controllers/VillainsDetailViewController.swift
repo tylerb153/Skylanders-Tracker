@@ -21,6 +21,7 @@ class VillainsDetailViewController: UIViewController, UITableViewDelegate, UITab
     lazy var statsName = chosenVillain.value(forKey: "statsName") as! String
     lazy var variant = chosenVillain.value(forKey: "variantText") as? String ?? ""
     lazy var element = getDetails()?.value(forKey: "element") as? String ?? ""
+    lazy var specialTrap = getDetails()?.value(forKey: "specialTrap") as? String ?? ""
     
     var trapToSend: NSManagedObject?
     
@@ -76,6 +77,13 @@ class VillainsDetailViewController: UIViewController, UITableViewDelegate, UITab
         for i in trapList {
             if i.value(forKey: "element") as! String == element { //}(i.value(forKey: "villiansCaptured") as! [String]).contains(statsName) {
                 villainsTrappedBy.append(i)
+            }
+        }
+        if specialTrap != "" {
+            for i in villainsTrappedBy {
+                if specialTrap == i.value(forKey: "statsName") as! String {
+                    return [i]
+                }
             }
         }
 //        print(villainsTrappedBy)

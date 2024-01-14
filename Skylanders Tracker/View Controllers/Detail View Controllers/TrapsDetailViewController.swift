@@ -81,7 +81,13 @@ class TrapsDetailViewController: UIViewController, UITableViewDelegate, UITableV
         for i in villainList {
 //            print(i)
             if element == i.value(forKey: "element") as! String {
-                villainsTrapable.append(i)
+                let villainSpecialTrap = i.value(forKey: "specialTrap") as! String
+                if villainSpecialTrap == "" {
+                    villainsTrapable.append(i)
+                }
+                else if villainSpecialTrap == statsName {
+                    villainsTrapable.append(i)
+                }
             }
         }
 //        print(villainsTrapable)

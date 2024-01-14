@@ -46,7 +46,7 @@
 		2FD970BE27C3620400283528 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD970BC27C3620400283528 /* LaunchScreen.storyboard */; };
 		2FDCC6052B50F7550034667A /* VillainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDCC6032B50F7540034667A /* VillainCell.swift */; };
 		2FDCC6062B50F7550034667A /* VillainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FDCC6042B50F7550034667A /* VillainCell.xib */; };
-		2FDCC6082B51DC9D0034667A /* VillainsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDCC6072B51DC9D0034667A /* VillainsDetailView.swift */; };
+		2FDCC6082B51DC9D0034667A /* VillainsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDCC6072B51DC9D0034667A /* VillainsDetailViewController.swift */; };
 		2FDCC60B2B51E0980034667A /* TrapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDCC6092B51E0980034667A /* TrapCell.swift */; };
 		2FDCC60C2B51E0980034667A /* TrapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FDCC60A2B51E0980034667A /* TrapCell.xib */; };
 		2FF6982A2B4E2CDC00A298F0 /* Swappers Stats.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FF698282B4E2CDC00A298F0 /* Swappers Stats.json */; };
@@ -102,7 +102,7 @@
 		2FD970BF27C3620400283528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FDCC6032B50F7540034667A /* VillainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VillainCell.swift; sourceTree = "<group>"; };
 		2FDCC6042B50F7550034667A /* VillainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VillainCell.xib; sourceTree = "<group>"; };
-		2FDCC6072B51DC9D0034667A /* VillainsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillainsDetailView.swift; sourceTree = "<group>"; };
+		2FDCC6072B51DC9D0034667A /* VillainsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillainsDetailViewController.swift; sourceTree = "<group>"; };
 		2FDCC6092B51E0980034667A /* TrapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrapCell.swift; sourceTree = "<group>"; };
 		2FDCC60A2B51E0980034667A /* TrapCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrapCell.xib; sourceTree = "<group>"; };
 		2FF698282B4E2CDC00A298F0 /* Swappers Stats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Swappers Stats.json"; sourceTree = "<group>"; };
@@ -140,12 +140,12 @@
 				2F0732CB2B4E281B000BAF36 /* SwapperStats.swift */,
 				2FFEEDE428C960AD0004FE1B /* TrapsDetailsList.swift */,
 				2FFEEDE228C960300004FE1B /* TrapsDetails.swift */,
+				2FB7C8752B50AA080032C2DC /* VillianDetailsList.swift */,
+				2FB7C8772B50AA910032C2DC /* VillianDetails.swift */,
 				2FF698392B4E449800A298F0 /* SuperChargersStatsList.swift */,
 				2FF6983B2B4E44C200A298F0 /* SuperChargersStats.swift */,
 				2FB7C86F2B4FA7F90032C2DC /* SenseiStatsList.swift */,
 				2FB7C8712B4FA8310032C2DC /* SenseiStats.swift */,
-				2FB7C8752B50AA080032C2DC /* VillianDetailsList.swift */,
-				2FB7C8772B50AA910032C2DC /* VillianDetails.swift */,
 				2F8A1F182B4C7A1C0084FB0B /* Skylanders Data.json */,
 				2F6280D928A04BC100319D03 /* Skylanders Stats.json */,
 				2FF698282B4E2CDC00A298F0 /* Swappers Stats.json */,
@@ -194,7 +194,7 @@
 				2F33D9C528BD55D00046B41F /* TrapsDetailViewController.swift */,
 				2FF6983D2B4E4D5600A298F0 /* SuperChargersDetailViewController.swift */,
 				2FB7C86B2B4F96A50032C2DC /* SenseisDetailViewController.swift */,
-				2FDCC6072B51DC9D0034667A /* VillainsDetailView.swift */,
+				2FDCC6072B51DC9D0034667A /* VillainsDetailViewController.swift */,
 				2FC27F522B5230290005BBA8 /* Popup View Controllers */,
 			);
 			path = "Detail View Controllers";
@@ -329,7 +329,7 @@
 				2FB7C8762B50AA080032C2DC /* VillianDetailsList.swift in Sources */,
 				2FF6983E2B4E4D5600A298F0 /* SuperChargersDetailViewController.swift in Sources */,
 				2FFEEDE528C960AD0004FE1B /* TrapsDetailsList.swift in Sources */,
-				2FDCC6082B51DC9D0034667A /* VillainsDetailView.swift in Sources */,
+				2FDCC6082B51DC9D0034667A /* VillainsDetailViewController.swift in Sources */,
 				2FB7C8722B4FA8310032C2DC /* SenseiStats.swift in Sources */,
 				2FB7C86C2B4F96A50032C2DC /* SenseisDetailViewController.swift in Sources */,
 				2FF698382B4E328E00A298F0 /* SwappersDetailViewController.swift in Sources */,

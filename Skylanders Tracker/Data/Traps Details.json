@@ -376,6 +376,34 @@
             "element": "Dark",
             "design": "Sword",
             "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Legendary Flood Flask Trap",
+            "element": "Water",
+            "design": "Jughead",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Legendary Spirit Sphere Trap",
+            "element": "Undead",
+            "design": "Orb",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Legendary Spectral Skull Trap",
+            "element": "Undead",
+            "design": "Skull",
+            "villiansCaptured": []
+        },
+
+        {
+            "statsName": "Easter Bunny Trap",
+            "element": "Earth",
+            "design": "Handstand",
+            "villiansCaptured": []
         }
     ]
 }
