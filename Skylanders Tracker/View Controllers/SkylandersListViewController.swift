@@ -148,6 +148,9 @@ class SkylandersListTableViewController: UITableViewController {
         case "DisplayVehicle":
             let VehiclesDetailViewController = segue.destination as! VehiclesDetailViewController
             VehiclesDetailViewController.chosenVehicle = skylanderToSend
+        case "DisplayMagicItem":
+            let MagicItemsDetailViewController = segue.destination as! MagicItemsDetailViewController
+            MagicItemsDetailViewController.chosenMagicItem = skylanderToSend
         default:
             print("Error in send")
         }
@@ -231,6 +234,9 @@ extension SkylandersListTableViewController {
             else if (type.contains("Vehicle")) {
                 type = "Vehicle"
             }
+            else if (type.contains("Magic Item")) {
+                type = "Magic Item"
+            }
 
             switch type {
             case "Trap":
@@ -245,6 +251,8 @@ extension SkylandersListTableViewController {
                 self.performSegue(withIdentifier: "DisplayVillain", sender: Any?.self)
             case "Vehicle":
                 self.performSegue(withIdentifier: "DisplayVehicle", sender: Any?.self)
+            case "Magic Item":
+                self.performSegue(withIdentifier: "DisplayMagicItem", sender: Any?.self)
             default:
                 self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
             }

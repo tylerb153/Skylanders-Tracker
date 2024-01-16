@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UEb-a5-3El">
-                                <rect key="frame" x="0.0" y="100" width="414" height="32"/>
+                                <rect key="frame" x="0.0" y="152" width="414" height="32"/>
                                 <segments>
                                     <segment title="Games"/>
                                     <segment title="Skylanders"/>
@@ -27,7 +27,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hh3-k8-V9V">
-                                <rect key="frame" x="0.0" y="139" width="414" height="757"/>
+                                <rect key="frame" x="0.0" y="191" width="414" height="705"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <sections/>
                                 <connections>
@@ -114,6 +114,8 @@
                         <segue destination="w4x-4L-exC" kind="show" identifier="DisplaySensei" id="1TJ-y7-BJq"/>
                         <segue destination="Rnm-sa-Hrl" kind="show" identifier="DisplayVillain" id="4X6-Ny-0dC"/>
                         <segue destination="mQi-mj-dqu" kind="show" identifier="DisplayVehicle" id="bao-bC-f2N"/>
+                        <segue destination="VoT-1t-2Tb" kind="show" identifier="DisplayMagicItem" id="E1I-aW-Cll"/>
+                        <segue destination="Lhr-MP-cNb" kind="show" identifier="DisplayCreationCrystal" id="bLW-zS-Ggw"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yTi-3N-5TF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -129,32 +131,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUZ-Pa-8tr">
-                                <rect key="frame" x="0.0" y="92" width="203" height="21"/>
+                                <rect key="frame" x="0.0" y="144" width="203" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IPO-9Q-dtJ">
-                                <rect key="frame" x="8" y="146" width="195" height="192.5"/>
+                                <rect key="frame" x="8" y="198" width="195" height="192.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="IPO-9Q-dtJ" secondAttribute="height" multiplier="1:1" id="Mme-Zo-ncl"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="Compatable Games" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3r2-6F-Vud">
-                                <rect key="frame" x="211" y="145" width="195" height="57.5"/>
+                                <rect key="frame" x="211" y="197" width="195" height="57.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWT-IH-WPY">
-                                <rect key="frame" x="211" y="210.5" width="195" height="129.5"/>
+                                <rect key="frame" x="211" y="262.5" width="195" height="129.5"/>
                                 <string key="text">All                                    games                         Skylander                                   is                                 compatible                           with</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xf1-3L-HXq">
-                                <rect key="frame" x="8" y="372" width="398" height="297"/>
+                                <rect key="frame" x="8" y="424" width="398" height="297"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character Stats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Goz-DX-TA2">
                                         <rect key="frame" x="118.5" y="0.0" width="161" height="29"/>
@@ -284,7 +286,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eum-Kf-npF">
-                                <rect key="frame" x="211" y="92" width="203" height="21"/>
+                                <rect key="frame" x="211" y="144" width="203" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -348,19 +350,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trap Element" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTJ-x9-XUK">
-                                <rect key="frame" x="0.0" y="92" width="207" height="21"/>
+                                <rect key="frame" x="0.0" y="144" width="207" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trap Design" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3Z-YB-gYO">
-                                <rect key="frame" x="207" y="92" width="207" height="21"/>
+                                <rect key="frame" x="207" y="144" width="207" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Nfd-35-2Ti">
-                                <rect key="frame" x="107" y="122" width="200" height="197.5"/>
+                                <rect key="frame" x="107" y="174" width="200" height="197.5"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Nfd-35-2Ti" secondAttribute="height" multiplier="1:1" id="1xb-Yf-aSz"/>
@@ -368,13 +370,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Villians Trappable:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLJ-C5-cvy">
-                                <rect key="frame" x="8" y="337" width="398" height="26.5"/>
+                                <rect key="frame" x="8" y="389" width="398" height="26.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QXm-3z-oex">
-                                <rect key="frame" x="0.0" y="371.5" width="414" height="490.5"/>
+                                <rect key="frame" x="0.0" y="423.5" width="414" height="438.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="DzU-xc-1Cc" id="6BT-TY-mk2"/>
@@ -478,8 +480,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KUt-T5-ScS" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2wh-1U-GA0">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="2wh-1U-GA0">
+                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -500,32 +502,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xl-sC-VnC">
-                                <rect key="frame" x="0.0" y="92" width="203" height="21"/>
+                                <rect key="frame" x="0.0" y="144" width="203" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tWO-wd-UlF">
-                                <rect key="frame" x="8" y="146" width="195" height="192.5"/>
+                                <rect key="frame" x="8" y="198" width="195" height="192.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="tWO-wd-UlF" secondAttribute="height" multiplier="1:1" id="zXT-ZB-ysi"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="Compatable Games" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eej-C9-Rbt">
-                                <rect key="frame" x="211" y="145" width="195" height="57.5"/>
+                                <rect key="frame" x="211" y="197" width="195" height="57.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtC-7T-7QH">
-                                <rect key="frame" x="211" y="210.5" width="195" height="129.5"/>
+                                <rect key="frame" x="211" y="262.5" width="195" height="129.5"/>
                                 <string key="text">All                                    games                         Skylander                                   is                                 compatible                           with</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8DL-Xd-sbQ">
-                                <rect key="frame" x="8" y="377" width="398" height="297"/>
+                                <rect key="frame" x="8" y="429" width="398" height="297"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character Stats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLo-2W-RrX">
                                         <rect key="frame" x="118.5" y="0.0" width="161" height="29"/>
@@ -655,13 +657,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96X-at-avS">
-                                <rect key="frame" x="211" y="92" width="203" height="21"/>
+                                <rect key="frame" x="211" y="144" width="203" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movement Type:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rk1-Jo-hLB">
-                                <rect key="frame" x="8" y="348" width="195" height="21"/>
+                                <rect key="frame" x="8" y="400" width="195" height="21"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -729,32 +731,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wn7-H5-yAy">
-                                <rect key="frame" x="0.0" y="92" width="203" height="21"/>
+                                <rect key="frame" x="0.0" y="144" width="203" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="T5a-8c-EAR">
-                                <rect key="frame" x="8" y="146" width="195" height="192.5"/>
+                                <rect key="frame" x="8" y="198" width="195" height="192.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="T5a-8c-EAR" secondAttribute="height" multiplier="1:1" id="1eB-9n-DoY"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="Compatable Games" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stM-6A-PBU">
-                                <rect key="frame" x="211" y="145" width="195" height="57.5"/>
+                                <rect key="frame" x="211" y="197" width="195" height="57.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hs2-TN-K2w">
-                                <rect key="frame" x="211" y="210.5" width="195" height="129.5"/>
+                                <rect key="frame" x="211" y="262.5" width="195" height="129.5"/>
                                 <string key="text">All                                    games                         Skylander                                   is                                 compatible                           with</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXd-b6-CiT">
-                                <rect key="frame" x="8" y="401" width="398" height="297"/>
+                                <rect key="frame" x="8" y="453" width="398" height="297"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character Stats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wY-Xj-goj">
                                         <rect key="frame" x="118.5" y="0.0" width="161" height="29"/>
@@ -884,19 +886,19 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEv-pp-Lv2">
-                                <rect key="frame" x="211" y="92" width="203" height="21"/>
+                                <rect key="frame" x="211" y="144" width="203" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Vehicle:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adA-Rh-0qo">
-                                <rect key="frame" x="8" y="348" width="398" height="24"/>
+                                <rect key="frame" x="8" y="400" width="398" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwl-UP-rwq">
-                                <rect key="frame" x="356" y="365.5" width="50" height="34"/>
+                                <rect key="frame" x="356" y="417.5" width="50" height="34"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
                                     <action selector="detailDisclosurePressed" destination="nFS-Te-dLN" eventType="touchUpInside" id="UKn-jl-yJX"/>
@@ -904,7 +906,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paired Vehicle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce2-in-2ug">
-                                <rect key="frame" x="8" y="372" width="398" height="21"/>
+                                <rect key="frame" x="8" y="424" width="398" height="21"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -979,32 +981,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAW-q0-8qT">
-                                <rect key="frame" x="0.0" y="92" width="203" height="21"/>
+                                <rect key="frame" x="0.0" y="144" width="203" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MSD-w5-HQe">
-                                <rect key="frame" x="8" y="146" width="195" height="192.5"/>
+                                <rect key="frame" x="8" y="198" width="195" height="192.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MSD-w5-HQe" secondAttribute="height" multiplier="1:1" id="wn1-3h-GWY"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="Compatable Games" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1L-ql-FQP">
-                                <rect key="frame" x="211" y="145" width="195" height="57.5"/>
+                                <rect key="frame" x="211" y="197" width="195" height="57.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdR-03-xVY">
-                                <rect key="frame" x="211" y="210.5" width="195" height="129.5"/>
+                                <rect key="frame" x="211" y="262.5" width="195" height="129.5"/>
                                 <string key="text">All                                    games                         Skylander                                   is                                 compatible                           with</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DTE-05-34O">
-                                <rect key="frame" x="8" y="377" width="398" height="257"/>
+                                <rect key="frame" x="8" y="429" width="398" height="257"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character Stats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAd-7Z-YHA">
                                         <rect key="frame" x="118.5" y="0.0" width="161" height="29"/>
@@ -1115,13 +1117,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTZ-ga-QC3">
-                                <rect key="frame" x="211" y="92" width="203" height="21"/>
+                                <rect key="frame" x="211" y="144" width="203" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battle Class" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pB-F7-WBo">
-                                <rect key="frame" x="8" y="348" width="195" height="21"/>
+                                <rect key="frame" x="8" y="400" width="195" height="21"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1187,13 +1189,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Villain Element" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m01-r8-5o5">
-                                <rect key="frame" x="0.0" y="92" width="203" height="21"/>
+                                <rect key="frame" x="0.0" y="144" width="203" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="z9V-mZ-vCD">
-                                <rect key="frame" x="107" y="122" width="200" height="197.5"/>
+                                <rect key="frame" x="107" y="174" width="200" height="197.5"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="z9V-mZ-vCD" secondAttribute="height" multiplier="1:1" id="2ru-IC-li8"/>
@@ -1201,13 +1203,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trapped by:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhd-fU-j8J">
-                                <rect key="frame" x="8" y="337" width="398" height="27"/>
+                                <rect key="frame" x="8" y="389" width="398" height="27"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nsw-e8-JCM">
-                                <rect key="frame" x="0.0" y="372" width="414" height="490"/>
+                                <rect key="frame" x="0.0" y="424" width="414" height="438"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Rnm-sa-Hrl" id="hP2-aL-nr7"/>
@@ -1215,7 +1217,7 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doom Raider" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2i-Dj-9kv">
-                                <rect key="frame" x="203" y="92" width="203" height="21"/>
+                                <rect key="frame" x="203" y="144" width="203" height="21"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1452,56 +1454,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne4-pM-TQ3">
-                                <rect key="frame" x="0.0" y="92" width="203" height="21"/>
+                                <rect key="frame" x="0.0" y="144" width="203" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qEg-QW-yXC">
-                                <rect key="frame" x="8" y="146" width="195" height="192.5"/>
+                                <rect key="frame" x="8" y="198" width="195" height="192.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qEg-QW-yXC" secondAttribute="height" multiplier="1:1" id="rXo-lJ-AW7"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="Compatable Games" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEr-ie-Nfh">
-                                <rect key="frame" x="211" y="145" width="195" height="57.5"/>
+                                <rect key="frame" x="211" y="197" width="195" height="57.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfn-8k-5Kw">
-                                <rect key="frame" x="211" y="210.5" width="195" height="129.5"/>
+                                <rect key="frame" x="211" y="262.5" width="195" height="129.5"/>
                                 <string key="text">All                                    games                         Skylander                                   is                                 compatible                           with</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5k-Qn-pPi">
-                                <rect key="frame" x="211" y="92" width="203" height="21"/>
+                                <rect key="frame" x="211" y="144" width="203" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terrain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PR6-mv-9nP">
-                                <rect key="frame" x="8" y="348" width="195" height="21"/>
+                                <rect key="frame" x="8" y="400" width="195" height="21"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SuperCharger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4M-cj-lnv">
-                                <rect key="frame" x="8" y="401" width="398" height="21"/>
+                                <rect key="frame" x="8" y="453" width="398" height="21"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="SuperCharger:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xL-S6-5Vc">
-                                <rect key="frame" x="8" y="377" width="398" height="24"/>
+                                <rect key="frame" x="8" y="429" width="398" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztR-SX-ao7">
-                                <rect key="frame" x="8" y="430" width="398" height="257"/>
+                                <rect key="frame" x="8" y="482" width="398" height="257"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicle Stats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OW9-7v-fqa">
                                         <rect key="frame" x="132" y="0.0" width="134" height="29"/>
@@ -1612,7 +1614,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Y0-KC-nJg">
-                                <rect key="frame" x="356" y="394.5" width="50" height="34"/>
+                                <rect key="frame" x="356" y="446.5" width="50" height="34"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
                                     <action selector="detailDisclosurePressed" destination="mQi-mj-dqu" eventType="touchUpInside" id="CoZ-AD-5gM"/>
@@ -1941,7 +1943,7 @@
             </objects>
             <point key="canvasLocation" x="5748" y="1718"/>
         </scene>
-        <!--Vehicle Name-->
+        <!--Popup Vehicle Name-->
         <scene sceneID="q64-Xh-EET">
             <objects>
                 <viewController id="KPk-vq-5lT" customClass="VehiclesDetailViewController" customModule="Skylanders_Tracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -2152,7 +2154,7 @@
                             <constraint firstItem="OaH-YJ-mqL" firstAttribute="leading" secondItem="sT8-Am-Ofv" secondAttribute="leading" id="zAl-jA-AkL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Vehicle Name" largeTitleDisplayMode="always" id="ZtO-1P-8lb"/>
+                    <navigationItem key="navigationItem" title="Popup Vehicle Name" largeTitleDisplayMode="always" id="ZtO-1P-8lb"/>
                     <connections>
                         <outlet property="compatableGames" destination="P5t-cb-p5v" id="wBo-j4-Zhq"/>
                         <outlet property="superChargerButton" destination="DdF-7M-zpM" id="wYG-ep-vLX"/>
@@ -2190,15 +2192,211 @@
             </objects>
             <point key="canvasLocation" x="4873.913043478261" y="1717.6339285714284"/>
         </scene>
+        <!--Magic Item Name-->
+        <scene sceneID="U6O-E8-IWH">
+            <objects>
+                <viewController id="VoT-1t-2Tb" customClass="MagicItemsDetailViewController" customModule="Skylanders_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mjm-Zc-WXi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBo-oL-Kip">
+                                <rect key="frame" x="0.0" y="144" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3mn-gp-ADd">
+                                <rect key="frame" x="8" y="198" width="195" height="192.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3mn-gp-ADd" secondAttribute="height" multiplier="1:1" id="Ut3-Ih-VN5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="Compatable Games" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vt-kF-fL3">
+                                <rect key="frame" x="211" y="197" width="195" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeF-mp-Igb">
+                                <rect key="frame" x="211" y="262.5" width="195" height="129.5"/>
+                                <string key="text">All                                    games                         Skylander                                   is                                 compatible                           with</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1O7-1Y-0F5">
+                                <rect key="frame" x="8" y="424" width="398" height="93.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magic Item Ability" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dac-pv-wJf">
+                                        <rect key="frame" x="107" y="0.0" width="184" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A description of the magic item's ability" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="My8-q0-rka">
+                                        <rect key="frame" x="8" y="53" width="382" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="My8-q0-rka" firstAttribute="top" secondItem="Dac-pv-wJf" secondAttribute="bottom" constant="24" id="3Ll-Np-hgz"/>
+                                    <constraint firstItem="My8-q0-rka" firstAttribute="leading" secondItem="1O7-1Y-0F5" secondAttribute="leading" constant="8" id="3XI-wP-BJT"/>
+                                    <constraint firstAttribute="bottom" secondItem="My8-q0-rka" secondAttribute="bottom" constant="20" id="4nc-ha-vzo"/>
+                                    <constraint firstAttribute="trailing" secondItem="My8-q0-rka" secondAttribute="trailing" constant="8" id="aOp-oB-QHc"/>
+                                    <constraint firstItem="Dac-pv-wJf" firstAttribute="centerX" secondItem="1O7-1Y-0F5" secondAttribute="centerX" id="cbY-k2-CEQ"/>
+                                    <constraint firstItem="Dac-pv-wJf" firstAttribute="top" secondItem="1O7-1Y-0F5" secondAttribute="top" id="kA8-DK-l2h"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEy-Xd-H1b">
+                                <rect key="frame" x="211" y="144" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="83E-Mj-aPY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="83E-Mj-aPY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MeF-mp-Igb" secondAttribute="trailing" symbolic="YES" id="0HN-ke-f2M"/>
+                            <constraint firstItem="MeF-mp-Igb" firstAttribute="top" secondItem="4Vt-kF-fL3" secondAttribute="bottom" constant="8" id="4Vn-2a-W96"/>
+                            <constraint firstItem="83E-Mj-aPY" firstAttribute="trailing" secondItem="1O7-1Y-0F5" secondAttribute="trailing" constant="8" id="4Yg-wt-wBg"/>
+                            <constraint firstItem="MeF-mp-Igb" firstAttribute="width" secondItem="3mn-gp-ADd" secondAttribute="width" id="5Vs-IX-T7w"/>
+                            <constraint firstItem="EBo-oL-Kip" firstAttribute="leading" secondItem="83E-Mj-aPY" secondAttribute="leading" id="6kg-jW-OeM"/>
+                            <constraint firstItem="83E-Mj-aPY" firstAttribute="trailing" secondItem="IEy-Xd-H1b" secondAttribute="trailing" id="Af3-8J-Y9Z"/>
+                            <constraint firstItem="IEy-Xd-H1b" firstAttribute="top" secondItem="83E-Mj-aPY" secondAttribute="top" id="BzZ-d2-8mr"/>
+                            <constraint firstItem="1O7-1Y-0F5" firstAttribute="top" secondItem="3mn-gp-ADd" secondAttribute="bottom" constant="32" id="FKW-TH-G1R"/>
+                            <constraint firstItem="IEy-Xd-H1b" firstAttribute="width" secondItem="EBo-oL-Kip" secondAttribute="width" id="LEp-h0-go2"/>
+                            <constraint firstItem="83E-Mj-aPY" firstAttribute="trailing" secondItem="4Vt-kF-fL3" secondAttribute="trailing" constant="8" id="MeD-2e-iK2"/>
+                            <constraint firstItem="MeF-mp-Igb" firstAttribute="bottom" secondItem="3mn-gp-ADd" secondAttribute="bottom" id="N6z-q6-Lwa"/>
+                            <constraint firstItem="3mn-gp-ADd" firstAttribute="leading" secondItem="83E-Mj-aPY" secondAttribute="leading" constant="8" id="TDU-I8-mM2"/>
+                            <constraint firstItem="1O7-1Y-0F5" firstAttribute="leading" secondItem="83E-Mj-aPY" secondAttribute="leading" constant="8" id="Y5h-zf-3cP"/>
+                            <constraint firstItem="IEy-Xd-H1b" firstAttribute="leading" secondItem="EBo-oL-Kip" secondAttribute="trailing" constant="8" id="YPf-bf-Krd"/>
+                            <constraint firstItem="4Vt-kF-fL3" firstAttribute="leading" secondItem="3mn-gp-ADd" secondAttribute="trailing" constant="8" id="hQm-q7-HBv"/>
+                            <constraint firstItem="MeF-mp-Igb" firstAttribute="leading" secondItem="4Vt-kF-fL3" secondAttribute="leading" id="nt9-Zv-swo"/>
+                            <constraint firstItem="4Vt-kF-fL3" firstAttribute="top" secondItem="3mn-gp-ADd" secondAttribute="top" id="oZ8-Yz-5Sk"/>
+                            <constraint firstItem="3mn-gp-ADd" firstAttribute="top" secondItem="EBo-oL-Kip" secondAttribute="bottom" constant="32" id="uzh-cX-6g3"/>
+                            <constraint firstItem="EBo-oL-Kip" firstAttribute="top" secondItem="83E-Mj-aPY" secondAttribute="top" id="w07-QC-pcL"/>
+                            <constraint firstItem="4Vt-kF-fL3" firstAttribute="width" secondItem="3mn-gp-ADd" secondAttribute="width" id="x7l-dA-rRc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Magic Item Name" largeTitleDisplayMode="always" id="fFU-XE-OR0"/>
+                    <connections>
+                        <outlet property="compatableGames" destination="MeF-mp-Igb" id="n12-GE-IsB"/>
+                        <outlet property="magicItemAbilityLabel" destination="My8-q0-rka" id="6mk-N5-FHW"/>
+                        <outlet property="skylanderGame" destination="IEy-Xd-H1b" id="Wbv-tl-7NO"/>
+                        <outlet property="skylanderImage" destination="3mn-gp-ADd" id="KzM-6f-BoP"/>
+                        <outlet property="skylanderSeries" destination="EBo-oL-Kip" id="1c6-XC-0gx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nGJ-7F-qzv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7597" y="860"/>
+        </scene>
+        <!--Creation Crystal Name-->
+        <scene sceneID="Y43-HN-JUj">
+            <objects>
+                <viewController id="Lhr-MP-cNb" customClass="CreationCrystalsDetailViewController" customModule="Skylanders_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DcX-GQ-FO4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6j0-Mf-gll">
+                                <rect key="frame" x="0.0" y="144" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ag6-hS-AMk">
+                                <rect key="frame" x="8" y="198" width="398" height="395.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ag6-hS-AMk" secondAttribute="height" multiplier="1:1" id="IPB-lp-goR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNF-PK-bW8">
+                                <rect key="frame" x="211" y="144" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Element" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oab-gH-KwL">
+                                <rect key="frame" x="8" y="603" width="398" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KAw-O9-P37">
+                                <rect key="frame" x="8" y="632" width="398" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="Compatable Games" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Age-hX-PnW">
+                                        <rect key="frame" x="96.5" y="0.0" width="205" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All games Skylander is compatible with" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8J5-8f-o2A">
+                                        <rect key="frame" x="0.0" y="37" width="398" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8J5-8f-o2A" secondAttribute="trailing" id="SaX-K7-j4U"/>
+                                    <constraint firstAttribute="bottom" secondItem="8J5-8f-o2A" secondAttribute="bottom" constant="20" id="cIh-9X-lft"/>
+                                    <constraint firstItem="Age-hX-PnW" firstAttribute="top" secondItem="KAw-O9-P37" secondAttribute="top" id="g8h-ma-JFy"/>
+                                    <constraint firstItem="8J5-8f-o2A" firstAttribute="top" secondItem="Age-hX-PnW" secondAttribute="bottom" constant="8" id="gT7-vG-AUq"/>
+                                    <constraint firstItem="Age-hX-PnW" firstAttribute="centerX" secondItem="KAw-O9-P37" secondAttribute="centerX" id="lPr-HQ-o7w"/>
+                                    <constraint firstItem="8J5-8f-o2A" firstAttribute="leading" secondItem="KAw-O9-P37" secondAttribute="leading" id="xVm-aO-ijJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LdW-gh-whG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jNF-PK-bW8" firstAttribute="leading" secondItem="6j0-Mf-gll" secondAttribute="trailing" constant="8" id="689-MX-ZGg"/>
+                            <constraint firstItem="oab-gH-KwL" firstAttribute="top" secondItem="Ag6-hS-AMk" secondAttribute="bottom" constant="8" id="77i-oQ-mjP"/>
+                            <constraint firstItem="LdW-gh-whG" firstAttribute="trailing" secondItem="jNF-PK-bW8" secondAttribute="trailing" id="COM-yX-gEC"/>
+                            <constraint firstItem="LdW-gh-whG" firstAttribute="trailing" secondItem="Ag6-hS-AMk" secondAttribute="trailing" constant="8" id="GE7-4G-vDa"/>
+                            <constraint firstItem="KAw-O9-P37" firstAttribute="top" secondItem="oab-gH-KwL" secondAttribute="bottom" constant="8" id="JB0-Fw-QS3"/>
+                            <constraint firstItem="jNF-PK-bW8" firstAttribute="width" secondItem="6j0-Mf-gll" secondAttribute="width" id="Ode-o4-3R4"/>
+                            <constraint firstItem="KAw-O9-P37" firstAttribute="leading" secondItem="LdW-gh-whG" secondAttribute="leading" constant="8" id="XXX-1N-S3v"/>
+                            <constraint firstItem="oab-gH-KwL" firstAttribute="trailing" secondItem="Ag6-hS-AMk" secondAttribute="trailing" id="Z2b-S5-aVh"/>
+                            <constraint firstItem="oab-gH-KwL" firstAttribute="leading" secondItem="Ag6-hS-AMk" secondAttribute="leading" id="Z6u-4D-SgM"/>
+                            <constraint firstItem="6j0-Mf-gll" firstAttribute="leading" secondItem="LdW-gh-whG" secondAttribute="leading" id="atf-Xw-igh"/>
+                            <constraint firstItem="6j0-Mf-gll" firstAttribute="top" secondItem="LdW-gh-whG" secondAttribute="top" id="cnh-J9-eEg"/>
+                            <constraint firstItem="Ag6-hS-AMk" firstAttribute="leading" secondItem="LdW-gh-whG" secondAttribute="leading" constant="8" id="edg-D2-JUq"/>
+                            <constraint firstItem="jNF-PK-bW8" firstAttribute="top" secondItem="LdW-gh-whG" secondAttribute="top" id="h0i-1Y-OCa"/>
+                            <constraint firstItem="Ag6-hS-AMk" firstAttribute="top" secondItem="6j0-Mf-gll" secondAttribute="bottom" constant="32" id="nCM-D1-sOZ"/>
+                            <constraint firstItem="LdW-gh-whG" firstAttribute="trailing" secondItem="KAw-O9-P37" secondAttribute="trailing" constant="8" id="vak-WJ-4X8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Creation Crystal Name" largeTitleDisplayMode="always" id="jFl-hy-Ndv"/>
+                    <connections>
+                        <outlet property="compatableGames" destination="8J5-8f-o2A" id="aVw-Mf-eHL"/>
+                        <outlet property="elementLabel" destination="oab-gH-KwL" id="8AN-pP-zoJ"/>
+                        <outlet property="skylanderGame" destination="jNF-PK-bW8" id="Zul-mS-yBa"/>
+                        <outlet property="skylanderImage" destination="Ag6-hS-AMk" id="E8c-ZN-bqD"/>
+                        <outlet property="skylanderSeries" destination="6j0-Mf-gll" id="ju5-Nt-c9q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hDv-Xp-e0S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8576.8115942028999" y="859.82142857142856"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pAs-Gd-9am"/>
-        <segue reference="FiH-B5-pw0"/>
+        <segue reference="bao-bC-f2N"/>
+        <segue reference="4X6-Ny-0dC"/>
         <segue reference="1TJ-y7-BJq"/>
         <segue reference="PuH-nF-Juk"/>
-        <segue reference="WnL-Be-kgT"/>
-        <segue reference="79z-E6-3Py"/>
-        <segue reference="j9q-D0-eET"/>
+        <segue reference="OIX-1U-RXH"/>
+        <segue reference="bz5-5T-Q9g"/>
+        <segue reference="Fjb-27-xG1"/>
         <segue reference="4Lc-0q-Bbt"/>
     </inferredMetricsTieBreakers>
     <resources>

@@ -1,0 +1,233 @@
+{
+    "MagicItemAbilities" : [
+        {
+            "statsName": "Pirate Seas",
+            "ability": "Grants access to the Pirate Seas chapter"
+        },
+
+        {
+            "statsName": "Ghost Swords",
+            "ability": "Helps defeat enemies"
+        },
+
+        {
+            "statsName": "Hidden Treasure",
+            "ability": "Reveals location of a hidden treasure chest"
+        },
+
+        {
+            "statsName": "Empire of Ice",
+            "ability": "Grants access to the Empire of Ice chapter"
+        },
+
+        {
+            "statsName": "Anvil Rain",
+            "ability": "Rains anvils all over the area to damage enemies"
+        },
+
+        {
+            "statsName": "Sky-Iron Shield",
+            "ability": "Raises the Skylander's armor for a while"
+        },
+
+        {
+            "statsName": "Dragon's Peak",
+            "ability": "Grants access to the Dragon's Peak chapter"
+        },
+
+        {
+            "statsName": "Sparx Dragonfly",
+            "ability": "Breathes fire at enemies"
+        },
+
+        {
+            "statsName": "Winged Boots",
+            "ability": "Makes the Skylander go faster"
+        },
+
+        {
+            "statsName": "Darklight Crypt",
+            "ability": "Grants access to the Darklight Crypt"
+        },
+
+        {
+            "statsName": "Time Twister",
+            "ability": "Slows down time for everything but the Skylander"
+        },
+
+        {
+            "statsName": "Healing Elixir",
+            "ability": "Heals Skylanders"
+        },
+
+        {
+            "statsName": "Volcanic Vault",
+            "ability": "Unlocks the Volcanic Vault battle arena. Also creates a rain for fire to damage enemies"
+        },
+
+        {
+            "statsName": "Dragonfire Cannon",
+            "ability": "The cannon will follow the Skylander and shoot blasts of fire at enemies"
+        },
+
+        {
+            "statsName": "Platinum Treasure Chest",
+            "ability": "Reveals the location of a hidden treasure chest"
+        },
+
+        {
+            "statsName": "Scorpion Striker Catapult",
+            "ability": "The catapult will follow the SKylander and lob mines at enemies"
+        },
+
+        {
+            "statsName": "Sheep Wreck Island",
+            "ability": "Grants access to the Sheep Wreck Island"
+        },
+
+        {
+            "statsName": "Groove Machine",
+            "ability": "Makes certain enemies vulnerable by making them dance"
+        },
+
+        {
+            "statsName": "Platinum Sheep",
+            "ability": "The sheep statue will temporarily turn the Skylander into a sheep. Enemies won't attack the Skylasheep form"
+        },
+
+        {
+            "statsName": "Tower of Time",
+            "ability": "Grants access to the Tower of Time"
+        },
+
+        {
+            "statsName": "Sky Diamond",
+            "ability": "Enemies defeated will release a shower of diamonds that are worth multiple coins"
+        },
+
+        {
+            "statsName": "Battle Hammer",
+            "ability": "Aids the Skylander by smashing the ground whenever a Skylander attacks, dealing more damage"
+        },
+
+        {
+            "statsName": "Arkeyan Crossbow",
+            "ability": "The crossbow will follow the Skylander and shoot arrows at enemies"
+        },
+
+        {
+            "statsName": "Fiery Forge",
+            "ability": "A cauldron will follow the Skylander and spill lava on enemies"
+        },
+
+        {
+            "statsName": "UFO Hat",
+            "ability": "Unlocks the UFO Hat"
+        },
+
+        {
+            "statsName": "Nightmare Express",
+            "ability": "Grants access to the Nightmare Express"
+        },
+
+        {
+            "statsName": "Piggy Bank",
+            "ability": "Follows Skylanders everywhere while making money rain down after enemies are defeated"
+        },
+
+        {
+            "statsName": "Hand of Fate",
+            "ability": "Delivers a heavy amount of damage and stuns enemies it bashes on"
+        },
+
+        {
+            "statsName": "Mirror of Mystery",
+            "ability": "Grants access to the Mirror of Mystery"
+        },
+
+        {
+            "statsName": "Rocket Ram",
+            "ability": "A bunch of Rocket Rams fall from the sky and explode on the ground"
+        },
+
+        {
+            "statsName": "Tiki Speaky",
+            "ability": "Shoots down a lightning bolt and delivers a heavy amount of damage to enemies"
+        },
+
+        {
+            "statsName": "Sunscraper Spire",
+            "ability": "Grants access to the Sunscraper Spire"
+        },
+
+        {
+            "statsName": "Midnight Museum",
+            "ability": "Grants access to the Midnight Museum"
+        },
+
+        {
+            "statsName": "Kaos Trophy",
+            "ability": "Allows Kaos and his Doom Jet to participate in Sky races"
+        },
+
+        {
+            "statsName": "Sky Trophy",
+            "ability": "Unlocks additional Sky tracks, as well as Villain racers and additional modes"
+        },
+
+        {
+            "statsName": "Land Trophy",
+            "ability": "Unlocks additional Land tracks, as well as Villain racers and additional modes"
+        },
+
+        {
+            "statsName": "Sea Trophy",
+            "ability": "Unlocks additional Sea tracks as well as Villain racers and additional modes"
+        },
+
+        {
+            "statsName": "Gold Mystery Chest",
+            "ability": "Contains 9 random Creation Pieces with at least 1 Epic and 4 Ultimate rarity pieces"
+        },
+
+        {
+            "statsName": "Silver Mystery Chest",
+            "ability": "Contains 9 random Creation Pieces with at least 1 Rare, 1 Epic, and 3 Ultimate rarity pieces"
+        },
+
+        {
+            "statsName": "Bronze Mystery Chest",
+            "ability": "Contains 9 random Creation Pieces with at least 2 Rare, 1 Epic, and 2 Ultimate rarity pieces"
+        },
+
+        {
+            "statsName": "Blue Mystery Chest (Cursed Tiki Temple)",
+            "ability": "Contains 80 Creation Pieces from the Cursed Tiki Temple"
+        },
+
+        {
+            "statsName": "Blue Mystery Chest (Lost Imaginite Mines)",
+            "ability": "Contains 80 Creation Pieces from the Lost Imaginite Mines"
+        },
+
+        {
+            "statsName": "Gryphon Park Observatory",
+            "ability": "Grants access to the Gryphon Park Observatory"
+        },
+
+        {
+            "statsName": "Enchanted Elven Forest",
+            "ability": "Grants access to the Elven Forest"
+        },
+
+        {
+            "statsName": "CYOS 3D Printed Figure",
+            "ability": "The 3D printed figure containing the custom Skylander you make"
+        },
+
+        {
+            "statsName": "CYOS Card",
+            "ability": "A card containing the custom Skylander you make"
+        }
+    ]
+}

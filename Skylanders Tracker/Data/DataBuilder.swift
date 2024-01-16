@@ -19,6 +19,7 @@ class DataBuilder {
     private static var jsonSenseiStats: [SenseisStats] = []
     private static var jsonVillainDetails: [VillianDetails] = []
     private static var jsonVehicleStats: [VehiclesStats] = []
+    private static var jsonMagicItemAblilities: [MagicItemAbilities] = []
     
     // MARK: - JSON parse
     private static func getData(type dataType: String) -> Data? {
@@ -40,6 +41,8 @@ class DataBuilder {
             name = "Villians Details"
         case "Vehicles":
             name = "Vehicles Stats"
+        case "Magic Items":
+            name = "Magic Items Abilities"
         default:
             print("Error in getData in DataBuilder with type \(dataType)")
             return nil
@@ -126,7 +129,13 @@ class DataBuilder {
             } catch let error {
                 print("Error decoding \(dataType) in DataBuilder: \(error)")
             }
-
+        case "Magic Items":
+            do {
+                let result = try decoder.decode(MagicItemAbilitiesList.self, from: data)
+                jsonMagicItemAblilities = result.MagicItemAbilities
+            } catch let error {
+                print("Error decoding \(dataType) in DataBuilder: \(error)")
+            }
            
         default: print("Incorrect Data Type")
         }
@@ -142,6 +151,7 @@ class DataBuilder {
         parseJson(type: "Senseis")
         parseJson(type: "Villains")
         parseJson(type: "Vehicles")
+        parseJson(type: "Magic Items")
         
         for jsonSkylander in jsonSkylanders {
             saveSkylander(jsonSkylander: jsonSkylander)
@@ -166,6 +176,9 @@ class DataBuilder {
         }
         for jsonVehicleStat in jsonVehicleStats {
             saveVehicleStats(jsonVehicleStats: jsonVehicleStat)
+        }
+        for jsonMagicItemAblility in jsonMagicItemAblilities {
+            saveMagicItemAbilities(jsonMagicItemAbility: jsonMagicItemAblility)
         }
     }
     
@@ -366,6 +379,24 @@ class DataBuilder {
         }
     }
     
+    private static func saveMagicItemAbilities(jsonMagicItemAbility: MagicItemAbilities) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "MagicItemsAbilitiesTable", in: managedContext)!
+        
+        let MagicItemAbility = NSManagedObject(entity: entity, insertInto: managedContext)
+        MagicItemAbility.setValue(jsonMagicItemAbility.statsName, forKey: "statsName")
+        MagicItemAbility.setValue(jsonMagicItemAbility.ability, forKey: "ability")
+        do {
+            try managedContext.save()
+        }
+        catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
     static func DeleteData() {
         print("Deleting Data")
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
@@ -380,7 +411,9 @@ class DataBuilder {
         NSFetchRequest<NSManagedObject>(entityName: "SwapperStatsTable"),
         NSFetchRequest<NSManagedObject>(entityName: "SuperChargerStatsTable"),
         NSFetchRequest<NSManagedObject>(entityName: "SenseisStatsTable"),
-        NSFetchRequest<NSManagedObject>(entityName: "VillianDetailsTable")
+        NSFetchRequest<NSManagedObject>(entityName: "VillianDetailsTable"),
+        NSFetchRequest<NSManagedObject>(entityName: "VehicleStatsTable"),
+        NSFetchRequest<NSManagedObject>(entityName: "MagicItemsAbilitiesTable")
     ]
         
         for i in fetchRequestList {
