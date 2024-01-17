@@ -8,7 +8,14 @@
 import UIKit
 import CoreData
 
+protocol TrapsDelegate: AnyObject {
+    func pageDidClose()
+}
+
 class TrapsDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    weak var delegate: TrapsDelegate?
+    
     @IBOutlet var trapImage: UIImageView!
     @IBOutlet var trapElementLabel: UILabel!
     @IBOutlet var trapDesignLabel: UILabel!
@@ -34,6 +41,11 @@ class TrapsDetailViewController: UIViewController, UITableViewDelegate, UITableV
         let cellNib = UINib(nibName: "VillainCell", bundle: nil)
         villainTable.register(cellNib, forCellReuseIdentifier: "VillainCell")
         villainTable.reloadData()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.delegate?.pageDidClose()
     }
     
 //MARK: - Helper Functions
@@ -147,7 +159,7 @@ extension TrapsDetailViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let navigationController = segue.destination as? UINavigationController
         let VillainsPopupDetailViewController = navigationController?.topViewController as! VillainsPopupDetailViewController
-        VillainsPopupDetailViewController.delegate = self
+        VillainsPopupDetailViewController.popupDelegate = self
         VillainsPopupDetailViewController.chosenVillain = villainToSend
     }
 }

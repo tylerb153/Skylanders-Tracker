@@ -14,14 +14,14 @@ protocol VillainsPopupDelegate: AnyObject {
 
 class VillainsPopupDetailViewController: VillainsDetailViewController {
     
-    weak var delegate: VillainsPopupDelegate?
+    weak var popupDelegate: VillainsPopupDelegate?
     
     override func viewDidLoad() {
             super.viewDidLoad()
         }
     
     override func viewWillDisappear(_ animated: Bool) {
-        self.delegate?.popupDidClose()
+        self.popupDelegate?.popupDidClose()
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

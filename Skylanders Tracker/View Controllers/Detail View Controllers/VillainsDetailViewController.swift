@@ -8,7 +8,14 @@
 import UIKit
 import CoreData
 
+protocol VillainsDelegate: AnyObject {
+    func pageDidClose()
+}
+
 class VillainsDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    weak var delegate: VillainsDelegate?
+    
     @IBOutlet var villainImage: UIImageView!
     @IBOutlet var villainElementLabel: UILabel!
     @IBOutlet var doomRaiderLabel: UILabel!
@@ -33,6 +40,11 @@ class VillainsDetailViewController: UIViewController, UITableViewDelegate, UITab
         let cellNib = UINib(nibName: "TrapCell", bundle: nil)
         trapTable.register(cellNib, forCellReuseIdentifier: "TrapCell")
         trapTable.reloadData()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.delegate?.pageDidClose()
     }
     
 //    @IBAction func refresh() {
@@ -149,7 +161,7 @@ extension VillainsDetailViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let navigationController = segue.destination as? UINavigationController
         let TrapsPopupDetailViewController = navigationController?.topViewController as! TrapsPopupDetailViewController
-        TrapsPopupDetailViewController.delegate = self
+        TrapsPopupDetailViewController.popupDelegate = self
         TrapsPopupDetailViewController.chosenTrap = trapToSend
     }
 }

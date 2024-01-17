@@ -46,12 +46,30 @@ class SearchViewController: UIViewController {
         case "DisplayTrap":
             let TrapsDetailViewController = segue.destination as! TrapsDetailViewController
             TrapsDetailViewController.chosenTrap = skylanderToSend
+            TrapsDetailViewController.delegate = self
         case "DisplaySwapper":
             let SwappersDetailViewController = segue.destination as! SwappersDetailViewController
             SwappersDetailViewController.chosenSwapper = skylanderToSend
         case "DisplaySuperCharger":
+//            print(skylanderToSend)
             let SuperChargersDetailViewController = segue.destination as! SuperChargersDetailViewController
             SuperChargersDetailViewController.chosenSuperCharger = skylanderToSend
+        case "DisplaySensei":
+            let SenseisDetailViewController = segue.destination as! SenseisDetailViewController
+            SenseisDetailViewController.chosenSensei = skylanderToSend
+        case "DisplayVillain":
+            let VillainsDetailViewController = segue.destination as! VillainsDetailViewController
+            VillainsDetailViewController.chosenVillain = skylanderToSend
+            VillainsDetailViewController.delegate = self
+        case "DisplayVehicle":
+            let VehiclesDetailViewController = segue.destination as! VehiclesDetailViewController
+            VehiclesDetailViewController.chosenVehicle = skylanderToSend
+        case "DisplayMagicItem":
+            let MagicItemsDetailViewController = segue.destination as! MagicItemsDetailViewController
+            MagicItemsDetailViewController.chosenMagicItem = skylanderToSend
+        case "DisplayCreationCrystal":
+            let CreationCrystalsDetailViewController = segue.destination as! CreationCrystalsDetailViewController
+            CreationCrystalsDetailViewController.chosenCreationCrystal = skylanderToSend
         default:
             print("Error in send")
         }
@@ -124,20 +142,49 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if !nothingFound {
             skylanderToSend = skylandersToDisplay[indexPath.row]
-            let type = skylanderToSend?.value(forKey: "variantText") as! String
+            var type = skylanderToSend?.value(forKey: "variantText") as! String
+            if (type.contains("Swapper")) {
+                type = "Swapper"
+            }
+            else if (type.contains("Trap") && !type.contains("Trap Master")) {
+                type = "Trap"
+            }
+            else if (type.contains("SuperCharger")) {
+                type = "SuperCharger"
+            }
+            else if (type.contains("Sensei")) {
+                type = "Sensei"
+            }
+            else if (type.contains("Villian") || type.contains("Doom Raider")) {
+                type = "Villain"
+            }
+            else if (type.contains("Vehicle")) {
+                type = "Vehicle"
+            }
+            else if (type.contains("Magic Item")) {
+                type = "Magic Item"
+            }
+            else if (type.contains("Creation Crystal")) {
+                type = "Creation Crystal"
+            }
+
             switch type {
-            case "Traps":
-                self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
-            case "Legendary Trap":
-                self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
-            case "Dark Trap":
-                self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
-            case "Chase Trap":
+            case "Trap":
                 self.performSegue(withIdentifier: "DisplayTrap", sender: Any?.self)
             case "Swapper":
                 self.performSegue(withIdentifier: "DisplaySwapper", sender: Any?.self)
             case "SuperCharger":
                 self.performSegue(withIdentifier: "DisplaySuperCharger", sender: Any?.self)
+            case "Sensei":
+                self.performSegue(withIdentifier: "DisplaySensei", sender: Any?.self)
+            case "Villain":
+                self.performSegue(withIdentifier: "DisplayVillain", sender: Any?.self)
+            case "Vehicle":
+                self.performSegue(withIdentifier: "DisplayVehicle", sender: Any?.self)
+            case "Magic Item":
+                self.performSegue(withIdentifier: "DisplayMagicItem", sender: Any?.self)
+            case "Creation Crystal":
+                self.performSegue(withIdentifier: "DisplayCreationCrystal", sender: Any?.self)
             default:
                 self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
             }
@@ -183,5 +230,11 @@ extension SearchViewController: UISearchBarDelegate {
     func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
         searchBar.setShowsCancelButton(false, animated: true)
         return true
+    }
+}
+
+extension SearchViewController: VillainsDelegate, TrapsDelegate {
+    func pageDidClose() {
+        tableView.reloadData()
     }
 }

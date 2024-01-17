@@ -14,7 +14,7 @@
 		2F0F5D1627C383C100FB29FC /* GameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0F5D1527C383C100FB29FC /* GameCell.xib */; };
 		2F0F5D1827C38DE100FB29FC /* SkylandersDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F5D1727C38DE100FB29FC /* SkylandersDetailViewController.swift */; };
 		2F0F5D1A27C3950200FB29FC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F5D1927C3950200FB29FC /* SearchViewController.swift */; };
-		2F0F5D1C27C3955200FB29FC /* SkylandersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F5D1B27C3955200FB29FC /* SkylandersListViewController.swift */; };
+		2F0F5D1C27C3955200FB29FC /* SkylandersListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F5D1B27C3955200FB29FC /* SkylandersListTableViewController.swift */; };
 		2F0F5D1E27C3A20100FB29FC /* SkylandersMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F5D1D27C3A20100FB29FC /* SkylandersMenuViewController.swift */; };
 		2F0F5D2027C3A6EA00FB29FC /* SkylanderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F5D1F27C3A6EA00FB29FC /* SkylanderCell.swift */; };
 		2F0F5D2227C3A76B00FB29FC /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F5D2127C3A76B00FB29FC /* GameCell.swift */; };
@@ -81,7 +81,7 @@
 		2F0F5D1527C383C100FB29FC /* GameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameCell.xib; sourceTree = "<group>"; };
 		2F0F5D1727C38DE100FB29FC /* SkylandersDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylandersDetailViewController.swift; sourceTree = "<group>"; };
 		2F0F5D1927C3950200FB29FC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		2F0F5D1B27C3955200FB29FC /* SkylandersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylandersListViewController.swift; sourceTree = "<group>"; };
+		2F0F5D1B27C3955200FB29FC /* SkylandersListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylandersListTableViewController.swift; sourceTree = "<group>"; };
 		2F0F5D1D27C3A20100FB29FC /* SkylandersMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylandersMenuViewController.swift; sourceTree = "<group>"; };
 		2F0F5D1F27C3A6EA00FB29FC /* SkylanderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylanderCell.swift; sourceTree = "<group>"; };
 		2F0F5D2127C3A76B00FB29FC /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				2F0F5D1D27C3A20100FB29FC /* SkylandersMenuViewController.swift */,
-				2F0F5D1B27C3955200FB29FC /* SkylandersListViewController.swift */,
+				2F0F5D1B27C3955200FB29FC /* SkylandersListTableViewController.swift */,
 				2F0F5D1927C3950200FB29FC /* SearchViewController.swift */,
 				2FC27F512B5230140005BBA8 /* Detail View Controllers */,
 			);
@@ -405,7 +405,7 @@
 				2F0F5D2227C3A76B00FB29FC /* GameCell.swift in Sources */,
 				2F5BAEAC2B571A7D00DCB45F /* MagicItemAbilitiesList.swift in Sources */,
 				2FC27F542B5230510005BBA8 /* TrapsPopupDetailViewController.swift in Sources */,
-				2F0F5D1C27C3955200FB29FC /* SkylandersListViewController.swift in Sources */,
+				2F0F5D1C27C3955200FB29FC /* SkylandersListTableViewController.swift in Sources */,
 				2F33D9C628BD55D00046B41F /* TrapsDetailViewController.swift in Sources */,
 				2F5BAEAE2B571AD300DCB45F /* MagicItemAbilities.swift in Sources */,
 				2FFEEDE328C960300004FE1B /* TrapsDetails.swift in Sources */,

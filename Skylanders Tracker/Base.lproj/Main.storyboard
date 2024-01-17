@@ -469,6 +469,8 @@
                         <segue destination="w4x-4L-exC" kind="show" identifier="DisplaySensei" id="xaK-zn-ybd"/>
                         <segue destination="Rnm-sa-Hrl" kind="show" identifier="DisplayVillain" id="FiH-B5-pw0"/>
                         <segue destination="mQi-mj-dqu" kind="show" identifier="DisplayVehicle" id="pAs-Gd-9am"/>
+                        <segue destination="VoT-1t-2Tb" kind="show" identifier="DisplayMagicItem" id="Cuo-bG-4yU"/>
+                        <segue destination="Lhr-MP-cNb" kind="show" identifier="DisplayCreationCrystal" id="jIG-Oq-OwY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gn7-vV-o2I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2390,13 +2392,15 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bao-bC-f2N"/>
-        <segue reference="4X6-Ny-0dC"/>
-        <segue reference="1TJ-y7-BJq"/>
-        <segue reference="PuH-nF-Juk"/>
+        <segue reference="jIG-Oq-OwY"/>
+        <segue reference="Cuo-bG-4yU"/>
+        <segue reference="pAs-Gd-9am"/>
+        <segue reference="FiH-B5-pw0"/>
+        <segue reference="xaK-zn-ybd"/>
+        <segue reference="pC5-kb-aoR"/>
         <segue reference="WnL-Be-kgT"/>
-        <segue reference="bz5-5T-Q9g"/>
-        <segue reference="Fjb-27-xG1"/>
+        <segue reference="79z-E6-3Py"/>
+        <segue reference="j9q-D0-eET"/>
         <segue reference="4Lc-0q-Bbt"/>
     </inferredMetricsTieBreakers>
     <resources>

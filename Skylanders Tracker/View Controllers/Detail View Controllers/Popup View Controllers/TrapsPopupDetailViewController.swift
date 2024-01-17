@@ -14,7 +14,7 @@ protocol TrapsPopupDelegate: AnyObject {
 
 class TrapsPopupDetailViewController: TrapsDetailViewController {
     
-    weak var delegate: TrapsPopupDelegate?
+    weak var popupDelegate: TrapsPopupDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class TrapsPopupDetailViewController: TrapsDetailViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        self.delegate?.popupDidClose()
+        self.popupDelegate?.popupDidClose()
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
