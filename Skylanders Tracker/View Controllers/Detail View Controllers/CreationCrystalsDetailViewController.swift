@@ -19,14 +19,14 @@ class CreationCrystalsDetailViewController: UIViewController {
     @IBOutlet weak var skylanderSeries: UILabel!
     @IBOutlet weak var skylanderGame: UILabel!
     
-    var chosenSkylander: NSManagedObject!
-    lazy var name = chosenSkylander.value(forKey: "name") as! String
-    lazy var baseName = chosenSkylander.value(forKey: "baseName") as! String
-    lazy var series = chosenSkylander.value(forKey: "series") as! Int
+    var chosenCreationCrystal: NSManagedObject!
+    lazy var name = chosenCreationCrystal.value(forKey: "name") as! String
+    lazy var baseName = chosenCreationCrystal.value(forKey: "baseName") as! String
+    lazy var series = chosenCreationCrystal.value(forKey: "series") as! Int
     lazy var image = getImage()
-    lazy var game = chosenSkylander.value(forKey: "game") as! String
-    lazy var statsName = chosenSkylander.value(forKey: "statsName") as! String
-    lazy var variant = chosenSkylander.value(forKey: "variantText") as! String
+    lazy var game = chosenCreationCrystal.value(forKey: "game") as! String
+    lazy var statsName = chosenCreationCrystal.value(forKey: "statsName") as! String
+    lazy var variant = chosenCreationCrystal.value(forKey: "variantText") as! String
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +44,7 @@ class CreationCrystalsDetailViewController: UIViewController {
     
     // MARK: - Helper Functions
     private func getImage() -> UIImage {
-        if let image = ConfigureImage(skylander: chosenSkylander) {
+        if let image = ConfigureImage(skylander: chosenCreationCrystal) {
             return image
         }
         else {
@@ -57,7 +57,7 @@ class CreationCrystalsDetailViewController: UIViewController {
             skylanderSeries.backgroundColor = UIColor(named: "Elite Gold")
         }
         if series == 0 {
-            let variant = chosenSkylander?.value(forKey: "variantText") as! String
+            let variant = chosenCreationCrystal?.value(forKey: "variantText") as! String
             return variant
         }
         else {
@@ -72,8 +72,8 @@ class CreationCrystalsDetailViewController: UIViewController {
     }
     
     private func setLabels() {
-        if let skylanderStats = getStats() {
-            let element = skylanderStats.value(forKey: "element") as! String
+        if let creationCrystalDetails = getDetails() {
+            let element = creationCrystalDetails.value(forKey: "element") as! String
             elementLabel.text = element
         }
         else {
@@ -84,22 +84,22 @@ class CreationCrystalsDetailViewController: UIViewController {
     
     private func setCompatibleGames() {
         var displayString = ""
-        if chosenSkylander.value(forKey: "worksWithSpyrosAdventure") as! Bool {
+        if chosenCreationCrystal.value(forKey: "worksWithSpyrosAdventure") as! Bool {
             displayString += "Spyro's Adventure\n"
         }
-        if chosenSkylander.value(forKey: "worksWithGiants") as! Bool {
+        if chosenCreationCrystal.value(forKey: "worksWithGiants") as! Bool {
             displayString += "Giants\n"
         }
-        if chosenSkylander.value(forKey: "worksWithSwapForce") as! Bool {
+        if chosenCreationCrystal.value(forKey: "worksWithSwapForce") as! Bool {
             displayString += "Swap Force\n"
         }
-        if chosenSkylander.value(forKey: "worksWithTrapTeam") as! Bool {
+        if chosenCreationCrystal.value(forKey: "worksWithTrapTeam") as! Bool {
             displayString += "Trap Team\n"
         }
-        if chosenSkylander.value(forKey: "worksWithSuperChargers") as! Bool {
+        if chosenCreationCrystal.value(forKey: "worksWithSuperChargers") as! Bool {
             displayString += "SuperChargers\n"
         }
-        if chosenSkylander.value(forKey: "worksWithImaginators") as! Bool {
+        if chosenCreationCrystal.value(forKey: "worksWithImaginators") as! Bool {
             displayString += "Imaginators"
         }
         
@@ -107,8 +107,8 @@ class CreationCrystalsDetailViewController: UIViewController {
     }
     
     // MARK: - Data Functions
-    private func getStats() -> NSManagedObject? {
-        let statsList = RefreshData(entityName: "SkylanderStats")!
+    private func getDetails() -> NSManagedObject? {
+        let statsList = RefreshData(entityName: "CreationCrystalsDetailsTable")!
         for skylanderStats in statsList {
             if skylanderStats.value(forKey: "statsName") as! String == statsName {
                 return skylanderStats

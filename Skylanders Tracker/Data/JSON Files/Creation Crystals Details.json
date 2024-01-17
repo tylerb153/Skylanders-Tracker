@@ -1,0 +1,53 @@
+{
+    "CreationCrystalDetails": [
+        {
+            "statsName": "Light Creation Crystal",
+            "element": "Light"
+        },
+
+        {
+            "statsName": "Dark Creation Crystal",
+            "element": "Dark"
+        },
+
+        {
+            "statsName": "Magic Creation Crystal",
+            "element": "Magic"
+        },
+
+        {
+            "statsName": "Water Creation Crystal",
+            "element": "Water"
+        },
+
+        {
+            "statsName": "Fire Creation Crystal",
+            "element": "Fire"
+        },
+
+        {
+            "statsName": "Air Creation Crystal",
+            "element": "Air"
+        },
+
+        {
+            "statsName": "Earth Creation Crystal",
+            "element": "Earth"
+        },
+
+        {
+            "statsName": "Undead Creation Crystal",
+            "element": "Undead"
+        },
+
+        {
+            "statsName": "Tech Creation Crystal",
+            "element": "Tech"
+        },
+
+        {
+            "statsName": "Life Creation Crystal",
+            "element": "Life"
+        }
+    ]
+}

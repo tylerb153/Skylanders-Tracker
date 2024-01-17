@@ -48,6 +48,9 @@
 		2FC27F542B5230510005BBA8 /* TrapsPopupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC27F532B5230510005BBA8 /* TrapsPopupDetailViewController.swift */; };
 		2FD7D3792B57276500D8B38A /* MagicItemsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD7D3782B57276500D8B38A /* MagicItemsDetailViewController.swift */; };
 		2FD7D37B2B5733D300D8B38A /* CreationCrystalsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD7D37A2B5733D300D8B38A /* CreationCrystalsDetailViewController.swift */; };
+		2FD7D37D2B577E0300D8B38A /* Creation Crystals Details.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FD7D37C2B577E0300D8B38A /* Creation Crystals Details.json */; };
+		2FD7D37F2B577E2300D8B38A /* CreationCrystalDetailsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD7D37E2B577E2300D8B38A /* CreationCrystalDetailsList.swift */; };
+		2FD7D3812B577E5C00D8B38A /* CreationCrystalDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD7D3802B577E5C00D8B38A /* CreationCrystalDetails.swift */; };
 		2FD970B227C3620300283528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD970B127C3620300283528 /* AppDelegate.swift */; };
 		2FD970B427C3620300283528 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD970B327C3620300283528 /* SceneDelegate.swift */; };
 		2FD970B927C3620300283528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD970B727C3620300283528 /* Main.storyboard */; };
@@ -112,6 +115,9 @@
 		2FC27F532B5230510005BBA8 /* TrapsPopupDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrapsPopupDetailViewController.swift; sourceTree = "<group>"; };
 		2FD7D3782B57276500D8B38A /* MagicItemsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicItemsDetailViewController.swift; sourceTree = "<group>"; };
 		2FD7D37A2B5733D300D8B38A /* CreationCrystalsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationCrystalsDetailViewController.swift; sourceTree = "<group>"; };
+		2FD7D37C2B577E0300D8B38A /* Creation Crystals Details.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Creation Crystals Details.json"; sourceTree = "<group>"; };
+		2FD7D37E2B577E2300D8B38A /* CreationCrystalDetailsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationCrystalDetailsList.swift; sourceTree = "<group>"; };
+		2FD7D3802B577E5C00D8B38A /* CreationCrystalDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationCrystalDetails.swift; sourceTree = "<group>"; };
 		2FD970AE27C3620300283528 /* Skylanders Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skylanders Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD970B127C3620300283528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FD970B327C3620300283528 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -199,6 +205,7 @@
 				2FB7C86D2B4FA7200032C2DC /* Senseis Stats.json */,
 				2FB7C8732B50A9E40032C2DC /* Villians Details.json */,
 				2F5BAEA92B571A4D00DCB45F /* Magic Items Abilities.json */,
+				2FD7D37C2B577E0300D8B38A /* Creation Crystals Details.json */,
 			);
 			path = "JSON Files";
 			sourceTree = "<group>";
@@ -224,6 +231,8 @@
 				2FB7C8712B4FA8310032C2DC /* SenseiStats.swift */,
 				2F5BAEAB2B571A7D00DCB45F /* MagicItemAbilitiesList.swift */,
 				2F5BAEAD2B571AD300DCB45F /* MagicItemAbilities.swift */,
+				2FD7D37E2B577E2300D8B38A /* CreationCrystalDetailsList.swift */,
+				2FD7D3802B577E5C00D8B38A /* CreationCrystalDetails.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -362,6 +371,7 @@
 				2F8A1F192B4C7A1C0084FB0B /* Skylanders Data.json in Resources */,
 				2FB7C8742B50A9E40032C2DC /* Villians Details.json in Resources */,
 				2F5BAEAA2B571A4D00DCB45F /* Magic Items Abilities.json in Resources */,
+				2FD7D37D2B577E0300D8B38A /* Creation Crystals Details.json in Resources */,
 				2F6280DA28A04BC100319D03 /* Skylanders Stats.json in Resources */,
 				2FF6982A2B4E2CDC00A298F0 /* Swappers Stats.json in Resources */,
 			);
@@ -382,6 +392,7 @@
 				2FD7D37B2B5733D300D8B38A /* CreationCrystalsDetailViewController.swift in Sources */,
 				2FB7C86C2B4F96A50032C2DC /* SenseisDetailViewController.swift in Sources */,
 				2F8C99352B53B021007C3BA9 /* VehiclesDetailViewController.swift in Sources */,
+				2FD7D3812B577E5C00D8B38A /* CreationCrystalDetails.swift in Sources */,
 				2FF698382B4E328E00A298F0 /* SwappersDetailViewController.swift in Sources */,
 				2F10582927CB8FF500CF67CF /* SkylandersStatsList.swift in Sources */,
 				2F0732CC2B4E281B000BAF36 /* SwapperStats.swift in Sources */,
@@ -398,6 +409,7 @@
 				2F33D9C628BD55D00046B41F /* TrapsDetailViewController.swift in Sources */,
 				2F5BAEAE2B571AD300DCB45F /* MagicItemAbilities.swift in Sources */,
 				2FFEEDE328C960300004FE1B /* TrapsDetails.swift in Sources */,
+				2FD7D37F2B577E2300D8B38A /* CreationCrystalDetailsList.swift in Sources */,
 				2F2A5FCF27CB88EE00B046CB /* SkylandersStats.swift in Sources */,
 				2F0F5D1827C38DE100FB29FC /* SkylandersDetailViewController.swift in Sources */,
 				2F0F5D2A27C3FC4C00FB29FC /* SkylandersList.xcdatamodeld in Sources */,

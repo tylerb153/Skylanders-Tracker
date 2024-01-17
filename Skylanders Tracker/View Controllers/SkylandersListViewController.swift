@@ -151,6 +151,9 @@ class SkylandersListTableViewController: UITableViewController {
         case "DisplayMagicItem":
             let MagicItemsDetailViewController = segue.destination as! MagicItemsDetailViewController
             MagicItemsDetailViewController.chosenMagicItem = skylanderToSend
+        case "DisplayCreationCrystal":
+            let CreationCrystalsDetailViewController = segue.destination as! CreationCrystalsDetailViewController
+            CreationCrystalsDetailViewController.chosenCreationCrystal = skylanderToSend
         default:
             print("Error in send")
         }
@@ -237,6 +240,9 @@ extension SkylandersListTableViewController {
             else if (type.contains("Magic Item")) {
                 type = "Magic Item"
             }
+            else if (type.contains("Creation Crystal")) {
+                type = "Creation Crystal"
+            }
 
             switch type {
             case "Trap":
@@ -253,6 +259,8 @@ extension SkylandersListTableViewController {
                 self.performSegue(withIdentifier: "DisplayVehicle", sender: Any?.self)
             case "Magic Item":
                 self.performSegue(withIdentifier: "DisplayMagicItem", sender: Any?.self)
+            case "Creation Crystal":
+                self.performSegue(withIdentifier: "DisplayCreationCrystal", sender: Any?.self)
             default:
                 self.performSegue(withIdentifier: "DisplaySkylander", sender: Any?.self)
             }

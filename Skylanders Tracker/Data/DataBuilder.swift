@@ -20,6 +20,7 @@ class DataBuilder {
     private static var jsonVillainDetails: [VillianDetails] = []
     private static var jsonVehicleStats: [VehiclesStats] = []
     private static var jsonMagicItemAblilities: [MagicItemAbilities] = []
+    private static var jsonCreationCrystalDetails: [CreationCrystalDetails] = []
     
     // MARK: - JSON parse
     private static func getData(type dataType: String) -> Data? {
@@ -43,6 +44,8 @@ class DataBuilder {
             name = "Vehicles Stats"
         case "Magic Items":
             name = "Magic Items Abilities"
+        case "Creation Crystals":
+            name = "Creation Crystals Details"
         default:
             print("Error in getData in DataBuilder with type \(dataType)")
             return nil
@@ -136,6 +139,13 @@ class DataBuilder {
             } catch let error {
                 print("Error decoding \(dataType) in DataBuilder: \(error)")
             }
+        case "Creation Crystals":
+            do {
+                let result = try decoder.decode(CreationCrystalDetailsList.self, from: data)
+                jsonCreationCrystalDetails = result.CreationCrystalDetails
+            } catch let error {
+                print("Error decoding \(dataType) in DataBuilder: \(error)")
+            }
            
         default: print("Incorrect Data Type")
         }
@@ -152,6 +162,7 @@ class DataBuilder {
         parseJson(type: "Villains")
         parseJson(type: "Vehicles")
         parseJson(type: "Magic Items")
+        parseJson(type: "Creation Crystals")
         
         for jsonSkylander in jsonSkylanders {
             saveSkylander(jsonSkylander: jsonSkylander)
@@ -179,6 +190,9 @@ class DataBuilder {
         }
         for jsonMagicItemAblility in jsonMagicItemAblilities {
             saveMagicItemAbilities(jsonMagicItemAbility: jsonMagicItemAblility)
+        }
+        for jsonCreationCrystalDetail in jsonCreationCrystalDetails {
+            saveCreationCrystalDetails(jsonCreationCrystalDetail: jsonCreationCrystalDetail)
         }
     }
     
@@ -397,6 +411,24 @@ class DataBuilder {
         }
     }
     
+    private static func saveCreationCrystalDetails(jsonCreationCrystalDetail: CreationCrystalDetails) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "CreationCrystalsDetailsTable", in: managedContext)!
+        
+        let CreationCrystalDetail = NSManagedObject(entity: entity, insertInto: managedContext)
+        CreationCrystalDetail.setValue(jsonCreationCrystalDetail.statsName, forKey: "statsName")
+        CreationCrystalDetail.setValue(jsonCreationCrystalDetail.element, forKey: "element")
+        do {
+            try managedContext.save()
+        }
+        catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
     static func DeleteData() {
         print("Deleting Data")
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
@@ -413,7 +445,8 @@ class DataBuilder {
         NSFetchRequest<NSManagedObject>(entityName: "SenseisStatsTable"),
         NSFetchRequest<NSManagedObject>(entityName: "VillianDetailsTable"),
         NSFetchRequest<NSManagedObject>(entityName: "VehicleStatsTable"),
-        NSFetchRequest<NSManagedObject>(entityName: "MagicItemsAbilitiesTable")
+        NSFetchRequest<NSManagedObject>(entityName: "MagicItemsAbilitiesTable"),
+        NSFetchRequest<NSManagedObject>(entityName: "CreationCrystalsDetailsTable")
     ]
         
         for i in fetchRequestList {
