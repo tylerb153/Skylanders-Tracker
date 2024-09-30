@@ -20,6 +20,7 @@ class TrapsDetailViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet var trapElementLabel: UILabel!
     @IBOutlet var trapDesignLabel: UILabel!
     @IBOutlet var villainTable: UITableView!
+    @IBOutlet weak var elementImage: UIImageView!
     
     lazy var villainsTrapable: [NSManagedObject] = getVillainsTrapable()
     
@@ -37,6 +38,7 @@ class TrapsDetailViewController: UIViewController, UITableViewDelegate, UITableV
         navigationItem.title = name
         SetImage()
         SetLabels()
+        setElementImage()
         
         let cellNib = UINib(nibName: "VillainCell", bundle: nil)
         villainTable.register(cellNib, forCellReuseIdentifier: "VillainCell")
@@ -55,6 +57,15 @@ class TrapsDetailViewController: UIViewController, UITableViewDelegate, UITableV
         }
         else {
             trapImage.image = UIImage(systemName: "square")
+        }
+    }
+    
+    private func setElementImage() {
+        if let element = configureElementImage(element: element) {
+            elementImage.image = element
+        }
+        else {
+            elementImage.isHidden = true
         }
     }
     

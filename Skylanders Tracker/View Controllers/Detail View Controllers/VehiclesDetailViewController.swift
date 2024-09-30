@@ -24,6 +24,7 @@ class VehiclesDetailViewController: UIViewController {
     @IBOutlet weak var vehicleSeries: UILabel!
     @IBOutlet weak var vehicleGame: UILabel!
     @IBOutlet weak var vehicleSuperCharger: UILabel!
+    @IBOutlet weak var elementImage: UIImageView!
     
     @IBOutlet var superChargerButton: UIButton!
     
@@ -35,6 +36,7 @@ class VehiclesDetailViewController: UIViewController {
     lazy var game = chosenVehicle.value(forKey: "game") as! String
     lazy var statsName = chosenVehicle.value(forKey: "statsName") as! String
     lazy var variant = chosenVehicle.value(forKey: "variantText") as! String
+    var element: String?
     
     lazy var superCharger = getSuperCharger()
     
@@ -46,9 +48,7 @@ class VehiclesDetailViewController: UIViewController {
         vehicleGame.text = game
         tintGame()
         setLabels()
-//        if variant == "Dark" {
-//            skylanderImage.backgroundColor = UIColor.black
-//        }
+        setElementImage()
         vehicleImage.layer.cornerRadius = vehicleImage.bounds.width / 5
     }
     
@@ -62,7 +62,23 @@ class VehiclesDetailViewController: UIViewController {
         }
     }
     
+    private func setElementImage() {
+        if variant == "Magic Item" {
+            element = "MagicItem"
+        }
+        if let element = configureElementImage(element: element ?? "Unknown") {
+            elementImage.image = element
+        }
+        else {
+            elementImage.isHidden = true
+        }
+    }
+    
     private func configureSeries() -> String {
+        if variant.contains("Dark") {
+            vehicleSeries.backgroundColor = UIColor.black
+            vehicleSeries.textColor = UIColor.white
+        }
         if series == 0 {
             let variant = chosenVehicle?.value(forKey: "variantText") as! String
             return variant
@@ -92,6 +108,7 @@ class VehiclesDetailViewController: UIViewController {
             vehicleHandling.text = handling != -1 ? String(handling) : "Unknown"
             let weight = vehicleStats.value(forKey: "weight") as! Int
             vehicleWeight.text = weight != -1 ? String(weight) : "Unknown"
+            element = vehicleStats.value(forKey: "element") as? String
         }
         else {
             vehicleSuperCharger.text = "Unknown"
@@ -100,6 +117,7 @@ class VehiclesDetailViewController: UIViewController {
             vehicleArmor.text = "Unknown"
             vehicleHandling.text = "Unknown"
             vehicleWeight.text = "Unknown"
+            element = "Unknown"
         }
         setCompatibleGames()
     }

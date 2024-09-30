@@ -18,6 +18,7 @@ class CreationCrystalsDetailViewController: UIViewController {
     @IBOutlet weak var compatableGames: UILabel!
     @IBOutlet weak var skylanderSeries: UILabel!
     @IBOutlet weak var skylanderGame: UILabel!
+    @IBOutlet weak var elementImage: UIImageView!
     
     var chosenCreationCrystal: NSManagedObject!
     lazy var name = chosenCreationCrystal.value(forKey: "name") as! String
@@ -27,6 +28,7 @@ class CreationCrystalsDetailViewController: UIViewController {
     lazy var game = chosenCreationCrystal.value(forKey: "game") as! String
     lazy var statsName = chosenCreationCrystal.value(forKey: "statsName") as! String
     lazy var variant = chosenCreationCrystal.value(forKey: "variantText") as! String
+    var element: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,9 +38,7 @@ class CreationCrystalsDetailViewController: UIViewController {
         skylanderGame.text = game
         tintGame()
         setLabels()
-//        if variant == "Dark" {
-//            skylanderImage.backgroundColor = UIColor.black
-//        }
+        setElementImage()
         skylanderImage.layer.cornerRadius = skylanderImage.bounds.width / 5
     }
     
@@ -52,7 +52,23 @@ class CreationCrystalsDetailViewController: UIViewController {
         }
     }
     
+    private func setElementImage() {
+        if variant == "Magic Item" {
+            element = "MagicItem"
+        }
+        if let element = configureElementImage(element: element ?? "Unknown") {
+            elementImage.image = element
+        }
+        else {
+            elementImage.isHidden = true
+        }
+    }
+    
     private func configureSeries() -> String {
+        if variant.contains("Dark") {
+            skylanderSeries.backgroundColor = UIColor.black
+            skylanderSeries.textColor = UIColor.white
+        }
         if variant == "Eon's Elite" {
             skylanderSeries.backgroundColor = UIColor(named: "Elite Gold")
         }
@@ -73,10 +89,17 @@ class CreationCrystalsDetailViewController: UIViewController {
     
     private func setLabels() {
         if let creationCrystalDetails = getDetails() {
-            let element = creationCrystalDetails.value(forKey: "element") as! String
-            elementLabel.text = element
+            let element = creationCrystalDetails.value(forKey: "element") as? String
+            if element == nil {
+                self.element = "Unknown"
+            }
+            else {
+                self.element = element
+            }
+            elementLabel.text = self.element
         }
         else {
+            element = "Unknown"
             elementLabel.text = "Unknown"
         }
         setCompatibleGames()

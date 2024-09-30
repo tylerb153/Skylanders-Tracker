@@ -15,6 +15,12 @@ func ConfigureImage(skylander: NSManagedObject) -> UIImage? {
     return UIImage(named: skylanderName)
     
 }
+func configureElementImage(element: String) -> UIImage? {
+    guard let elementImage = UIImage(named: "Element\(element)") else {
+        return nil
+    }
+    return elementImage
+}
 
 private func configureName(name: String, series: Int, variant: String) -> String {
     if series == 0 {

@@ -18,6 +18,7 @@ class MagicItemsDetailViewController: UIViewController {
     @IBOutlet weak var compatableGames: UILabel!
     @IBOutlet weak var skylanderSeries: UILabel!
     @IBOutlet weak var skylanderGame: UILabel!
+    @IBOutlet weak var elementImage: UIImageView!
     
     var chosenMagicItem: NSManagedObject!
     lazy var name = chosenMagicItem.value(forKey: "name") as! String
@@ -27,6 +28,7 @@ class MagicItemsDetailViewController: UIViewController {
     lazy var game = chosenMagicItem.value(forKey: "game") as! String
     lazy var statsName = chosenMagicItem.value(forKey: "statsName") as! String
     lazy var variant = chosenMagicItem.value(forKey: "variantText") as! String
+    var element: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,9 +38,7 @@ class MagicItemsDetailViewController: UIViewController {
         skylanderGame.text = game
         tintGame()
         setLabels()
-//        if variant == "Dark" {
-//            skylanderImage.backgroundColor = UIColor.black
-//        }
+        setElementImage()
         skylanderImage.layer.cornerRadius = skylanderImage.bounds.width / 5
     }
     
@@ -52,7 +52,23 @@ class MagicItemsDetailViewController: UIViewController {
         }
     }
     
+    private func setElementImage() {
+        if variant == "Magic Item" {
+            element = "MagicItem"
+        }
+        if let element = configureElementImage(element: element ?? "Unknown") {
+            elementImage.image = element
+        }
+        else {
+            elementImage.isHidden = true
+        }
+    }
+    
     private func configureSeries() -> String {
+        if variant.contains("Dark") {
+            skylanderSeries.backgroundColor = UIColor.black
+            skylanderSeries.textColor = UIColor.white
+        }
         if variant == "Eon's Elite" {
             skylanderSeries.backgroundColor = UIColor(named: "Elite Gold")
         }

@@ -32,6 +32,7 @@ class SuperChargersDetailViewController: UIViewController {
     @IBOutlet weak var skylanderSeries: UILabel!
     @IBOutlet weak var skylanderGame: UILabel!
     @IBOutlet weak var superChargerVehicle: UILabel!
+    @IBOutlet weak var elementImage: UIImageView!
     
     @IBOutlet weak var vehicleButton: UIButton!
     
@@ -43,6 +44,7 @@ class SuperChargersDetailViewController: UIViewController {
     lazy var game = chosenSuperCharger.value(forKey: "game") as! String
     lazy var statsName = chosenSuperCharger.value(forKey: "statsName") as! String
     lazy var variant = chosenSuperCharger.value(forKey: "variantText") as! String
+    var element: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,9 +54,7 @@ class SuperChargersDetailViewController: UIViewController {
         skylanderGame.text = game
         tintGame()
         setLabels()
-//        if variant == "Dark" {
-//            skylanderImage.backgroundColor = UIColor.black
-//        }
+        setElementImage()
         skylanderImage.layer.cornerRadius = skylanderImage.bounds.width / 5
     }
     
@@ -68,7 +68,23 @@ class SuperChargersDetailViewController: UIViewController {
         }
     }
     
+    private func setElementImage() {
+        if variant == "Magic Item" {
+            element = "MagicItem"
+        }
+        if let element = configureElementImage(element: element ?? "Unknown") {
+            elementImage.image = element
+        }
+        else {
+            elementImage.isHidden = true
+        }
+    }
+    
     private func configureSeries() -> String {
+        if variant.contains("Dark") {
+            skylanderSeries.backgroundColor = UIColor.black
+            skylanderSeries.textColor = UIColor.white
+        }
         if series == 0 {
             let variant = chosenSuperCharger?.value(forKey: "variantText") as! String
             return variant
@@ -99,6 +115,7 @@ class SuperChargersDetailViewController: UIViewController {
             skylanderStartHealth.text = startingHealthStat != -1 ? String(startingHealthStat) : "Unknown"
             let maxHealthStat = skylanderStats.value(forKey: "maxHealth") as! Int
             skylanderMaximumHealth.text = maxHealthStat != -1 ? String(maxHealthStat) : "Unknown"
+            element = skylanderStats.value(forKey: "element") as? String
         }
         else {
             superChargerVehicle.text = "Unknown"
@@ -108,6 +125,7 @@ class SuperChargersDetailViewController: UIViewController {
             skylanderElementalPower.text = "Unknown"
             skylanderStartHealth.text = "Unknown"
             skylanderMaximumHealth.text = "Unknown"
+            element = "Unknown"
         }
         setCompatibleGames()
     }

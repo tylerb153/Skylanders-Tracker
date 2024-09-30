@@ -31,6 +31,7 @@ class SenseisDetailViewController: UIViewController {
     @IBOutlet weak var skylanderSeries: UILabel!
     @IBOutlet weak var skylanderGame: UILabel!
     @IBOutlet weak var senseiBattleClass: UILabel!
+    @IBOutlet weak var elementImage: UIImageView!
     
     var chosenSensei: NSManagedObject!
     lazy var name = chosenSensei.value(forKey: "name") as! String
@@ -40,6 +41,7 @@ class SenseisDetailViewController: UIViewController {
     lazy var game = chosenSensei.value(forKey: "game") as! String
     lazy var statsName = chosenSensei.value(forKey: "statsName") as! String
     lazy var variant = chosenSensei.value(forKey: "variantText") as! String
+    var element: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,9 +51,7 @@ class SenseisDetailViewController: UIViewController {
         skylanderGame.text = game
         tintGame()
         setLabels()
-//        if variant == "Dark" {
-//            skylanderImage.backgroundColor = UIColor.black
-//        }
+        setElementImage()
         skylanderImage.layer.cornerRadius = skylanderImage.bounds.width / 5
     }
     
@@ -65,7 +65,23 @@ class SenseisDetailViewController: UIViewController {
         }
     }
     
+    private func setElementImage() {
+        if variant == "Magic Item" {
+            element = "MagicItem"
+        }
+        if let element = configureElementImage(element: element ?? "Unknown") {
+            elementImage.image = element
+        }
+        else {
+            elementImage.isHidden = true
+        }
+    }
+    
     private func configureSeries() -> String {
+        if variant.contains("Dark") {
+            skylanderSeries.backgroundColor = UIColor.black
+            skylanderSeries.textColor = UIColor.white
+        }
         if series == 0 {
             let variant = chosenSensei?.value(forKey: "variantText") as! String
             return variant
@@ -94,6 +110,7 @@ class SenseisDetailViewController: UIViewController {
             skylanderLuck.text = elementalPowerStat != -1 ? String(elementalPowerStat) : "Unknown"
             let startingHealthStat = skylanderStats.value(forKey: "health") as! Int
             skylanderHealth.text = startingHealthStat != -1 ? String(startingHealthStat) : "Unknown"
+            element = skylanderStats.value(forKey: "element") as? String
         }
         else {
             senseiBattleClass.text = "Unknown"
@@ -102,6 +119,7 @@ class SenseisDetailViewController: UIViewController {
             skylanderAttack.text = "Unknown"
             skylanderLuck.text = "Unknown"
             skylanderHealth.text = "Unknown"
+            element = "Unknown"
         }
         setCompatibleGames()
     }

@@ -32,6 +32,7 @@ class SwappersDetailViewController: UIViewController {
     @IBOutlet weak var skylanderSeries: UILabel!
     @IBOutlet weak var skylanderGame: UILabel!
     @IBOutlet weak var swapperMovementType: UILabel!
+    @IBOutlet weak var elementImage: UIImageView!
     
     var chosenSwapper: NSManagedObject!
     lazy var name = chosenSwapper.value(forKey: "name") as! String
@@ -41,6 +42,7 @@ class SwappersDetailViewController: UIViewController {
     lazy var game = chosenSwapper.value(forKey: "game") as! String
     lazy var statsName = chosenSwapper.value(forKey: "statsName") as! String
     lazy var variant = chosenSwapper.value(forKey: "variantText") as! String
+    var element: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,9 +52,7 @@ class SwappersDetailViewController: UIViewController {
         skylanderGame.text = game
         tintGame()
         setLabels()
-//        if variant == "Dark" {
-//            skylanderImage.backgroundColor = UIColor.black
-//        }
+        setElementImage()
         skylanderImage.layer.cornerRadius = skylanderImage.bounds.width / 5
     }
     
@@ -66,7 +66,23 @@ class SwappersDetailViewController: UIViewController {
         }
     }
     
+    private func setElementImage() {
+        if variant == "Magic Item" {
+            element = "MagicItem"
+        }
+        if let element = configureElementImage(element: element ?? "Unknown") {
+            elementImage.image = element
+        }
+        else {
+            elementImage.isHidden = true
+        }
+    }
+    
     private func configureSeries() -> String {
+        if variant.contains("Dark") {
+            skylanderSeries.backgroundColor = UIColor.black
+            skylanderSeries.textColor = UIColor.white
+        }
         if series == 0 {
             let variant = chosenSwapper?.value(forKey: "variantText") as! String
             return variant
@@ -97,7 +113,7 @@ class SwappersDetailViewController: UIViewController {
             skylanderStartHealth.text = startingHealthStat != -1 ? String(startingHealthStat) : "Unknown"
             let maxHealthStat = skylanderStats.value(forKey: "maxHealth") as! Int
             skylanderMaximumHealth.text = maxHealthStat != -1 ? String(maxHealthStat) : "Unknown"
-            
+            element = skylanderStats.value(forKey: "element") as? String
         }
         else {
             swapperMovementType.text = "Unknown"
@@ -107,6 +123,7 @@ class SwappersDetailViewController: UIViewController {
             skylanderElementalPower.text = "Unknown"
             skylanderStartHealth.text = "Unknown"
             skylanderMaximumHealth.text = "Unknown"
+            element = "Unknown"
         }
         setCompatibleGames()
     }

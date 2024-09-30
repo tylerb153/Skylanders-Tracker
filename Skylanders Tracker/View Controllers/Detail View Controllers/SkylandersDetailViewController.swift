@@ -31,6 +31,7 @@ class SkylandersDetailViewController: UIViewController {
     @IBOutlet weak var compatableGames: UILabel!
     @IBOutlet weak var skylanderSeries: UILabel!
     @IBOutlet weak var skylanderGame: UILabel!
+    @IBOutlet weak var elementImage: UIImageView!
     
     var chosenSkylander: NSManagedObject!
     lazy var name = chosenSkylander.value(forKey: "name") as! String
@@ -40,6 +41,7 @@ class SkylandersDetailViewController: UIViewController {
     lazy var game = chosenSkylander.value(forKey: "game") as! String
     lazy var statsName = chosenSkylander.value(forKey: "statsName") as! String
     lazy var variant = chosenSkylander.value(forKey: "variantText") as! String
+    var element: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,9 +51,7 @@ class SkylandersDetailViewController: UIViewController {
         skylanderGame.text = game
         tintGame()
         setLabels()
-//        if variant == "Dark" {
-//            skylanderImage.backgroundColor = UIColor.black
-//        }
+        setElementImage()
         skylanderImage.layer.cornerRadius = skylanderImage.bounds.width / 5
     }
     
@@ -65,7 +65,23 @@ class SkylandersDetailViewController: UIViewController {
         }
     }
     
+    private func setElementImage() {
+        if variant == "Magic Item" {
+            element = "MagicItem"
+        }
+        if let element = configureElementImage(element: element ?? "Unknown") {
+            elementImage.image = element
+        }
+        else {
+            elementImage.isHidden = true
+        }
+    }
+    
     private func configureSeries() -> String {
+        if variant.contains("Dark") {
+            skylanderSeries.backgroundColor = UIColor.black
+            skylanderSeries.textColor = UIColor.white
+        }
         if variant == "Eon's Elite" {
             skylanderSeries.backgroundColor = UIColor(named: "Elite Gold")
         }
@@ -99,7 +115,7 @@ class SkylandersDetailViewController: UIViewController {
             skylanderStartHealth.text = startingHealthStat != -1 ? String(startingHealthStat) : "Unknown"
             let maxHealthStat = skylanderStats.value(forKey: "maxHealth") as! Int
             skylanderMaximumHealth.text = maxHealthStat != -1 ? String(maxHealthStat) : "Unknown"
-
+            element = skylanderStats.value(forKey: "element") as? String
         }
         else {
             skylanderSpeed.text = "Unknown"
@@ -108,6 +124,7 @@ class SkylandersDetailViewController: UIViewController {
             skylanderElementalPower.text = "Unknown"
             skylanderStartHealth.text = "Unknown"
             skylanderMaximumHealth.text = "Unknown"
+            element = "Unknown"
         }
         setCompatibleGames()
     }

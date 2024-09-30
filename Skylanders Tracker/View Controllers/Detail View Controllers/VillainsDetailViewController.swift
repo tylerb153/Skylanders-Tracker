@@ -20,6 +20,7 @@ class VillainsDetailViewController: UIViewController, UITableViewDelegate, UITab
     @IBOutlet var villainElementLabel: UILabel!
     @IBOutlet var doomRaiderLabel: UILabel!
     @IBOutlet var trapTable: UITableView!
+    @IBOutlet weak var elementImage: UIImageView!
     
     lazy var villainTrappedBy: [NSManagedObject] = getTraps()
     
@@ -36,6 +37,7 @@ class VillainsDetailViewController: UIViewController, UITableViewDelegate, UITab
         navigationItem.title = name
         SetImage()
         SetLabels()
+        setElementImage()
         
         let cellNib = UINib(nibName: "TrapCell", bundle: nil)
         trapTable.register(cellNib, forCellReuseIdentifier: "TrapCell")
@@ -61,6 +63,18 @@ class VillainsDetailViewController: UIViewController, UITableViewDelegate, UITab
         }
         else {
             villainImage.image = UIImage(systemName: "square")
+        }
+    }
+    
+    private func setElementImage() {
+        if variant == "Magic Item" {
+            element = "MagicItem"
+        }
+        if let element = configureElementImage(element: element) {
+            elementImage.image = element
+        }
+        else {
+            elementImage.isHidden = true
         }
     }
     
